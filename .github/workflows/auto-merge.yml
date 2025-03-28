@@ -38,9 +38,8 @@ jobs:
           
           # Get the latest midi-database file from woodenplastic/MidiDeviceDefinitions
           echo "Fetching latest MIDI database version..."
-          MIDI_DB_LIST_URL="https://api.github.com/repos/woodenplastic/MidiDeviceDefinitions/contents/Json"
-          MIDI_DB_FILES=$(curl -s $MIDI_DB_LIST_URL | grep -o '"name": "midi-database-v[^"]*\.json"' | sed 's/"name": "\(.*\)"/\1/g')
-          
+           MIDI_DB_LIST_URL="https://api.github.com/repos/woodenplastic/MidiDeviceDefinitions/contents/Json"
+          MIDI_DB_FILES=$(curl -s $MIDI_DB_LIST_URL | grep -o '"name": "midi-database-v[^"]*\.json"' | grep -v "version" | sed 's/"name": "\(.*\)"/\1/g')          
           # Find the latest version based on version number
           LATEST_MIDI_DB=$(echo "$MIDI_DB_FILES" | grep -v "min.json" | grep -v ".gz" | sort -Vr | head -n 1)
           echo "Latest MIDI database file: $LATEST_MIDI_DB"
