@@ -155,7 +155,7 @@ function normalizeAndMapKey(key, mappingTable = {}) {
     // Direct mapping lookup
     if (mappingTable[key]) {
         return {
-            normalized: mappingTable[key].toLowerCase().replace(/\s+/g, '_'), // Normalized for object keys
+            normalized: mappingTable[key],
             canonical: mappingTable[key] // Keep the canonical version for display
         };
     }
