@@ -147,6 +147,7 @@ const deviceMapping = {
 
     // 3 Degrees Audio
     "huestereo": "HUE Stereo",
+    "hue_stereo": "HUE Stereo",
     "hue_stereo_multi_fx": "HUE Stereo"
 };
 
@@ -159,7 +160,7 @@ function normalizeAndMapKey(key, mappingTable = {}) {
             canonical: mappingTable[key] // Keep the canonical version for display
         };
     }
-    
+
     // Lowercase lookup
     const lowercaseKey = key.toLowerCase();
     if (mappingTable[lowercaseKey]) {
@@ -168,7 +169,7 @@ function normalizeAndMapKey(key, mappingTable = {}) {
             canonical: mappingTable[lowercaseKey]
         };
     }
-    
+
     // No mapping found - create normalized version that preserves model identifiers
     // Convert spaces to underscores, convert to lowercase
     return {
@@ -280,11 +281,11 @@ try {
     Object.entries(targetDb).forEach(([brandKey, brandData]) => {
         // Skip metadata fields
         if (reservedKeys.includes(brandKey)) return;
-        
+
         // Get normalized and canonical keys for manufacturer
-        const { normalized: normalizedBrand, canonical: canonicalBrand } = 
+        const { normalized: normalizedBrand, canonical: canonicalBrand } =
             normalizeAndMapKey(brandKey, manufacturerMapping);
-        
+
         // Save original and normalized forms
         if (!manufacturers[normalizedBrand]) {
             manufacturers[normalizedBrand] = {
@@ -295,18 +296,18 @@ try {
         } else {
             manufacturers[normalizedBrand].variants.push(brandKey);
         }
-        
+
         Object.entries(brandData).forEach(([deviceKey, deviceData]) => {
             // Get normalized and canonical keys for device
-            const { normalized: normalizedDevice, canonical: canonicalDevice } = 
+            const { normalized: normalizedDevice, canonical: canonicalDevice } =
                 normalizeAndMapKey(deviceKey, deviceMapping);
-            
+
             const deviceId = `${normalizedBrand}_${normalizedDevice}`;
-            
+
             if (!normalizedDeviceMap[deviceId]) {
                 normalizedDeviceMap[deviceId] = [];
             }
-            
+
             // Store both original key and canonical name
             normalizedDeviceMap[deviceId].push({
                 brandKey,
@@ -315,7 +316,7 @@ try {
                 canonicalDeviceName: canonicalDevice,
                 data: createStandardDevice(deviceData, deviceData.brand || canonicalBrand, deviceData.device_name || canonicalDevice)
             });
-            
+
             manufacturers[normalizedBrand].devices[normalizedDevice] = deviceId;
         });
     });
@@ -323,22 +324,25 @@ try {
     // Process source database
     Object.entries(sourceDb).forEach(([brandKey, brandData]) => {
         // Apply manual mapping first, then normalize
-        const normalizedBrand = normalizeAndMapKey(brandKey, manufacturerMapping);
+        const { normalized: normalizedBrand, canonical: canonicalBrand } = 
+            normalizeAndMapKey(brandKey, manufacturerMapping);
 
-        if (!manufacturers[normalizedBrand.normalized]) {
-            manufacturers[normalizedBrand.normalized] = {
+        if (!manufacturers[normalizedBrand]) {
+            manufacturers[normalizedBrand] = {
                 variants: [brandKey],
+                canonicalName: canonicalBrand,
                 devices: {}
             };
-        } else if (!manufacturers[normalizedBrand.normalized].variants.includes(brandKey)) {
-            manufacturers[normalizedBrand.normalized].variants.push(brandKey);
+        } else if (!manufacturers[normalizedBrand].variants.includes(brandKey)) {
+            manufacturers[normalizedBrand].variants.push(brandKey);
         }
 
         Object.entries(brandData).forEach(([deviceKey, deviceData]) => {
             // Apply manual mapping first, then normalize
-            const normalizedDevice = normalizeAndMapKey(deviceKey, deviceMapping);
+            const { normalized: normalizedDevice, canonical: canonicalDevice } = 
+                normalizeAndMapKey(deviceKey, deviceMapping);
 
-            const deviceId = `${normalizedBrand.normalized}_${normalizedDevice.normalized}`;
+            const deviceId = `${normalizedBrand}_${normalizedDevice}`;
 
             if (!normalizedDeviceMap[deviceId]) {
                 normalizedDeviceMap[deviceId] = [];
@@ -362,10 +366,12 @@ try {
             normalizedDeviceMap[deviceId].push({
                 brandKey,
                 deviceKey,
-                data: createStandardDevice(deviceData, brandKey, deviceKey)
+                canonicalBrandName: canonicalBrand,
+                canonicalDeviceName: canonicalDevice,
+                data: createStandardDevice(deviceData, canonicalBrand, canonicalDevice)
             });
 
-            manufacturers[normalizedBrand.normalized].devices[normalizedDevice.normalized] = deviceId;
+            manufacturers[normalizedBrand].devices[normalizedDevice] = deviceId;
         });
     });
 
@@ -375,16 +381,16 @@ try {
     Object.entries(manufacturers).forEach(([normalizedBrand, data]) => {
         // Use the canonical name for the brand
         const primaryBrandKey = data.canonicalName;
-        
+
         finalDb[primaryBrandKey] = {};
-        
+
         // Process each device
         Object.entries(data.devices).forEach(([normalizedDevice, deviceId]) => {
             const deviceVariants = normalizedDeviceMap[deviceId];
-            
+
             // Don't merge different models - split by canonical name
             const variantsByName = {};
-            
+
             deviceVariants.forEach(variant => {
                 const modelName = variant.canonicalDeviceName || variant.deviceKey;
                 if (!variantsByName[modelName]) {
@@ -392,7 +398,7 @@ try {
                 }
                 variantsByName[modelName].push(variant);
             });
-            
+
             // Process each distinct model separately
             Object.entries(variantsByName).forEach(([modelName, variants]) => {
                 // Sort variants of this specific model by data completeness
@@ -401,9 +407,9 @@ try {
                     const bCount = (b.data.cc?.length || 0) + (b.data.nrpn?.length || 0) + (b.data.pc?.length || 0);
                     return bCount - aCount;
                 });
-                
+
                 const primaryVariant = variants[0];
-                
+
                 // Merge data only from variants with the same model name
                 let mergedData = { ...primaryVariant.data };
                 if (variants.length > 1) {
@@ -411,11 +417,11 @@ try {
                         mergedData = mergeDevices(mergedData, variants[i].data);
                     }
                 }
-                
+
                 // Ensure brand and device name are set correctly
                 mergedData.brand = primaryBrandKey;
                 mergedData.device_name = modelName;
-                
+
                 // Add to final database under the appropriate name
                 finalDb[primaryBrandKey][modelName] = mergedData;
             });
