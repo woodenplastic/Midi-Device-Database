@@ -1,0 +1,160 @@
+name: Auto Merge JSON Databases
+
+on:
+  # Run when files are pushed to the repository
+  push:
+    paths:
+      - 'all.json'
+      - 'midi-database-v*.json'
+      - 'merge.js'
+  
+  # Run on a schedule (daily at midnight UTC)
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  merge-databases:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Check for external file changes
+        id: check-files
+        run: |
+          # Create the URLs directory if it doesn't exist
+          mkdir -p .urls
+          
+          # Get the latest midi-database file from woodenplastic/MidiDeviceDefinitions
+          echo "Fetching latest MIDI database version..."
+          MIDI_DB_LIST_URL="https://api.github.com/repos/woodenplastic/MidiDeviceDefinitions/contents/Json"
+          MIDI_DB_FILES=$(curl -s $MIDI_DB_LIST_URL | grep -o '"name": "midi-database-v[^"]*\.json"' | sed 's/"name": "\(.*\)"/\1/g')
+          
+          # Find the latest version based on version number
+          LATEST_MIDI_DB=$(echo "$MIDI_DB_FILES" | grep -v "min.json" | grep -v ".gz" | sort -Vr | head -n 1)
+          echo "Latest MIDI database file: $LATEST_MIDI_DB"
+          
+          # Get the URL for the latest midi-database file
+          MIDI_DB_URL="https://raw.githubusercontent.com/woodenplastic/MidiDeviceDefinitions/main/Json/$LATEST_MIDI_DB"
+          
+          # Get all.json from Morningstar-Engineering/openmidi
+          ALL_JSON_URL="https://raw.githubusercontent.com/Morningstar-Engineering/openmidi/master/data/all.json"
+          
+          # Download the latest files
+          echo "Downloading latest files..."
+          curl -s "$MIDI_DB_URL" -o ".urls/midi-database-latest.json"
+          curl -s "$ALL_JSON_URL" -o ".urls/all-latest.json"
+          
+          # Verify the downloaded files are valid JSON
+          if ! jq empty ".urls/midi-database-latest.json" 2>/dev/null; then
+            echo "Error: Downloaded MIDI database is not valid JSON"
+            exit 1
+          fi
+          
+          if ! jq empty ".urls/all-latest.json" 2>/dev/null; then
+            echo "Error: Downloaded all.json is not valid JSON"
+            exit 1
+          fi
+          
+          # Check for existing local files
+          CHANGED=false
+          LOCAL_MIDI_DB=$(find . -name "midi-database-v*.json" -not -name "*.min.json" -not -name "*.json.gz" | head -n 1)
+          
+          if [ -n "$LOCAL_MIDI_DB" ]; then
+            LOCAL_MIDI_DB="${LOCAL_MIDI_DB:2}" # Remove ./ prefix
+            echo "Found local MIDI database: $LOCAL_MIDI_DB"
+            
+            if ! cmp -s ".urls/midi-database-latest.json" "$LOCAL_MIDI_DB"; then
+              CHANGED=true
+              echo "MIDI database changed, updating..."
+              cp ".urls/midi-database-latest.json" "$LATEST_MIDI_DB"
+              
+              # If the file name has changed, remove the old file
+              if [ "$LOCAL_MIDI_DB" != "$LATEST_MIDI_DB" ]; then
+                echo "Removing old MIDI database file: $LOCAL_MIDI_DB"
+                rm "$LOCAL_MIDI_DB"
+              fi
+            else
+              echo "MIDI database is up-to-date"
+              # Ensure file is named correctly even if content is the same
+              if [ "$LOCAL_MIDI_DB" != "$LATEST_MIDI_DB" ]; then
+                echo "Renaming to latest version: $LATEST_MIDI_DB"
+                cp "$LOCAL_MIDI_DB" "$LATEST_MIDI_DB"
+                rm "$LOCAL_MIDI_DB"
+                CHANGED=true
+              fi
+            fi
+          else
+            CHANGED=true
+            echo "No local MIDI database found, downloading..."
+            cp ".urls/midi-database-latest.json" "$LATEST_MIDI_DB"
+          fi
+          
+          if [ -f "all.json" ]; then
+            if ! cmp -s ".urls/all-latest.json" "all.json"; then
+              CHANGED=true
+              echo "all.json changed, copying new version..."
+              cp ".urls/all-latest.json" "all.json"
+            else
+              echo "all.json is up-to-date"
+            fi
+          else
+            CHANGED=true
+            echo "all.json not found locally, downloading..."
+            cp ".urls/all-latest.json" "all.json"
+          fi
+          
+          echo "files_changed=$CHANGED" >> $GITHUB_OUTPUT
+          echo "latest_midi_db=$LATEST_MIDI_DB" >> $GITHUB_OUTPUT
+
+      - name: Setup Node.js
+        if: steps.check-files.outputs.files_changed == 'true'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          
+      - name: Install jq
+        if: steps.check-files.outputs.files_changed == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Run merge script
+        if: steps.check-files.outputs.files_changed == 'true'
+        run: |
+          echo "Running merge script..."
+          node merge.js
+          
+          # Verify the output files exist and are valid JSON
+          if [ ! -f "midi.json" ]; then
+            echo "Error: merge.js did not generate midi.json"
+            exit 1
+          fi
+          
+          if ! jq empty "midi.json" 2>/dev/null; then
+            echo "Error: Generated midi.json is not valid JSON"
+            exit 1
+          fi
+          
+          echo "Merge completed successfully"
+
+      - name: Commit and push changes
+        if: steps.check-files.outputs.files_changed == 'true'
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+          
+          git add "${{ steps.check-files.outputs.latest_midi_db }}" all.json midi.json midi.min.json midi.min.json.gz
+          
+          if git status --porcelain | grep .; then
+            git commit -m "Auto-update merged JSON database files"
+            git push
+          else
+            echo "No changes to commit"
+          fi
