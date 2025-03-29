@@ -447,6 +447,17 @@ try {
     const compressed = zlib.gzipSync(minified);
     fs.writeFileSync(gzipPath, compressed);
 
+    console.log('Creating version information file...');
+    const versionPath = path.join(__dirname, 'midi-database-version.json');
+    const versionInfo = {
+        version: finalDb.version || "unknown",
+        generatedAt: finalDb.generatedAt || new Date().toISOString(),
+    };
+    fs.writeFileSync(versionPath, JSON.stringify(versionInfo, null, 2));
+    console.log(`Version information written to ${versionPath}`);
+
+
+
     // Calculate file sizes
     const prettySize = (fs.statSync(outputPath).size / 1024).toFixed(2);
     const minSize = (fs.statSync(minifiedPath).size / 1024).toFixed(2);
@@ -475,32 +486,6 @@ try {
         });
     });
 
-    // THEN create the version file after stats are calculated
-    console.log('Creating version information file...');
-    const versionPath = path.join(__dirname, 'midi-database-version.json');
-    const versionInfo = {
-        version: finalDb.version || "unknown",
-        generatedAt: finalDb.generatedAt || new Date().toISOString(),
-        sourceFile: path.basename(targetDbPath),
-        databaseStats: {
-            brands: brandCount,
-            devices: deviceCount,
-            parameters: {
-                cc: ccCount,
-                nrpn: nrpnCount,
-                pc: pcCount,
-                total: ccCount + nrpnCount + pcCount
-            }
-        },
-        sizes: {
-            prettyJson: `${prettySize} KB`,
-            minifiedJson: `${minSize} KB`,
-            gzippedJson: `${gzipSize} KB`,
-            compressionRatio: `${(gzipSize / prettySize * 100).toFixed(1)}%`
-        }
-    };
-    fs.writeFileSync(versionPath, JSON.stringify(versionInfo, null, 2));
-    console.log(`Version information written to ${versionPath}`);
 
     // Count original sources statistics
     let targetBrandCount = 0;
