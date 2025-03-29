@@ -154,14 +154,20 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Pull latest changes to avoid non-fast-forward rejection
-          git pull --rebase origin main
-          
+          # First, track the files we're planning to commit 
+          # This transforms them from "untracked" to "tracked"
           git add "${{ steps.check-files.outputs.latest_midi_db }}" all.json midi.json midi.min.json midi.min.json.gz
           
+          # Fetch the latest changes from remote
+          git fetch origin main
+          
+          # Merge with strategy that favors our local changes
+          git merge -X ours --no-edit origin/main
+          
+          # Commit our changes
           if git status --porcelain | grep .; then
             git commit -m "Auto-update merged JSON database files"
             git push
           else
             echo "No changes to commit"
-          fi
+    fi
