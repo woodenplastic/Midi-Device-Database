@@ -154,7 +154,7 @@ jobs:
           
           # First, track the files we're planning to commit 
           # This transforms them from "untracked" to "tracked"
-          git add "${{ steps.check-files.outputs.latest_midi_db }}" all.json midi.json midi.min.json midi.min.json.gz
+          git add "${{ steps.check-files.outputs.latest_midi_db }}" all.json midi.json midi.min.json midi.min.json.gz midi-database-version.json
           
           # Fetch the latest changes from remote
           git fetch origin main
