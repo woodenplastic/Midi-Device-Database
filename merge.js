@@ -23,6 +23,107 @@ function findLatestDatabase() {
     return path.join(__dirname, dbFiles[0]);
 }
 
+// Load mapping.json file
+function loadMappings() {
+    try {
+        const mappingPath = path.join(__dirname, 'mapping.json');
+        const mapping = JSON.parse(fs.readFileSync(mappingPath, 'utf8'));
+        
+        // Parse mapping.json to create manufacturer and device mappings
+        const manufacturerMapping = {};
+        const deviceMapping = {};
+        
+        mapping.brands.forEach(brand => {
+            const brandValue = brand.value;
+            const brandName = brand.name;
+            
+            // Add the primary brand mapping - map to value (key)
+            manufacturerMapping[brandValue] = brandValue;
+            
+            // Add common variations of brand names - also map to value (key)
+            manufacturerMapping[brandName.toLowerCase()] = brandValue;
+            manufacturerMapping[brandName.toLowerCase().replace(/\s+/g, '')] = brandValue;
+            manufacturerMapping[brandName.toLowerCase().replace(/\s+/g, '_')] = brandValue;
+            manufacturerMapping[brandName.toLowerCase().replace(/\s+/g, '-')] = brandValue;
+            
+            // Add common suffixes
+            manufacturerMapping[brandValue + '_music'] = brandValue;
+            manufacturerMapping[brandValue + 'music'] = brandValue;
+            manufacturerMapping[brandValue + '_audio'] = brandValue;
+            manufacturerMapping[brandValue + 'audio'] = brandValue;
+            manufacturerMapping[brandValue + '_electronics'] = brandValue;
+            manufacturerMapping[brandValue + 'electronics'] = brandValue;
+            manufacturerMapping[brandValue + '_pedals'] = brandValue;
+            manufacturerMapping[brandValue + 'pedals'] = brandValue;
+            manufacturerMapping[brandValue + '_effects'] = brandValue;
+            manufacturerMapping[brandValue + 'effects'] = brandValue;
+            manufacturerMapping[brandValue + '_engineering'] = brandValue;
+            manufacturerMapping[brandValue + 'engineering'] = brandValue;
+            
+            // Add name variations with spaces/underscores/dashes replaced
+            manufacturerMapping[brandValue.replace(/-/g, '_')] = brandValue;
+            manufacturerMapping[brandValue.replace(/_/g, '-')] = brandValue;
+            
+            // Process device models if available
+            if (brand.models && Array.isArray(brand.models)) {
+                brand.models.forEach(model => {
+                    if (!model.value) return; // Skip entries without values
+                    
+                    const modelValue = model.value;
+                    const modelName = model.name || modelValue;
+                    
+                    // Add the primary model mapping - map to value (key)
+                    deviceMapping[modelValue] = modelValue;
+                    
+                    // Add variations of model names - also map to value (key)
+                    deviceMapping[modelName.toLowerCase()] = modelValue;
+                    deviceMapping[modelName.toLowerCase().replace(/\s+/g, '')] = modelValue;
+                    deviceMapping[modelName.toLowerCase().replace(/\s+/g, '_')] = modelValue;
+                    deviceMapping[modelName.toLowerCase().replace(/\s+/g, '-')] = modelValue;
+                    
+                    // Add common model variations with different separators
+                    deviceMapping[modelValue.replace(/-/g, '_')] = modelValue;
+                    deviceMapping[modelValue.replace(/_/g, '-')] = modelValue;
+                    deviceMapping[modelValue.replace(/\./g, '')] = modelValue;
+                    
+                    // Special case for roman numerals and MK versions
+                    deviceMapping[modelValue.replace(/mk(\d+)/i, 'mark$1')] = modelValue;
+                    deviceMapping[modelValue.replace(/mark(\d+)/i, 'mk$1')] = modelValue;
+                    deviceMapping[modelValue.replace(/mkii/i, 'mk2')] = modelValue;
+                    deviceMapping[modelValue.replace(/mk2/i, 'mkii')] = modelValue;
+                });
+            }
+        });
+        
+        // Brand display names - map from value (key) to display name
+        const brandDisplayNames = {};
+        mapping.brands.forEach(brand => {
+            brandDisplayNames[brand.value] = brand.name;
+        });
+        
+        // Model display names - map from value (key) to display name
+        const modelDisplayNames = {};
+        mapping.brands.forEach(brand => {
+            if (brand.models && Array.isArray(brand.models)) {
+                brand.models.forEach(model => {
+                    if (model.value && model.name) {
+                        if (!modelDisplayNames[brand.value]) {
+                            modelDisplayNames[brand.value] = {};
+                        }
+                        modelDisplayNames[brand.value][model.value] = model.name;
+                    }
+                });
+            }
+        });
+        
+        console.log(`Loaded mappings for ${Object.keys(manufacturerMapping).length} manufacturer variations and ${Object.keys(deviceMapping).length} device variations`);
+        return { manufacturerMapping, deviceMapping, brandDisplayNames, modelDisplayNames };
+    } catch (error) {
+        console.error('Error loading mapping.json:', error);
+        return { manufacturerMapping: {}, deviceMapping: {}, brandDisplayNames: {}, modelDisplayNames: {} };
+    }
+}
+
 // Paths to the JSON files
 const targetDbPath = findLatestDatabase();
 const sourceDbPath = path.join(__dirname, 'all.json');
@@ -32,150 +133,54 @@ const outputPath = path.join(__dirname, 'midi.json');
 const minifiedPath = path.join(__dirname, 'midi.min.json');
 const gzipPath = path.join(__dirname, 'midi.min.json.gz');
 
-// Mapping tables for known device and manufacturer variations
-const manufacturerMapping = {
-    // Access
-    "access_music": "Access",
-    "accessmusic": "Access",
-
-    // Alexander
-    "alexander_pedals": "Alexander Pedals",
-
-    // Arturia
-    "arturiamusic": "Arturia",
-
-    // Atomic
-    "atomic_amps": "Atomic Amps",
-    "atomicamps": "Atomic Amps",
-
-    // Audio Thingies
-    "audiothingies": "Audio Thingies",
-    "audio_thingies": "Audio Thingies",
-
-    // Black Corporation
-    "black_corporation": "Black Crporation",
-    "blackcorporation": "Black Corporation",
-
-    // Behringer
-    "behringer_music": "Behringer",
-
-    // BluGuitar
-    "bluguitar": "Blu Guitar",
-    "blu_guitar": "Blu Guitar",
-
-    // Bondi Effects
-    "bondi_effects": "Bondi Effects",
-    "bondieffects": "Bondi Effects",
-
-    // Boss/Roland
-    "roland_boss": "BOSS",
-    "roland": "BOSS",
-
-    // Chase Bliss
-    "chase_bliss": "Chase Bliss Audio",
-    "chaseblissaudio": "Chase Bliss Audio",
-    "chase_bliss_audio": "Chase Bliss Audio",
-
-    // Empress
-    "empress_effects": "Empress Effects",
-
-    // Meris
-    "meris_llc": "Meris",
-
-    // 3 Degrees Audio
-    "3_degrees_audio": "3 Degrees Audio",
-    "3degreesaudio": "3 Degrees Audio",
-
-
-    // Strymon
-    "strymon_engineering": "Strymon"
-};
-
-// Mapping of device variations to canonical names
-const deviceMapping = {
-    // Access Virus
-    "virus_a": "Virus A",
-    "virus_b": "Virus B",
-    "virus_c": "Virus C",
-    "virus_ti": "Virus TI",
-    "virus_ti2": "Virus TI2",
-    "virustidesk": "Virus TI Desktop",
-    "virustikeyboard": "Virus TI Keyboard",
-
-    // Arturia
-    "matrixbrute": "Matrixbrute",
-    "matrix_brute": "Matrixbrute",
-
-    // Alexander
-    "superneo-matic": "superneomatic",
-    "super_neo_matic": "superneomatic",
-    "f13_neo": "f13neo",
-    "colour_theory": "colourtheory",
-
-    // Behringer
-    "deepmind12": "Deepmind 12",
-    "deepmind12d": "Deepmind 12D",
-    "deepmind-6": "Deepmind 6",
-    "deepmind_6": "Deepmind 6",
-
-    // BluGuitar
-    "amp1_mercury_edition": "Amp1 Mercury Iridium",
-    "amp1_mercury": "Amp1 Mercury Iridium",
-
-    // Atomic
-    "amplifire": "Amplifire",
-    "amplifire3": "Amplifire 3",
-    "amplifire_3": "Amplifire 3",
-    "amplifire6": "Amplifire 6",
-    "amplifire_6": "Amplifire 6",
-    "amplifire12": "Amplifire 12",
-    "amplifire_12": "Amplifire 12",
-
-    // Chase Bliss
-    "mood": "mood",
-    "moodmkii": "mood_mkii",
-    "mood_mkii": "mood_mkii",
-    "blooper": "blooper",
-    "thermae": "thermae",
-    "generation_loss_mki": "Generation Loss MK I",
-    "generation_loss_mkii": "Generation Loss MK II",
-    "preamp_mkii": "preamp_mkii",
-
-    // Meris
-    "mercury7": "Mercury 7",
-    "mercury_7": "Mercury 7",
-
-    // 3 Degrees Audio
-    "huestereo": "HUE Stereo",
-    "hue_stereo": "HUE Stereo",
-    "hue_stereo_multi_fx": "HUE Stereo"
-};
+// Load mappings from mapping.json
+const { 
+    manufacturerMapping, 
+    deviceMapping, 
+    brandDisplayNames, 
+    modelDisplayNames 
+} = loadMappings();
 
 // Function to handle normalization and mapping with model number preservation
-function normalizeAndMapKey(key, mappingTable = {}) {
-    // Direct mapping lookup
+function normalizeAndMapKey(key, mappingTable = {}, displayNameTable = null) {
+    // Direct mapping lookup (exact match)
     if (mappingTable[key]) {
+        const normalizedKey = mappingTable[key];
+        // Get display name if available
+        const displayName = displayNameTable ? (displayNameTable[normalizedKey] || normalizedKey) : normalizedKey;
+        
         return {
-            normalized: mappingTable[key],
-            canonical: mappingTable[key] // Keep the canonical version for display
+            normalized: normalizedKey.toLowerCase().replace(/\s+/g, '_'),
+            canonical: displayName
         };
     }
 
     // Lowercase lookup
     const lowercaseKey = key.toLowerCase();
     if (mappingTable[lowercaseKey]) {
+        const normalizedKey = mappingTable[lowercaseKey];
+        const displayName = displayNameTable ? (displayNameTable[normalizedKey] || normalizedKey) : normalizedKey;
+        
         return {
-            normalized: mappingTable[lowercaseKey].toLowerCase().replace(/\s+/g, '_'),
-            canonical: mappingTable[lowercaseKey]
+            normalized: normalizedKey.toLowerCase().replace(/\s+/g, '_'),
+            canonical: displayName
         };
     }
-
+    
     // No mapping found - create normalized version that preserves model identifiers
     // Convert spaces to underscores, convert to lowercase
     return {
         normalized: key.toLowerCase().replace(/\s+/g, '_'),
         canonical: key
     };
+}
+
+// Function to get display name for model from modelDisplayNames
+function getModelDisplayName(brandKey, modelKey) {
+    if (modelDisplayNames[brandKey] && modelDisplayNames[brandKey][modelKey]) {
+        return modelDisplayNames[brandKey][modelKey];
+    }
+    return modelKey;
 }
 
 // Function to merge device data, preferring the more complete version
@@ -284,7 +289,7 @@ try {
 
         // Get normalized and canonical keys for manufacturer
         const { normalized: normalizedBrand, canonical: canonicalBrand } =
-            normalizeAndMapKey(brandKey, manufacturerMapping);
+            normalizeAndMapKey(brandKey, manufacturerMapping, brandDisplayNames);
 
         // Save original and normalized forms
         if (!manufacturers[normalizedBrand]) {
@@ -301,6 +306,7 @@ try {
             // Get normalized and canonical keys for device
             const { normalized: normalizedDevice, canonical: canonicalDevice } =
                 normalizeAndMapKey(deviceKey, deviceMapping);
+            const displayDeviceName = getModelDisplayName(normalizedBrand, normalizedDevice);
 
             const deviceId = `${normalizedBrand}_${normalizedDevice}`;
 
@@ -313,8 +319,8 @@ try {
                 brandKey,
                 deviceKey,
                 canonicalBrandName: canonicalBrand,
-                canonicalDeviceName: canonicalDevice,
-                data: createStandardDevice(deviceData, deviceData.brand || canonicalBrand, deviceData.device_name || canonicalDevice)
+                canonicalDeviceName: displayDeviceName,
+                data: createStandardDevice(deviceData, deviceData.brand || canonicalBrand, deviceData.device_name || displayDeviceName)
             });
 
             manufacturers[normalizedBrand].devices[normalizedDevice] = deviceId;
@@ -325,7 +331,7 @@ try {
     Object.entries(sourceDb).forEach(([brandKey, brandData]) => {
         // Apply manual mapping first, then normalize
         const { normalized: normalizedBrand, canonical: canonicalBrand } = 
-            normalizeAndMapKey(brandKey, manufacturerMapping);
+            normalizeAndMapKey(brandKey, manufacturerMapping, brandDisplayNames);
 
         if (!manufacturers[normalizedBrand]) {
             manufacturers[normalizedBrand] = {
@@ -341,6 +347,7 @@ try {
             // Apply manual mapping first, then normalize
             const { normalized: normalizedDevice, canonical: canonicalDevice } = 
                 normalizeAndMapKey(deviceKey, deviceMapping);
+            const displayDeviceName = getModelDisplayName(normalizedBrand, normalizedDevice);
 
             const deviceId = `${normalizedBrand}_${normalizedDevice}`;
 
@@ -367,8 +374,8 @@ try {
                 brandKey,
                 deviceKey,
                 canonicalBrandName: canonicalBrand,
-                canonicalDeviceName: canonicalDevice,
-                data: createStandardDevice(deviceData, canonicalBrand, canonicalDevice)
+                canonicalDeviceName: displayDeviceName,
+                data: createStandardDevice(deviceData, canonicalBrand, displayDeviceName)
             });
 
             manufacturers[normalizedBrand].devices[normalizedDevice] = deviceId;
