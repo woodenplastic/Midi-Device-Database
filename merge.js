@@ -504,6 +504,118 @@ try {
     fs.writeFileSync(versionPath, JSON.stringify(versionInfo, null, 2));
     console.log(`Version information written to ${versionPath}`);
 
+    // Generate CSV export of all devices with their parameters
+    console.log('Generating CSV exports...');
+
+    // 1. First CSV: Device summary (one row per device)
+    const deviceCsvPath = path.join(__dirname, 'midi-devices-summary.csv');
+    let deviceCsvContent = 'Brand,Device,CC Count,NRPN Count,PC Count,Total Parameters,MIDI Thru,MIDI Clock,Phantom Power\n';
+
+    // 2. Second CSV: All parameters (one row per parameter)
+    const paramCsvPath = path.join(__dirname, 'midi-parameters.csv');
+    let paramCsvContent = 'Brand,Device,Parameter Type,Parameter Name,Value/MSB,LSB,Min,Max,Description\n';
+
+    // Helper function to escape CSV fields
+    const escapeCsv = (field) => {
+        // Convert to string, handle nulls/undefined
+        const str = (field === null || field === undefined) ? '' : String(field);
+        // If the field contains commas, quotes, or newlines, wrap in quotes and escape inner quotes
+        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+            return `"${str.replace(/"/g, '""')}"`;
+        }
+        return str;
+    };
+
+    // Process each device in the database
+    Object.keys(finalDb).forEach(brandKey => {
+        // Skip metadata fields
+        if (reservedKeys.includes(brandKey)) return;
+        
+        const brand = finalDb[brandKey];
+        
+        // Process each device for this brand
+        Object.entries(brand).forEach(([deviceName, deviceData]) => {
+            const ccCount = deviceData.cc?.length || 0;
+            const nrpnCount = deviceData.nrpn?.length || 0;
+            const pcCount = deviceData.pc?.length || 0;
+            const totalParams = ccCount + nrpnCount + pcCount;
+            
+            // Add device to summary CSV
+            const deviceRow = [
+                escapeCsv(brandKey),
+                escapeCsv(deviceName),
+                ccCount,
+                nrpnCount,
+                pcCount,
+                totalParams,
+                deviceData.midi_thru ? 'Yes' : 'No',
+                deviceData.midi_clock ? 'Yes' : 'No',
+                escapeCsv(deviceData.phantom_power)
+            ];
+            deviceCsvContent += deviceRow.join(',') + '\n';
+            
+            // Process CC parameters
+            if (deviceData.cc && deviceData.cc.length > 0) {
+                deviceData.cc.forEach(cc => {
+                    const paramRow = [
+                        escapeCsv(brandKey),
+                        escapeCsv(deviceName),
+                        'CC',
+                        escapeCsv(cc.name),
+                        cc.value,
+                        '', // No LSB for CC
+                        cc.min,
+                        cc.max,
+                        escapeCsv(cc.description)
+                    ];
+                    paramCsvContent += paramRow.join(',') + '\n';
+                });
+            }
+            
+            // Process NRPN parameters
+            if (deviceData.nrpn && deviceData.nrpn.length > 0) {
+                deviceData.nrpn.forEach(nrpn => {
+                    const paramRow = [
+                        escapeCsv(brandKey),
+                        escapeCsv(deviceName),
+                        'NRPN',
+                        escapeCsv(nrpn.name),
+                        nrpn.msb,
+                        nrpn.lsb,
+                        nrpn.min,
+                        nrpn.max,
+                        escapeCsv(nrpn.description)
+                    ];
+                    paramCsvContent += paramRow.join(',') + '\n';
+                });
+            }
+            
+            // Process PC parameters
+            if (deviceData.pc && deviceData.pc.length > 0) {
+                deviceData.pc.forEach(pc => {
+                    const paramRow = [
+                        escapeCsv(brandKey),
+                        escapeCsv(deviceName),
+                        'PC',
+                        escapeCsv(pc.name),
+                        pc.value,
+                        '', // No LSB for PC
+                        pc.min,
+                        pc.max,
+                        escapeCsv(pc.description)
+                    ];
+                    paramCsvContent += paramRow.join(',') + '\n';
+                });
+            }
+        });
+    });
+
+    // Write the CSV files
+    fs.writeFileSync(deviceCsvPath, deviceCsvContent);
+    fs.writeFileSync(paramCsvPath, paramCsvContent);
+    console.log(`Device summary CSV written to ${deviceCsvPath}`);
+    console.log(`Parameters CSV written to ${paramCsvPath}`);
+
     // Count original sources statistics
     let targetBrandCount = 0;
     let targetDeviceCount = 0;
