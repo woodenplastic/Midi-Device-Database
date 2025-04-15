@@ -27,26 +27,24 @@ jobs:
           node-version: '18'
       
       - name: Install dependencies
-        run: npm install pako pg-promise
+        run: npm install pako node-fetch@2
       
       - name: Create scripts directory
         run: mkdir -p scripts
       
       - name: Create import script
         run: |
-          cat > scripts/import-with-pg.js << 'EOF'
+          cat > scripts/import-with-rest.js << 'EOF'
           const fs = require('fs');
           const path = require('path');
           const pako = require('pako');
-          const pgp = require('pg-promise')();
+          const fetch = require('node-fetch');
 
-          async function importToDatabase() {
-            let db = null;
-            
+          async function importToSupabase() {
             try {
-              console.log('Starting MIDI database import using direct PostgreSQL connection...');
+              console.log('Starting MIDI database import using Supabase REST API...');
               
-              // Get database connection details from Supabase URL
+              // Get Supabase credentials
               const supabaseUrl = process.env.SUPABASE_URL;
               const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
               
@@ -54,29 +52,8 @@ jobs:
                 throw new Error('Supabase credentials not provided');
               }
               
-              // Extract host from Supabase URL (e.g., https://xyz.supabase.co -> xyz.supabase.co)
-              const urlObj = new URL(supabaseUrl);
-              const host = urlObj.hostname;
-              
-              // Connection details for direct Postgres connection
-              const connectionDetails = {
-                host: host,
-                port: 5432,
-                database: 'postgres',
-                user: 'postgres',
-                password: supabaseKey,
-                ssl: { rejectUnauthorized: false }
-              };
-              
-              console.log('Connecting to PostgreSQL database...');
-              console.log('Host:', host);
-              
-              // Create database connection
-              db = pgp(connectionDetails);
-              
-              // Test connection
-              const testResult = await db.one('SELECT current_database() as db');
-              console.log('Connected to database:', testResult.db);
+              console.log('Supabase URL:', supabaseUrl);
+              console.log('Service Key (first 10 chars):', supabaseKey.substring(0, 10) + '...');
               
               // Read the gzipped JSON file
               const filePath = path.join(process.cwd(), 'midi.min.json.gz');
@@ -93,222 +70,236 @@ jobs:
               console.log('Parsing JSON...');
               const data = JSON.parse(decompressedData);
               
-              // Start a transaction
-              await db.tx(async t => {
-                // Clear existing data
-                console.log('Clearing existing data...');
-                await t.none('TRUNCATE TABLE device_cc, device_nrpn, device_pc, devices, manufacturers, midi_database_meta CASCADE');
+              // Function to make authenticated requests to Supabase REST API
+              async function supabaseRequest(path, method, body = null) {
+                const url = `${supabaseUrl}/rest/v1/${path}`;
+                const headers = {
+                  'apikey': supabaseKey,
+                  'Authorization': `Bearer ${supabaseKey}`,
+                  'Content-Type': 'application/json',
+                  'Prefer': 'return=minimal'
+                };
                 
-                // Store metadata
-                console.log('Storing metadata...');
-                await t.none(
-                  'INSERT INTO midi_database_meta(id, version, generated_at) VALUES($1, $2, $3)',
-                  [1, data.version, data.generatedAt]
-                );
+                const options = {
+                  method,
+                  headers,
+                  body: body ? JSON.stringify(body) : undefined
+                };
                 
-                // Process manufacturers and devices
-                const manufacturers = [];
-                const devices = [];
-                const ccParams = [];
-                const nrpnParams = [];
-                const pcParams = [];
+                const response = await fetch(url, options);
                 
-                // Process all brands except version and generatedAt
-                console.log('Processing data...');
-                Object.entries(data).forEach(([brandName, brandContent]) => {
-                  // Skip metadata fields
-                  if (brandName === "version" || brandName === "generatedAt") return;
-                  
-                  let deviceCount = 0;
-                  
-                  // Process devices
-                  Object.entries(brandContent).forEach(([deviceName, deviceData]) => {
-                    deviceCount++;
-                    
-                    const deviceId = `${brandName}_${deviceName}`.replace(/\s+/g, "_").toLowerCase();
-                    
-                    // Add device
-                    devices.push({
-                      id: deviceId,
-                      brand: brandName,
-                      device_name: deviceName,
-                      midi_thru: deviceData.midi_thru,
-                      midi_in: deviceData.midi_in,
-                      midi_clock: deviceData.midi_clock,
-                      phantom_power: deviceData.phantom_power,
-                      midi_channel: deviceData.midi_channel,
-                      instructions: deviceData.instructions,
-                    });
-                    
-                    // Process CC parameters
-                    if (deviceData.cc && deviceData.cc.length > 0) {
-                      deviceData.cc.forEach((param, index) => {
-                        ccParams.push({
-                          id: `${deviceId}_cc_${index}`,
-                          device_id: deviceId,
-                          name: param.name,
-                          description: param.description,
-                          usage: param.usage,
-                          curve: param.curve,
-                          value: param.value,
-                          min: param.min,
-                          max: param.max,
-                          type: param.type,
-                        });
-                      });
-                    }
-                    
-                    // Process NRPN parameters
-                    if (deviceData.nrpn && deviceData.nrpn.length > 0) {
-                      deviceData.nrpn.forEach((param, index) => {
-                        nrpnParams.push({
-                          id: `${deviceId}_nrpn_${index}`,
-                          device_id: deviceId,
-                          name: param.name,
-                          description: param.description,
-                          usage: param.usage,
-                          curve: param.curve,
-                          msb: param.msb,
-                          lsb: param.lsb,
-                          min: param.min,
-                          max: param.max,
-                          type: param.type,
-                        });
-                      });
-                    }
-                    
-                    // Process PC parameters
-                    if (deviceData.pc && deviceData.pc.length > 0) {
-                      deviceData.pc.forEach((param, index) => {
-                        pcParams.push({
-                          id: `${deviceId}_pc_${index}`,
-                          device_id: deviceId,
-                          name: param.name,
-                          description: param.description,
-                          usage: param.usage,
-                          curve: param.curve,
-                          value: param.value,
-                          min: param.min,
-                          max: param.max,
-                          type: param.type,
-                        });
-                      });
-                    }
-                  });
-                  
-                  manufacturers.push({
-                    name: brandName,
-                    device_count: deviceCount,
-                  });
-                });
-                
-                // Insert manufacturers
-                console.log(`Inserting ${manufacturers.length} manufacturers...`);
-                const manufacturersColumns = new pgp.helpers.ColumnSet(
-                  ['name', 'device_count'],
-                  { table: 'manufacturers' }
-                );
-                const manufacturersQuery = pgp.helpers.insert(manufacturers, manufacturersColumns);
-                await t.none(manufacturersQuery);
-                
-                // Insert devices
-                console.log(`Inserting ${devices.length} devices...`);
-                const devicesColumns = new pgp.helpers.ColumnSet(
-                  ['id', 'brand', 'device_name', 'midi_thru', 'midi_in', 'midi_clock', 'phantom_power', 'midi_channel', 'instructions'],
-                  { table: 'devices' }
-                );
-                
-                // Insert devices in batches
-                for (let i = 0; i < devices.length; i += 100) {
-                  const batch = devices.slice(i, i + 100);
-                  const devicesQuery = pgp.helpers.insert(batch, devicesColumns);
-                  await t.none(devicesQuery);
-                  console.log(`Inserted devices ${i + 1} to ${Math.min(i + 100, devices.length)}`);
+                if (!response.ok) {
+                  const errorText = await response.text();
+                  throw new Error(`Supabase API error (${response.status}): ${errorText}`);
                 }
                 
-                // Insert CC parameters
-                console.log(`Inserting ${ccParams.length} CC parameters...`);
-                const ccColumns = new pgp.helpers.ColumnSet(
-                  ['id', 'device_id', 'name', 'description', 'usage', 'curve', 'value', 'min', 'max', 'type'],
-                  { table: 'device_cc' }
-                );
-                
-                // Insert CC parameters in batches
-                for (let i = 0; i < ccParams.length; i += 100) {
-                  const batch = ccParams.slice(i, i + 100);
-                  const ccQuery = pgp.helpers.insert(batch, ccColumns);
-                  await t.none(ccQuery);
-                  console.log(`Inserted CC parameters ${i + 1} to ${Math.min(i + 100, ccParams.length)}`);
+                if (response.status !== 204) { // 204 No Content
+                  return await response.json();
                 }
                 
-                // Insert NRPN parameters
-                console.log(`Inserting ${nrpnParams.length} NRPN parameters...`);
-                const nrpnColumns = new pgp.helpers.ColumnSet(
-                  ['id', 'device_id', 'name', 'description', 'usage', 'curve', 'msb', 'lsb', 'min', 'max', 'type'],
-                  { table: 'device_nrpn' }
-                );
-                
-                // Insert NRPN parameters in batches
-                for (let i = 0; i < nrpnParams.length; i += 100) {
-                  const batch = nrpnParams.slice(i, i + 100);
-                  const nrpnQuery = pgp.helpers.insert(batch, nrpnColumns);
-                  await t.none(nrpnQuery);
-                  console.log(`Inserted NRPN parameters ${i + 1} to ${Math.min(i + 100, nrpnParams.length)}`);
-                }
-                
-                // Insert PC parameters
-                if (pcParams.length > 0) {
-                  console.log(`Inserting ${pcParams.length} PC parameters...`);
-                  const pcColumns = new pgp.helpers.ColumnSet(
-                    ['id', 'device_id', 'name', 'description', 'usage', 'curve', 'value', 'min', 'max', 'type'],
-                    { table: 'device_pc' }
-                  );
-                  
-                  // Insert PC parameters in batches
-                  for (let i = 0; i < pcParams.length; i += 100) {
-                    const batch = pcParams.slice(i, i + 100);
-                    const pcQuery = pgp.helpers.insert(batch, pcColumns);
-                    await t.none(pcQuery);
-                    console.log(`Inserted PC parameters ${i + 1} to ${Math.min(i + 100, pcParams.length)}`);
-                  }
-                }
-                
-                // Verify data was inserted
-                console.log('Verifying data insertion...');
-                const mfgCount = await t.one('SELECT COUNT(*) FROM manufacturers');
-                console.log('Manufacturers count:', mfgCount.count);
-                
-                const devCount = await t.one('SELECT COUNT(*) FROM devices');
-                console.log('Devices count:', devCount.count);
-                
-                const ccCount = await t.one('SELECT COUNT(*) FROM device_cc');
-                console.log('CC parameters count:', ccCount.count);
-                
-                const nrpnCount = await t.one('SELECT COUNT(*) FROM device_nrpn');
-                console.log('NRPN parameters count:', nrpnCount.count);
-                
-                const pcCount = await t.one('SELECT COUNT(*) FROM device_pc');
-                console.log('PC parameters count:', pcCount.count);
+                return null;
+              }
+              
+              // Clear existing data
+              console.log('Clearing existing data...');
+              await supabaseRequest('device_pc', 'DELETE');
+              await supabaseRequest('device_nrpn', 'DELETE');
+              await supabaseRequest('device_cc', 'DELETE');
+              await supabaseRequest('devices', 'DELETE');
+              await supabaseRequest('manufacturers', 'DELETE');
+              await supabaseRequest('midi_database_meta', 'DELETE');
+              
+              // Store metadata
+              console.log('Storing metadata...');
+              await supabaseRequest('midi_database_meta', 'POST', {
+                id: 1,
+                version: data.version,
+                generated_at: data.generatedAt
               });
               
+              // Process manufacturers and devices
+              const manufacturers = [];
+              const devices = [];
+              const ccParams = [];
+              const nrpnParams = [];
+              const pcParams = [];
+              
+              // Process all brands except version and generatedAt
+              console.log('Processing data...');
+              Object.entries(data).forEach(([brandName, brandContent]) => {
+                // Skip metadata fields
+                if (brandName === "version" || brandName === "generatedAt") return;
+                
+                let deviceCount = 0;
+                
+                // Process devices
+                Object.entries(brandContent).forEach(([deviceName, deviceData]) => {
+                  deviceCount++;
+                  
+                  const deviceId = `${brandName}_${deviceName}`.replace(/\s+/g, "_").toLowerCase();
+                  
+                  // Add device
+                  devices.push({
+                    id: deviceId,
+                    brand: brandName,
+                    device_name: deviceName,
+                    midi_thru: deviceData.midi_thru,
+                    midi_in: deviceData.midi_in,
+                    midi_clock: deviceData.midi_clock,
+                    phantom_power: deviceData.phantom_power,
+                    midi_channel: deviceData.midi_channel,
+                    instructions: deviceData.instructions,
+                  });
+                  
+                  // Process CC parameters
+                  if (deviceData.cc && deviceData.cc.length > 0) {
+                    deviceData.cc.forEach((param, index) => {
+                      ccParams.push({
+                        id: `${deviceId}_cc_${index}`,
+                        device_id: deviceId,
+                        name: param.name,
+                        description: param.description,
+                        usage: param.usage,
+                        curve: param.curve,
+                        value: param.value,
+                        min: param.min,
+                        max: param.max,
+                        type: param.type,
+                      });
+                    });
+                  }
+                  
+                  // Process NRPN parameters
+                  if (deviceData.nrpn && deviceData.nrpn.length > 0) {
+                    deviceData.nrpn.forEach((param, index) => {
+                      nrpnParams.push({
+                        id: `${deviceId}_nrpn_${index}`,
+                        device_id: deviceId,
+                        name: param.name,
+                        description: param.description,
+                        usage: param.usage,
+                        curve: param.curve,
+                        msb: param.msb,
+                        lsb: param.lsb,
+                        min: param.min,
+                        max: param.max,
+                        type: param.type,
+                      });
+                    });
+                  }
+                  
+                  // Process PC parameters
+                  if (deviceData.pc && deviceData.pc.length > 0) {
+                    deviceData.pc.forEach((param, index) => {
+                      pcParams.push({
+                        id: `${deviceId}_pc_${index}`,
+                        device_id: deviceId,
+                        name: param.name,
+                        description: param.description,
+                        usage: param.usage,
+                        curve: param.curve,
+                        value: param.value,
+                        min: param.min,
+                        max: param.max,
+                        type: param.type,
+                      });
+                    });
+                  }
+                });
+                
+                manufacturers.push({
+                  name: brandName,
+                  device_count: deviceCount,
+                });
+              });
+              
+              // Insert manufacturers
+              console.log(`Inserting ${manufacturers.length} manufacturers...`);
+              await supabaseRequest('manufacturers', 'POST', manufacturers);
+              
+              // Insert devices in batches
+              console.log(`Inserting ${devices.length} devices...`);
+              for (let i = 0; i < devices.length; i += 100) {
+                const batch = devices.slice(i, i + 100);
+                await supabaseRequest('devices', 'POST', batch);
+                console.log(`Inserted devices ${i + 1} to ${Math.min(i + 100, devices.length)}`);
+              }
+              
+              // Insert CC parameters in batches
+              console.log(`Inserting ${ccParams.length} CC parameters...`);
+              for (let i = 0; i < ccParams.length; i += 100) {
+                const batch = ccParams.slice(i, i + 100);
+                await supabaseRequest('device_cc', 'POST', batch);
+                console.log(`Inserted CC parameters ${i + 1} to ${Math.min(i + 100, ccParams.length)}`);
+              }
+              
+              // Insert NRPN parameters in batches
+              console.log(`Inserting ${nrpnParams.length} NRPN parameters...`);
+              for (let i = 0; i < nrpnParams.length; i += 100) {
+                const batch = nrpnParams.slice(i, i + 100);
+                await supabaseRequest('device_nrpn', 'POST', batch);
+                console.log(`Inserted NRPN parameters ${i + 1} to ${Math.min(i + 100, nrpnParams.length)}`);
+              }
+              
+              // Insert PC parameters in batches
+              if (pcParams.length > 0) {
+                console.log(`Inserting ${pcParams.length} PC parameters...`);
+                for (let i = 0; i < pcParams.length; i += 100) {
+                  const batch = pcParams.slice(i, i + 100);
+                  await supabaseRequest('device_pc', 'POST', batch);
+                  console.log(`Inserted PC parameters ${i + 1} to ${Math.min(i + 100, pcParams.length)}`);
+                }
+              }
+              
+              // Verify data was inserted
+              console.log('Verifying data insertion...');
+              
+              // Count manufacturers
+              const mfgResponse = await fetch(`${supabaseUrl}/rest/v1/manufacturers?select=count`, {
+                headers: {
+                  'apikey': supabaseKey,
+                  'Authorization': `Bearer ${supabaseKey}`,
+                  'Content-Type': 'application/json',
+                  'Prefer': 'count=exact'
+                }
+              });
+              
+              const mfgCount = mfgResponse.headers.get('content-range').split('/')[1];
+              console.log('Manufacturers count:', mfgCount);
+              
+              // Count devices
+              const devResponse = await fetch(`${supabaseUrl}/rest/v1/devices?select=count`, {
+                headers: {
+                  'apikey': supabaseKey,
+                  'Authorization': `Bearer ${supabaseKey}`,
+                  'Content-Type': 'application/json',
+                  'Prefer': 'count=exact'
+                }
+              });
+              
+              const devCount = devResponse.headers.get('content-range').split('/')[1];
+              console.log('Devices count:', devCount);
+              
               console.log('Import completed successfully!');
+              console.log({
+                manufacturers: manufacturers.length,
+                devices: devices.length,
+                ccParams: ccParams.length,
+                nrpnParams: nrpnParams.length,
+                pcParams: pcParams.length,
+              });
               
             } catch (error) {
               console.error('Error importing data:', error);
               process.exit(1);
-            } finally {
-              if (db) {
-                // Close the database connection
-                pgp.end();
-              }
             }
           }
 
-          importToDatabase();
+          importToSupabase();
           EOF
       
       - name: Run import script
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        run: node scripts/import-with-pg.js
+        run: node scripts/import-with-rest.js
