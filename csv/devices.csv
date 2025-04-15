@@ -1,645 +1,645 @@
-id,brand,device_name,midi_thru,midi_in,midi_clock,phantom_power,midi_channel,instructions
-1010_music_blackbox,1010_music,blackbox,false,,false,None,"{""instructions"":""""}",
-3_degrees_audio_hue_stereo_multi_fx,3 Degrees Audio,hue_stereo_multi_fx,false,,false,None,"{""instructions"":""""}",
-3_degrees_audio_hue_stereo_multi_effect_pedal,3 Degrees Audio,Hue Stereo Multi Effect Pedal,false,,false,None,"{""instructions"":""""}",
-art_sgx_2000/nitro/t2,art,sgx_2000/nitro/t2,false,,false,None,"{""instructions"":""""}",
-asm_hydrasynth,asm,hydrasynth,false,,false,None,"{""instructions"":""""}",
-abildgard_droid-3,abildgard,droid-3,false,,false,None,"{""instructions"":""""}",
-access_virus_a,Access,virus_a,false,,false,None,"{""instructions"":""""}",
-access_virus_ti,Access,Virus TI,false,,false,None,"{""instructions"":""""}",
-adrenalinn_iii,Adrenalinn,III,false,,false,None,"{""instructions"":""""}",
-aerospace_audio_atmosphere_v2,Aerospace Audio,Atmosphere v2,false,,false,None,"{""instructions"":""""}",
-alesis_q20,alesis,q20,false,,false,None,"{""instructions"":""""}",
-alexander_fever_pitch,Alexander,Fever Pitch,false,,false,None,"{""instructions"":""""}",
-alexander_quadrant,Alexander,Quadrant,false,,false,None,"{""instructions"":""""}",
-alexander_space_race,Alexander,Space Race,false,,false,None,"{""instructions"":""""}",
-alexander_superball,Alexander,Superball,None,TRS,false,None,"{""instructions"":""Power on the Neo Series pedal while holding its center Select button.\nRelease the button when the main LED turns violet.\nTap the center Select button until the upper small LED is red, then hold\nSelect to save.\n\nPower the Neo Series pedal off and back on, again holding the center Select button until the\nupper LED turns violet.\nFinally, send a program change message from your controller on the MIDI channel you would\nlike to use. When you see the upper small LED flash, hold the Select button to save and exit.\nYour Neo Series pedal is now configured!\n\n""}",
-alexander_marshmallow,Alexander,Marshmallow,false,,false,None,"{""instructions"":""""}",
-alexander_f.13_neo,Alexander,F.13 Neo,false,,false,None,"{""instructions"":""""}",
-alexander_wavelength,Alexander,Wavelength,false,,false,None,"{""instructions"":""""}",
-alexander_syntax_error,Alexander,Syntax Error,false,,false,None,"{""instructions"":""""}",
-alexander_colour_theory_,Alexander,Colour Theory ,false,,false,None,"{""instructions"":""""}",
-alexander_super_neo-matic,Alexander,Super Neo-Matic,false,,false,None,"{""instructions"":""""}",
-alexander_defender_neo,Alexander,Defender Neo,false,,false,None,"{""instructions"":""""}",
-alexander_quadrant_audio_mirror,Alexander,Quadrant Audio Mirror,false,,false,None,"{""instructions"":""""}",
-alexander_super_radical_delay,Alexander,Super Radical Delay,false,,false,None,"{""instructions"":""""}",
-alexander_oblivion_vintage_delay,Alexander,Oblivion Vintage Delay,false,,false,None,"{""instructions"":""""}",
-alexander_radical_delay_dx,Alexander,Radical Delay DX,false,,false,None,"{""instructions"":""""}",
-alexander_sky_5000,Alexander,SKY 5000,false,,false,None,"{""instructions"":""""}",
-arturia_matrixbrute,Arturia,MatrixBrute,false,,false,None,"{""instructions"":""""}",
-arturia_microfreak,Arturia,MicroFreak,false,,false,None,"{""instructions"":""""}",
-arturia_minifreak,Arturia,MiniFreak,false,,false,None,"{""instructions"":""""}",
-arturia_polybrute,Arturia,polybrute,false,,false,None,"{""instructions"":""""}",
-atomic_amplifire_12,Atomic,Amplifire 12,false,,false,None,"{""instructions"":""""}",
-atomic_amplifire_3,Atomic,Amplifire 3,false,,false,None,"{""instructions"":""""}",
-atomic_amplifire_6,Atomic,Amplifire 6,false,,false,None,"{""instructions"":""""}",
-atomic_amplifire,Atomic,Amplifire,true,DIN5,true,true,"{""instructions"":""PC Data Values between 0 and 63 are interpreted as OFF. Values between 64 and 127 are interpreted as ON. For TAP TEMPO and FOOTSWITCH continuous controls, the DATA VALUE is ignored and any message is interpreted as a “press” of that function.\n\nCC value assignments are configurable to modify from these defaults.\n""}",
-audiothingies_doctor_a,audiothingies,doctor_a,false,,false,None,"{""instructions"":""""}",
-audiothingies_micromonsta,audiothingies,micromonsta,false,,false,None,"{""instructions"":""""}",
-avid_eleven_rack,AVID,Eleven Rack,false,,false,None,"{""instructions"":""""}",
-beetronics_seabee_harmochorus,Beetronics,Seabee Harmochorus,false,,false,None,"{""instructions"":""""}",
-behringer_deepmind_12,Behringer,Deepmind 12,false,,false,None,"{""instructions"":""""}",
-behringer_deepmind_12d,Behringer,Deepmind 12D,false,,false,None,"{""instructions"":""""}",
-behringer_neutron,Behringer,neutron,false,,false,None,"{""instructions"":""""}",
-behringer_pro-800,Behringer,Pro-800,false,,false,None,"{""instructions"":""""}",
-behringer_td-3-mo,Behringer,td-3-mo,false,,false,None,"{""instructions"":""""}",
-behringer_ac112,Behringer,ac112,false,,false,None,"{""instructions"":""""}",
-behringer_wing,Behringer,wing,false,,false,None,"{""instructions"":""""}",
-behringer_x-air,Behringer,X-Air,false,,false,None,"{""instructions"":""""}",
-behringer_x32,Behringer,x32,false,,false,None,"{""instructions"":""""}",
-behringer_deepmind_6,Behringer,Deepmind 6,false,,false,None,"{""instructions"":""""}",
-black_corporation_deckard's_dream_mk2,black_corporation,deckard's_dream_mk2,false,,false,None,"{""instructions"":""""}",
-black_corporation_deckard's_dream,black_corporation,deckard's_dream,false,,false,None,"{""instructions"":""""}",
-blackstar_amped_1,blackstar,amped_1,false,,false,None,"{""instructions"":""""}",
-blackstar_amped_2,blackstar,amped_2,false,,false,None,"{""instructions"":""""}",
-blackstar_amped_3,blackstar,amped_3,false,,false,None,"{""instructions"":""""}",
-blackstar_silverlinedeluxe,blackstar,silverlinedeluxe,false,,false,None,"{""instructions"":""""}",
-bluguitar_amp1,BluGuitar,amp1,false,,false,None,"{""instructions"":""""}",
-bluguitar_amp1_(mercury_&_iridium_edition),BluGuitar,Amp1 (Mercury & Iridium Edition),None,TR,false,None,"{""instructions"":""The BluGuitar Amp1™ receives midi on midi channel 1.\n\nEvery available switching possibility on AMP1™ can be recalled via\nMIDI program change commands, when the corresponding command is sent\nfrom MIDI Channel 1.\n\nYou can create up to 128 presets by \""midi learn\"" assigning.\n\nEQ and the Custom Control are not programmable (they are analog controls).\n""}",
-bondi_effects_art_van_delay,Bondi Effects,Art Van Delay,false,,false,None,"{""instructions"":""""}",
-boss_dd-200,Boss,dd-200,false,,false,None,"{""instructions"":""""}",
-boss_dd-500,Boss,DD-500,false,,false,None,"{""instructions"":""""}",
-boss_dm-101,Boss,DM-101,false,,false,None,"{""instructions"":""""}",
-boss_eq-200,Boss,eq-200,false,,false,None,"{""instructions"":""""}",
-boss_gt-pro,Boss,gt-pro,false,,false,None,"{""instructions"":""""}",
-boss_ir-200,Boss,ir-200,false,,false,None,"{""instructions"":""""}",
-boss_katana,Boss,Katana,false,,false,None,"{""instructions"":""""}",
-boss_md-200,Boss,md-200,false,,false,None,"{""instructions"":""""}",
-boss_md-500,Boss,MD-500,false,,false,None,"{""instructions"":""""}",
-boss_od-200,Boss,OD-200,false,,false,None,"{""instructions"":""""}",
-boss_rc-10r,Boss,RC-10R,false,,false,None,"{""instructions"":""""}",
-boss_re-202,Boss,RE-202,false,,false,None,"{""instructions"":""""}",
-boss_rv-500,Boss,RV-500,false,,false,None,"{""instructions"":""""}",
-boss_sde-3000d/evh,Boss,sde-3000d/evh,false,,false,None,"{""instructions"":""""}",
-boss_katana_artist,Boss,Katana Artist,false,,false,None,"{""instructions"":""""}",
-boss_slicer_sl-2,Boss,Slicer SL-2,false,,false,None,"{""instructions"":""""}",
-boss_gt1000_core,Boss,GT1000 Core,false,TRS,true,None,"{""instructions"":""\n""}",
-boss_katana_head,Boss,Katana Head,false,,false,None,"{""instructions"":""""}",
-chaos_audio_stratus,Chaos Audio,Stratus,false,,false,None,"{""instructions"":""""}",
-chase_bliss_cxm1978_vintage_studioverb,chase_bliss,cxm1978_vintage_studioverb,false,,false,None,"{""instructions"":""""}",
-chase_bliss_clean,chase_bliss,clean,false,,false,None,"{""instructions"":""""}",
-chase_bliss_preampmkii,chase_bliss,preampmkii,false,,false,None,"{""instructions"":""""}",
-conductive_labs_ndlr,conductive_labs,ndlr,false,,false,None,"{""instructions"":""""}",
-darkglass_electronics_microtubes_infinity,Darkglass Electronics,Microtubes Infinity,false,,false,None,"{""instructions"":""""}",
-dave_smith_instruments_evolver,Dave Smith Instruments,Evolver,false,,false,None,"{""instructions"":""""}",
-dave_smith_instruments_ob-6,Dave Smith Instruments,ob-6,false,,false,None,"{""instructions"":""""}",
-dave_smith_instruments_prophet_'08,Dave Smith Instruments,prophet_'08,false,,false,None,"{""instructions"":""""}",
-dave_smith_instruments_prophet12,Dave Smith Instruments,prophet12,false,,false,None,"{""instructions"":""""}",
-dave_smith_instruments_prophet_rev2,Dave Smith Instruments,prophet_rev2,false,,false,None,"{""instructions"":""""}",
-dave_smith_instruments_prophet_x_(prophet_xl),Dave Smith Instruments,prophet_x_(prophet_xl),false,,false,None,"{""instructions"":""""}",
-dawner_prince_boonar_tube_deluxe,dawner_prince,boonar_tube_deluxe,false,,false,None,"{""instructions"":""""}",
-decibel_eleven_loop_expander,Decibel Eleven,Loop Expander,false,,false,None,"{""instructions"":""""}",
-diezel_vhx,diezel,vhx,false,,false,None,"{""instructions"":""""}",
-dimehead_nam,Dimehead,NAM,false,,false,None,"{""instructions"":""""}",
-disaster_area_dpc-8ez_gen2,Disaster Area,DPC-8EZ Gen2,false,,false,None,"{""instructions"":""""}",
-disaster_area_dpc_micro,Disaster Area,DPC Micro,true,DIN5,false,None,"{""instructions"":""\n\n""}",
-dr_scientist_dusk,Dr Scientist,Dusk,false,,false,None,"{""instructions"":""""}",
-dr_scientist_the_atmosphere,Dr Scientist,The Atmosphere,false,,false,None,"{""instructions"":""""}",
-dreadbox_medusa,Dreadbox,Medusa,false,,false,None,"{""instructions"":""""}",
-dreadbox_nymphes,Dreadbox,nymphes,false,,false,None,"{""instructions"":""""}",
-dreadbox_typhon,Dreadbox,Typhon,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_45000,Electro Harmonix,45000,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_95000,Electro Harmonix,95000,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_modrex,Electro Harmonix,ModRex,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_8-step_program,Electro Harmonix,8-Step Program,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_hog_2,Electro Harmonix,hog_2,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_holiest_grail,Electro Harmonix,holiest_grail,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_v256_vocoder,Electro Harmonix,v256_vocoder,false,,false,None,"{""instructions"":""""}",
-electro_harmonix_hog2,Electro Harmonix,HOG2,false,DIN5,false,None,"{""instructions"":""1. While power is off, press and hold the EXP. Footswitch. \n2. Continue to hold down the EXP. Footswitch while applying power and during the next step.\n3. Upon applying power, the VOLUME LED should light up for approximately three seconds. After the VOLUME LED shuts off, the HOG2 displays the current MIDI channel setting. The MIDI channel is displayed in binary with the LEDs of the EXP. Modes FREEZE+GLISS, FREEZE+VOL, WAH WAH and FILTER.\n4. While continuing to hold down the EX. Footswitch, press and release the EXP. MODE button to cycle through the 16 MIDI channels. \n5. Release the EXP. Footswitch to sve the new MIDI channel setting and use the HOG2 normally. The MIDI channel setting is saved during power cycles. \n\n\n""}",
-electronic_audio_experiments_sending_v2,Electronic Audio Experiments,Sending v2,false,,false,None,"{""instructions"":""""}",
-electronic_audio_experiments_sending_v2_(firmware_2.0),Electronic Audio Experiments,Sending v2 (Firmware 2.0),false,,false,None,"{""instructions"":""""}",
-elektron_analog_four_mkii,Elektron,Analog Four MKII,false,,false,None,"{""instructions"":""""}",
-elektron_analog_four,Elektron,analog_four,false,,false,None,"{""instructions"":""""}",
-elektron_analog_heat_+fx,Elektron,analog_heat_+fx,false,,false,None,"{""instructions"":""""}",
-elektron_analog_heat,Elektron,analog_heat,false,,false,None,"{""instructions"":""""}",
-elektron_analog_rytm_mkii,Elektron,Analog Rytm MKII,false,,false,None,"{""instructions"":""""}",
-elektron_digitakt_ii,Elektron,digitakt_ii,false,,false,None,"{""instructions"":""""}",
-elektron_digitakt,Elektron,Digitakt,false,,false,None,"{""instructions"":""""}",
-elektron_digitone_ii,Elektron,digitone_ii,false,,false,None,"{""instructions"":""""}",
-elektron_digitone,Elektron,Digitone,false,,false,None,"{""instructions"":""""}",
-elektron_machinedrum,Elektron,machinedrum,false,,false,None,"{""instructions"":""""}",
-elektron_model_cycles,Elektron,model_cycles,false,,false,None,"{""instructions"":""""}",
-elektron_monomachine,Elektron,monomachine,false,,false,None,"{""instructions"":""""}",
-elektron_octatrack,Elektron,octatrack,false,,false,None,"{""instructions"":""""}",
-elektron_syntakt,Elektron,syntakt,false,,false,None,"{""instructions"":""""}",
-elektron_model:samples,Elektron,Model:Samples,false,,false,None,"{""instructions"":""""}",
-elektron_model:cycles,Elektron,Model:Cycles,false,,false,None,"{""instructions"":""""}",
-elektron_analog_drive,Elektron,Analog Drive,false,,false,None,"{""instructions"":""""}",
-elektron_analog_heat_mkii,Elektron,Analog Heat MKII,false,,false,None,"{""instructions"":""""}",
-elektron_digitone_keys,Elektron,Digitone Keys,false,,false,None,"{""instructions"":""""}",
-elektron_octatrack_mkii,Elektron,Octatrack MKII,false,,false,None,"{""instructions"":""""}",
-empress_echo_system,Empress,Echo System,false,TRS,true,None,"{""instructions"":""Enter the Advanced Configuration Menu by holding down both the tap and bypass stompswitches, and then pressing the\nshift button. All the preset LEDs will blink yellow twice to confirm you’re in.\n\nEach mode LED represents a different configuration item you can change. For MIDI Channel, it is the Ambient LED.\n\nTurn the mode knob until the Ambient LED is lit, then turn the delay time knob to modify the value.\n\nAs you turn from left to right the LEDs will illuminate in order to indicate the MIDI channel.\n(ex. If the 3rd LED is lit, it’s going to listen on MIDI channel 3).\n\nYou will need to set up the Control Port Configuration as well.\n\nThe control port configuration is the Tape LED. LED 5 indicates that MIDI is selected for the control port.\n1. Expression Pedal*\n2. Control Voltage Input\n3. Normally Open Switch\n4. Normally Closed Switch\n5. MIDI\n6. MIDI with Preset Out\n\nTo exit the Advanced Configuration menu, hold down tap and bypass stompswitches.\nThe Preset LEDs will blink yellow twice and the pedal will reboot.\n""}",
-empress_reverb,Empress,Reverb,false,TRS,true,None,"{""instructions"":""Enter the Advanced Configuration Menu by holding down both the select and bypass stompswitches, and then\npressing the shift button. All the preset LEDs will blink yellow twice to confirm you’re in.\n\nEach mode LED represents a different configuration item you can change. For MIDI Channel, it is the Ambient Swell LED.\n\nTurn the mode knob until the Ambient Swell LED is lit, then turn the decay time knob to modify the value.\n\nAs you turn from left to right the LEDs will illuminate in order to indicate the MIDI channel. (ex. If the 3rd LED\nis lit, it’s going to listen on MIDI channel 3).\n\nYou will need to set up the Control Port Configuration as well.\n\nThe control port configuration is the Plate LED. LED 5 indicates that MIDI is selected for the control port.\n1. Expression Pedal*\n2. Control Voltage Input\n3. Normally Open Switch\n4. Normally Closed Switch\n5. MIDI\n6. MIDI with Preset Out\n\nTo exit the Advanced Configuration menu, hold down tap and bypass stompswitches.\nThe Preset LEDs will blink yellow twice and the pedal will reboot.\n""}",
-empress_zoia,Empress,ZOIA,false,,false,None,"{""instructions"":""""}",
-empress_phaser,Empress,Phaser,false,TRS,true,None,"{""instructions"":""The control port configuration is set using the dip-switch array inside the unit. \nWhen you open the phaser, you’ll see a set of 3 dip-switches labelled ‘CON JACK CONFIG’.\nOn power up, the configuration will be changed to the new setting. \n\nCON JACK CONFIG MIDI Dip Configuration\n\n| MODE | DIP1 | DIP2 | DIP3 |\n|:----:|:----:|:----:|:----:|\n| MIDI |  OFF |  ON  |  ON  |\n\nConfigure the unit’s MIDI channel by setting the internal dip switches labelled ‘MIDI CH’.\nOnly MIDI channels 1-8 can be selected.\n\nMIDI Channel Dip Configuration\n\n| Channel | DIP1 | DIP2 | DIP3 |\n|:-------:|:----:|:----:|:----:|\n|    1    |  OFF |  OFF |  OFF |\n|    2    |  ON  |  OFF |  OFF |\n|    3    |  OFF |  ON  |  OFF |\n|    4    |  ON  |  ON  |  OFF |\n|    5    |  OFF |  OFF |  ON  |\n|    6    |  ON  |  OFF |  ON  |\n|    7    |  OFF |  ON  |  ON  |\n|    8    |  ON  |  ON  |  ON  |\n""}",
-empress_tremolo2,Empress,Tremolo2,false,,false,None,"{""instructions"":""""}",
-engl_e658,ENGL,e658,false,,false,None,"{""instructions"":""""}",
-engl_savage_60_mark_ii_e630ii,ENGL,Savage 60 Mark II E630II,false,,false,None,"{""instructions"":""""}",
-engl_savage_120_mark_ii_e610ii,ENGL,Savage 120 Mark II E610II,false,,false,None,"{""instructions"":""""}",
-engl_invader_ii_e642ii,ENGL,Invader II E642II,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e662,ENGL,Steve Morse Signature E662,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e663,ENGL,Steve Morse Signature E663,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e661,ENGL,Steve Morse Signature E661,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e660,ENGL,Steve Morse Signature E660,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e656,ENGL,Steve Morse Signature E656,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e657,ENGL,Steve Morse Signature E657,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e665,ENGL,Steve Morse Signature E665,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e664,ENGL,Steve Morse Signature E664,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e667,ENGL,Steve Morse Signature E667,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e666,ENGL,Steve Morse Signature E666,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e669,ENGL,Steve Morse Signature E669,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e668,ENGL,Steve Morse Signature E668,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e658,ENGL,Steve Morse Signature E658,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e659,ENGL,Steve Morse Signature E659,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e670,ENGL,Steve Morse Signature E670,false,,false,None,"{""instructions"":""""}",
-engl_steve_morse_signature_e671,ENGL,Steve Morse Signature E671,false,,false,None,"{""instructions"":""""}",
-ensoniq_asr-x_pro,ensoniq,asr-x_pro,false,,false,None,"{""instructions"":""""}",
-erica_synths_lxr-02,erica_synths,lxr-02,false,,false,None,"{""instructions"":""""}",
-eventide_h9,Eventide,H9,true,DIN5,true,None,"{""instructions"":""MIDI channel can be changed in the H9 Control app.\nOnce your device is connected to the app, select\n\nPedal >> MIDI Settings >> MIDI Receive Channel\n\nand then select your desired channel.\n""}",
-eventide_knifedrop,Eventide,Knifedrop,false,,false,None,"{""instructions"":""""}",
-eventide_rose,Eventide,Rose,false,,false,None,"{""instructions"":""""}",
-eventide_blackhole,Eventide,Blackhole,false,,false,None,"{""instructions"":""""}",
-eventide_tricerachorus,Eventide,Tricerachorus,false,,false,None,"{""instructions"":""""}",
-eventide_ultratap,Eventide,Ultratap,false,,false,None,"{""instructions"":""""}",
-expert_sleepers_fh-2,expert_sleepers,fh-2,false,,false,None,"{""instructions"":""""}",
-flame_curves,flame,curves,false,,false,None,"{""instructions"":""""}",
-flame_mäander,flame,mäander,false,,false,None,"{""instructions"":""""}",
-fractal_audio_ax-8,fractal_audio,ax-8,false,,false,None,"{""instructions"":""""}",
-fractal_audio_axe-fxii,fractal_audio,axe-fxii,false,,false,None,"{""instructions"":""""}",
-fractal_audio_axe-fx_iii,fractal_audio,axe-fx_iii,false,,false,None,"{""instructions"":""""}",
-fractal_audio_standard,fractal_audio,standard,false,,false,None,"{""instructions"":""""}",
-fractal_audio_ultra,fractal_audio,ultra,false,,false,None,"{""instructions"":""""}",
-fred's_lab_buzzzy!,fred's_lab,buzzzy!,false,,false,None,"{""instructions"":""""}",
-gem_rp-x,gem,rp-x,false,,false,None,"{""instructions"":""""}",
-gfi_system_duophony,GFI System,Duophony,false,,false,None,"{""instructions"":""""}",
-gfi_system_enieqma,GFI System,Enieqma,false,,false,None,"{""instructions"":""""}",
-gfi_system_specular_tempus,GFI System,Specular Tempus,false,DIN5,true,None,"{""instructions"":""To change the MIDI channel, you need to access the Global Configuration Menu.\nHold down footswitch B on power up and release the switch when the display reads: [GLOBAL CONFIG]\nYou can turn the knobs to select the MIDI channel menu.\nTo save the changes, hold down footswitch B unitl LED B flashes 3x.\n""}",
-gfi_system_synesthesia,GFI System,Synesthesia,true,DIN5,true,None,"{""instructions"":""Synesthesia is pre‐programmed to use MIDI channel 1. You can change the channel number to any number from 1 through 16 in Global Settings menu.\n""}",
-gfi_system_solis_ventus,GFI System,Solis Ventus,true,Tip Active,true,None,"{""instructions"":""\n""}",
-gsmusic_e7,gsmusic,e7,false,,false,None,"{""instructions"":""""}",
-generic_midi_device,generic,midi_device,false,,false,None,"{""instructions"":""""}",
-gotharman_spazedrum_black,gotharman,spazedrum_black,false,,false,None,"{""instructions"":""""}",
-hologram_microcosm,hologram,microcosm,false,,false,None,"{""instructions"":""""}",
-ik_multimedia_tonex,IK Multimedia,ToneX,false,,false,None,"{""instructions"":""""}",
-ik_multimedia_uno_synth_pro_x,IK Multimedia,uno_synth_pro_x,false,,false,None,"{""instructions"":""""}",
-ik_multimedia_uno_drum,IK Multimedia,uno_drum,false,,false,None,"{""instructions"":""""}",
-ik_multimedia_uno_synth,IK Multimedia,UNO Synth,false,,false,None,"{""instructions"":""""}",
-ik_multimedia_x-series,IK Multimedia,x-series,false,,false,None,"{""instructions"":""""}",
-idoru_p-1,Idoru,p-1,false,,false,None,"{""instructions"":""""}",
-idoru_p1,Idoru,P1,false,,false,None,"{""instructions"":""\n""}",
-intellijel_umidi,intellijel,umidi,false,,false,None,"{""instructions"":""""}",
-jomox_airbase_99,jomox,airbase_99,false,,false,None,"{""instructions"":""""}",
-korg_arp_2600_m,Korg,arp_2600_m,false,,false,None,"{""instructions"":""""}",
-korg_electribe_er-1,Korg,electribe_er-1,false,,false,None,"{""instructions"":""""}",
-korg_grandstage,Korg,grandstage,false,,false,None,"{""instructions"":""""}",
-korg_ms2000,Korg,MS2000,false,,false,None,"{""instructions"":""""}",
-korg_nts-1,Korg,nts-1,false,,false,None,"{""instructions"":""""}",
-korg_opsix,Korg,opsix,false,,false,None,"{""instructions"":""""}",
-korg_wavestate,Korg,wavestate,false,,false,None,"{""instructions"":""""}",
-korg_micro_korg,Korg,micro_korg,false,,false,None,"{""instructions"":""""}",
-korg_minilogue_xd,Korg,minilogue xd,false,,false,None,"{""instructions"":""""}",
-korg_minilogue,Korg,minilogue,false,,false,None,"{""instructions"":""""}",
-korg_monologue,Korg,monologue,false,,false,None,"{""instructions"":""""}",
-korg_volca_bass,Korg,volca bass,false,,false,None,"{""instructions"":""""}",
-korg_volca_beats,Korg,volca beats,false,,false,None,"{""instructions"":""""}",
-korg_volca_drum,Korg,volca drum,false,,false,None,"{""instructions"":""""}",
-korg_volca_fm,Korg,volca fm,false,,false,None,"{""instructions"":""""}",
-korg_volca_keys,Korg,volca keys,false,,false,None,"{""instructions"":""""}",
-korg_volca_kick,Korg,volca kick,false,,false,None,"{""instructions"":""""}",
-korg_volca_nubass,Korg,volca nubass,false,,false,None,"{""instructions"":""""}",
-korg_volca_sample,Korg,volca sample,false,,false,None,"{""instructions"":""""}",
-korg_pa4x,Korg,pa4x,false,,false,None,"{""instructions"":""""}",
-korg_microkorg_xl+,Korg,microKORG XL+,false,,false,None,"{""instructions"":""""}",
-korg_microkorg,Korg,microKORG,false,,false,None,"{""instructions"":""""}",
-korg_kaoss_pad_3,Korg,Kaoss Pad 3,false,,false,None,"{""instructions"":""""}",
-korg_kaoss_pad_2,Korg,Kaoss Pad 2,false,,false,None,"{""instructions"":""""}",
-kemper_profiler,Kemper,Profiler,true,DIN5,true,None,"{""instructions"":""By default, the PROFILER receives MIDI commands on all sixteen MIDI channels (“Omni”). However, if you want to control multiple devices independently, you can set a specific channel in System Settings on the “MIDI Settings” page. Now, the PROFILER will only receive messages on that channel.\n""}",
-kemper_profiler_player,Kemper,Profiler Player,false,USB,true,None,"{""instructions"":""By default, the PROFILER receives MIDI commands on all sixteen MIDI channels (“Omni”). However, if you want to control multiple devices independently, you can set a specific channel in System Settings on the “MIDI Settings” page. Now, the PROFILER will only receive messages on that channel.\nThe Player is compatible with universal MIDI foot controllers, which were designed for the KEMPER PROFILER use its “relative” method based on CC# 47-54 to load sounds. This includes the application of the global parameter Bank Load which can be found in System Settings.\n\n""}",
-kodamo_essencefm,kodamo,essencefm,false,,false,None,"{""instructions"":""""}",
-kurzweil_k2661,kurzweil,k2661,false,,false,None,"{""instructions"":""""}",
-lpzw_tram8,lpzw,tram8,false,,false,None,"{""instructions"":""""}",
-lexicon_mx200,lexicon,mx200,false,,false,None,"{""instructions"":""""}",
-line_6_hx_one,Line 6,HX One,false,,false,None,"{""instructions"":""""}",
-line_6_hx_stomp,Line 6,HX Stomp,true,DIN5,true,None,"{""instructions"":""Press both '< PAGE' and 'PAGE >' buttons together.\nPress 'PAGE >' and press Knob 1 to enter Global Settings.\nTurn the Upper Knob to select 'MIDI/Tempo'.\nPress 'PAGE >' until you see MIDI Channel and turn the knob to select your desired MIDI channel.\n""}",
-line_6_helix,Line 6,Helix,false,,false,None,"{""instructions"":""""}",
-line_6_m5,Line 6,m5,false,,false,None,"{""instructions"":""""}",
-line_6_m5_stompbox_modeler,Line 6,M5 Stompbox Modeler,false,,false,None,"{""instructions"":""""}",
-line_6_m13_v2.0_sompbox_modeler,Line 6,M13 v2.0 Sompbox Modeler,false,,false,None,"{""instructions"":""""}",
-line_6_dt25_112,Line 6,DT25 112,false,,false,None,"{""instructions"":""""}",
-line_6_helix_lt,Line 6,Helix LT,false,,false,None,"{""instructions"":""""}",
-line_6_pod_hd500x,Line 6,POD HD500X,false,,false,None,"{""instructions"":""""}",
-line_6_dt25_head,Line 6,DT25 Head,false,,false,None,"{""instructions"":""""}",
-line_6_pod_go,Line 6,POD GO,false,,false,None,"{""instructions"":""""}",
-line_6_pod_hd_pro_x,Line 6,POD HD PRO X,false,,false,None,"{""instructions"":""""}",
-line_6_helix_rack_and_control,Line 6,Helix Rack and Control,false,,false,None,"{""instructions"":""""}",
-line_6_powercab_112_plus,Line 6,Powercab 112 Plus,false,,false,None,"{""instructions"":""""}",
-line_6_powercab_plus,Line 6,Powercab Plus,false,DIN5,false,None,"{""instructions"":""Line 6 Powercab 112 Plus and 212 Plus have MIDI. The Powercab does not. The covers both Pus models.  Speaker 2 does not apply to the 112.\n""}",
-line_6_helix_floor,Line 6,Helix Floor,true,DIN5,true,None,"{""instructions"":""MIDI Channel is set by accessing Global Settings > MIDI/Tempo\nThen change the MIDI Base Channel to the Channel you would like.\n""}",
-line_6_hx_stomp_xl,Line 6,HX Stomp XL,true,DIN5,true,None,"{""instructions"":""Press both '< PAGE' and 'PAGE >' buttons together.\nPress 'PAGE >' and press Knob 2 to enter Global Settings.\nTurn the Upper Knob to select 'MIDI/Tempo'.\nPress 'PAGE >' until you see MIDI Channel and turn the knob to select your desired MIDI channel.\n""}",
-line_6_hx_effects,Line 6,HX Effects,false,,false,None,"{""instructions"":""""}",
-line_6_dl4_mkii,Line 6,DL4 MKII,true,DIN5,true,None,"{""instructions"":""Follow these steps to change the DL4 midi channel (default is channel 1).\n\n1. To enter Global Settings mode, press and hold the ALT/LEGACY button, press the TAP footswitch, and then release both.\n\n2. Turn the device’s Selector knob to SWEEP / MULTI PASS.\n\n3. Push and release the ALT/LEGACY button repeatedly to cycle through the different options to choose the one you prefer:\n- red = Channel 1\n- white = Channel 2\n- blue = Channel 3\n- orange = Channel 4\n- yellow = Assigned based on next received PC message\n\n4. Press any footswitch to exit Global Settings and your changes are automatically retained.""}",
-line_6_powercab_212_plus,Line 6,Powercab 212 Plus,false,,false,None,"{""instructions"":""""}",
-line_6_m9_v2.0_stompbox_modeler,Line 6,M9 v2.0 Stompbox Modeler,false,,false,None,"{""instructions"":""""}",
-line_6_pocket_pod,Line 6,Pocket POD,false,,false,None,"{""instructions"":""""}",
-mfb_synth_ii,MFB,synth_ii,false,,false,None,"{""instructions"":""""}",
-mfb_tanzbar_1,MFB,tanzbar_1,false,,false,None,"{""instructions"":""""}",
-mfb_tanzbar_lite,MFB,Tanzbar Lite,false,,false,None,"{""instructions"":""""}",
-mfb_tanzmaus,MFB,tanzmaus,false,,false,None,"{""instructions"":""""}",
-mlc_ls10/6,mlc,ls10/6,false,,false,None,"{""instructions"":""""}",
-mlc_ls12/2,mlc,ls12/2,false,,false,None,"{""instructions"":""""}",
-make_noise_0-coast,make_noise,0-coast,false,,false,None,"{""instructions"":""""}",
-meeblip_geode,Meeblip,Geode,false,,false,None,"{""instructions"":""""}",
-meeblip_triode,Meeblip,Triode,false,,false,None,"{""instructions"":""""}",
-melbourne_instruments_nina,Melbourne Instruments,Nina,false,,false,None,"{""instructions"":""""}",
-meris_lvx,Meris,LVX,false,,false,None,"{""instructions"":""""}",
-meris_mercury_x,Meris,Mercury X,false,DIN5,false,None,"{""instructions"":""GLOBALS settings page""}",refer to Manual v1.1.1
-meris_ottobit_jr,Meris,Ottobit JR,false,TRS,false,None,"{""instructions"":""Hold down the left LED switch while powering up to enter Global Configuration mode.\nTurn the 'SEQUENCER MULT' knob fully clockwise to activate MIDI in.\nTurn the 'SEQUENCER' knob to select your desired MIDI channel.\nNo light = Channel 1, Right most light = Channel 2 and so on.\nPower off and on the pedal to save.\nVisit the Mercury 7 manual for more information\nhttps://www.meris.us/wp-content/uploads/2017/03/Meris_OttobitJr_full_Manual_v5.pdf.\n\n""}",
-meris_polymoon,Meris,Polymoon,false,TRS,false,None,"{""instructions"":""Hold down the left LED switch while powering up to enter Global Configuration mode. Turn the 'DYNAMICS' knob fully clockwise to activate MIDI in. Turn the 'DIMENSION' knob to select your desired MIDI channel. No light = Channel 1, Right most light = Channel 2 and so on. Power off and on the pedal to save. Visit the Mercury 7 manual for more information https://www.meris.us/wp-content/uploads/2017/07/Meris_Polymoon_full_Manual_v3.pdf.""}",
-meris_enzo,Meris,Enzo,false,TRS,false,None,"{""instructions"":""Hold down the left LED switch while powering up to enter Global Configuration mode.\nTurn the 'MODULATION' knob fully clockwise to activate MIDI in.\nTurn the 'FILTER ENV' knob to select your desired MIDI channel.\nNo light = Channel 1, Right most light = Channel 2 and so on. Power off and on the pedal to save.\nVisit the Enzo manual for more information\nhttps://www.meris.us/wp-content/uploads/2018/06/Meris_Enzo_full_Manual_v3.pdf.\n\n""}",
-meris_hedra,Meris,Hedra,false,TRS,false,None,"{""instructions"":""Hold down the left LED switch while powering up to enter Global Configuration mode.\nTurn the 'PITCH 3' knob fully clockwise to activate MIDI in.\nTurn the 'PITCH 2' knob to select your desired MIDI channel.\nNo light = Channel 1, Right most light = Channel 2 and so on.\nPower off and on the pedal to save.\nVisit the Hedra manual for more information\nhttps://www.meris.us/wp-content/uploads/2019/03/Meris_Hedra_full_Manual_v7.pdf.\n\n""}",
-meris_mercury_7,Meris,Mercury 7,false,TRS,false,None,"{""instructions"":""Hold down the left LED switch while powering up to enter Global Configuration mode.\nTurn the 'HI FREQUENCY' knob fully clockwise to activate MIDI in.\nTurn the 'PITCH VECTOR' knob to select your desired MIDI channel.\nNo light = Channel 1, Right most light = Channel 2 and so on.\nPower off and on the pedal to save.\nVisit the Mercury 7 manual for more information\nhttps://www.meris.us/wp-content/uploads/2017/03/Meris_Mercury7_full_Manual-v4.pdf.\n\n""}",
-mesa_boogie_jp2c,mesa_boogie,jp2c,false,,false,None,"{""instructions"":""""}",
-modal_electronics_1,Modal Electronics,1,false,,false,None,"{""instructions"":""""}",
-modal_electronics_2,Modal Electronics,2,false,,false,None,"{""instructions"":""""}",
-modal_electronics_8,Modal Electronics,8,false,,false,None,"{""instructions"":""""}",
-modal_electronics_argon_8m,Modal Electronics,ARGON 8M,false,,false,None,"{""instructions"":""""}",
-modal_electronics_cobalt5s,Modal Electronics,cobalt5s,false,,false,None,"{""instructions"":""""}",
-modal_electronics_craftsynth_2.0,Modal Electronics,CRAFTsynth 2.0,false,,false,None,"{""instructions"":""""}",
-modal_electronics_craft,Modal Electronics,craft,false,,false,None,"{""instructions"":""""}",
-modal_electronics_skulpt,Modal Electronics,skulpt,false,,false,None,"{""instructions"":""""}",
-modal_electronics_002r,Modal Electronics,002R,false,,false,None,"{""instructions"":""""}",
-modal_electronics_argon_8x,Modal Electronics,ARGON 8X,false,,false,None,"{""instructions"":""""}",
-modal_electronics_skulptsynthesiser,Modal Electronics,SKULPTsynthesiser,false,,false,None,"{""instructions"":""""}",
-modal_electronics_argon_8,Modal Electronics,ARGON 8,false,,false,None,"{""instructions"":""""}",
-modal_electronics_008r,Modal Electronics,008R,false,,false,None,"{""instructions"":""""}",
-modor_nf-1,Modor,NF-1,false,,false,None,"{""instructions"":""""}",
-moog_grandmother,Moog,Grandmother,false,,false,None,"{""instructions"":""""}",
-moog_matriarch,Moog,Matriarch,true,DIN5 | USB,true,None,"{""instructions"":""The MIDI channel can be set in the Global Settings on your Matriarch. \nTo access Global Parameters, simultaneously press and hold the HOLD [SHIFT] \nbutton located in the Left-Hand Controller and the SYNC ENABLE button located \nin Oscillator 1 until the SYNC ENABLE button begins to blink. Once in Global Settings\nmode, press the C#2 key followed by the C#0 key. You can then use the first\n16 keys to select channels 1-16. For a map of the keys, check your manual.\n""}",
-moog_minitaur,Moog,Minitaur,false,,false,None,"{""instructions"":""""}",
-moog_mother-32,Moog,Mother-32,false,,false,None,"{""instructions"":""""}",
-moog_muse,Moog,muse,false,,false,None,"{""instructions"":""""}",
-moog_sirin,Moog,sirin,false,,false,None,"{""instructions"":""""}",
-moog_sub_phatty,Moog,Sub Phatty,false,,false,None,"{""instructions"":""""}",
-moog_subsequent_25,Moog,Subsequent 25,false,,false,None,"{""instructions"":""""}",
-moog_subsequent_37,Moog,Subsequent 37,false,,false,None,"{""instructions"":""""}",
-moog_mf-108m_cluster_flux,Moog,MF-108M Cluster Flux,false,,false,None,"{""instructions"":""""}",
-moog_mf-105m_midi_murf,Moog,MF-105M MIDI MuRF,false,,false,None,"{""instructions"":""""}",
-moog_minimoog_voyager,Moog,Minimoog Voyager,false,,false,None,"{""instructions"":""""}",
-moog_subharmonicon,Moog,Subharmonicon,false,,false,None,"{""instructions"":""""}",
-moog_mf-104m,Moog,MF-104M,false,DIN5,false,None,"{""instructions"":""The default MIDI Channel for the MF-104M is Channel one. To change this,\npress and hold both the TAP TEMPO and BYPASS switches. While holding\nboth, send a MIDI Channel mode message to the Analog Delay on the\ndesired MIDI channel. The TIME LED will flash yellow indicating that the\nmessage has been received. The MF-104M will now only receive MIDI messages on that channel. The current MIDI Input channel is stored in memory\non power down.\n""}",
-moog_minimoog_voyager_xl,Moog,Minimoog Voyager XL,false,,false,None,"{""instructions"":""""}",
-mutable_instruments_shruthi,Mutable Instruments,Shruthi,false,,false,None,"{""instructions"":""""}",
-nux_tape_echo_ndd-7,nux,tape_echo_ndd-7,false,,false,None,"{""instructions"":""""}",
-neural_dsp_quad_cortex,Neural DSP,Quad Cortex,false,DIN5/USB,true,None,"{""instructions"":""\n""}",
-norand_mono,norand,mono,false,,false,None,"{""instructions"":""""}",
-nord_a1,Nord,a1,false,,false,None,"{""instructions"":""""}",
-nord_c2d,Nord,C2D,false,,false,None,"{""instructions"":""""}",
-nord_drum_2,Nord,Drum 2,false,,false,None,"{""instructions"":""""}",
-nord_drum_3p,Nord,drum_3p,false,,false,None,"{""instructions"":""""}",
-nord_electro_3,Nord,Electro 3,false,,false,None,"{""instructions"":""""}",
-nord_electro_5,Nord,electro_5,false,,false,None,"{""instructions"":""""}",
-nord_lead_(rack)_2x,Nord,lead_(rack)_2x,false,,false,None,"{""instructions"":""""}",
-nord_lead_(rack),Nord,lead_(rack),false,,false,None,"{""instructions"":""""}",
-nord_stage_2,Nord,Stage 2,false,,false,None,"{""instructions"":""""}",
-nord_stage_3,Nord,Stage 3,false,,false,None,"{""instructions"":""""}",
-nord_wave_2,Nord,Wave 2,false,,false,None,"{""instructions"":""""}",
-nord_lead_4r,Nord,Lead 4R,false,,false,None,"{""instructions"":""""}",
-nord_electro_6,Nord,Electro 6,false,,false,None,"{""instructions"":""""}",
-nord_electro_3_hp,Nord,Electro 3 HP,false,,false,None,"{""instructions"":""""}",
-nord_electro_2,Nord,Electro 2,false,,false,None,"{""instructions"":""""}",
-nord_electro_5hp_73,Nord,Electro 5HP 73,false,,false,None,"{""instructions"":""""}",
-nord_rack_3,Nord,Rack 3,false,,false,None,"{""instructions"":""""}",
-nord_piano_2_ha88,Nord,Piano 2 HA88,false,,false,None,"{""instructions"":""""}",
-nord_lead,Nord,Lead,false,,false,None,"{""instructions"":""""}",
-nord_grand,Nord,Grand,false,,false,None,"{""instructions"":""""}",
-nord_lead_a1r,Nord,Lead A1R,false,,false,None,"{""instructions"":""""}",
-nord_electro_5d_73,Nord,Electro 5D 73,false,,false,None,"{""instructions"":""""}",
-nord_electro_4_hp,Nord,Electro 4 HP,false,,false,None,"{""instructions"":""""}",
-nord_stage_2_ex,Nord,Stage 2 EX,false,,false,None,"{""instructions"":""""}",
-nord_piano_3,Nord,Piano 3,false,,false,None,"{""instructions"":""""}",
-nord_piano_4,Nord,Piano 4,false,,false,None,"{""instructions"":""""}",
-nord_lead_3,Nord,Lead 3,false,,false,None,"{""instructions"":""""}",
-nord_lead_2,Nord,Lead 2,false,,false,None,"{""instructions"":""""}",
-nord_lead_4,Nord,Lead 4,false,,false,None,"{""instructions"":""""}",
-nord_c2,Nord,C2,false,,false,None,"{""instructions"":""""}",
-nord_c1,Nord,C1,false,,false,None,"{""instructions"":""""}",
-nord_wave,Nord,Wave,false,,false,None,"{""instructions"":""""}",
-nord_piano,Nord,Piano,false,,false,None,"{""instructions"":""""}",
-nord_stage,Nord,Stage,false,,false,None,"{""instructions"":""""}",
-nord_lead_a1,Nord,Lead A1,false,,false,None,"{""instructions"":""""}",
-nord_electro_4_sw,Nord,Electro 4 SW,false,,false,None,"{""instructions"":""""}",
-nord_electro_4d,Nord,Electro 4D,false,,false,None,"{""instructions"":""""}",
-nord_lead_2x,Nord,Lead 2X,false,,false,None,"{""instructions"":""""}",
-nord_electro_5d_61_,Nord,Electro 5D 61 ,false,,false,None,"{""instructions"":""""}",
-nord_piano_2_hp,Nord,Piano 2 HP,false,,false,None,"{""instructions"":""""}",
-nord_stage_ex,Nord,Stage EX,false,,false,None,"{""instructions"":""""}",
-novation_bass_station_ii,Novation,Bass Station II,false,,false,None,"{""instructions"":""""}",
-novation_bass_station_rack,Novation,bass_station_rack,false,,false,None,"{""instructions"":""""}",
-novation_circuit,Novation,Circuit,false,,false,None,"{""instructions"":""""}",
-novation_nova,Novation,nova,false,,false,None,"{""instructions"":""""}",
-novation_summit_and_peak,Novation,summit_and_peak,false,,false,None,"{""instructions"":""""}",
-novation_bass_station_keyboard,Novation,Bass Station Keyboard,false,,false,None,"{""instructions"":""""}",
-novation_ultranova,Novation,UltraNova,false,,false,None,"{""instructions"":""""}",
-novation_circuit_mono_station,Novation,Circuit Mono Station,false,,false,None,"{""instructions"":""""}",
-novation_summit,Novation,Summit,false,,false,None,"{""instructions"":""""}",
-novation_circuit_rhythm,Novation,Circuit Rhythm,true,,true,None,"{""instructions"":""You can change the MIDI channel which each track uses in Setup View. Each track can be set to any of MIDI channels 1-15. Channel 16 is reserved for the Project.\n\nTo change the MIDI channel that will be used by a track, press the track select button or the required track. The top two rows of pads in Setup View represent the MIDI channels 1-16. Press the pad for the required MIDI channel.\n\nNo two tracks can transmit on the same MIDI channel.\n""}",
-novation_peak,Novation,Peak,false,,false,None,"{""instructions"":""""}",
-novation_mininova,Novation,MiniNova,false,,false,None,"{""instructions"":""""}",
-oto_machines_fx_bam,oto_machines_fx,bam,false,,false,None,"{""instructions"":""""}",
-oto_machines_fx_bim,oto_machines_fx,bim,false,,false,None,"{""instructions"":""""}",
-oto_machines_fx_boum,oto_machines_fx,boum,false,,false,None,"{""instructions"":""""}",
-oberheim_ob-6,oberheim,ob-6,false,,false,None,"{""instructions"":""""}",
-oberheim_ob-x8,oberheim,ob-x8,false,,false,None,"{""instructions"":""""}",
-oscillator_devices_minerva,Oscillator Devices,Minerva,Yes,TRS,No,No,"{""instructions"":""\n""}",
-oscillator_devices_siren,Oscillator Devices,Siren,Yes,TRS,No,No,"{""instructions"":""\n""}",
-oscillator_devices_goblin-exp_in_ehx_pitch_fork,Oscillator Devices,Goblin-EXP in EHX Pitch Fork,Yes,TRS,No,No,"{""instructions"":""The Goblin's MIDI channel is adjustable. To change the MIDI channel, proceed as follows\n1. Disconnect the device from the power supply\n2. Press the bypass button and restore the power supply while it is pressed. The device starts to flash its LED after the startup delay has elapsed.\n3. Press the button according to the number of the desired channel (e.g. twice for channel 2). The Goblin acknowledges this by emitting short flashing impulses according to the number of the channel.\n4. Once the desired channel is set, press the button and hold it down until the Goblin switches off completely.\n5. Disconnect supply voltage. The next time the Goblin is started, it reacts to the selected MIDI channel.\nTo put the Goblin in omni mode (i.e. it responds to every channel) skip step 3.\n""}",
-pioneer_dj_toraiz_as-1,pioneer_dj,toraiz_as-1,false,,false,None,"{""instructions"":""""}",
-poly_josh_smith_flat_v,poly,josh_smith_flat_v,false,,false,None,"{""instructions"":""""}",
-poly_verbs,poly,verbs,false,,false,None,"{""instructions"":""""}",
-polyend_tracker,polyend,tracker,false,,false,None,"{""instructions"":""""}",
-quilter_illumine_reverb,quilter,illumine_reverb,false,,false,None,"{""instructions"":""""}",
-revv_d20,revv,d20,false,,false,None,"{""instructions"":""""}",
-revv_g20,revv,g20,false,,false,None,"{""instructions"":""""}",
-revv_generator,revv,generator,false,,false,None,"{""instructions"":""""}",
-rjm_miniampgizmo,rjm,miniampgizmo,false,,false,None,"{""instructions"":""""}",
-red_panda_particle,Red Panda,particle,false,,false,None,"{""instructions"":""""}",
-red_panda_raster,Red Panda,raster,false,,false,None,"{""instructions"":""""}",
-red_panda_raster_2,Red Panda,Raster 2,false,USB MIDI,false,None,"{""instructions"":""\n""}",
-red_panda_context_2,Red Panda,Context 2,false,,false,None,"{""instructions"":""""}",
-red_panda_tensor,Red Panda,Tensor,false,USB MIDI,false,None,"{""instructions"":""Please refer to the manual at https://www.redpandalab.com/content/docs/Tensor%20Owners%20Manual.pdf\n\n""}",
-red_panda_bitmap_2,Red Panda,Bitmap 2,false,,false,None,"{""instructions"":""\n\n""}",
-red_panda_particle_2,Red Panda,Particle 2,false,USB MIDI,false,None,"{""instructions"":""The Particle sends and receives on MIDI channel 1 by default. You can change the MIDI channel using\nMIDI System Exclusive messages, our web-based editor, or the TouchOSC template available on our web\nsite. The MIDI channel is remembered when power is of\nVisit the Red Panda Particle 2 manual for more information\nhttp://www.redpandalab.com/content/docs/Particle%202%20Owners%20Manual.pdf\n\n""}",
-roland_d-05,Roland,D-05,false,,false,None,"{""instructions"":""""}",
-roland_gaia_sh-01,Roland,GAIA SH-01,false,,false,None,"{""instructions"":""""}",
-roland_jd-xa,Roland,JD-XA,false,,false,None,"{""instructions"":""""}",
-roland_jd-xi,Roland,JD-Xi,false,,false,None,"{""instructions"":""""}",
-roland_jp-08,Roland,JP-08,false,,false,None,"{""instructions"":""""}",
-roland_ju-06,Roland,JU-06,false,,false,None,"{""instructions"":""""}",
-roland_ju-06a,Roland,ju-06a,false,,false,None,"{""instructions"":""""}",
-roland_jv-1010,Roland,jv-1010,false,,false,None,"{""instructions"":""""}",
-roland_jx-03,Roland,JX-03,false,,false,None,"{""instructions"":""""}",
-roland_jx-08,Roland,jx-08,false,,false,None,"{""instructions"":""""}",
-roland_jupiter-x_(jupiter-xm),Roland,jupiter-x_(jupiter-xm),false,,false,None,"{""instructions"":""""}",
-roland_mc-101,Roland,mc-101,false,,false,None,"{""instructions"":""""}",
-roland_mc-2oh2,Roland,mc-2oh2,false,,false,None,"{""instructions"":""""}",
-roland_mx-1,Roland,mx-1,false,,false,None,"{""instructions"":""""}",
-roland_s-1,Roland,s-1,false,,false,None,"{""instructions"":""""}",
-roland_se-02,Roland,SE-02,false,,false,None,"{""instructions"":""""}",
-roland_sh-01a,Roland,SH-01A,false,,false,None,"{""instructions"":""""}",
-roland_sh-4d,Roland,sh-4d,false,,false,None,"{""instructions"":""""}",
-roland_system-1_(system-1m),Roland,system-1_(system-1m),false,,false,None,"{""instructions"":""""}",
-roland_system-8,Roland,SYSTEM-8,false,,false,None,"{""instructions"":""""}",
-roland_tb-03,Roland,TB-03,false,,false,None,"{""instructions"":""""}",
-roland_tb-3,Roland,tb-3,false,,false,None,"{""instructions"":""""}",
-roland_tr-06,Roland,tr-06,false,,false,None,"{""instructions"":""""}",
-roland_tr-08,Roland,TR-08,false,,false,None,"{""instructions"":""""}",
-roland_tr-09,Roland,TR-09,false,,false,None,"{""instructions"":""""}",
-roland_tr-6s,Roland,tr-6s,false,,false,None,"{""instructions"":""""}",
-roland_tr-8,Roland,TR-8,false,,false,None,"{""instructions"":""""}",
-roland_tr-8s,Roland,tr-8s,false,,false,None,"{""instructions"":""""}",
-roland_vp-03,Roland,VP-03,false,,false,None,"{""instructions"":""""}",
-roland_xv-5050,Roland,xv-5050,false,,false,None,"{""instructions"":""""}",
-roland_fr-18d,Roland,FR-18D,false,,false,None,"{""instructions"":""""}",
-roland_bk-7m,Roland,BK-7m,false,,false,None,"{""instructions"":""""}",
-roland_fr-06/07/08,Roland,FR-06/07/08,false,,false,None,"{""instructions"":""""}",
-roland_system-1,Roland,SYSTEM-1,false,,false,None,"{""instructions"":""""}",
-sequential_pro_3,Sequential,Pro 3,false,,false,None,"{""instructions"":""""}",
-sequential_prophet_6,Sequential,Prophet 6,false,,false,None,"{""instructions"":""""}",
-sequential_take_5,Sequential,take_5,false,,false,None,"{""instructions"":""""}",
-sequential_prophet_12,Sequential,Prophet 12,false,,false,None,"{""instructions"":""""}",
-sequential_ob-6,Sequential,OB-6,false,,false,None,"{""instructions"":""""}",
-sequential_prophet_x,Sequential,Prophet X,false,,false,None,"{""instructions"":""""}",
-sequential_rev_2,Sequential,Rev 2,false,,false,None,"{""instructions"":""""}",
-sherman_filterbank,sherman,filterbank,false,,false,None,"{""instructions"":""""}",
-sonicware_liven_lofi-12,sonicware,liven_lofi-12,false,,false,None,"{""instructions"":""""}",
-sonicware_liven_xfm,sonicware,liven_xfm,false,,false,None,"{""instructions"":""""}",
-sonicware_smpltrek,sonicware,smpltrek,false,,false,None,"{""instructions"":""""}",
-source_audio_nemesis,Source Audio,Nemesis,true,DIN5,true,None,"{""instructions"":""By default, the Nemesis responds to MIDI Channel 1. The Nemesis ignores all MIDI messages sent to\nit that are not on its channel, with the exception of MIDI clock messages. The input MIDI channel for\nthe Nemesis can be changed in the Hardware Options menu of the Neuro App. Note that the MIDI\nInput Channel is a global setting that is NOT saved per preset.\n""}",
-source_audio_ventris,Source Audio,Ventris,true,DIN5,true,None,"{""instructions"":""\n""}",
-source_audio_ultrawave,Source Audio,Ultrawave,false,,false,None,"{""instructions"":""""}",
-source_audio_collider,Source Audio,Collider,true,DIN5,true,None,"{""instructions"":""By default, the Collider responds to MIDI Channel 1. The Collider ignores all MIDI messages sent to it that are not on its channel. The input MIDI channel for the Collider can be changed in the Hardware Options menu of the Neuro Editors. Note that the MIDI Input Channel is a global setting that is NOT saved per preset. Note that some manufacturers begin counting MIDI channels at zero (from 0 to 15), while the Source Audio Neuro Editors use the convention of counting from 1 to 16.\n\n""}",
-source_audio_spectrum_intelligence_filter,Source Audio,Spectrum Intelligence Filter,false,,false,None,"{""instructions"":""""}",
-source_audio_eq2,Source Audio,EQ2,true,DIN5,true,None,"{""instructions"":""By\tdefault, the EQ2 responds to MIDI Channel 1. The setting can be edited in the Neuro Editor.\n""}",
-source_audio_programmable_eq,Source Audio,Programmable EQ,false,,false,None,"{""instructions"":""""}",
-source_audio_atlas,Source Audio,Atlas,true,,true,None,"{""instructions"":""\n""}",
-source_audio_c4_synth,Source Audio,C4 Synth,false,USB,true,None,"{""instructions"":""MIDI Channel is set via the Neuro Editor\n""}",
-strymon_nightsky,Strymon,NightSky,true,DIN5,true,None,"{""instructions"":""Global parameters and functions can be accessed via a power up procedure. All power up functions persist through\npower cycles.\n\nPress and hold the INFINITE footswitch while connecting power to the pedal. Once the three footswitch LEDs light\nup, release the footswitch.\n\nAdjust the desired functions with the knobs and buttons noted below.\n\nPress any footswitch to exit power up mode.\n\nSET MIDI CHANNEL\n\nTurn the REC LEVEL knob to select. ON LED indicates channel selection.\n1 = GREEN (default)\n2 = AMBER\n3 = RED\n4-16 = BLUE (channel set by next MIDI message) With this option,\n\nMIDI Channel is set to the channel of the next incoming MIDI Program Change message received.\n""}",
-strymon_volante,Strymon,Volante,false,,false,None,"{""instructions"":""""}",
-strymon_ultraviolet,Strymon,Ultraviolet,false,TRS,false,None,"{""instructions"":""\n""}",
-strymon_deco,Strymon,Deco,false,,false,None,"{""instructions"":""""}",
-strymon_bluesky,Strymon,blueSky,false,,false,None,"{""instructions"":""""}",
-strymon_dig,Strymon,DIG,false,,false,None,"{""instructions"":""""}",
-strymon_zelzah,Strymon,Zelzah,false,,false,None,"{""instructions"":""""}",
-strymon_cloudburst,Strymon,Cloudburst,false,TRS,false,None,"{""instructions"":""Refer to https://www.strymon.net/manuals/cloudburst_UserManual_RevC.pdf\n""}",
-strymon_el_capistan,Strymon,El Capistan,false,,false,None,"{""instructions"":""""}",
-strymon_iridium,Strymon,Iridium,false,TRS,false,None,"{""instructions"":""Press and hold both footswitches while connecting power to the pedal.\nOnce both LEDs flash, release the footswitches.\n\nTurn the DRIVE knob to set the MIDI communication channel.\nFAV LED indicates status.\n\nChannel 1 - GREEN (default)\nChannel 2 - AMBER Channel 2\nChannel 3 - RED\nChannel 4-16 - BLUE (Requires ¼” MIDI connection.) Once the LED\nturns BLUE, it will blink until the pedal receives a MIDI Program\nChange message. Once a message is received, the pedal will be\nset to the MIDI channel that carried the message and the LED will\nstop blinking.\n\nPress the ON footswitch again to store the MIDI channel and begin.\n""}",
-strymon_flint,Strymon,Flint,false,,false,None,"{""instructions"":""""}",
-strymon_mobius,Strymon,Mobius,true,DIN5,true,None,"{""instructions"":""Push and hold the Value knob to go into the Global Settings Menu.\nFrom there, turn the knob until you see MIDICH. Press the Value knob to select that option. You will now be able\nto select the MIDI channel for your device.\n\nTurn the knob to your desired channel. Once done, press the Value knob again to save the channel.\n""}",
-strymon_timeline,Strymon,Timeline,true,DIN5,true,None,"{""instructions"":""Push and hold the Value knob to go into the Global Settings Menu.\nFrom there, turn the knob until you see MIDICH. Press the Value knob to select that option. You will now be able\nto select the MIDI channel for your device.\n\nTurn the knob to your desired channel. Once done, press the Value knob again to save the channel.\n""}",
-strymon_lex,Strymon,Lex,false,,false,None,"{""instructions"":""""}",
-strymon_sunset,Strymon,Sunset,false,TRS,false,None,"{""instructions"":""Press and hold the B footswitch while powering up the pedal. Once both LEDs flash, release the footswitch.\n\nTurn the LEVEL knob on the A side to set the MIDI communication channel. The A LED will change color as the MIDI channel is changed.\n1 = GREEN (default)\n2 = AMBER\n3 = RED\n4-16 = BLUE (channel set by next MIDI message)\n\nWith this option, MIDI Channel is set to the channel of the next incoming MIDI Program Change message received.\n\nPress the B footswitch again to store the MIDI channel and begin.\n\n""}",
-strymon_riverside,Strymon,Riverside,false,TRS,false,None,"{""instructions"":""To select channel 4-16, you will need to connect Riverside to a\nMIDI device.\n\n1. Press and hold the ON footswitch while powering up the pedal. Once both LEDs flash, release the footswitch.\n\n2. Turn the DRIVE knob on the to set the MIDI receive channel. Both LEDs will flash momentarily as the channel is changed.\nGreen = Channel 1\nAmber = Channel 2\nRed = Channel 3\nBlue = Channel 4-16. Send a PC message to set the MIDI Channel.\n\n3. Press the ON footswitch again to store the MIDI channel and begin.\n\n\n""}",
-strymon_bigsky,Strymon,Bigsky,true,DIN5,true,None,"{""instructions"":""Push and hold the Value knob to go into the Global Settings Menu.\n\nFrom there, turn the knob until you see MIDICH.\nPress the Value knob to select that option.\nYou will now be able to select the MIDI channel for your device.\n\nTurn the knob to your desired channel.\nOnce done, press the Value knob again to save the channel.\n""}",
-strymon_brig,Strymon,Brig,false,,false,None,"{""instructions"":""""}",
-strymon_compadre,Strymon,Compadre,false,TRS,false,None,"{""instructions"":""Refer to Page14: https://www.strymon.net/manuals/Compadre_UserManual_RevC.pdf\n""}",
-strymon_bigsky_mx,Strymon,Bigsky MX,true,DIN5,true,None,"{""instructions"":""\n""}",
-studio_electronics_atc-1,studio_electronics,atc-1,false,,false,None,"{""instructions"":""""}",
-studio_electronics_se-1x,studio_electronics,se-1x,false,,false,None,"{""instructions"":""""}",
-studiologic_sledge,Studiologic,Sledge,false,,false,None,"{""instructions"":""""}",
-tc_electronic_d-two,TC Electronic,d-two,false,,false,None,"{""instructions"":""""}",
-tc_electronic_plethora_x5,TC Electronic,Plethora X5,true,DIN5,true,None,"{""instructions"":""SETTINGS > GLOBAL > MIDI > CHANNEL SELECT\n""}",
-tc_electronic_plethora_x3,TC Electronic,Plethora X3,true,DIN5,true,None,"{""instructions"":""SETTINGS > GLOBAL > MIDI > CHANNEL SELECT\n""}",
-tc_electronic_hall_of_fame_2_x4_reverb,TC Electronic,Hall of Fame 2 X4 Reverb,false,,false,None,"{""instructions"":""""}",
-tc_electronic_nova_drive,TC Electronic,Nova Drive,false,DIN5,false,None,"{""instructions"":""Per default, NOVA Drive sends and receives MIDI messages on MIDI channel 2. To change the MIDI channel:\n•  Press and hold the SWITCH MODE button forthree seconds.\n•  Turn the PRESET encoder until the desired MIDIchannel is shown in the display.\n•  Release the SWITCH MODE button.\n\n""}",
-tc_electronic_flashback_2_x4_delay,TC Electronic,Flashback 2 X4 Delay,false,,false,None,"{""instructions"":""""}",
-tc_electronic_ditto_x4,TC Electronic,Ditto X4,true,DIN5,true,None,"{""instructions"":""\n""}",
-tasty_chips_gr-1,tasty_chips,gr-1,false,,false,None,"{""instructions"":""""}",
-teenage_engineering_op-1,Teenage Engineering,op-1,false,,false,None,"{""instructions"":""""}",
-teenage_engineering_op-z,Teenage Engineering,OP-Z,false,,false,None,"{""instructions"":""""}",
-twisted_electrons_megafm,twisted_electrons,megafm,false,,false,None,"{""instructions"":""""}",
-twisted_electrons_therapsid,twisted_electrons,therapsid,false,,false,None,"{""instructions"":""""}",
-udo_audio_super_6,udo_audio,super_6,false,,false,None,"{""instructions"":""""}",
-voodoolab_control_switcher,voodoolab,control_switcher,false,,false,None,"{""instructions"":""""}",
-voodoolab_gcx,voodoolab,gcx,false,,false,None,"{""instructions"":""""}",
-voodoolab_hex,voodoolab,hex,false,,false,None,"{""instructions"":""""}",
-vongon_polyphrase,Vongon,Polyphrase,false,,false,None,"{""instructions"":""""}",
-wmd_geiger_counter_pro,WMD,Geiger Counter Pro,false,,false,None,"{""instructions"":""""}",
-waldorf_blofeld,Waldorf,Blofeld,false,,false,None,"{""instructions"":""""}",
-waldorf_iridium,Waldorf,iridium,false,,false,None,"{""instructions"":""""}",
-waldorf_m,Waldorf,m,false,,false,None,"{""instructions"":""""}",
-waldorf_pulse_2,Waldorf,pulse_2,false,,false,None,"{""instructions"":""""}",
-waldorf_rocket,Waldorf,rocket,false,,false,None,"{""instructions"":""""}",
-waldorf_streichfett,Waldorf,streichfett,false,,false,None,"{""instructions"":""""}",
-walrus_audio_acs1,Walrus Audio,ACS1,false,,false,None,"{""instructions"":""""}",
-walrus_audio_d1_(new_version),Walrus Audio,D1 (New version),false,,false,None,"{""instructions"":""""}",
-walrus_audio_m1,Walrus Audio,M1,false,,false,None,"{""instructions"":""""}",
-walrus_audio_meraki_(stereo_analog_delay),Walrus Audio,Meraki (Stereo Analog Delay),false,,false,None,"{""instructions"":""""}",
-walrus_audio_r1,Walrus Audio,R1,false,,false,None,"{""instructions"":""""}",
-walrus_audio_d1_(old_version),Walrus Audio,D1 (Old version),true,DIN5,true,None,"{""instructions"":""1. Hold down both stomp switches at power up until the rate LED starts flashing like normal,\nthen release both switches.\n2. Now send a MIDI Program Change message on the desired MIDI channel for the pedal.\n3. The pedal will save that MIDI channel and only respond to messages on that channel until\nthe user changes it again\n""}",
-wampler_catacombs,wampler,catacombs,false,,false,None,"{""instructions"":""""}",
-wampler_metaverse,wampler,metaverse,false,,false,None,"{""instructions"":""""}",
-wampler_pantheon,wampler,pantheon,false,,false,None,"{""instructions"":""""}",
-wampler_terraform,wampler,terraform,false,,false,None,"{""instructions"":""""}",
-yamaha_nsx-1,Yamaha,nsx-1,false,,false,None,"{""instructions"":""""}",
-yamaha_reface_cp,Yamaha,reface CP,false,,false,None,"{""instructions"":""""}",
-yamaha_reface_cs,Yamaha,reface CS,false,,false,None,"{""instructions"":""""}",
-yamaha_reface_dx,Yamaha,reface DX,false,,false,None,"{""instructions"":""""}",
-yamaha_reface_yc,Yamaha,reface YC,false,,false,None,"{""instructions"":""""}",
-em_custom_ami_universal_dual_trs,EM Custom,AMI Universal Dual TRS,false,,false,None,"{""instructions"":""""}",
-swindler_effects_red_mountain_tremolo_v2,Swindler Effects,Red Mountain Tremolo V2,false,,false,None,"{""instructions"":""""}",
-swindler_effects_the_gulf_chorus_v2,Swindler Effects,The Gulf Chorus V2,false,,false,None,"{""instructions"":""""}",
-pigtronix_infinity,Pigtronix,Infinity,false,,false,None,"{""instructions"":""""}",
-pigtronix_echolution_2_deluxe,Pigtronix,Echolution 2 Deluxe,false,,true,None,"{""instructions"":""More info here: https://www.pigtronix.com/uploads/pigtronix/2020/11/Echolution-2_D-manual_15-1.pdf\n\n""}",
-chase_bliss_audio_habit,Chase Bliss Audio,Habit,false,,false,None,"{""instructions"":""""}",
-chase_bliss_audio_lossy,Chase Bliss Audio,Lossy,None,Type B,false,None,"{""instructions"":""\n""}",
-chase_bliss_audio_warped_vinyl_hifi,Chase Bliss Audio,Warped Vinyl HiFi,false,RTS,true,None,"{""instructions"":""Wraped Vinyl HiFi is set to MIDI channel 6 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power to the pedal\n(hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will set itself to whatever channel\nit gets that first message from, permanently (until you change it again, of course).\n""}",
-chase_bliss_audio_thermae,Chase Bliss Audio,Thermae,false,RTS,true,None,"{""instructions"":""Thermae is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will\nset itself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n\n""}",
-chase_bliss_audio_wombtone_mkii,Chase Bliss Audio,Wombtone MKII,false,RTS,true,None,"{""instructions"":""Wombtone is set to MIDI channel 6 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power to the pedal (hold down both\nstomp switches simultaneously) and then you can let go. The pedal is now looking for the first “Program Change”\nmessage it sees, and it will set itself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n""}",
-chase_bliss_audio_mood_mkii,Chase Bliss Audio,Mood MkII,false,TRS,true,None,"{""instructions"":""MOOD MKII is set to MIDI channel 2 by default, but it is easy to change.\nSimply hold down both stomp switches when you power up the pedal. \nThe pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to that channel.\n""}",
-chase_bliss_audio_cxm_1978,Chase Bliss Audio,CXM 1978,true,DIN5,false,None,"{""instructions"":""CXM 1978TM is set to MIDI channel 2 by default. This can be changed by holding down both stomp switches simultaneously when you provide power to the \npedal and releasing the stomp switches once the\tseven segment display on the front of the pedal lights up. The pedal is now looking for the first \nprogram change message it sees and will set itself to whichever channel it receives that message from. Note that you may need to send that program change \nmessage more than one time. This is saved as the new MIDI channel until you decide to change it again.\n""}",
-chase_bliss_audio_mood,Chase Bliss Audio,Mood,None,RTS,false,None,"{""instructions"":""Mood is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then\nyou can let go. The pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to whatever channel it gets that first message from,\npermanently (until you change it again, of course).\n""}",
-chase_bliss_audio_condor,Chase Bliss Audio,Condor,None,RTS,false,None,"{""instructions"":""Condor is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will\nset itself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n""}",
-chase_bliss_audio_onward,Chase Bliss Audio,Onward,false,TRS,true,None,"{""instructions"":""Onward C is set to MIDI channel 2 by default, but it is easy to change.\nSimply hold down both stomp switches when you power up the pedal. \nThe pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to that channel.\n""}",
-chase_bliss_audio_bliss_factory,Chase Bliss Audio,Bliss Factory,None,RTS,false,None,"{""instructions"":""Bliss Factory is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will\nset itself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n""}",
-chase_bliss_audio_generation_loss_mkii,Chase Bliss Audio,Generation Loss MKII,false,,false,None,"{""instructions"":""""}",
-chase_bliss_audio_dark_world,Chase Bliss Audio,Dark World,false,RTS,false,None,"{""instructions"":""Dark World is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will\nset itself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n""}",
-chase_bliss_audio_reverse_mode_c,Chase Bliss Audio,Reverse Mode C,false,TRS,true,None,"{""instructions"":""Reverse Mode C is set to MIDI channel 2 by default, but it is easy to change.\nSimply hold down both stomp switches when you power up the pedal. \nThe pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to that channel.\n""}",
-chase_bliss_audio_tonal_recall,Chase Bliss Audio,Tonal Recall,false,RTS,true,None,"{""instructions"":""Tonal Recall is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power to\nthe pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will set\nitself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n""}",
-chase_bliss_audio_brothers,Chase Bliss Audio,Brothers,None,RTS,false,None,"{""instructions"":""Brothers is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then\nyou can let go. The pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to whatever channel it gets that first message from,\npermanently (until you change it again, of course).\n""}",
-chase_bliss_audio_blooper,Chase Bliss Audio,Blooper,None,RTS,false,None,"{""instructions"":""Blooper is set to MIDI channel 2 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then\nyou can let go. The pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to whatever channel it gets that first message from,\npermanently (until you change it again, of course).\n""}",
-chase_bliss_audio_billy_strings_wombtone,Chase Bliss Audio,Billy Strings Wombtone,false,,false,None,"{""instructions"":""""}",
-chase_bliss_audio_preamp_mkii,Chase Bliss Audio,Preamp MkII,true,DIN5,false,None,"{""instructions"":""Preamp MKII™ is set to MIDI channel 2 by default. This can be changed by holding down both stomp switches simultaneously when\nyou provide power to the pedal and releasing the stomp switches once the seven segment display on the front of the pedal lights up.\nThe pedal is now looking for the first Program Change message it sees and will set itself to whichever channel it receives that message from.\nThis is saved as the new MIDI channel until you decide to change it again.\n""}",
-chase_bliss_audio_generation_loss_mki,Chase Bliss Audio,Generation Loss MKI,false,,false,None,"{""instructions"":""""}",
-chase_bliss_audio_ayahuasca,Chase Bliss Audio,Ayahuasca,false,,false,None,"{""instructions"":""""}",
-chase_bliss_audio_gravitas,Chase Bliss Audio,Gravitas,false,RTS,true,None,"{""instructions"":""Gravitas is set to MIDI channel 4 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will set\nitself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n\n""}",
-chase_bliss_audio_spectre,Chase Bliss Audio,Spectre,false,RTS,true,None,"{""instructions"":""Spectre is set to MIDI channel 3 by default, but it is easy to change if you need to.\n\nIf you want to change it, simply hold down both stomp switches when you provide power\nto the pedal (hold down both stomp switches simultaneously) and then you can let go.\nThe pedal is now looking for the first “Program Change” message it sees, and it will\nset itself to whatever channel it gets that first message from, permanently\n(until you change it again, of course).\n""}",
-chase_bliss_audio_clean,Chase Bliss Audio,Clean,unknown,unknown,unknown,unknown,"{""instructions"":""""}",
-fractal_audio_systems_axe-fx_ii_xl+,Fractal Audio Systems,Axe-Fx II XL+,false,,false,None,"{""instructions"":""""}",
-fractal_audio_systems_ax8,Fractal Audio Systems,AX8,false,,false,None,"{""instructions"":""""}",
-fractal_audio_systems_axe-fx_ii_xl,Fractal Audio Systems,Axe-Fx II XL,false,,false,None,"{""instructions"":""""}",
-fractal_audio_systems_axe-fx_ii,Fractal Audio Systems,Axe-Fx II,false,,false,None,"{""instructions"":""""}",
-fractal_audio_systems_fx8,Fractal Audio Systems,FX8,false,,false,None,"{""instructions"":""""}",
-hughes_&_kettner_grandmeister_deluxe_40,Hughes & Kettner,GrandMeister Deluxe 40,false,,false,None,"{""instructions"":""""}",
-hughes_&_kettner_triamp_mk3,Hughes & Kettner,TriAmp Mk3,false,,false,None,"{""instructions"":""""}",
-digitech_whammy_dt,DigiTech,Whammy DT,false,DIN5,false,None,"{""instructions"":""1. Disconnect the power from the Whammy pedal.\n2. Press and hold the WHAMMY Effect Footswitch while reconnecting the power. One of the WHAMMY Effect LEDs should light up and begin to flash indicating the current selected MIDI channel\n3. Rotate the WHAMMY Effect Knob to select the desired MIDI channel. \n  WHAMMY \n    ▲2 OCT    - Channel 1\n    ▲ OCT     - Channel 2 \n    ▲ 5TH     - Channel 3 \n    ▲ 4TH     - Channel 4\n    ▼ 2ND     - Channel 5\n    ▼ 4TH     - Channel 6\n    ▼ 5TH     - Channel 7 \n    ▼ OCT     - Channel 8 \n    ▼2 OCT    - Channel 9 \n    DIVE BOMB - Channel 10 \n  HARMONY\n    ▲2ND▼3RD  - Channel 11\n    ▲♭3RD▲3RD - Channel 12\n    ▲3RD▲4TH  - Channel 13\n    ▲4TH▲5TH  - Channel 14\n    ▲5TH▲6TH  - Channel 15\n    ▲5TH▲7TH  - Channel 16\n    ▼4TH▼3RD  - Omni\n4. Press the WHAMMY Effect Footswitch again to exit the MIDI set up menu.\n    \n\n\n""}",
-digitech_bass_whammy,DigiTech,Bass Whammy,false,,false,None,"{""instructions"":""""}",
-digitech_whammy,DigiTech,Whammy,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_100s_head,EVH,5150III 100S HEAD,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_head,EVH,5150III 50W HEAD,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_el34_2x12_combo,EVH,5150III 50W EL34 2X12 COMBO,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_el34_head,EVH,5150III 50W EL34 HEAD,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_6l6_1x12_combo,EVH,5150III 50W 6L6 1X12 COMBO,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50s_6l6_head,EVH,5150III 50S 6L6 HEAD,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_el34_1x12_combo,EVH,5150III 50W EL34 1X12 COMBO,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_6l6_2x12_combo,EVH,5150III 50W 6L6 2X12 COMBO,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_50w_6l6_head,EVH,5150III 50W 6L6 HEAD,false,,false,None,"{""instructions"":""""}",
-evh_5150iii_100w_head,EVH,5150III 100W HEAD,false,,false,None,"{""instructions"":""""}",
-evh_5150iiis_100w_el34_head,EVH,5150IIIS 100W EL34 HEAD,false,,false,None,"{""instructions"":""""}",
-free_the_tone_ta-1h_tri_avatar,Free The Tone,TA-1H Tri Avatar,false,,false,None,"{""instructions"":""""}",
-free_the_tone_flight_time_ft-2y,Free The Tone,Flight Time FT-2Y,false,,false,None,"{""instructions"":""""}",
-free_the_tone_pa-1qg,Free The Tone,PA-1QG,false,,false,None,"{""instructions"":""""}",
-free_the_tone_pa-1qb,Free The Tone,PA-1QB,false,,false,None,"{""instructions"":""""}",
-free_the_tone_pa-1qa,Free The Tone,PA-1QA,false,,false,None,"{""instructions"":""""}",
-free_the_tone_ff-1y,Free The Tone,FF-1Y,true,DIN5,false,None,"{""instructions"":""""}",
-free_the_tone_as-1r_ambi_space,Free The Tone,AS-1R Ambi Space,false,,false,None,"{""instructions"":""""}",
-ksr_amplification_artemis_100,KSR Amplification,Artemis 100,false,,false,None,"{""instructions"":""""}",
-ksr_amplification_colossus_h-100,KSR Amplification,Colossus H-100,false,,false,None,"{""instructions"":""""}",
-ksr_amplification_gemini_100,KSR Amplification,Gemini 100,false,,false,None,"{""instructions"":""""}",
-seymour_duncan_andromeda,Seymour Duncan,Andromeda,false,,false,None,"{""instructions"":""""}",
-old_blood_noise_endeavors_dark_star_stereo_soundscape_reverb,Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,false,,false,None,"{""instructions"":""""}",
-sheeran_looper+,Sheeran,Looper+,false,,false,None,"{""instructions"":""""}",
-sheeran_looperx,Sheeran,looperx,false,,false,None,"{""instructions"":""""}",
-two_notes_audio_engineering_torpedo_c.a.b._(v4_firmware),Two Notes Audio Engineering,Torpedo C.A.B. (v4 firmware),false,,false,None,"{""instructions"":""""}",
-two_notes_audio_engineering_torpedo_live_v4_firmware,Two Notes Audio Engineering,Torpedo Live v4 firmware,false,,false,None,"{""instructions"":""""}",
-two_notes_audio_engineering_opus,Two Notes Audio Engineering,Opus,false,,false,None,"{""instructions"":""""}",
-two_notes_audio_engineering_torpedo_studio,Two Notes Audio Engineering,Torpedo Studio,false,,false,None,"{""instructions"":""""}",
-two_notes_audio_engineering_torpedo_captor_x,Two Notes Audio Engineering,Torpedo Captor X,false,,false,None,"{""instructions"":""""}",
-two_notes_audio_engineering_torpedo_live_v3_firmware,Two Notes Audio Engineering,Torpedo Live v3 firmware,false,,false,None,"{""instructions"":""""}",
-singular_sound_beatbuddy,Singular Sound,BeatBuddy,true,DIN5,true,None,"{""instructions"":""\n\n""}",
-singular_sound_aeros_looper,Singular Sound,Aeros Looper,true,DIN5,true,true,"{""instructions"":""Sysex Info:\n\nStart (Sysex Real Time)\t- Starts the Aeros depending on the MIDI Start setting. If the part is empty and MIDI Start is set to record, the Aeros will\nrecord on the first track. If the song part is empty and the MIDI Start setting is set to only playback, the Aeros will enter a 'scrolling' mode in the empty part.\n\nStop (Sysex Real Time) - Stops playback immediately\n\nTime Signature:\t- Time Signature is sent by BeatBuddy whenever a song is loaded as a Sysex midi message and repeatedly every 3 seconds. The Aeros will set it's own internal time signature when receiving these commands if the song is empty.\n    (All values in hex)\n    2/4: F0 - 7F - 7F - 03 - 02 - 04 - 02 - 02 - 18 - 08 - F7\n    3/4: F0 - 7F - 7F - 03 - 02 - 04 - 03 - 02 - 18 - 08 - F7\n    4/4: F0 - 7F - 7F - 03 - 02 - 04 - 04 - 02 - 18 - 08 - F7\n    5/4: F0 - 7F - 7F - 03 - 02 - 04 - 05 - 02 - 18 - 08 - F7\n    3/8: F0 - 7F - 7F - 03 - 02 - 04 - 03 - 03 - 18 - 08 - F7\n    6/8: F0 - 7F - 7F - 03 - 02 - 04 - 06 - 03 - 18 - 08 - F7\n""}",
-suhr_hedgehog,Suhr,Hedgehog,false,,false,None,"{""instructions"":""""}",
-suhr_pt-100,Suhr,PT-100,false,,false,None,"{""instructions"":""""}",
-suhr_discovery,Suhr,Discovery,true,DIN5,false,None,"{""instructions"":""https://www.suhr.com/electronics/pedals/discovery-delay/\n""}",
-freds_labs_buzzy!,Freds Labs,Buzzy!,false,,false,None,"{""instructions"":""""}",
-oto_machines_boum,OTO Machines,BOUM,false,,false,None,"{""instructions"":""""}",
-oto_machines_bim,OTO Machines,BIM,false,,false,None,"{""instructions"":""""}",
-oto_machines_bam,OTO Machines,BAM,false,,false,None,"{""instructions"":""""}",
-oto_machines_biscuit,OTO Machines,Biscuit,false,,false,None,"{""instructions"":""""}",
-that_worship_sound_worship_essentials_2,That Worship Sound,Worship Essentials 2,false,,false,None,"{""instructions"":""""}",
-that_worship_sound_worship_guitar_essentials_2,That Worship Sound,Worship Guitar Essentials 2,false,,false,None,"{""instructions"":""""}",
-flower_pedals_dahlia_dual_analog_delay,Flower Pedals,Dahlia Dual Analog Delay,false,TRS,false,None,"{""instructions"":""\n""}",
-flower_pedals_sunflower,Flower Pedals,Sunflower,false,TRS,false,None,"{""instructions"":""\n""}",
-sound_sculpture_switchblade_8f,Sound Sculpture,Switchblade 8F,true,DIN5,false,None,"{""instructions"":""\n\n""}",
-hologram_electronics_chroma_console,Hologram Electronics,Chroma Console,true,DIN5,true,None,"{""instructions"":""To enter Chroma Console’s GLOBAL SETTINGS MENU, press all buttons (A, B, C, and D) simultaneously and release., \nThe tilt knob sets channel 1-16, ""}",
-hologram_electronics_dream_sequence,Hologram Electronics,Dream Sequence,false,DIN5,false,None,"{""instructions"":""""}",
-hologram_electronics_microcosm,Hologram Electronics,Microcosm,true,DIN5,true,None,"{""instructions"":""""}",
-gamechanger_audio_bigsby,Gamechanger Audio,Bigsby,false,,false,None,"{""instructions"":""""}",
-opfxs_v-uno,OPFXS,v-uno,false,,false,None,"{""instructions"":""""}",
-tastychips_gr1,TastyChips,GR1,false,,false,None,"{""instructions"":""""}",
-marshall_dsl40cr,Marshall,DSL40CR,false,,false,None,"{""instructions"":""""}",
-jackson_audio_el_guapo,Jackson Audio,El Guapo,false,,false,None,"{""instructions"":""""}",
-jackson_audio_the_optimist,Jackson Audio,The Optimist,false,TRS,false,None,"{""instructions"":""""}",
-jackson_audio_golden_boy,Jackson Audio,Golden Boy,false,TRS,false,None,"{""instructions"":""By default, the GOLDEN BOY ships with MIDI Channel 1 being the selected channel. \nThis can be changed by pressing and holding the DRIVE footswitch while applying power to the GOLDEN BOY. \nPress the BOOST footswitch to increment the MIDI channel number.\n\nYou’ll notice that as you continue to hold the DRIVE footswitch, the BOOST LED will flash to indicate which MIDI channel you have selected. \nIE – 7 flashes = MIDI Channel 7. After the LED flashes, we inserted a 2-second pause so you could tell when the LED was finished flashing. \nThe LED will continue flashing as long as you are holding down the DRIVE footswitch. \nOnce you have selected the MIDI channel you want and have verified it by counting the flashes, simply release the DRIVE footswitch and the pedal will save this MIDI Channel to the internal EEPROM on the microprocessor and reboo""}",
-jackson_audio_broken_arrow,Jackson Audio,Broken Arrow,false,TRS,false,None,"{""instructions"":""By default, the BROKEN ARROW v2 ships with MIDI Channel 1 being the selected channel. \nThis can be changed by pressing and holding the DRIVE footswitch while applying power to the BROKEN ARROW. \nPress the BOOST footswitch to increment the MIDI channel number.\n\nYou’ll notice that as you continue to hold the DRIVE footswitch, the BOOST LED will flash to indicate which MIDI channel you have selected. \nIE – 7 flashes = MIDI Channel 7. After the LED flashes, we inserted a 2-second pause so you could tell when the LED was finished flashing. \nThe LED will continue flashing as long as you are holding down the DRIVE footswitch. \nOnce you have selected the MIDI channel you want and have verified it by counting the flashes, simply release the DRIVE footswitch \nand the pedal will save this MIDI Channel to the internal EEPROM on the microprocessor and reboot.""}",
-jackson_audio_new_wave,Jackson Audio,New Wave,false,TRS,false,None,"{""instructions"":""""}",
-jackson_audio_bloom,Jackson Audio,Bloom,false,TRS,false,None,"{""instructions"":""By default, the BLOOM v2 – MIDI ships with MIDI Channel 1 being the selected channel. This can be changed by pressing and holding both the COMP and BLOOM footswitches while applying power to the BLOOM. While holding these footswitches down adjust the BLOOM knob. All the way down is MIDI Channel 1…all the way up is MIDI Channel 16 with channels 2-15 being located evenly between those two points as you rotate the BLOOM knob.\n\nYou’ll notice that as you rotate the BLOOM knob, the BLOOM LED will flash to indicate which MIDI channel you have selected. IE – 7 flashes = MIDI Channel 7. After the LED flashes, we inserted a 2-second pause so you could tell when the LED was finished flashing. The LED will continue flashing as long as you are holding down the two footswitches. Once you have selected the MIDI channel you want and have verified it by counting the flashes, simply release the two footswitches and the pedal will save this MIDI Channel to the internal EEPROM on the microprocessor and reboot.""}",
-jackson_audio_asabi,Jackson Audio,Asabi,false,TRS,false,None,"{""instructions"":""By default, the ASABI ships with MIDI Channel 1 being the selected channel. This\ncan be changed by pressing and holding the DIST footswitch while applying power\nto the ASABI. Press the DRIVE footswitch to increment the MIDI channel number. \nYou’ll notice that as you continue to hold the DIST footswitch, the DRIVE LED will\nflash to indicate which MIDI channel you have selected. IE – 7 flashes = MIDI\nChannel 7. After the LED flashes, we inserted a 2-second pause so you could tell\nwhen the LED was finished flashing. The LED will continue flashing as long as you\nare holding down the DIST footswitch. Once you have selected the MIDI channel\nyou want and have verified it by counting the flashes, simply release the DIST\nfootswitch and the pedal will save this MIDI Channel to the internal EEPROM on\nthe microprocessor and reboot.""}",
-the_montreal_assembly_856forzellersasn,the montreal assembly,856forzellersasn,false,,true,None,"{""instructions"":""\n""}",
-kernom_moho,Kernom,Moho,false,,false,None,"{""instructions"":""""}",
-kernom_ridge,Kernom,Ridge,false,,false,None,"{""instructions"":""""}",
-morningstar_engineering_mc6_mkii,Morningstar Engineering,MC6 MKII,true,DIN5,false,true,"{""instructions"":""MIDI channel can be set in the Global Config menu or in the Editor.\n\n""}",
-morningstar_engineering_ml5r,Morningstar Engineering,ML5R,true,DIN5,false,None,"{""instructions"":""To set the MIDI channel on the ML5R, power up the ML5R while holding down the TRAILS button. After releasing the button, the ML5R Red LED will be blinking to indicate that it is waiting for the MIDI channel to be set.\n\n""}",
-morningstar_engineering_mc8,Morningstar Engineering,MC8,true,DIN5,false,true,"{""instructions"":""MIDI channel can be set in the Global Config menu or in the Editor.\n\n""}",
-morningstar_engineering_mc6_pro,Morningstar Engineering,MC6 PRO,true,DIN5,true,true,"{""instructions"":""MIDI channel can be set in the Global Config menu or in the Editor.\n\n""}",
-morningstar_engineering_ml5,Morningstar Engineering,ML5,true,DIN5,false,None,"{""instructions"":""Hold down Switch E while powering up the ML5. Once the ML5 is powered up, release Switch E. The Learn button will flash quickly and continuously.\nSend a CC or PC message to the ML5 on your desired MIDI channel. The ML5 will read the message and set its MIDI channel to the first message received.\n\n""}",
-morningstar_engineering_mc3,Morningstar Engineering,MC3,false,None,false,None,"{""instructions"":""MIDI channel can be set in the Global Config menu or in the Editor.\n\n""}",
-morningstar_engineering_ml10x,Morningstar Engineering,ML10X,true,DIN5,false,None,"{""instructions"":""Set the MIDI channel in the Editor or in the Global Settings on the device.\n""}",
-g-lab_midi_4_x_loop-er,G-LAB,MIDI 4 X LOOP-er,false,,false,None,"{""instructions"":""""}",
-g-lab_midi_2_x_loop-er,G-LAB,MIDI 2 X LOOP-er,false,,false,None,"{""instructions"":""""}",
-g-lab_bc-1,G-LAB,BC-1,true,DIN5,false,None,"{""instructions"":""To  set  the  MIDI  channel  on  which  the  BC-1  receives  the  commands  serves the  MIDI  CHANNEL  rotary  switch.  To  set  the  channel  it  is  needed  to  use  a  small  flat screwdriver  and  to  turn  right  or  left  the  middle  part  of  the  switch.  The  arrow-head indicates the set channel.\n\n""}",
-headrush_mx5,Headrush,MX5,false,3.5mm TRS,false,None,"{""instructions"":""Select the MIDI channel under GLOBAL SETTINGS > MIDI SETTINGS > MIDI CHANNEL.\n""}",
-headrush_gigboard,Headrush,Gigboard,false,,false,None,"{""instructions"":""""}",
-headrush_looperboard,Headrush,Looperboard,true,DIN5,false,None,"{""instructions"":""On Global Settings/Midi menu set Externall Midi Channel""}",
-headrush_pedalbaord,Headrush,Pedalbaord,false,,false,None,"{""instructions"":""""}",
-neunaber_illumine,Neunaber,Illumine,false,3.5MM TRS,false,None,"{""instructions"":""Select the MIDI channel under GLOBAL SETUP > MIDI CHANNEL.\n""}",
-neunaber_neuron,Neunaber,Neuron,false,,false,None,"{""instructions"":""• Disconnect power\n• Hold down the Engage switch and reconnect power\n• Send any MIDI command containing the channel number to which to set Neuron\n• Release the Engage switch\n""}",
-kinotone_ribbons,Kinotone,Ribbons,false,,false,None,"{""instructions"":""""}",
-laney_bbc_the_difference_engine,Laney,BBC The Difference Engine,true,DIN5,true,None,"{""instructions"":""\n""}",
-jet_pedals_lamb,Jet Pedals,Lamb,false,,false,None,"{""instructions"":""""}",
-jet_pedals_revelation_reverb_2.0,Jet Pedals,Revelation Reverb 2.0,false,,false,None,"{""instructions"":""""}",
-sunday_sounds_sunday_guitar_2,Sunday Sounds,Sunday Guitar 2,false,,false,None,"{""instructions"":""""}",
-sunday_sounds_sunday_keys_2020,Sunday Sounds,Sunday Keys 2020,false,,false,None,"{""instructions"":""""}",
-tc_helicon_voicelive_3_extreme,TC Helicon,Voicelive 3 Extreme,false,,false,None,"{""instructions"":""""}",
-tc_helicon_voicelive_touch_2,TC Helicon,Voicelive Touch 2,false,,false,None,"{""instructions"":""""}",
-tc_helicon_voicelive_rack,TC Helicon,Voicelive Rack,false,,false,None,"{""instructions"":""""}",
-tc_helicon_voicelive_3,TC Helicon,Voicelive 3,true,DIN5,true,None,"{""instructions"":""\n\n""}",
-peavey_mini_mega,Peavey,Mini MEGA,false,,false,None,"{""instructions"":""""}",
-panda_audio_future_impact,Panda Audio,Future Impact,false,,false,None,"{""instructions"":""Enter the Boot Menu by pressing and holding the PROGRAM (left) footswitch before powering on the pedal;\ncontinue to hold down the footswitch until after the firmware version number and the instrument mode have both been displayed.\nTurn the PARAMETER dial to “Note Off Level” to see the name of the menu parameter.\nStep through the parameters by pressing the left footswitch again until you get to \""GLb\"".\nTurn PARAMETER dial clockwise to any other position to see the parameter’s value. Adjust the value by turning the EDIT dial.\nChoose channel 1-16 or \""ALL\"" for omni mode. When editing is complete, turn the FI off and on again.\n\n""}",
-hotone_ampero,Hotone,Ampero,false,,false,None,"{""instructions"":""""}",
-hotone_ampero_2_stomp,Hotone,Ampero 2 Stomp,false,,false,None,"{""instructions"":""""}",
-blackstar_amplification_silverline_stereo_deluxe,Blackstar Amplification,Silverline Stereo Deluxe,false,,false,None,"{""instructions"":""""}",
-blackstar_amplification_silverline_deluxe,Blackstar Amplification,Silverline Deluxe,false,,false,None,"{""instructions"":""""}",
-blackstar_amplification_amped_3,Blackstar Amplification,Amped 3,false,TRS,false,None,"{""instructions"":""\n""}",
-blackstar_amplification_silverline_deluxe_head,Blackstar Amplification,Silverline Deluxe Head,false,,false,None,"{""instructions"":""""}",
-blackstar_amplification_amped_1,Blackstar Amplification,Amped 1,false,TRS,false,None,"{""instructions"":""The default for receiving MIDI messages via the MIDI In is channel 1.\nThe MIDI channel can be changed using Blackstar’s Architect software\n""}",
-jmk_music_pedals_clockstep,JMK Music Pedals,CLOCKstep,false,,false,None,"{""instructions"":""\n""}",
-mooer_ocean_machine,Mooer,Ocean Machine,false,,false,None,"{""instructions"":""""}",
-mooer_ge300_lite,Mooer,GE300 LITE,false,,false,None,"{""instructions"":""""}",
-mooer_ge300,Mooer,GE300,false,,false,None,"{""instructions"":""""}",
-ramble_fx_kismet,Ramble FX,Kismet,false,TRS,false,None,"{""instructions"":""Refer to manual\n\n""}",
-fender_tone_master_pro,Fender,Tone Master Pro,false,TRS,false,None,"{""instructions"":""\n""}",
-wampler_pedals_terraform,Wampler Pedals,Terraform,false,,false,None,"{""instructions"":""""}",
-wampler_pedals_pantheon,Wampler Pedals,pantheon,Yes,TRS,false,None,"{""instructions"":""""}",
-wampler_pedals_metaverse,Wampler Pedals,Metaverse,false,,false,None,"{""instructions"":""""}",
-make_noise_co._0-coast,Make Noise Co.,0-COAST,false,,false,None,"{""instructions"":""""}",
-stone_deaf_syncopy,Stone Deaf,Syncopy,false,,false,None,"{""instructions"":""""}",
-stone_deaf_tremotron,Stone Deaf,Tremotron,false,,false,None,"{""instructions"":""""}",
-positive_grid_bias_head,Positive Grid,Bias Head,false,,false,None,"{""instructions"":""Only receives MIDI messages on MIDI Channel 1.\n\n\n""}",Only receives MIDI messages on MIDI Channel 1.
-positive_grid_bias_distortion_pro,Positive Grid,Bias Distortion Pro,false,,false,None,"{""instructions"":""With BIAS Pedal app, you can choose the MIDI channel from 1-16 or Omni (all channels).\n\n""}",
-positive_grid_bias_rack,Positive Grid,Bias Rack,false,,false,None,"{""instructions"":""""}",
-poly_effects_verbs,Poly Effects,Verbs,false,3.5mm TRS Type A,false,None,"{""instructions"":""To set the MIDI channel, tap the LED diode icon three times quickly.   \n\nThe preset number buttons will light, press one of these to set a MIDI channel from 1-6.\n""}",
-poly_effects_flat_v,Poly Effects,Flat V,false,3.5mm TRS Type A,false,None,"{""instructions"":""To set the MIDI channel, tap the LED diode icon three times quickly.   \n\nThe preset number buttons will light, press one of these to set a MIDI channel from 1-6.\n""}",
-synergy_amps_syn2,Synergy Amps,SYN2,false,DIN5,false,None,"{""instructions"":""\n\n""}",
-rjm_music_overture,RJM Music,Overture,false,DIN5,false,None,"{""instructions"":""The MIDI channel can be set by entering setup mode.\n\nTo enter setup mode, hold the ON/OFF button as you power up the pedal. The mode LEDs will spin for 3 seconds.\nKeep holding until the LEDs stop spinning and all light up in green. Once in setup mode, you can use the MODE\nbutton to select a MIDI channel.\n\nThe current MIDI channel is indicated by the four preset LEDs using the following code:\n| MIDI Channel | LED 1 | LED 2 | LED 3 | LED 4 |\n| 1 (default)  | off   | off   | off   | off   |\n| 2            | ON    | off   | off   | off   |\n| 3            | off   | ON    | off   | off   |\n| 4            | ON    | ON    | off   | off   |\n| 5            | off   | off   | ON    | off   |\n| 6            | ON    | off   | ON    | off   |\n| 7            | off   | ON    | ON    | off   |\n| 8            | ON    | ON    | ON    | off   |\n| 9            | off   | off   | off   | ON    |\n| 10           | ON    | off   | off   | ON    |\n| 11           | off   | ON    | off   | ON    |\n| 12           | ON    | ON    | off   | ON    |\n| 13           | off   | off   | ON    | ON    |\n| 14           | ON    | off   | ON    | ON    |\n| 15           | off   | ON    | ON    | ON    |\n| 16           | ON    | ON    | ON    | ON    |\n\nPress the ON/OFF button to save your changes and exit setup mode.\n""}",
-rjm_music_mini_amp_gizmo,RJM Music,Mini Amp Gizmo,false,,false,None,"{""instructions"":""""}",
-rjm_music_mastermind_pbc/10,RJM Music,Mastermind PBC/10,false,,false,None,"{""instructions"":""""}",
+id,brand,device_name,midi_thru,midi_clock,phantom_power
+1010_music_blackbox,1010_music,blackbox,false,false,None
+3_degrees_audio_hue_stereo_multi_fx,3 Degrees Audio,hue_stereo_multi_fx,false,false,None
+3_degrees_audio_hue_stereo_multi_effect_pedal,3 Degrees Audio,Hue Stereo Multi Effect Pedal,false,false,None
+art_sgx_2000/nitro/t2,art,sgx_2000/nitro/t2,false,false,None
+asm_hydrasynth,asm,hydrasynth,false,false,None
+abildgard_droid-3,abildgard,droid-3,false,false,None
+access_virus_a,Access,virus_a,false,false,None
+access_virus_ti,Access,Virus TI,false,false,None
+adrenalinn_iii,Adrenalinn,III,false,false,None
+aerospace_audio_atmosphere_v2,Aerospace Audio,Atmosphere v2,false,false,None
+alesis_q20,alesis,q20,false,false,None
+alexander_fever_pitch,Alexander,Fever Pitch,false,false,None
+alexander_quadrant,Alexander,Quadrant,false,false,None
+alexander_space_race,Alexander,Space Race,false,false,None
+alexander_superball,Alexander,Superball,None,false,None
+alexander_marshmallow,Alexander,Marshmallow,false,false,None
+alexander_f.13_neo,Alexander,F.13 Neo,false,false,None
+alexander_wavelength,Alexander,Wavelength,false,false,None
+alexander_syntax_error,Alexander,Syntax Error,false,false,None
+alexander_colour_theory_,Alexander,Colour Theory ,false,false,None
+alexander_super_neo-matic,Alexander,Super Neo-Matic,false,false,None
+alexander_defender_neo,Alexander,Defender Neo,false,false,None
+alexander_quadrant_audio_mirror,Alexander,Quadrant Audio Mirror,false,false,None
+alexander_super_radical_delay,Alexander,Super Radical Delay,false,false,None
+alexander_oblivion_vintage_delay,Alexander,Oblivion Vintage Delay,false,false,None
+alexander_radical_delay_dx,Alexander,Radical Delay DX,false,false,None
+alexander_sky_5000,Alexander,SKY 5000,false,false,None
+arturia_matrixbrute,Arturia,MatrixBrute,false,false,None
+arturia_microfreak,Arturia,MicroFreak,false,false,None
+arturia_minifreak,Arturia,MiniFreak,false,false,None
+arturia_polybrute,Arturia,polybrute,false,false,None
+atomic_amplifire_12,Atomic,Amplifire 12,false,false,None
+atomic_amplifire_3,Atomic,Amplifire 3,false,false,None
+atomic_amplifire_6,Atomic,Amplifire 6,false,false,None
+atomic_amplifire,Atomic,Amplifire,true,true,true
+audiothingies_doctor_a,audiothingies,doctor_a,false,false,None
+audiothingies_micromonsta,audiothingies,micromonsta,false,false,None
+avid_eleven_rack,AVID,Eleven Rack,false,false,None
+beetronics_seabee_harmochorus,Beetronics,Seabee Harmochorus,false,false,None
+behringer_deepmind_12,Behringer,Deepmind 12,false,false,None
+behringer_deepmind_12d,Behringer,Deepmind 12D,false,false,None
+behringer_neutron,Behringer,neutron,false,false,None
+behringer_pro-800,Behringer,Pro-800,false,false,None
+behringer_td-3-mo,Behringer,td-3-mo,false,false,None
+behringer_ac112,Behringer,ac112,false,false,None
+behringer_wing,Behringer,wing,false,false,None
+behringer_x-air,Behringer,X-Air,false,false,None
+behringer_x32,Behringer,x32,false,false,None
+behringer_deepmind_6,Behringer,Deepmind 6,false,false,None
+black_corporation_deckard's_dream_mk2,black_corporation,deckard's_dream_mk2,false,false,None
+black_corporation_deckard's_dream,black_corporation,deckard's_dream,false,false,None
+blackstar_amped_1,blackstar,amped_1,false,false,None
+blackstar_amped_2,blackstar,amped_2,false,false,None
+blackstar_amped_3,blackstar,amped_3,false,false,None
+blackstar_silverlinedeluxe,blackstar,silverlinedeluxe,false,false,None
+bluguitar_amp1,BluGuitar,amp1,false,false,None
+bluguitar_amp1_(mercury_&_iridium_edition),BluGuitar,Amp1 (Mercury & Iridium Edition),None,false,None
+bondi_effects_art_van_delay,Bondi Effects,Art Van Delay,false,false,None
+boss_dd-200,Boss,dd-200,false,false,None
+boss_dd-500,Boss,DD-500,false,false,None
+boss_dm-101,Boss,DM-101,false,false,None
+boss_eq-200,Boss,eq-200,false,false,None
+boss_gt-pro,Boss,gt-pro,false,false,None
+boss_ir-200,Boss,ir-200,false,false,None
+boss_katana,Boss,Katana,false,false,None
+boss_md-200,Boss,md-200,false,false,None
+boss_md-500,Boss,MD-500,false,false,None
+boss_od-200,Boss,OD-200,false,false,None
+boss_rc-10r,Boss,RC-10R,false,false,None
+boss_re-202,Boss,RE-202,false,false,None
+boss_rv-500,Boss,RV-500,false,false,None
+boss_sde-3000d/evh,Boss,sde-3000d/evh,false,false,None
+boss_katana_artist,Boss,Katana Artist,false,false,None
+boss_slicer_sl-2,Boss,Slicer SL-2,false,false,None
+boss_gt1000_core,Boss,GT1000 Core,false,true,None
+boss_katana_head,Boss,Katana Head,false,false,None
+chaos_audio_stratus,Chaos Audio,Stratus,false,false,None
+chase_bliss_cxm1978_vintage_studioverb,chase_bliss,cxm1978_vintage_studioverb,false,false,None
+chase_bliss_clean,chase_bliss,clean,false,false,None
+chase_bliss_preampmkii,chase_bliss,preampmkii,false,false,None
+conductive_labs_ndlr,conductive_labs,ndlr,false,false,None
+darkglass_electronics_microtubes_infinity,Darkglass Electronics,Microtubes Infinity,false,false,None
+dave_smith_instruments_evolver,Dave Smith Instruments,Evolver,false,false,None
+dave_smith_instruments_ob-6,Dave Smith Instruments,ob-6,false,false,None
+dave_smith_instruments_prophet_'08,Dave Smith Instruments,prophet_'08,false,false,None
+dave_smith_instruments_prophet12,Dave Smith Instruments,prophet12,false,false,None
+dave_smith_instruments_prophet_rev2,Dave Smith Instruments,prophet_rev2,false,false,None
+dave_smith_instruments_prophet_x_(prophet_xl),Dave Smith Instruments,prophet_x_(prophet_xl),false,false,None
+dawner_prince_boonar_tube_deluxe,dawner_prince,boonar_tube_deluxe,false,false,None
+decibel_eleven_loop_expander,Decibel Eleven,Loop Expander,false,false,None
+diezel_vhx,diezel,vhx,false,false,None
+dimehead_nam,Dimehead,NAM,false,false,None
+disaster_area_dpc-8ez_gen2,Disaster Area,DPC-8EZ Gen2,false,false,None
+disaster_area_dpc_micro,Disaster Area,DPC Micro,true,false,None
+dr_scientist_dusk,Dr Scientist,Dusk,false,false,None
+dr_scientist_the_atmosphere,Dr Scientist,The Atmosphere,false,false,None
+dreadbox_medusa,Dreadbox,Medusa,false,false,None
+dreadbox_nymphes,Dreadbox,nymphes,false,false,None
+dreadbox_typhon,Dreadbox,Typhon,false,false,None
+electro_harmonix_45000,Electro Harmonix,45000,false,false,None
+electro_harmonix_95000,Electro Harmonix,95000,false,false,None
+electro_harmonix_modrex,Electro Harmonix,ModRex,false,false,None
+electro_harmonix_8-step_program,Electro Harmonix,8-Step Program,false,false,None
+electro_harmonix_hog_2,Electro Harmonix,hog_2,false,false,None
+electro_harmonix_holiest_grail,Electro Harmonix,holiest_grail,false,false,None
+electro_harmonix_v256_vocoder,Electro Harmonix,v256_vocoder,false,false,None
+electro_harmonix_hog2,Electro Harmonix,HOG2,false,false,None
+electronic_audio_experiments_sending_v2,Electronic Audio Experiments,Sending v2,false,false,None
+electronic_audio_experiments_sending_v2_(firmware_2.0),Electronic Audio Experiments,Sending v2 (Firmware 2.0),false,false,None
+elektron_analog_four_mkii,Elektron,Analog Four MKII,false,false,None
+elektron_analog_four,Elektron,analog_four,false,false,None
+elektron_analog_heat_+fx,Elektron,analog_heat_+fx,false,false,None
+elektron_analog_heat,Elektron,analog_heat,false,false,None
+elektron_analog_rytm_mkii,Elektron,Analog Rytm MKII,false,false,None
+elektron_digitakt_ii,Elektron,digitakt_ii,false,false,None
+elektron_digitakt,Elektron,Digitakt,false,false,None
+elektron_digitone_ii,Elektron,digitone_ii,false,false,None
+elektron_digitone,Elektron,Digitone,false,false,None
+elektron_machinedrum,Elektron,machinedrum,false,false,None
+elektron_model_cycles,Elektron,model_cycles,false,false,None
+elektron_monomachine,Elektron,monomachine,false,false,None
+elektron_octatrack,Elektron,octatrack,false,false,None
+elektron_syntakt,Elektron,syntakt,false,false,None
+elektron_model:samples,Elektron,Model:Samples,false,false,None
+elektron_model:cycles,Elektron,Model:Cycles,false,false,None
+elektron_analog_drive,Elektron,Analog Drive,false,false,None
+elektron_analog_heat_mkii,Elektron,Analog Heat MKII,false,false,None
+elektron_digitone_keys,Elektron,Digitone Keys,false,false,None
+elektron_octatrack_mkii,Elektron,Octatrack MKII,false,false,None
+empress_echo_system,Empress,Echo System,false,true,None
+empress_reverb,Empress,Reverb,false,true,None
+empress_zoia,Empress,ZOIA,false,false,None
+empress_phaser,Empress,Phaser,false,true,None
+empress_tremolo2,Empress,Tremolo2,false,false,None
+engl_e658,ENGL,e658,false,false,None
+engl_savage_60_mark_ii_e630ii,ENGL,Savage 60 Mark II E630II,false,false,None
+engl_savage_120_mark_ii_e610ii,ENGL,Savage 120 Mark II E610II,false,false,None
+engl_invader_ii_e642ii,ENGL,Invader II E642II,false,false,None
+engl_steve_morse_signature_e662,ENGL,Steve Morse Signature E662,false,false,None
+engl_steve_morse_signature_e663,ENGL,Steve Morse Signature E663,false,false,None
+engl_steve_morse_signature_e661,ENGL,Steve Morse Signature E661,false,false,None
+engl_steve_morse_signature_e660,ENGL,Steve Morse Signature E660,false,false,None
+engl_steve_morse_signature_e656,ENGL,Steve Morse Signature E656,false,false,None
+engl_steve_morse_signature_e657,ENGL,Steve Morse Signature E657,false,false,None
+engl_steve_morse_signature_e665,ENGL,Steve Morse Signature E665,false,false,None
+engl_steve_morse_signature_e664,ENGL,Steve Morse Signature E664,false,false,None
+engl_steve_morse_signature_e667,ENGL,Steve Morse Signature E667,false,false,None
+engl_steve_morse_signature_e666,ENGL,Steve Morse Signature E666,false,false,None
+engl_steve_morse_signature_e669,ENGL,Steve Morse Signature E669,false,false,None
+engl_steve_morse_signature_e668,ENGL,Steve Morse Signature E668,false,false,None
+engl_steve_morse_signature_e658,ENGL,Steve Morse Signature E658,false,false,None
+engl_steve_morse_signature_e659,ENGL,Steve Morse Signature E659,false,false,None
+engl_steve_morse_signature_e670,ENGL,Steve Morse Signature E670,false,false,None
+engl_steve_morse_signature_e671,ENGL,Steve Morse Signature E671,false,false,None
+ensoniq_asr-x_pro,ensoniq,asr-x_pro,false,false,None
+erica_synths_lxr-02,erica_synths,lxr-02,false,false,None
+eventide_h9,Eventide,H9,true,true,None
+eventide_knifedrop,Eventide,Knifedrop,false,false,None
+eventide_rose,Eventide,Rose,false,false,None
+eventide_blackhole,Eventide,Blackhole,false,false,None
+eventide_tricerachorus,Eventide,Tricerachorus,false,false,None
+eventide_ultratap,Eventide,Ultratap,false,false,None
+expert_sleepers_fh-2,expert_sleepers,fh-2,false,false,None
+flame_curves,flame,curves,false,false,None
+flame_mäander,flame,mäander,false,false,None
+fractal_audio_ax-8,fractal_audio,ax-8,false,false,None
+fractal_audio_axe-fxii,fractal_audio,axe-fxii,false,false,None
+fractal_audio_axe-fx_iii,fractal_audio,axe-fx_iii,false,false,None
+fractal_audio_standard,fractal_audio,standard,false,false,None
+fractal_audio_ultra,fractal_audio,ultra,false,false,None
+fred's_lab_buzzzy!,fred's_lab,buzzzy!,false,false,None
+gem_rp-x,gem,rp-x,false,false,None
+gfi_system_duophony,GFI System,Duophony,false,false,None
+gfi_system_enieqma,GFI System,Enieqma,false,false,None
+gfi_system_specular_tempus,GFI System,Specular Tempus,false,true,None
+gfi_system_synesthesia,GFI System,Synesthesia,true,true,None
+gfi_system_solis_ventus,GFI System,Solis Ventus,true,true,None
+gsmusic_e7,gsmusic,e7,false,false,None
+generic_midi_device,generic,midi_device,false,false,None
+gotharman_spazedrum_black,gotharman,spazedrum_black,false,false,None
+hologram_microcosm,hologram,microcosm,false,false,None
+ik_multimedia_tonex,IK Multimedia,ToneX,false,false,None
+ik_multimedia_uno_synth_pro_x,IK Multimedia,uno_synth_pro_x,false,false,None
+ik_multimedia_uno_drum,IK Multimedia,uno_drum,false,false,None
+ik_multimedia_uno_synth,IK Multimedia,UNO Synth,false,false,None
+ik_multimedia_x-series,IK Multimedia,x-series,false,false,None
+idoru_p-1,Idoru,p-1,false,false,None
+idoru_p1,Idoru,P1,false,false,None
+intellijel_umidi,intellijel,umidi,false,false,None
+jomox_airbase_99,jomox,airbase_99,false,false,None
+korg_arp_2600_m,Korg,arp_2600_m,false,false,None
+korg_electribe_er-1,Korg,electribe_er-1,false,false,None
+korg_grandstage,Korg,grandstage,false,false,None
+korg_ms2000,Korg,MS2000,false,false,None
+korg_nts-1,Korg,nts-1,false,false,None
+korg_opsix,Korg,opsix,false,false,None
+korg_wavestate,Korg,wavestate,false,false,None
+korg_micro_korg,Korg,micro_korg,false,false,None
+korg_minilogue_xd,Korg,minilogue xd,false,false,None
+korg_minilogue,Korg,minilogue,false,false,None
+korg_monologue,Korg,monologue,false,false,None
+korg_volca_bass,Korg,volca bass,false,false,None
+korg_volca_beats,Korg,volca beats,false,false,None
+korg_volca_drum,Korg,volca drum,false,false,None
+korg_volca_fm,Korg,volca fm,false,false,None
+korg_volca_keys,Korg,volca keys,false,false,None
+korg_volca_kick,Korg,volca kick,false,false,None
+korg_volca_nubass,Korg,volca nubass,false,false,None
+korg_volca_sample,Korg,volca sample,false,false,None
+korg_pa4x,Korg,pa4x,false,false,None
+korg_microkorg_xl+,Korg,microKORG XL+,false,false,None
+korg_microkorg,Korg,microKORG,false,false,None
+korg_kaoss_pad_3,Korg,Kaoss Pad 3,false,false,None
+korg_kaoss_pad_2,Korg,Kaoss Pad 2,false,false,None
+kemper_profiler,Kemper,Profiler,true,true,None
+kemper_profiler_player,Kemper,Profiler Player,false,true,None
+kodamo_essencefm,kodamo,essencefm,false,false,None
+kurzweil_k2661,kurzweil,k2661,false,false,None
+lpzw_tram8,lpzw,tram8,false,false,None
+lexicon_mx200,lexicon,mx200,false,false,None
+line_6_hx_one,Line 6,HX One,false,false,None
+line_6_hx_stomp,Line 6,HX Stomp,true,true,None
+line_6_helix,Line 6,Helix,false,false,None
+line_6_m5,Line 6,m5,false,false,None
+line_6_m5_stompbox_modeler,Line 6,M5 Stompbox Modeler,false,false,None
+line_6_m13_v2.0_sompbox_modeler,Line 6,M13 v2.0 Sompbox Modeler,false,false,None
+line_6_dt25_112,Line 6,DT25 112,false,false,None
+line_6_helix_lt,Line 6,Helix LT,false,false,None
+line_6_pod_hd500x,Line 6,POD HD500X,false,false,None
+line_6_dt25_head,Line 6,DT25 Head,false,false,None
+line_6_pod_go,Line 6,POD GO,false,false,None
+line_6_pod_hd_pro_x,Line 6,POD HD PRO X,false,false,None
+line_6_helix_rack_and_control,Line 6,Helix Rack and Control,false,false,None
+line_6_powercab_112_plus,Line 6,Powercab 112 Plus,false,false,None
+line_6_powercab_plus,Line 6,Powercab Plus,false,false,None
+line_6_helix_floor,Line 6,Helix Floor,true,true,None
+line_6_hx_stomp_xl,Line 6,HX Stomp XL,true,true,None
+line_6_hx_effects,Line 6,HX Effects,false,false,None
+line_6_dl4_mkii,Line 6,DL4 MKII,true,true,None
+line_6_powercab_212_plus,Line 6,Powercab 212 Plus,false,false,None
+line_6_m9_v2.0_stompbox_modeler,Line 6,M9 v2.0 Stompbox Modeler,false,false,None
+line_6_pocket_pod,Line 6,Pocket POD,false,false,None
+mfb_synth_ii,MFB,synth_ii,false,false,None
+mfb_tanzbar_1,MFB,tanzbar_1,false,false,None
+mfb_tanzbar_lite,MFB,Tanzbar Lite,false,false,None
+mfb_tanzmaus,MFB,tanzmaus,false,false,None
+mlc_ls10/6,mlc,ls10/6,false,false,None
+mlc_ls12/2,mlc,ls12/2,false,false,None
+make_noise_0-coast,make_noise,0-coast,false,false,None
+meeblip_geode,Meeblip,Geode,false,false,None
+meeblip_triode,Meeblip,Triode,false,false,None
+melbourne_instruments_nina,Melbourne Instruments,Nina,false,false,None
+meris_lvx,Meris,LVX,false,false,None
+meris_mercury_x,Meris,Mercury X,false,false,None
+meris_ottobit_jr,Meris,Ottobit JR,false,false,None
+meris_polymoon,Meris,Polymoon,false,false,None
+meris_enzo,Meris,Enzo,false,false,None
+meris_hedra,Meris,Hedra,false,false,None
+meris_mercury_7,Meris,Mercury 7,false,false,None
+mesa_boogie_jp2c,mesa_boogie,jp2c,false,false,None
+modal_electronics_1,Modal Electronics,1,false,false,None
+modal_electronics_2,Modal Electronics,2,false,false,None
+modal_electronics_8,Modal Electronics,8,false,false,None
+modal_electronics_argon_8m,Modal Electronics,ARGON 8M,false,false,None
+modal_electronics_cobalt5s,Modal Electronics,cobalt5s,false,false,None
+modal_electronics_craftsynth_2.0,Modal Electronics,CRAFTsynth 2.0,false,false,None
+modal_electronics_craft,Modal Electronics,craft,false,false,None
+modal_electronics_skulpt,Modal Electronics,skulpt,false,false,None
+modal_electronics_002r,Modal Electronics,002R,false,false,None
+modal_electronics_argon_8x,Modal Electronics,ARGON 8X,false,false,None
+modal_electronics_skulptsynthesiser,Modal Electronics,SKULPTsynthesiser,false,false,None
+modal_electronics_argon_8,Modal Electronics,ARGON 8,false,false,None
+modal_electronics_008r,Modal Electronics,008R,false,false,None
+modor_nf-1,Modor,NF-1,false,false,None
+moog_grandmother,Moog,Grandmother,false,false,None
+moog_matriarch,Moog,Matriarch,true,true,None
+moog_minitaur,Moog,Minitaur,false,false,None
+moog_mother-32,Moog,Mother-32,false,false,None
+moog_muse,Moog,muse,false,false,None
+moog_sirin,Moog,sirin,false,false,None
+moog_sub_phatty,Moog,Sub Phatty,false,false,None
+moog_subsequent_25,Moog,Subsequent 25,false,false,None
+moog_subsequent_37,Moog,Subsequent 37,false,false,None
+moog_mf-108m_cluster_flux,Moog,MF-108M Cluster Flux,false,false,None
+moog_mf-105m_midi_murf,Moog,MF-105M MIDI MuRF,false,false,None
+moog_minimoog_voyager,Moog,Minimoog Voyager,false,false,None
+moog_subharmonicon,Moog,Subharmonicon,false,false,None
+moog_mf-104m,Moog,MF-104M,false,false,None
+moog_minimoog_voyager_xl,Moog,Minimoog Voyager XL,false,false,None
+mutable_instruments_shruthi,Mutable Instruments,Shruthi,false,false,None
+nux_tape_echo_ndd-7,nux,tape_echo_ndd-7,false,false,None
+neural_dsp_quad_cortex,Neural DSP,Quad Cortex,false,true,None
+norand_mono,norand,mono,false,false,None
+nord_a1,Nord,a1,false,false,None
+nord_c2d,Nord,C2D,false,false,None
+nord_drum_2,Nord,Drum 2,false,false,None
+nord_drum_3p,Nord,drum_3p,false,false,None
+nord_electro_3,Nord,Electro 3,false,false,None
+nord_electro_5,Nord,electro_5,false,false,None
+nord_lead_(rack)_2x,Nord,lead_(rack)_2x,false,false,None
+nord_lead_(rack),Nord,lead_(rack),false,false,None
+nord_stage_2,Nord,Stage 2,false,false,None
+nord_stage_3,Nord,Stage 3,false,false,None
+nord_wave_2,Nord,Wave 2,false,false,None
+nord_lead_4r,Nord,Lead 4R,false,false,None
+nord_electro_6,Nord,Electro 6,false,false,None
+nord_electro_3_hp,Nord,Electro 3 HP,false,false,None
+nord_electro_2,Nord,Electro 2,false,false,None
+nord_electro_5hp_73,Nord,Electro 5HP 73,false,false,None
+nord_rack_3,Nord,Rack 3,false,false,None
+nord_piano_2_ha88,Nord,Piano 2 HA88,false,false,None
+nord_lead,Nord,Lead,false,false,None
+nord_grand,Nord,Grand,false,false,None
+nord_lead_a1r,Nord,Lead A1R,false,false,None
+nord_electro_5d_73,Nord,Electro 5D 73,false,false,None
+nord_electro_4_hp,Nord,Electro 4 HP,false,false,None
+nord_stage_2_ex,Nord,Stage 2 EX,false,false,None
+nord_piano_3,Nord,Piano 3,false,false,None
+nord_piano_4,Nord,Piano 4,false,false,None
+nord_lead_3,Nord,Lead 3,false,false,None
+nord_lead_2,Nord,Lead 2,false,false,None
+nord_lead_4,Nord,Lead 4,false,false,None
+nord_c2,Nord,C2,false,false,None
+nord_c1,Nord,C1,false,false,None
+nord_wave,Nord,Wave,false,false,None
+nord_piano,Nord,Piano,false,false,None
+nord_stage,Nord,Stage,false,false,None
+nord_lead_a1,Nord,Lead A1,false,false,None
+nord_electro_4_sw,Nord,Electro 4 SW,false,false,None
+nord_electro_4d,Nord,Electro 4D,false,false,None
+nord_lead_2x,Nord,Lead 2X,false,false,None
+nord_electro_5d_61_,Nord,Electro 5D 61 ,false,false,None
+nord_piano_2_hp,Nord,Piano 2 HP,false,false,None
+nord_stage_ex,Nord,Stage EX,false,false,None
+novation_bass_station_ii,Novation,Bass Station II,false,false,None
+novation_bass_station_rack,Novation,bass_station_rack,false,false,None
+novation_circuit,Novation,Circuit,false,false,None
+novation_nova,Novation,nova,false,false,None
+novation_summit_and_peak,Novation,summit_and_peak,false,false,None
+novation_bass_station_keyboard,Novation,Bass Station Keyboard,false,false,None
+novation_ultranova,Novation,UltraNova,false,false,None
+novation_circuit_mono_station,Novation,Circuit Mono Station,false,false,None
+novation_summit,Novation,Summit,false,false,None
+novation_circuit_rhythm,Novation,Circuit Rhythm,true,true,None
+novation_peak,Novation,Peak,false,false,None
+novation_mininova,Novation,MiniNova,false,false,None
+oto_machines_fx_bam,oto_machines_fx,bam,false,false,None
+oto_machines_fx_bim,oto_machines_fx,bim,false,false,None
+oto_machines_fx_boum,oto_machines_fx,boum,false,false,None
+oberheim_ob-6,oberheim,ob-6,false,false,None
+oberheim_ob-x8,oberheim,ob-x8,false,false,None
+oscillator_devices_minerva,Oscillator Devices,Minerva,Yes,No,No
+oscillator_devices_siren,Oscillator Devices,Siren,Yes,No,No
+oscillator_devices_goblin-exp_in_ehx_pitch_fork,Oscillator Devices,Goblin-EXP in EHX Pitch Fork,Yes,No,No
+pioneer_dj_toraiz_as-1,pioneer_dj,toraiz_as-1,false,false,None
+poly_josh_smith_flat_v,poly,josh_smith_flat_v,false,false,None
+poly_verbs,poly,verbs,false,false,None
+polyend_tracker,polyend,tracker,false,false,None
+quilter_illumine_reverb,quilter,illumine_reverb,false,false,None
+revv_d20,revv,d20,false,false,None
+revv_g20,revv,g20,false,false,None
+revv_generator,revv,generator,false,false,None
+rjm_miniampgizmo,rjm,miniampgizmo,false,false,None
+red_panda_particle,Red Panda,particle,false,false,None
+red_panda_raster,Red Panda,raster,false,false,None
+red_panda_raster_2,Red Panda,Raster 2,false,false,None
+red_panda_context_2,Red Panda,Context 2,false,false,None
+red_panda_tensor,Red Panda,Tensor,false,false,None
+red_panda_bitmap_2,Red Panda,Bitmap 2,false,false,None
+red_panda_particle_2,Red Panda,Particle 2,false,false,None
+roland_d-05,Roland,D-05,false,false,None
+roland_gaia_sh-01,Roland,GAIA SH-01,false,false,None
+roland_jd-xa,Roland,JD-XA,false,false,None
+roland_jd-xi,Roland,JD-Xi,false,false,None
+roland_jp-08,Roland,JP-08,false,false,None
+roland_ju-06,Roland,JU-06,false,false,None
+roland_ju-06a,Roland,ju-06a,false,false,None
+roland_jv-1010,Roland,jv-1010,false,false,None
+roland_jx-03,Roland,JX-03,false,false,None
+roland_jx-08,Roland,jx-08,false,false,None
+roland_jupiter-x_(jupiter-xm),Roland,jupiter-x_(jupiter-xm),false,false,None
+roland_mc-101,Roland,mc-101,false,false,None
+roland_mc-2oh2,Roland,mc-2oh2,false,false,None
+roland_mx-1,Roland,mx-1,false,false,None
+roland_s-1,Roland,s-1,false,false,None
+roland_se-02,Roland,SE-02,false,false,None
+roland_sh-01a,Roland,SH-01A,false,false,None
+roland_sh-4d,Roland,sh-4d,false,false,None
+roland_system-1_(system-1m),Roland,system-1_(system-1m),false,false,None
+roland_system-8,Roland,SYSTEM-8,false,false,None
+roland_tb-03,Roland,TB-03,false,false,None
+roland_tb-3,Roland,tb-3,false,false,None
+roland_tr-06,Roland,tr-06,false,false,None
+roland_tr-08,Roland,TR-08,false,false,None
+roland_tr-09,Roland,TR-09,false,false,None
+roland_tr-6s,Roland,tr-6s,false,false,None
+roland_tr-8,Roland,TR-8,false,false,None
+roland_tr-8s,Roland,tr-8s,false,false,None
+roland_vp-03,Roland,VP-03,false,false,None
+roland_xv-5050,Roland,xv-5050,false,false,None
+roland_fr-18d,Roland,FR-18D,false,false,None
+roland_bk-7m,Roland,BK-7m,false,false,None
+roland_fr-06/07/08,Roland,FR-06/07/08,false,false,None
+roland_system-1,Roland,SYSTEM-1,false,false,None
+sequential_pro_3,Sequential,Pro 3,false,false,None
+sequential_prophet_6,Sequential,Prophet 6,false,false,None
+sequential_take_5,Sequential,take_5,false,false,None
+sequential_prophet_12,Sequential,Prophet 12,false,false,None
+sequential_ob-6,Sequential,OB-6,false,false,None
+sequential_prophet_x,Sequential,Prophet X,false,false,None
+sequential_rev_2,Sequential,Rev 2,false,false,None
+sherman_filterbank,sherman,filterbank,false,false,None
+sonicware_liven_lofi-12,sonicware,liven_lofi-12,false,false,None
+sonicware_liven_xfm,sonicware,liven_xfm,false,false,None
+sonicware_smpltrek,sonicware,smpltrek,false,false,None
+source_audio_nemesis,Source Audio,Nemesis,true,true,None
+source_audio_ventris,Source Audio,Ventris,true,true,None
+source_audio_ultrawave,Source Audio,Ultrawave,false,false,None
+source_audio_collider,Source Audio,Collider,true,true,None
+source_audio_spectrum_intelligence_filter,Source Audio,Spectrum Intelligence Filter,false,false,None
+source_audio_eq2,Source Audio,EQ2,true,true,None
+source_audio_programmable_eq,Source Audio,Programmable EQ,false,false,None
+source_audio_atlas,Source Audio,Atlas,true,true,None
+source_audio_c4_synth,Source Audio,C4 Synth,false,true,None
+strymon_nightsky,Strymon,NightSky,true,true,None
+strymon_volante,Strymon,Volante,false,false,None
+strymon_ultraviolet,Strymon,Ultraviolet,false,false,None
+strymon_deco,Strymon,Deco,false,false,None
+strymon_bluesky,Strymon,blueSky,false,false,None
+strymon_dig,Strymon,DIG,false,false,None
+strymon_zelzah,Strymon,Zelzah,false,false,None
+strymon_cloudburst,Strymon,Cloudburst,false,false,None
+strymon_el_capistan,Strymon,El Capistan,false,false,None
+strymon_iridium,Strymon,Iridium,false,false,None
+strymon_flint,Strymon,Flint,false,false,None
+strymon_mobius,Strymon,Mobius,true,true,None
+strymon_timeline,Strymon,Timeline,true,true,None
+strymon_lex,Strymon,Lex,false,false,None
+strymon_sunset,Strymon,Sunset,false,false,None
+strymon_riverside,Strymon,Riverside,false,false,None
+strymon_bigsky,Strymon,Bigsky,true,true,None
+strymon_brig,Strymon,Brig,false,false,None
+strymon_compadre,Strymon,Compadre,false,false,None
+strymon_bigsky_mx,Strymon,Bigsky MX,true,true,None
+studio_electronics_atc-1,studio_electronics,atc-1,false,false,None
+studio_electronics_se-1x,studio_electronics,se-1x,false,false,None
+studiologic_sledge,Studiologic,Sledge,false,false,None
+tc_electronic_d-two,TC Electronic,d-two,false,false,None
+tc_electronic_plethora_x5,TC Electronic,Plethora X5,true,true,None
+tc_electronic_plethora_x3,TC Electronic,Plethora X3,true,true,None
+tc_electronic_hall_of_fame_2_x4_reverb,TC Electronic,Hall of Fame 2 X4 Reverb,false,false,None
+tc_electronic_nova_drive,TC Electronic,Nova Drive,false,false,None
+tc_electronic_flashback_2_x4_delay,TC Electronic,Flashback 2 X4 Delay,false,false,None
+tc_electronic_ditto_x4,TC Electronic,Ditto X4,true,true,None
+tasty_chips_gr-1,tasty_chips,gr-1,false,false,None
+teenage_engineering_op-1,Teenage Engineering,op-1,false,false,None
+teenage_engineering_op-z,Teenage Engineering,OP-Z,false,false,None
+twisted_electrons_megafm,twisted_electrons,megafm,false,false,None
+twisted_electrons_therapsid,twisted_electrons,therapsid,false,false,None
+udo_audio_super_6,udo_audio,super_6,false,false,None
+voodoolab_control_switcher,voodoolab,control_switcher,false,false,None
+voodoolab_gcx,voodoolab,gcx,false,false,None
+voodoolab_hex,voodoolab,hex,false,false,None
+vongon_polyphrase,Vongon,Polyphrase,false,false,None
+wmd_geiger_counter_pro,WMD,Geiger Counter Pro,false,false,None
+waldorf_blofeld,Waldorf,Blofeld,false,false,None
+waldorf_iridium,Waldorf,iridium,false,false,None
+waldorf_m,Waldorf,m,false,false,None
+waldorf_pulse_2,Waldorf,pulse_2,false,false,None
+waldorf_rocket,Waldorf,rocket,false,false,None
+waldorf_streichfett,Waldorf,streichfett,false,false,None
+walrus_audio_acs1,Walrus Audio,ACS1,false,false,None
+walrus_audio_d1_(new_version),Walrus Audio,D1 (New version),false,false,None
+walrus_audio_m1,Walrus Audio,M1,false,false,None
+walrus_audio_meraki_(stereo_analog_delay),Walrus Audio,Meraki (Stereo Analog Delay),false,false,None
+walrus_audio_r1,Walrus Audio,R1,false,false,None
+walrus_audio_d1_(old_version),Walrus Audio,D1 (Old version),true,true,None
+wampler_catacombs,wampler,catacombs,false,false,None
+wampler_metaverse,wampler,metaverse,false,false,None
+wampler_pantheon,wampler,pantheon,false,false,None
+wampler_terraform,wampler,terraform,false,false,None
+yamaha_nsx-1,Yamaha,nsx-1,false,false,None
+yamaha_reface_cp,Yamaha,reface CP,false,false,None
+yamaha_reface_cs,Yamaha,reface CS,false,false,None
+yamaha_reface_dx,Yamaha,reface DX,false,false,None
+yamaha_reface_yc,Yamaha,reface YC,false,false,None
+em_custom_ami_universal_dual_trs,EM Custom,AMI Universal Dual TRS,false,false,None
+swindler_effects_red_mountain_tremolo_v2,Swindler Effects,Red Mountain Tremolo V2,false,false,None
+swindler_effects_the_gulf_chorus_v2,Swindler Effects,The Gulf Chorus V2,false,false,None
+pigtronix_infinity,Pigtronix,Infinity,false,false,None
+pigtronix_echolution_2_deluxe,Pigtronix,Echolution 2 Deluxe,false,true,None
+chase_bliss_audio_habit,Chase Bliss Audio,Habit,false,false,None
+chase_bliss_audio_lossy,Chase Bliss Audio,Lossy,None,false,None
+chase_bliss_audio_warped_vinyl_hifi,Chase Bliss Audio,Warped Vinyl HiFi,false,true,None
+chase_bliss_audio_thermae,Chase Bliss Audio,Thermae,false,true,None
+chase_bliss_audio_wombtone_mkii,Chase Bliss Audio,Wombtone MKII,false,true,None
+chase_bliss_audio_mood_mkii,Chase Bliss Audio,Mood MkII,false,true,None
+chase_bliss_audio_cxm_1978,Chase Bliss Audio,CXM 1978,true,false,None
+chase_bliss_audio_mood,Chase Bliss Audio,Mood,None,false,None
+chase_bliss_audio_condor,Chase Bliss Audio,Condor,None,false,None
+chase_bliss_audio_onward,Chase Bliss Audio,Onward,false,true,None
+chase_bliss_audio_bliss_factory,Chase Bliss Audio,Bliss Factory,None,false,None
+chase_bliss_audio_generation_loss_mkii,Chase Bliss Audio,Generation Loss MKII,false,false,None
+chase_bliss_audio_dark_world,Chase Bliss Audio,Dark World,false,false,None
+chase_bliss_audio_reverse_mode_c,Chase Bliss Audio,Reverse Mode C,false,true,None
+chase_bliss_audio_tonal_recall,Chase Bliss Audio,Tonal Recall,false,true,None
+chase_bliss_audio_brothers,Chase Bliss Audio,Brothers,None,false,None
+chase_bliss_audio_blooper,Chase Bliss Audio,Blooper,None,false,None
+chase_bliss_audio_billy_strings_wombtone,Chase Bliss Audio,Billy Strings Wombtone,false,false,None
+chase_bliss_audio_preamp_mkii,Chase Bliss Audio,Preamp MkII,true,false,None
+chase_bliss_audio_generation_loss_mki,Chase Bliss Audio,Generation Loss MKI,false,false,None
+chase_bliss_audio_ayahuasca,Chase Bliss Audio,Ayahuasca,false,false,None
+chase_bliss_audio_gravitas,Chase Bliss Audio,Gravitas,false,true,None
+chase_bliss_audio_spectre,Chase Bliss Audio,Spectre,false,true,None
+chase_bliss_audio_clean,Chase Bliss Audio,Clean,unknown,unknown,unknown
+fractal_audio_systems_axe-fx_ii_xl+,Fractal Audio Systems,Axe-Fx II XL+,false,false,None
+fractal_audio_systems_ax8,Fractal Audio Systems,AX8,false,false,None
+fractal_audio_systems_axe-fx_ii_xl,Fractal Audio Systems,Axe-Fx II XL,false,false,None
+fractal_audio_systems_axe-fx_ii,Fractal Audio Systems,Axe-Fx II,false,false,None
+fractal_audio_systems_fx8,Fractal Audio Systems,FX8,false,false,None
+hughes_&_kettner_grandmeister_deluxe_40,Hughes & Kettner,GrandMeister Deluxe 40,false,false,None
+hughes_&_kettner_triamp_mk3,Hughes & Kettner,TriAmp Mk3,false,false,None
+digitech_whammy_dt,DigiTech,Whammy DT,false,false,None
+digitech_bass_whammy,DigiTech,Bass Whammy,false,false,None
+digitech_whammy,DigiTech,Whammy,false,false,None
+evh_5150iii_100s_head,EVH,5150III 100S HEAD,false,false,None
+evh_5150iii_50w_head,EVH,5150III 50W HEAD,false,false,None
+evh_5150iii_50w_el34_2x12_combo,EVH,5150III 50W EL34 2X12 COMBO,false,false,None
+evh_5150iii_50w_el34_head,EVH,5150III 50W EL34 HEAD,false,false,None
+evh_5150iii_50w_6l6_1x12_combo,EVH,5150III 50W 6L6 1X12 COMBO,false,false,None
+evh_5150iii_50s_6l6_head,EVH,5150III 50S 6L6 HEAD,false,false,None
+evh_5150iii_50w_el34_1x12_combo,EVH,5150III 50W EL34 1X12 COMBO,false,false,None
+evh_5150iii_50w_6l6_2x12_combo,EVH,5150III 50W 6L6 2X12 COMBO,false,false,None
+evh_5150iii_50w_6l6_head,EVH,5150III 50W 6L6 HEAD,false,false,None
+evh_5150iii_100w_head,EVH,5150III 100W HEAD,false,false,None
+evh_5150iiis_100w_el34_head,EVH,5150IIIS 100W EL34 HEAD,false,false,None
+free_the_tone_ta-1h_tri_avatar,Free The Tone,TA-1H Tri Avatar,false,false,None
+free_the_tone_flight_time_ft-2y,Free The Tone,Flight Time FT-2Y,false,false,None
+free_the_tone_pa-1qg,Free The Tone,PA-1QG,false,false,None
+free_the_tone_pa-1qb,Free The Tone,PA-1QB,false,false,None
+free_the_tone_pa-1qa,Free The Tone,PA-1QA,false,false,None
+free_the_tone_ff-1y,Free The Tone,FF-1Y,true,false,None
+free_the_tone_as-1r_ambi_space,Free The Tone,AS-1R Ambi Space,false,false,None
+ksr_amplification_artemis_100,KSR Amplification,Artemis 100,false,false,None
+ksr_amplification_colossus_h-100,KSR Amplification,Colossus H-100,false,false,None
+ksr_amplification_gemini_100,KSR Amplification,Gemini 100,false,false,None
+seymour_duncan_andromeda,Seymour Duncan,Andromeda,false,false,None
+old_blood_noise_endeavors_dark_star_stereo_soundscape_reverb,Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,false,false,None
+sheeran_looper+,Sheeran,Looper+,false,false,None
+sheeran_looperx,Sheeran,looperx,false,false,None
+two_notes_audio_engineering_torpedo_c.a.b._(v4_firmware),Two Notes Audio Engineering,Torpedo C.A.B. (v4 firmware),false,false,None
+two_notes_audio_engineering_torpedo_live_v4_firmware,Two Notes Audio Engineering,Torpedo Live v4 firmware,false,false,None
+two_notes_audio_engineering_opus,Two Notes Audio Engineering,Opus,false,false,None
+two_notes_audio_engineering_torpedo_studio,Two Notes Audio Engineering,Torpedo Studio,false,false,None
+two_notes_audio_engineering_torpedo_captor_x,Two Notes Audio Engineering,Torpedo Captor X,false,false,None
+two_notes_audio_engineering_torpedo_live_v3_firmware,Two Notes Audio Engineering,Torpedo Live v3 firmware,false,false,None
+singular_sound_beatbuddy,Singular Sound,BeatBuddy,true,true,None
+singular_sound_aeros_looper,Singular Sound,Aeros Looper,true,true,true
+suhr_hedgehog,Suhr,Hedgehog,false,false,None
+suhr_pt-100,Suhr,PT-100,false,false,None
+suhr_discovery,Suhr,Discovery,true,false,None
+freds_labs_buzzy!,Freds Labs,Buzzy!,false,false,None
+oto_machines_boum,OTO Machines,BOUM,false,false,None
+oto_machines_bim,OTO Machines,BIM,false,false,None
+oto_machines_bam,OTO Machines,BAM,false,false,None
+oto_machines_biscuit,OTO Machines,Biscuit,false,false,None
+that_worship_sound_worship_essentials_2,That Worship Sound,Worship Essentials 2,false,false,None
+that_worship_sound_worship_guitar_essentials_2,That Worship Sound,Worship Guitar Essentials 2,false,false,None
+flower_pedals_dahlia_dual_analog_delay,Flower Pedals,Dahlia Dual Analog Delay,false,false,None
+flower_pedals_sunflower,Flower Pedals,Sunflower,false,false,None
+sound_sculpture_switchblade_8f,Sound Sculpture,Switchblade 8F,true,false,None
+hologram_electronics_chroma_console,Hologram Electronics,Chroma Console,true,true,None
+hologram_electronics_dream_sequence,Hologram Electronics,Dream Sequence,false,false,None
+hologram_electronics_microcosm,Hologram Electronics,Microcosm,true,true,None
+gamechanger_audio_bigsby,Gamechanger Audio,Bigsby,false,false,None
+opfxs_v-uno,OPFXS,v-uno,false,false,None
+tastychips_gr1,TastyChips,GR1,false,false,None
+marshall_dsl40cr,Marshall,DSL40CR,false,false,None
+jackson_audio_el_guapo,Jackson Audio,El Guapo,false,false,None
+jackson_audio_the_optimist,Jackson Audio,The Optimist,false,false,None
+jackson_audio_golden_boy,Jackson Audio,Golden Boy,false,false,None
+jackson_audio_broken_arrow,Jackson Audio,Broken Arrow,false,false,None
+jackson_audio_new_wave,Jackson Audio,New Wave,false,false,None
+jackson_audio_bloom,Jackson Audio,Bloom,false,false,None
+jackson_audio_asabi,Jackson Audio,Asabi,false,false,None
+the_montreal_assembly_856forzellersasn,the montreal assembly,856forzellersasn,false,true,None
+kernom_moho,Kernom,Moho,false,false,None
+kernom_ridge,Kernom,Ridge,false,false,None
+morningstar_engineering_mc6_mkii,Morningstar Engineering,MC6 MKII,true,false,true
+morningstar_engineering_ml5r,Morningstar Engineering,ML5R,true,false,None
+morningstar_engineering_mc8,Morningstar Engineering,MC8,true,false,true
+morningstar_engineering_mc6_pro,Morningstar Engineering,MC6 PRO,true,true,true
+morningstar_engineering_ml5,Morningstar Engineering,ML5,true,false,None
+morningstar_engineering_mc3,Morningstar Engineering,MC3,false,false,None
+morningstar_engineering_ml10x,Morningstar Engineering,ML10X,true,false,None
+g-lab_midi_4_x_loop-er,G-LAB,MIDI 4 X LOOP-er,false,false,None
+g-lab_midi_2_x_loop-er,G-LAB,MIDI 2 X LOOP-er,false,false,None
+g-lab_bc-1,G-LAB,BC-1,true,false,None
+headrush_mx5,Headrush,MX5,false,false,None
+headrush_gigboard,Headrush,Gigboard,false,false,None
+headrush_looperboard,Headrush,Looperboard,true,false,None
+headrush_pedalbaord,Headrush,Pedalbaord,false,false,None
+neunaber_illumine,Neunaber,Illumine,false,false,None
+neunaber_neuron,Neunaber,Neuron,false,false,None
+kinotone_ribbons,Kinotone,Ribbons,false,false,None
+laney_bbc_the_difference_engine,Laney,BBC The Difference Engine,true,true,None
+jet_pedals_lamb,Jet Pedals,Lamb,false,false,None
+jet_pedals_revelation_reverb_2.0,Jet Pedals,Revelation Reverb 2.0,false,false,None
+sunday_sounds_sunday_guitar_2,Sunday Sounds,Sunday Guitar 2,false,false,None
+sunday_sounds_sunday_keys_2020,Sunday Sounds,Sunday Keys 2020,false,false,None
+tc_helicon_voicelive_3_extreme,TC Helicon,Voicelive 3 Extreme,false,false,None
+tc_helicon_voicelive_touch_2,TC Helicon,Voicelive Touch 2,false,false,None
+tc_helicon_voicelive_rack,TC Helicon,Voicelive Rack,false,false,None
+tc_helicon_voicelive_3,TC Helicon,Voicelive 3,true,true,None
+peavey_mini_mega,Peavey,Mini MEGA,false,false,None
+panda_audio_future_impact,Panda Audio,Future Impact,false,false,None
+hotone_ampero,Hotone,Ampero,false,false,None
+hotone_ampero_2_stomp,Hotone,Ampero 2 Stomp,false,false,None
+blackstar_amplification_silverline_stereo_deluxe,Blackstar Amplification,Silverline Stereo Deluxe,false,false,None
+blackstar_amplification_silverline_deluxe,Blackstar Amplification,Silverline Deluxe,false,false,None
+blackstar_amplification_amped_3,Blackstar Amplification,Amped 3,false,false,None
+blackstar_amplification_silverline_deluxe_head,Blackstar Amplification,Silverline Deluxe Head,false,false,None
+blackstar_amplification_amped_1,Blackstar Amplification,Amped 1,false,false,None
+jmk_music_pedals_clockstep,JMK Music Pedals,CLOCKstep,false,false,None
+mooer_ocean_machine,Mooer,Ocean Machine,false,false,None
+mooer_ge300_lite,Mooer,GE300 LITE,false,false,None
+mooer_ge300,Mooer,GE300,false,false,None
+ramble_fx_kismet,Ramble FX,Kismet,false,false,None
+fender_tone_master_pro,Fender,Tone Master Pro,false,false,None
+wampler_pedals_terraform,Wampler Pedals,Terraform,false,false,None
+wampler_pedals_pantheon,Wampler Pedals,pantheon,Yes,false,None
+wampler_pedals_metaverse,Wampler Pedals,Metaverse,false,false,None
+make_noise_co._0-coast,Make Noise Co.,0-COAST,false,false,None
+stone_deaf_syncopy,Stone Deaf,Syncopy,false,false,None
+stone_deaf_tremotron,Stone Deaf,Tremotron,false,false,None
+positive_grid_bias_head,Positive Grid,Bias Head,false,false,None
+positive_grid_bias_distortion_pro,Positive Grid,Bias Distortion Pro,false,false,None
+positive_grid_bias_rack,Positive Grid,Bias Rack,false,false,None
+poly_effects_verbs,Poly Effects,Verbs,false,false,None
+poly_effects_flat_v,Poly Effects,Flat V,false,false,None
+synergy_amps_syn2,Synergy Amps,SYN2,false,false,None
+rjm_music_overture,RJM Music,Overture,false,false,None
+rjm_music_mini_amp_gizmo,RJM Music,Mini Amp Gizmo,false,false,None
+rjm_music_mastermind_pbc/10,RJM Music,Mastermind PBC/10,false,false,None
