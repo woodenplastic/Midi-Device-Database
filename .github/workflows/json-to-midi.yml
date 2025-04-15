@@ -1,0 +1,340 @@
+name: Convert JSON to CSV
+
+on:
+  # Trigger on changes to the JSON files
+  push:
+    paths:
+      - 'midi.json'
+      - 'midi.min.json'
+      - 'midi.min.json.gz'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  convert-to-csv:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install pako csv-writer
+      
+      - name: Create conversion script
+        run: |
+          cat > convert-to-csv.js << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+          const pako = require('pako');
+          const { createObjectCsvWriter } = require('csv-writer');
+
+          async function convertToCsv() {
+            try {
+              console.log('Starting JSON to CSV conversion...');
+              
+              // Create output directory
+              const outputDir = path.join(process.cwd(), 'csv');
+              if (!fs.existsSync(outputDir)) {
+                fs.mkdirSync(outputDir);
+              }
+              
+              // Determine which file to use (in order of preference)
+              let data;
+              if (fs.existsSync('midi.min.json.gz')) {
+                console.log('Using compressed JSON file (midi.min.json.gz)');
+                const compressedData = fs.readFileSync('midi.min.json.gz');
+                const uint8Array = new Uint8Array(compressedData);
+                const decompressedData = pako.inflate(uint8Array, { to: 'string' });
+                data = JSON.parse(decompressedData);
+              } else if (fs.existsSync('midi.min.json')) {
+                console.log('Using minified JSON file (midi.min.json)');
+                const jsonData = fs.readFileSync('midi.min.json', 'utf8');
+                data = JSON.parse(jsonData);
+              } else if (fs.existsSync('midi.json')) {
+                console.log('Using full JSON file (midi.json)');
+                const jsonData = fs.readFileSync('midi.json', 'utf8');
+                data = JSON.parse(jsonData);
+              } else {
+                throw new Error('No JSON file found');
+              }
+              
+              // Process manufacturers and devices
+              const manufacturers = [];
+              const devices = [];
+              const ccParams = [];
+              const nrpnParams = [];
+              const pcParams = [];
+              const metaData = [];
+              
+              // Add metadata
+              metaData.push({
+                id: 1,
+                version: data.version,
+                generated_at: data.generatedAt
+              });
+              
+              // Process all brands except version and generatedAt
+              console.log('Processing data...');
+              Object.entries(data).forEach(([brandName, brandContent]) => {
+                // Skip metadata fields
+                if (brandName === "version" || brandName === "generatedAt") return;
+                
+                let deviceCount = 0;
+                
+                // Process devices
+                Object.entries(brandContent).forEach(([deviceName, deviceData]) => {
+                  deviceCount++;
+                  
+                  const deviceId = `${brandName}_${deviceName}`.replace(/\s+/g, "_").toLowerCase();
+                  
+                  // Add device
+                  devices.push({
+                    id: deviceId,
+                    brand: brandName,
+                    device_name: deviceName,
+                    midi_thru: deviceData.midi_thru,
+                    midi_in: deviceData.midi_in,
+                    midi_clock: deviceData.midi_clock,
+                    phantom_power: deviceData.phantom_power,
+                    midi_channel: JSON.stringify(deviceData.midi_channel),
+                    instructions: deviceData.instructions,
+                  });
+                  
+                  // Process CC parameters
+                  if (deviceData.cc && deviceData.cc.length > 0) {
+                    deviceData.cc.forEach((param, index) => {
+                      ccParams.push({
+                        id: `${deviceId}_cc_${index}`,
+                        device_id: deviceId,
+                        name: param.name,
+                        description: param.description,
+                        usage: param.usage,
+                        curve: param.curve,
+                        value: param.value,
+                        min: param.min,
+                        max: param.max,
+                        type: param.type,
+                      });
+                    });
+                  }
+                  
+                  // Process NRPN parameters
+                  if (deviceData.nrpn && deviceData.nrpn.length > 0) {
+                    deviceData.nrpn.forEach((param, index) => {
+                      nrpnParams.push({
+                        id: `${deviceId}_nrpn_${index}`,
+                        device_id: deviceId,
+                        name: param.name,
+                        description: param.description,
+                        usage: param.usage,
+                        curve: param.curve,
+                        msb: param.msb,
+                        lsb: param.lsb,
+                        min: param.min,
+                        max: param.max,
+                        type: param.type,
+                      });
+                    });
+                  }
+                  
+                  // Process PC parameters
+                  if (deviceData.pc && deviceData.pc.length > 0) {
+                    deviceData.pc.forEach((param, index) => {
+                      pcParams.push({
+                        id: `${deviceId}_pc_${index}`,
+                        device_id: deviceId,
+                        name: param.name,
+                        description: param.description,
+                        usage: param.usage,
+                        curve: param.curve,
+                        value: param.value,
+                        min: param.min,
+                        max: param.max,
+                        type: param.type,
+                      });
+                    });
+                  }
+                });
+                
+                manufacturers.push({
+                  name: brandName,
+                  device_count: deviceCount,
+                });
+              });
+              
+              // Write metadata to CSV
+              console.log('Writing metadata to CSV...');
+              const metaWriter = createObjectCsvWriter({
+                path: path.join(outputDir, 'midi_database_meta.csv'),
+                header: [
+                  { id: 'id', title: 'id' },
+                  { id: 'version', title: 'version' },
+                  { id: 'generated_at', title: 'generated_at' }
+                ]
+              });
+              await metaWriter.writeRecords(metaData);
+              
+              // Write manufacturers to CSV
+              console.log('Writing manufacturers to CSV...');
+              const manufacturersWriter = createObjectCsvWriter({
+                path: path.join(outputDir, 'manufacturers.csv'),
+                header: [
+                  { id: 'name', title: 'name' },
+                  { id: 'device_count', title: 'device_count' }
+                ]
+              });
+              await manufacturersWriter.writeRecords(manufacturers);
+              
+              // Write devices to CSV
+              console.log('Writing devices to CSV...');
+              const devicesWriter = createObjectCsvWriter({
+                path: path.join(outputDir, 'devices.csv'),
+                header: [
+                  { id: 'id', title: 'id' },
+                  { id: 'brand', title: 'brand' },
+                  { id: 'device_name', title: 'device_name' },
+                  { id: 'midi_thru', title: 'midi_thru' },
+                  { id: 'midi_in', title: 'midi_in' },
+                  { id: 'midi_clock', title: 'midi_clock' },
+                  { id: 'phantom_power', title: 'phantom_power' },
+                  { id: 'midi_channel', title: 'midi_channel' },
+                  { id: 'instructions', title: 'instructions' }
+                ]
+              });
+              await devicesWriter.writeRecords(devices);
+              
+              // Write CC parameters to CSV
+              console.log('Writing CC parameters to CSV...');
+              const ccWriter = createObjectCsvWriter({
+                path: path.join(outputDir, 'device_cc.csv'),
+                header: [
+                  { id: 'id', title: 'id' },
+                  { id: 'device_id', title: 'device_id' },
+                  { id: 'name', title: 'name' },
+                  { id: 'description', title: 'description' },
+                  { id: 'usage', title: 'usage' },
+                  { id: 'curve', title: 'curve' },
+                  { id: 'value', title: 'value' },
+                  { id: 'min', title: 'min' },
+                  { id: 'max', title: 'max' },
+                  { id: 'type', title: 'type' }
+                ]
+              });
+              await ccWriter.writeRecords(ccParams);
+              
+              // Write NRPN parameters to CSV
+              console.log('Writing NRPN parameters to CSV...');
+              const nrpnWriter = createObjectCsvWriter({
+                path: path.join(outputDir, 'device_nrpn.csv'),
+                header: [
+                  { id: 'id', title: 'id' },
+                  { id: 'device_id', title: 'device_id' },
+                  { id: 'name', title: 'name' },
+                  { id: 'description', title: 'description' },
+                  { id: 'usage', title: 'usage' },
+                  { id: 'curve', title: 'curve' },
+                  { id: 'msb', title: 'msb' },
+                  { id: 'lsb', title: 'lsb' },
+                  { id: 'min', title: 'min' },
+                  { id: 'max', title: 'max' },
+                  { id: 'type', title: 'type' }
+                ]
+              });
+              await nrpnWriter.writeRecords(nrpnParams);
+              
+              // Write PC parameters to CSV
+              if (pcParams.length > 0) {
+                console.log('Writing PC parameters to CSV...');
+                const pcWriter = createObjectCsvWriter({
+                  path: path.join(outputDir, 'device_pc.csv'),
+                  header: [
+                    { id: 'id', title: 'id' },
+                    { id: 'device_id', title: 'device_id' },
+                    { id: 'name', title: 'name' },
+                    { id: 'description', title: 'description' },
+                    { id: 'usage', title: 'usage' },
+                    { id: 'curve', title: 'curve' },
+                    { id: 'value', title: 'value' },
+                    { id: 'min', title: 'min' },
+                    { id: 'max', title: 'max' },
+                    { id: 'type', title: 'type' }
+                  ]
+                });
+                await pcWriter.writeRecords(pcParams);
+              }
+              
+              // Create a README file with instructions
+              const readmeContent = `# MIDI Database CSV Files
+
+These CSV files were generated from the MIDI device database JSON.
+
+## Files
+
+- \`midi_database_meta.csv\`: Database metadata (version and generation date)
+- \`manufacturers.csv\`: List of manufacturers with device counts
+- \`devices.csv\`: Device information
+- \`device_cc.csv\`: CC parameters for devices
+- \`device_nrpn.csv\`: NRPN parameters for devices
+- \`device_pc.csv\`: PC parameters for devices (if any)
+
+## Import Instructions
+
+To import these files into Supabase:
+
+1. Go to your Supabase project dashboard
+2. Navigate to the Table Editor
+3. For each table:
+   - Select the table
+   - Click "Import Data"
+   - Upload the corresponding CSV file
+   - Follow the prompts to map columns
+
+## Statistics
+
+- Manufacturers: ${manufacturers.length}
+- Devices: ${devices.length}
+- CC Parameters: ${ccParams.length}
+- NRPN Parameters: ${nrpnParams.length}
+- PC Parameters: ${pcParams.length}
+
+Generated on: ${new Date().toISOString()}
+`;
+              
+              fs.writeFileSync(path.join(outputDir, 'README.md'), readmeContent);
+              
+              console.log('CSV conversion completed successfully!');
+              console.log(`CSV files are in: ${outputDir}`);
+              console.log({
+                manufacturers: manufacturers.length,
+                devices: devices.length,
+                ccParams: ccParams.length,
+                nrpnParams: nrpnParams.length,
+                pcParams: pcParams.length,
+              });
+              
+            } catch (error) {
+              console.error('Error converting to CSV:', error);
+              process.exit(1);
+            }
+          }
+
+          convertToCsv();
+          EOF
+      
+      - name: Run conversion script
+        run: node convert-to-csv.js
+      
+      - name: Commit and push CSV files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add csv/
+          git commit -m "Update CSV files from JSON data" || echo "No changes to commit"
+          git push
