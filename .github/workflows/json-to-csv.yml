@@ -29,7 +29,7 @@ jobs:
       
       - name: Create conversion script
         run: |
-          cat > convert-to-csv.js << 'EOF'
+          cat > convert-to-csv.js << 'EOFSCRIPT'
           const fs = require('fs');
           const path = require('path');
           const pako = require('pako');
@@ -326,7 +326,7 @@ Generated on: ${new Date().toISOString()}
           }
 
           convertToCsv();
-          EOF
+          EOFSCRIPT
       
       - name: Run conversion script
         run: node convert-to-csv.js
