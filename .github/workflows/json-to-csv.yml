@@ -271,41 +271,33 @@ jobs:
               }
               
               // Create a README file with instructions
-              const readmeContent = `# MIDI Database CSV Files
+             const readmeContent =
+                '# MIDI Database CSV Files\n\n' +
+                'These CSV files were generated from the MIDI device database JSON.\n\n' +
+                '## Files\n\n' +
+                '- `midi_database_meta.csv`: Database metadata (version and generation date)\n' +
+                '- `manufacturers.csv`: List of manufacturers with device counts\n' +
+                '- `devices.csv`: Device information\n' +
+                '- `device_cc.csv`: CC parameters for devices\n' +
+                '- `device_nrpn.csv`: NRPN parameters for devices\n' +
+                '- `device_pc.csv`: PC parameters for devices (if any)\n\n' +
+                '## Import Instructions\n\n' +
+                'To import these files into Supabase:\n\n' +
+                '1. Go to your Supabase project dashboard\n' +
+                '2. Navigate to the Table Editor\n' +
+                '3. For each table:\n' +
+                '   - Select the table\n' +
+                '   - Click "Import Data"\n' +
+                '   - Upload the corresponding CSV file\n' +
+                '   - Follow the prompts to map columns\n\n' +
+                '## Statistics\n\n' +
+                '- Manufacturers: ' + manufacturers.length + '\n' +
+                '- Devices: ' + devices.length + '\n' +
+                '- CC Parameters: ' + ccParams.length + '\n' +
+                '- NRPN Parameters: ' + nrpnParams.length + '\n' +
+                '- PC Parameters: ' + pcParams.length + '\n\n' +
+                'Generated on: ' + new Date().toISOString() + '\n';
 
-These CSV files were generated from the MIDI device database JSON.
-
-## Files
-
-- \`midi_database_meta.csv\`: Database metadata (version and generation date)
-- \`manufacturers.csv\`: List of manufacturers with device counts
-- \`devices.csv\`: Device information
-- \`device_cc.csv\`: CC parameters for devices
-- \`device_nrpn.csv\`: NRPN parameters for devices
-- \`device_pc.csv\`: PC parameters for devices (if any)
-
-## Import Instructions
-
-To import these files into Supabase:
-
-1. Go to your Supabase project dashboard
-2. Navigate to the Table Editor
-3. For each table:
-   - Select the table
-   - Click "Import Data"
-   - Upload the corresponding CSV file
-   - Follow the prompts to map columns
-
-## Statistics
-
-- Manufacturers: ${manufacturers.length}
-- Devices: ${devices.length}
-- CC Parameters: ${ccParams.length}
-- NRPN Parameters: ${nrpnParams.length}
-- PC Parameters: ${pcParams.length}
-
-Generated on: ${new Date().toISOString()}
-`;
               
               fs.writeFileSync(path.join(outputDir, 'README.md'), readmeContent);
               
