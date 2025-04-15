@@ -1,0 +1,12 @@
+{
+    "name": "midi-device-database",
+    "version": "1.0.0",
+    "description": "MIDI Device Database",
+    "scripts": {
+      "convert": "node scripts/convert-to-csv.js"
+    },
+    "dependencies": {
+      "csv-writer": "^1.6.0",
+      "pako": "^2.1.0"
+    }
+  }
