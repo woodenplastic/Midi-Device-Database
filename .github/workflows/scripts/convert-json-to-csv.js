@@ -33,13 +33,6 @@ async function convertToCsv() {
       throw new Error('No JSON file found');
     }
     
-    // Helper function to convert mixed boolean/string values to proper boolean or null
-    function convertToProperBoolean(value) {
-      if (value === true) return 'true';
-      if (value === false) return 'false';
-      return ''; // Convert strings like "None" or "" to empty string (will be imported as NULL)
-    }
-    
     // Helper function to ensure string values are properly handled
     function safeString(value) {
       if (value === null || value === undefined) return '';
@@ -58,14 +51,6 @@ async function convertToCsv() {
     const ccParams = [];
     const nrpnParams = [];
     const pcParams = [];
-    const metaData = [];
-    
-    // Add metadata
-    metaData.push({
-      id: 1,
-      version: data.version,
-      generated_at: data.generatedAt
-    });
     
     // Process all brands except version and generatedAt
     console.log('Processing data...');
@@ -81,17 +66,14 @@ async function convertToCsv() {
         
         const deviceId = `${brandName}_${deviceName}`.replace(/\s+/g, "_").toLowerCase();
         
-        // Add device with properly converted boolean values
+        // Add device
         devices.push({
           id: deviceId,
           brand: brandName,
           device_name: deviceName,
-          midi_thru: convertToProperBoolean(deviceData.midi_thru),
-          midi_in: safeString(deviceData.midi_in),
-          midi_clock: convertToProperBoolean(deviceData.midi_clock),
+          midi_thru: safeString(deviceData.midi_thru),
+          midi_clock: safeString(deviceData.midi_clock),
           phantom_power: safeString(deviceData.phantom_power),
-          midi_channel: JSON.stringify(deviceData.midi_channel || {}),
-          instructions: safeString(deviceData.instructions),
         });
         
         // Process CC parameters
@@ -102,12 +84,9 @@ async function convertToCsv() {
               device_id: deviceId,
               name: safeString(param.name),
               description: safeString(param.description),
-              usage: safeString(param.usage),
-              curve: safeString(param.curve),
               value: safeNumber(param.value),
               min: safeNumber(param.min),
               max: safeNumber(param.max),
-              type: safeString(param.type),
             });
           });
         }
@@ -120,13 +99,10 @@ async function convertToCsv() {
               device_id: deviceId,
               name: safeString(param.name),
               description: safeString(param.description),
-              usage: safeString(param.usage),
-              curve: safeString(param.curve),
               msb: safeNumber(param.msb),
               lsb: safeNumber(param.lsb),
               min: safeNumber(param.min),
               max: safeNumber(param.max),
-              type: safeString(param.type),
             });
           });
         }
@@ -139,12 +115,9 @@ async function convertToCsv() {
               device_id: deviceId,
               name: safeString(param.name),
               description: safeString(param.description),
-              usage: safeString(param.usage),
-              curve: safeString(param.curve),
               value: safeNumber(param.value),
               min: safeNumber(param.min),
               max: safeNumber(param.max),
-              type: safeString(param.type),
             });
           });
         }
@@ -155,18 +128,6 @@ async function convertToCsv() {
         device_count: deviceCount,
       });
     });
-    
-    // Write metadata to CSV
-    console.log('Writing metadata to CSV...');
-    const metaWriter = createObjectCsvWriter({
-      path: path.join(outputDir, 'midi_database_meta.csv'),
-      header: [
-        { id: 'id', title: 'id' },
-        { id: 'version', title: 'version' },
-        { id: 'generated_at', title: 'generated_at' }
-      ]
-    });
-    await metaWriter.writeRecords(metaData);
     
     // Write manufacturers to CSV
     console.log('Writing manufacturers to CSV...');
@@ -188,11 +149,8 @@ async function convertToCsv() {
         { id: 'brand', title: 'brand' },
         { id: 'device_name', title: 'device_name' },
         { id: 'midi_thru', title: 'midi_thru' },
-        { id: 'midi_in', title: 'midi_in' },
         { id: 'midi_clock', title: 'midi_clock' },
-        { id: 'phantom_power', title: 'phantom_power' },
-        { id: 'midi_channel', title: 'midi_channel' },
-        { id: 'instructions', title: 'instructions' }
+        { id: 'phantom_power', title: 'phantom_power' }
       ]
     });
     await devicesWriter.writeRecords(devices);
@@ -206,12 +164,9 @@ async function convertToCsv() {
         { id: 'device_id', title: 'device_id' },
         { id: 'name', title: 'name' },
         { id: 'description', title: 'description' },
-        { id: 'usage', title: 'usage' },
-        { id: 'curve', title: 'curve' },
         { id: 'value', title: 'value' },
         { id: 'min', title: 'min' },
-        { id: 'max', title: 'max' },
-        { id: 'type', title: 'type' }
+        { id: 'max', title: 'max' }
       ]
     });
     await ccWriter.writeRecords(ccParams);
@@ -225,94 +180,32 @@ async function convertToCsv() {
         { id: 'device_id', title: 'device_id' },
         { id: 'name', title: 'name' },
         { id: 'description', title: 'description' },
-        { id: 'usage', title: 'usage' },
-        { id: 'curve', title: 'curve' },
         { id: 'msb', title: 'msb' },
         { id: 'lsb', title: 'lsb' },
         { id: 'min', title: 'min' },
-        { id: 'max', title: 'max' },
-        { id: 'type', title: 'type' }
+        { id: 'max', title: 'max' }
       ]
     });
     await nrpnWriter.writeRecords(nrpnParams);
     
     // Write PC parameters to CSV
-    if (pcParams.length > 0) {
-      console.log('Writing PC parameters to CSV...');
-      const pcWriter = createObjectCsvWriter({
-        path: path.join(outputDir, 'device_pc.csv'),
-        header: [
-          { id: 'id', title: 'id' },
-          { id: 'device_id', title: 'device_id' },
-          { id: 'name', title: 'name' },
-          { id: 'description', title: 'description' },
-          { id: 'usage', title: 'usage' },
-          { id: 'curve', title: 'curve' },
-          { id: 'value', title: 'value' },
-          { id: 'min', title: 'min' },
-          { id: 'max', title: 'max' },
-          { id: 'type', title: 'type' }
-        ]
-      });
-      await pcWriter.writeRecords(pcParams);
-    }
-    
-    // Create a README file with instructions
-    const readmeContent = `# MIDI Database CSV Files
-
-These CSV files were generated from the MIDI device database JSON.
-
-## Files
-
-- \`midi_database_meta.csv\`: Database metadata (version and generation date)
-- \`manufacturers.csv\`: List of manufacturers with device counts
-- \`devices.csv\`: Device information
-- \`device_cc.csv\`: CC parameters for devices
-- \`device_nrpn.csv\`: NRPN parameters for devices
-- \`device_pc.csv\`: PC parameters for devices (if any)
-
-## Import Instructions
-
-To import these files into Supabase:
-
-1. Go to your Supabase project dashboard
-2. Navigate to the Table Editor
-3. For each table:
-   - Select the table
-   - Click "Import Data"
-   - Upload the corresponding CSV file
-   - Follow the prompts to map columns
-
-### Important Notes for Import
-
-- For boolean fields (midi_thru, midi_clock):
-  - "true" will be imported as TRUE
-  - "false" will be imported as FALSE
-  - Empty values will be imported as NULL
-
-## Statistics
-
-- Manufacturers: ${manufacturers.length}
-- Devices: ${devices.length}
-- CC Parameters: ${ccParams.length}
-- NRPN Parameters: ${nrpnParams.length}
-- PC Parameters: ${pcParams.length}
-
-Generated on: ${new Date().toISOString()}
-`;
-    
-    fs.writeFileSync(path.join(outputDir, 'README.md'), readmeContent);
+    console.log('Writing PC parameters to CSV...');
+    const pcWriter = createObjectCsvWriter({
+      path: path.join(outputDir, 'device_pc.csv'),
+      header: [
+        { id: 'id', title: 'id' },
+        { id: 'device_id', title: 'device_id' },
+        { id: 'name', title: 'name' },
+        { id: 'description', title: 'description' },
+        { id: 'value', title: 'value' },
+        { id: 'min', title: 'min' },
+        { id: 'max', title: 'max' }
+      ]
+    });
+    await pcWriter.writeRecords(pcParams);
     
     console.log('CSV conversion completed successfully!');
     console.log(`CSV files are in: ${outputDir}`);
-    console.log({
-      manufacturers: manufacturers.length,
-      devices: devices.length,
-      ccParams: ccParams.length,
-      nrpnParams: nrpnParams.length,
-      pcParams: pcParams.length,
-    });
-    
   } catch (error) {
     console.error('Error converting to CSV:', error);
     process.exit(1);

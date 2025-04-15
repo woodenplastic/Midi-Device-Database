@@ -7,7 +7,7 @@ on:
       - 'midi.json'
       - 'midi.min.json'
       - 'midi.min.json.gz'
-      - 'scripts/convert-to-csv.js'
+      - '.github/workflows/scripts/convert-json-to-csv.js'
   
   # Allow manual triggering
   workflow_dispatch:
@@ -33,7 +33,7 @@ jobs:
         run: npm install pako csv-writer
       
       - name: Run conversion script
-        run: node scripts/convert-to-csv.js
+        run: node .github/workflows/scripts/convert-json-to-csv.js
       
       - name: Commit and push CSV files
         run: |
