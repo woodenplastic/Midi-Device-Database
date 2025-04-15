@@ -71,9 +71,9 @@ async function convertToCsv() {
           id: deviceId,
           brand: brandName,
           device_name: deviceName,
-          midi_thru: safeString(deviceData.midi_thru),
-          midi_clock: safeString(deviceData.midi_clock),
-          phantom_power: safeString(deviceData.phantom_power),
+          midi_thru: deviceData.midi_thru ? true : false, // Convert to boolean
+          midi_clock: deviceData.midi_clock ? true : false, // Convert to boolean
+          phantom_power: deviceData.phantom_power ? true : false // Convert to boolean
         });
         
         // Process CC parameters
@@ -148,9 +148,9 @@ async function convertToCsv() {
         { id: 'id', title: 'id' },
         { id: 'brand', title: 'brand' },
         { id: 'device_name', title: 'device_name' },
-        { id: 'midi_thru', title: 'midi_thru' },
-        { id: 'midi_clock', title: 'midi_clock' },
-        { id: 'phantom_power', title: 'phantom_power' }
+        { id: 'midi_thru', title: 'midi_thru' }, // Boolean field
+        { id: 'midi_clock', title: 'midi_clock' }, // Boolean field
+        { id: 'phantom_power', title: 'phantom_power' } // Boolean field
       ]
     });
     await devicesWriter.writeRecords(devices);
