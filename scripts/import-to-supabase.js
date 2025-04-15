@@ -7,15 +7,29 @@ async function importToSupabase() {
   try {
     console.log('Starting MIDI database import to Supabase...');
     
-    // Initialize Supabase client
+    // Initialize Supabase client with debug logging
     const supabaseUrl = process.env.SUPABASE_URL;
     const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
+    
+    console.log('Supabase URL:', supabaseUrl);
+    console.log('Service Key (first 10 chars):', supabaseKey ? supabaseKey.substring(0, 10) + '...' : 'undefined');
     
     if (!supabaseUrl || !supabaseKey) {
       throw new Error('Supabase credentials not provided');
     }
     
     const supabase = createClient(supabaseUrl, supabaseKey);
+    
+    // Test connection with a simple query
+    console.log('Testing Supabase connection...');
+    const { data: testData, error: testError } = await supabase.from('manufacturers').select('*').limit(1);
+    
+    if (testError) {
+      console.error('Connection test failed:', testError);
+      throw new Error(`Supabase connection test failed: ${testError.message}`);
+    }
+    
+    console.log('Connection test result:', testData);
     
     // Read the gzipped JSON file
     const filePath = path.join(process.cwd(), 'midi.min.json.gz');
@@ -34,11 +48,16 @@ async function importToSupabase() {
     
     // Store metadata
     console.log('Storing metadata...');
-    await supabase.from("midi_database_meta").upsert({
+    const { error: metaError } = await supabase.from("midi_database_meta").upsert({
       id: 1,
       version: data.version,
       generated_at: data.generatedAt,
     });
+    
+    if (metaError) {
+      console.error('Failed to insert metadata:', metaError);
+      throw new Error(`Failed to insert metadata: ${metaError.message}`);
+    }
 
     // Process manufacturers and devices
     const manufacturers = [];
@@ -138,13 +157,21 @@ async function importToSupabase() {
 
     // Insert data in batches
     console.log(`Inserting ${manufacturers.length} manufacturers...`);
-    await supabase.from("manufacturers").upsert(manufacturers);
+    const { error: mfgError } = await supabase.from("manufacturers").upsert(manufacturers);
+    if (mfgError) {
+      console.error('Failed to insert manufacturers:', mfgError);
+      throw new Error(`Failed to insert manufacturers: ${mfgError.message}`);
+    }
 
     // Insert devices in batches of 100
     console.log(`Inserting ${devices.length} devices...`);
     for (let i = 0; i < devices.length; i += 100) {
       const batch = devices.slice(i, i + 100);
-      await supabase.from("devices").upsert(batch);
+      const { error: devError } = await supabase.from("devices").upsert(batch);
+      if (devError) {
+        console.error(`Failed to insert devices batch ${i + 1} to ${Math.min(i + 100, devices.length)}:`, devError);
+        throw new Error(`Failed to insert devices: ${devError.message}`);
+      }
       console.log(`Inserted devices ${i + 1} to ${Math.min(i + 100, devices.length)}`);
     }
 
@@ -152,7 +179,11 @@ async function importToSupabase() {
     console.log(`Inserting ${ccParams.length} CC parameters...`);
     for (let i = 0; i < ccParams.length; i += 100) {
       const batch = ccParams.slice(i, i + 100);
-      await supabase.from("device_cc").upsert(batch);
+      const { error: ccError } = await supabase.from("device_cc").upsert(batch);
+      if (ccError) {
+        console.error(`Failed to insert CC parameters batch ${i + 1} to ${Math.min(i + 100, ccParams.length)}:`, ccError);
+        throw new Error(`Failed to insert CC parameters: ${ccError.message}`);
+      }
       console.log(`Inserted CC parameters ${i + 1} to ${Math.min(i + 100, ccParams.length)}`);
     }
 
@@ -160,7 +191,11 @@ async function importToSupabase() {
     console.log(`Inserting ${nrpnParams.length} NRPN parameters...`);
     for (let i = 0; i < nrpnParams.length; i += 100) {
       const batch = nrpnParams.slice(i, i + 100);
-      await supabase.from("device_nrpn").upsert(batch);
+      const { error: nrpnError } = await supabase.from("device_nrpn").upsert(batch);
+      if (nrpnError) {
+        console.error(`Failed to insert NRPN parameters batch ${i + 1} to ${Math.min(i + 100, nrpnParams.length)}:`, nrpnError);
+        throw new Error(`Failed to insert NRPN parameters: ${nrpnError.message}`);
+      }
       console.log(`Inserted NRPN parameters ${i + 1} to ${Math.min(i + 100, nrpnParams.length)}`);
     }
 
@@ -168,23 +203,21 @@ async function importToSupabase() {
     console.log(`Inserting ${pcParams.length} PC parameters...`);
     for (let i = 0; i < pcParams.length; i += 100) {
       const batch = pcParams.slice(i, i + 100);
-      await supabase.from("device_pc").upsert(batch);
-      console.log(`Inserted PC parameters ${i + 1} to ${Math.min(i + 100, pcParams.length)}`);
+      if (batch.length > 0) {
+        const { error: pcError } = await supabase.from("device_pc").upsert(batch);
+        if (pcError) {
+          console.error(`Failed to insert PC parameters batch ${i + 1} to ${Math.min(i + 100, pcParams.length)}:`, pcError);
+          throw new Error(`Failed to insert PC parameters: ${pcError.message}`);
+        }
+        console.log(`Inserted PC parameters ${i + 1} to ${Math.min(i + 100, pcParams.length)}`);
+      }
     }
 
-    console.log('Import completed successfully!');
-    console.log({
-      manufacturers: manufacturers.length,
-      devices: devices.length,
-      ccParams: ccParams.length,
-      nrpnParams: nrpnParams.length,
-      pcParams: pcParams.length,
-    });
-    
-  } catch (error) {
-    console.error('Error importing data:', error.message);
-    process.exit(1);
-  }
-}
-
-importToSupabase();
+    // Verify data was inserted
+    console.log('Verifying data insertion...');
+    const { data: mfgCount, error: mfgCountError } = await supabase.from('manufacturers').select('*', { count: 'exact', head: true });
+    if (mfgCountError) {
+      console.error('Failed to verify manufacturers count:', mfgCountError);
+    } else {
+      console.log('Manufacturers count:', mfgCount.count);
+    }
