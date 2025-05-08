@@ -2491,23 +2491,24 @@ Boss,OD-200,CC,CTL1,80,,0,127,
 Boss,OD-200,CC,CTL2,81,,0,127,
 Boss,OD-200,CC,Expression,16,,0,127,Expression pedal
 Boss,OD-200,CC,Effect ON/OFF,27,,0,127,Effect On/OFF
-Boss,RC-10R,CC,Rhythm Start,1,,0,95,Starts the rhythm playback
-Boss,RC-10R,CC,Rhythm Division,2,,0,127,Switches rhythm between Pattern 1 and Pattern 2
-Boss,RC-10R,CC,Rhythm Fill-in,3,,0,127,Plays a fill-in pattern
-Boss,RC-10R,CC,Rhythm Stop,4,,0,127,Stops the rhythm playback
-Boss,RC-10R,CC,Rhythm Break,5,,0,127,Temporarily breaks the rhythm playback
-Boss,RC-10R,CC,Rhy Level,6,,0,127,Adjusts the rhythm playback level
-Boss,RC-10R,CC,Loop Start,7,,0,127,Starts the looper recording/playback
-Boss,RC-10R,CC,Loop Stop,8,,0,127,Stops the looper playback
-Boss,RC-10R,CC,TRK1 Start,9,,0,127,Starts playback of Track 1
-Boss,RC-10R,CC,TRK1 Stop,10,,0,127,Stops playback of Track 1
-Boss,RC-10R,CC,TRK1 UnRedo,11,,0,127,Executes undo/redo on Track 1
-Boss,RC-10R,CC,TRK2 Start,12,,0,127,Starts playback of Track 2
-Boss,RC-10R,CC,TRK2 Stop,13,,0,127,Stops playback of Track 2
-Boss,RC-10R,CC,TRK2 UnRedo,14,,0,127,Executes undo/redo on Track 2
-Boss,RC-10R,CC,Loop Level,15,,0,127,Adjusts the looper playback level
-Boss,RC-10R,CC,Total Level,16,,0,127,Adjusts the overall level of rhythm and looper together
-Boss,RC-10R,CC,All Break,17,,0,127,Breaks both rhythm and looper playback simultaneously
+Boss,RC-10R,CC,Rhythm Start,1,,0,95,Start the rhythm
+Boss,RC-10R,CC,Rhythm Division,2,,0,127,Switch rhythm between PTN1 and PTN2
+Boss,RC-10R,CC,Rhythm Fill-in,3,,0,127,Play a fill-in
+Boss,RC-10R,CC,Rhythm Stop,4,,0,127,Stops the rhythm
+Boss,RC-10R,CC,Rhythm Break,5,,0,127,Break the rhythm playback
+Boss,RC-10R,CC,Rhy Level,6,,0,127,Adjust the rhythm playback level
+Boss,RC-10R,CC,Loop Start,7,,0,127,Start the Looper
+Boss,RC-10R,CC,Loop Stop,8,,0,127,Stop the Looper
+Boss,RC-10R,CC,Loop Undo/Redo,9,,0,127,Loop Undo and Redo
+Boss,RC-10R,CC,TRK1 Start,10,,0,127,Play TRK1
+Boss,RC-10R,CC,TRK1 Stop,11,,0,127,Stop TRK1
+Boss,RC-10R,CC,TRK1 UnRedo,12,,0,127,Executes undo/redo on TRK1
+Boss,RC-10R,CC,TRK2 Start,13,,0,127,Play TRK2
+Boss,RC-10R,CC,TRK2 Stop,14,,0,127,Stop TRK2
+Boss,RC-10R,CC,TRK2 UnRedo,15,,0,127,Executes undo/redo on TRK2
+Boss,RC-10R,CC,Loop Level,16,,0,127,Adjustes the looper plaback level
+Boss,RC-10R,CC,Total Level,17,,0,127,Adjusts the playback of the rhythm and looper together
+Boss,RC-10R,CC,All Break,18,,0,127,Breaks the Rhythm and looper together
 Boss,RE-202,CC,TAP TIME (MSB),16,,0,127,Controls the delay time (Most Significant Byte)
 Boss,RE-202,CC,REPEAT RATE,17,,0,127,Controls the delay rate/speed
 Boss,RE-202,CC,INTENSITY,18,,0,127,Controls the feedback/regeneration amount
@@ -3387,6 +3388,12 @@ Disaster Area,DPC-8EZ Gen2,CC,Save,122,,0,127,Saves current loop status to speci
 Disaster Area,DPC Micro,CC,Loop A,50,,0,127,"Loop Off: 0-63, Loop On: 64-127"
 Disaster Area,DPC Micro,CC,Loop B,51,,0,127,"Loop Off: 0-63, Loop On: 64-127"
 Disaster Area,DPC Micro,CC,Loop C,52,,0,127,"Loop Off: 0-63, Loop On: 64-127"
+Disaster Area,microclockgen4,CC,Tap Tempo,93,,0,127,Any value triggers tap tempo
+Disaster Area,microclockgen4,CC,Set BPM,103,,0,127,"Sets tempo in BPM, value + 30 (range 30-157)"
+Disaster Area,microclockgen4,CC,Set BPM,104,,0,127,"Sets tempo in BPM, value + 150 (range 150-277)"
+Disaster Area,microclockgen4,CC,Output A Subdivision,106,,0,9,"Sets subdivision for output A. 0 whole, 1 half, 2 qtr trip, 3 qtr, 4 dot 8th, 5 phi, 6 8th, 7 8th trip, 8 16th, 9 off"
+Disaster Area,microclockgen4,CC,Output B Subdivision,107,,0,9,"Sets subdivision for output B. 0 whole, 1 half, 2 qtr trip, 3 qtr, 4 dot 8th, 5 phi, 6 8th, 7 8th trip, 8 16th, 9 off"
+Disaster Area,microclockgen4,CC,Output C Subdivision,108,,0,9,"Sets subdivision for output C. 0 whole, 1 half, 2 qtr trip, 3 qtr, 4 dot 8th, 5 phi, 6 8th, 7 8th trip, 8 16th, 9 off"
 Dr Scientist,Dusk,CC,Remote Tap,9,,0,127,Remotely taps tempo for LFO synchronization
 Dr Scientist,Dusk,CC,Waveform Select,20,,0,127,Selects the LFO waveform
 Dr Scientist,Dusk,CC,LFO Rate x1,23,,0,127,Controls normal LFO rate
@@ -12563,6 +12570,77 @@ Meris,Mercury 7,CC,Swell Off,28,,0,63,
 Meris,Mercury 7,CC,Swell On,28,,64,127,
 Meris,Mercury 7,CC,Algorithm Select: Ultraplate,29,,0,63,
 Meris,Mercury 7,CC,Algorithm Select: Cathedra,29,,64,127,
+Meris,enzox,CC,Mix ,1,,0,127,
+Meris,enzox,CC,Dry Trim,2,,0,127,
+Meris,enzox,CC,Wet Trim,3,,0,127,
+Meris,enzox,CC,Expression Pedal,4,,0,127,
+Meris,enzox,CC,Drive Type,5,,0,127,0 - 21 = Off ; 22 - 42 = Volume Pedal ; 43 - 63 = Tube ; 64 - 85 = Transistor ; 86 - 106 = Op-Amp ; 107 - 127 = Bitcrusher
+Meris,enzox,CC,Drive Location ,6,,0,127,0 - 31 = Pre + Dry ; 32 - 63 = Dry ; 64 - 95 = Pre Ambience ; 96 - 127 = Post Ambience
+Meris,enzox,CC,Gain/Volume/Sample Rate,7,,0,127,
+Meris,enzox,CC,Balance/Bits,8,,0,127,
+Meris,enzox,CC,Drive Level,9,,0,127,
+Meris,enzox,CC,Ambience Type,10,,0,127,0 - 25 = Off ; 26 - 51 = Echo ; 52 - 76 = Small ; 77 - 102 = Medium ; 103 - 127 = Large
+Meris,enzox,CC,Feedback/Decay,11,,0,127,
+Meris,enzox,CC,Half Speed,12,,0,127,0 - 63 = Half Speed OFF ; 64 - 127 = Half Speed ON
+Meris,enzox,CC,Ambience Mod ,13,,0,127,
+Meris,enzox,CC,Bypass,14,,0,127,0 - 63 = FX Bypass ; 64 - 127 = FX Enable
+Meris,enzox,CC,"Time (Clock, 7 Bit Tempo)",15,,0,127,
+Meris,enzox,CC,Ambience Highs,16,,0,127,
+Meris,enzox,CC,Echo Left Division,17,,0,127,
+Meris,enzox,CC,Echo Right Division,18,,0,127,
+Meris,enzox,CC,Ambience + Echo Mix,19,,0,127,
+Meris,enzox,CC,Ambience Lows,20,,0,127,
+Meris,enzox,CC,Midi Clock,21,,0,127,0 - 42 = Use Global ; 43 - 85 = Force Listen ; 86 - 127 = Force Ignore
+Meris,enzox,CC,Synth Mode,22,,0,127,0 - 25 = Mono Synth ; 26 - 51 = Poly Synth ; 52 - 76 = Arp Synth ; 77 - 102 = Dry Mono ; 103 - 127 = Dry Poly
+Meris,enzox,CC,Synth Pitch ,23,,0,127,
+Meris,enzox,CC,Osc 1 Wave Shape ,24,,0,127,
+Meris,enzox,CC,Osc 2 Wave Shape,25,,0,127,
+Meris,enzox,CC,Osc 2 Pitch Offset,26,,0,127,
+Meris,enzox,CC,Osc 2 Detune,27,,0,127,
+Meris,enzox,CC,Synth Glide (Portamento),28,,0,127,
+Meris,enzox,CC,Osc 1 Gain,29,,0,127,
+Meris,enzox,CC,Osc 2 Gain,30,,0,127,
+Meris,enzox,CC,Xmod,31,,0,127,
+Meris,enzox,CC,Arp Mode,32,,0,127,
+Meris,enzox,CC,Arp Steps,33,,0,127,
+Meris,enzox,CC,Arp Octaves,34,,0,127,
+Meris,enzox,CC,Level,35,,0,127,
+Meris,enzox,CC,Dry Blend,36,,0,127,
+Meris,enzox,CC,Arp Cycle Latch,37,,0,127,0 - 63 = Off ; 64 - 127 = On
+Meris,enzox,CC,Filter Type,38,,0,127,0 - 42 = Ladder ; 43 - 85 = State Variable ; 86 - 127 = Twin
+Meris,enzox,CC,Filter Frequency,39,,0,127,
+Meris,enzox,CC,Filter Typology,0,,0,127,0 - 42 = LowPass ; 43 - 85 = BandPass ; 86 - 127 = HighPass
+Meris,enzox,CC,Filter Resonance,41,,0,127,
+Meris,enzox,CC,Filter Noise,42,,0,127,
+Meris,enzox,CC,Twin Filter Spread,43,,0,127,
+Meris,enzox,CC,Filter Envelope Amount,44,,0,127,
+Meris,enzox,CC,Filter Envelope Type,46,,0,127,0 - 63 = ADSR ; 64 - 127 = Envelope
+Meris,enzox,CC,Filter Attack Time,47,,0,127,
+Meris,enzox,CC,Filter Decay Time ,48,,0,127,
+Meris,enzox,CC,Filter Sustain Time,49,,0,127,
+Meris,enzox,CC,Filter Sustain Level,0,,0,127,
+Meris,enzox,CC,Filter Release Time,51,,0,127,
+Meris,enzox,CC,Direction,52,,0,127,0 - 63 = Up ; 64 - 127 = Down
+Meris,enzox,CC,Depth,53,,0,127,
+Meris,enzox,CC,Note Persist,54,,0,127,
+Meris,enzox,CC,Amplitude Attack Time,55,,0,127,
+Meris,enzox,CC,Amplitude Decay Time,56,,0,127,
+Meris,enzox,CC,Amplitude Sustain Level,57,,0,127,
+Meris,enzox,CC,Amplitude Sustain Time ,58,,0,127,
+Meris,enzox,CC,Amplitude Release Time,59,,0,127,
+Meris,enzox,CC,Oscillator Mod Speed,60,,0,127,
+Meris,enzox,CC,Oscillator Mod Depth,61,,0,127,
+Meris,enzox,CC,Oscillator Mod Ramp Time,62,,0,127,
+Meris,enzox,CC,Mod Type,86,,0,127,0 - 21 = Off ; 22 - 42 = Chorus ; 43 - 63 = Flanger ; 64 - 85 = Vibrato ; 86 - 106 = Phaser ; 107 - 127 = Ring Mod
+Meris,enzox,CC,Mod Location ,87,,0,127,0 - 31 = Pre + Dry ; 32 - 63 = Dry ; 64 - 95 = Pre Ambience ; 96 - 127 = Post Ambience
+Meris,enzox,CC,Mod Speed/Frequency,88,,0,127,
+Meris,enzox,CC,Mod Depth,89,,0,127,
+Meris,enzox,CC,Mod Mode/WaveShape/Stages,90,,0,127,
+Meris,enzox,CC,Mod Feedback,91,,0,127,
+Meris,enzox,CC,Mod Mix,92,,0,127,
+Meris,enzox,CC,Mod Note Div,93,,0,127,
+Meris,enzox,CC,Toggle Tuner Mode,117,,127,127,Press = 127
+Meris,enzox,CC,Trigger Hold Modifier,118,,0,127,Press = 127 ; Release = 0 ; Note: Be sure to send a release after every press
 mesa_boogie,jp2c,CC,Channel 1,20,,0,127,Activates Channel 1
 mesa_boogie,jp2c,CC,Channel 2,21,,0,127,Activates Channel 2
 mesa_boogie,jp2c,CC,Channel 3,22,,0,127,Activates Channel 3
@@ -15755,12 +15833,18 @@ Neural DSP,Quad Cortex,CC,Enable/Bypass Footswitch G,41,,0,127,"Preset/Stomp/Sce
 Neural DSP,Quad Cortex,CC,Enable/Bypass Footswitch H,42,,0,127,"Preset/Stomp/Scene Mode, and Gig View"
 Neural DSP,Quad Cortex,CC,Scene Select,43,,0,7,Scene select (A-H)
 Neural DSP,Quad Cortex,CC,Tempo BPM,44,,0,127,
-Neural DSP,Quad Cortex,CC,Tuner On/Off,45,,0,127,
-Neural DSP,Quad Cortex,CC,Open/Close Gig View,46,,0,127,
+Neural DSP,Quad Cortex,CC,Tuner On/Off (< CorOS 2.1.0),45,,0,127,
+Neural DSP,Quad Cortex,CC,Tuner Off (>= CorOS 2.1.0),45,,0,63,
+Neural DSP,Quad Cortex,CC,Tuner On (>= CorOS 2.1.0),45,,64,127,
+Neural DSP,Quad Cortex,CC,Open/Close Gig View (< CorOS 2.1.0),46,,0,127,
+Neural DSP,Quad Cortex,CC,Close Gig View (>= CorOS 2.1.0),46,,0,63,
+Neural DSP,Quad Cortex,CC,Open Gig View (>= CorOS 2.1.0),46,,64,127,
 Neural DSP,Quad Cortex,CC,Change Mode - Preset,47,,0,0,
 Neural DSP,Quad Cortex,CC,Change Mode - Scene,47,,1,1,
 Neural DSP,Quad Cortex,CC,Change Mode - Stomp,47,,2,2,
-Neural DSP,Quad Cortex,CC,Open / Close Looper UI,48,,64,127,
+Neural DSP,Quad Cortex,CC,Open / Close Looper UI (< CorOS 2.1.0),48,,64,127,
+Neural DSP,Quad Cortex,CC,Close Looper UI (>= CorOS 2.1.0),48,,0,63,
+Neural DSP,Quad Cortex,CC,Open Looper UI (>= CorOS 2.1.0),48,,64,127,
 Neural DSP,Quad Cortex,CC,Duplicate / Stop Duplicate,49,,64,127,
 Neural DSP,Quad Cortex,CC,Enable / Disable One Shot,50,,64,127,
 Neural DSP,Quad Cortex,CC,Enable / Disable Half Speed,51,,64,127,
@@ -20628,6 +20712,24 @@ Red Panda,Raster 2,CC,Shift link left/right channels,114,,0,1,"0: Linked (tilt, 
 1: Independent;"
 Red Panda,Raster 2,CC,Feedback invert**,119,,0,127,"0-63: Off;
 64-127: On;"
+Red Panda,Tensor,CC,Expression pedal,4,,0,127,CTRL input
+Red Panda,Tensor,CC,Speed,20,,0,127,"0: Reverse 100%, 64: Stop, 127: Forward 100% "
+Red Panda,Tensor,CC,Time,21,,0,127,"0: 1-4 Stretch, 64: 1-1, 127: 4-1 Compress"
+Red Panda,Tensor,CC,Pitch,22,,0,127,"0: -2 octaves, 64: Unison, 127: +2 octaves"
+Red Panda,Tensor,CC,Blend,23,,0,127,"0: 100% dry, 127: 100% wet"
+Red Panda,Tensor,CC,Random,24,,0,127,
+Red Panda,Tensor,CC,Loop Decay,25,,0,127,"0: 0dB, 1: -0.25dB ... 126: -31.5dB, 127: Off"
+Red Panda,Tensor,CC,Hold Mode,28,,0,127,"0-42: Next, 43-85: Replace, 86-127: Forward"
+Red Panda,Tensor,CC,Loop direction,29,,0,127,"0-42: Reverse, 43-85: Alternate, 86-127: Forward"
+Red Panda,Tensor,CC,Pitch Semitones,30,,0,127,"40: -2 octaves, 64: unison, 88: +8 octaves"
+Red Panda,Tensor,CC,Pitch glide rate,31,,0,127,"0: Minimum, 127: Maximum"
+Red Panda,Tensor,CC,Hold footswitch,80,,0,127,"0-63: Off (release), 64-127: On (press)"
+Red Panda,Tensor,CC,Effect on Footswitch,81,,0,127,"0-63: Off (release), 64-127: On (press)"
+Red Panda,Tensor,CC,Hold momentary/latch,85,,0,127,"0-63: Momentary, 64-127: Latching"
+Red Panda,Tensor,CC,Effect momentary/latch,86,,0,127,"0-63: Momentary, 64-127: Latching"
+Red Panda,Tensor,CC,Hold/Sample (Receive only),87,,0,127,"127: Record, 96: Overdub, 64: Loop play / retrigger, 48: One shot play / retrigger, 24: Stop (save loop), 0: Live (clear loop)"
+Red Panda,Tensor,CC,Bypass (Receive only),88,,0,127,"0-63 = Bypass, 64-127 = Effect on"
+Red Panda,Tensor,CC,Drift (Receive only),90,,0,127,"0-63 = Off, 64-127 = On"
 Red Panda,Context 2,CC,Expression Pedal,4,,0,127,
 Red Panda,Context 2,CC,Blend,12,,0,127,
 Red Panda,Context 2,CC,Reverb Predelay,13,,0,127,
@@ -20763,24 +20865,6 @@ Red Panda,Context 2,CC,Receive MIDI Clock: On,110,,127,127,
 Red Panda,Context 2,CC,Trails: Off,111,,0,0,
 Red Panda,Context 2,CC,Trails: On,111,,64,64,
 Red Panda,Context 2,CC,Trails: Global,111,,127,127,
-Red Panda,Tensor,CC,Expression pedal,4,,0,127,CTRL input
-Red Panda,Tensor,CC,Speed,20,,0,127,"0: Reverse 100%, 64: Stop, 127: Forward 100% "
-Red Panda,Tensor,CC,Time,21,,0,127,"0: 1-4 Stretch, 64: 1-1, 127: 4-1 Compress"
-Red Panda,Tensor,CC,Pitch,22,,0,127,"0: -2 octaves, 64: Unison, 127: +2 octaves"
-Red Panda,Tensor,CC,Blend,23,,0,127,"0: 100% dry, 127: 100% wet"
-Red Panda,Tensor,CC,Random,24,,0,127,
-Red Panda,Tensor,CC,Loop Decay,25,,0,127,"0: 0dB, 1: -0.25dB ... 126: -31.5dB, 127: Off"
-Red Panda,Tensor,CC,Hold Mode,28,,0,127,"0-42: Next, 43-85: Replace, 86-127: Forward"
-Red Panda,Tensor,CC,Loop direction,29,,0,127,"0-42: Reverse, 43-85: Alternate, 86-127: Forward"
-Red Panda,Tensor,CC,Pitch Semitones,30,,0,127,"40: -2 octaves, 64: unison, 88: +8 octaves"
-Red Panda,Tensor,CC,Pitch glide rate,31,,0,127,"0: Minimum, 127: Maximum"
-Red Panda,Tensor,CC,Hold footswitch,80,,0,127,"0-63: Off (release), 64-127: On (press)"
-Red Panda,Tensor,CC,Effect on Footswitch,81,,0,127,"0-63: Off (release), 64-127: On (press)"
-Red Panda,Tensor,CC,Hold momentary/latch,85,,0,127,"0-63: Momentary, 64-127: Latching"
-Red Panda,Tensor,CC,Effect momentary/latch,86,,0,127,"0-63: Momentary, 64-127: Latching"
-Red Panda,Tensor,CC,Hold/Sample (Receive only),87,,0,127,"127: Record, 96: Overdub, 64: Loop play / retrigger, 48: One shot play / retrigger, 24: Stop (save loop), 0: Live (clear loop)"
-Red Panda,Tensor,CC,Bypass (Receive only),88,,0,127,"0-63 = Bypass, 64-127 = Effect on"
-Red Panda,Tensor,CC,Drift (Receive only),90,,0,127,"0-63 = Off, 64-127 = On"
 Red Panda,Bitmap 2,CC,Expression pedal,4,,0,127,Control Input
 Red Panda,Bitmap 2,CC,Mix,12,,0,127,
 Red Panda,Bitmap 2,CC,Crush,13,,0,127,
@@ -20869,6 +20953,36 @@ Red Panda,Particle 2,CC,LFO Rate Note Division,109,,0,127,See Note Divisions tab
 Red Panda,Particle 2,CC,Trails Mode,111,,0,127,"0-63 = Off, 64-127 = On"
 Red Panda,Particle 2,CC,Freeze Mode,118,,0,1,"0 = Grain Freeze, 1 = Delay Freeze (V1)"
 Red Panda,Particle 2,CC,Mode Switch Reassigns Knobs,119,,0,127,"0=63 = Off, 64-127 = On (combine modes)"
+Red Panda,radius,CC,Expression,4,,0,127,"Sending CC 4 is the same as having an expression
+pedal connected to the CTRL input (which does not
+have to be configured for “expression”). "
+Red Panda,radius,CC,Mix,14,,0,127,
+Red Panda,radius,CC,Ring mod/freq shift mix,15,,0,127,
+Red Panda,radius,CC,Carrier frequency,16,,0,127,
+Red Panda,radius,CC,Carrier pitch tracking,18,,0,127,0 = -100% ; 64 = Off ; 127 = +100%
+Red Panda,radius,CC,Modulation rate,22,,0,127,
+Red Panda,radius,CC,Modulation depth,24,,0,127,
+Red Panda,radius,CC,Step modulator step 1,70,,0,127,
+Red Panda,radius,CC,Step modulator step 2,71,,0,127,
+Red Panda,radius,CC,Step modulator step 3,72,,0,127,
+Red Panda,radius,CC,Step modulator step 4,73,,0,127,
+Red Panda,radius,CC,Step modulator step 5,74,,0,127,
+Red Panda,radius,CC,Step modulator step 6,75,,0,127,
+Red Panda,radius,CC,Step modulator step 7,76,,0,127,
+Red Panda,radius,CC,Step modulator step 8,77,,0,127,
+Red Panda,radius,CC,Step mod last step,78,,1,8,
+Red Panda,radius,CC,Step mod ramp,79,,0,127,0 - 63 = Off (step) ; 64 - 127 = On (ramp)
+Red Panda,radius,CC,AUX footswitch,80,,0,127,Use gated (momentary) mode to send 127 on press and 0 on release. Matches footswitch behavior. 0 - 63 = Release ; 64 - 127 = Press
+Red Panda,radius,CC,ON footswitch,81,,0,127,Use gated (momentary) mode to send 127 on press and 0 on release. Matches footswitch behavior. 0 - 63 = Release ; 64 - 127 = Press
+Red Panda,radius,CC,Mod envelope trigger,82,,0,127,0 - 63 = Off ; 64 - 127 = On
+Red Panda,radius,CC,Modulation waveform,85,,0,7,0 = Triangle ; 1 = Square ; 2 = Random step ; 3 = Random 2 ; 4 = Step modulator ; 5 = X- ; 6 = X+ ; 7 = Envelope follower
+Red Panda,radius,CC,Shift 2X,86,,0,2,0 = Down ; 1 = Off ; 2 = Up
+Red Panda,radius,CC,Shift range,87,,0,2,0 = Low ; 1 = High ; 2 = Stepped
+Red Panda,radius,CC,Bypass (receive only),80,,0,127,0 - 63 = Bypass ; 64 - 127 = Effect on
+Red Panda,radius,CC,Tap (receive only),89,,64,127,64 - 127 = Tap
+Red Panda,radius,CC,Modulation note division,109,,0,26,See Radius “Note Divisions” table: https://www.redpandalab.com/content/docs/Radius%20Owners%20Manual.pdf 
+Red Panda,radius,CC,Receive MIDI clock (global),110,,0,127,0 - 63 = Off ; 64 - 127 = Receive MIDI clock
+Red Panda,radius,CC,Play carrier by MIDI note,111,,0,2,0 = Off ; 1 = On ; 2 = Use global setting
 Roland,D-05,CC,Bank select A,0,,0,127,
 Roland,D-05,CC,Bank select B,32,,0,127,
 Roland,D-05,CC,Modulation,1,,0,127,
@@ -23215,11 +23329,31 @@ Source Audio,Programmable EQ,CC,EQ Band 5 Level,39,,0,127,
 Source Audio,Programmable EQ,CC,EQ Band 6 Level,40,,0,127,
 Source Audio,Programmable EQ,CC,EQ Band 7 Level,41,,0,127,
 Source Audio,Programmable EQ,CC,EQ Band 8 Level,42,,0,127,
-Source Audio,Atlas,CC,Remote Expression Pedal,100,,0,127,position external expression pedal 
-Source Audio,Atlas,CC,Engaged/Bypass,102,,0,127,(0-63) Engaged     (64-127)  Bypass 
-Source Audio,Atlas,CC,Preset Recall (OFF),103,,0,127,
-Source Audio,Atlas,CC,Preset Recall (ON),104,,0,127,
-Source Audio,Atlas,CC,Engaged/Bypass Toggle,105,,0,127,
+Source Audio,Atlas,CC,Remote Expression Pedal,0,,0,127,
+Source Audio,Atlas,CC,Ratio A,1,,0,127,
+Source Audio,Atlas,CC,Threshold A,2,,0,127,
+Source Audio,Atlas,CC,Attack A,3,,0,127,
+Source Audio,Atlas,CC,Release A,4,,0,127,
+Source Audio,Atlas,CC,Output A,5,,0,127,
+Source Audio,Atlas,CC,Mix A,6,,0,127,
+Source Audio,Atlas,CC,Side Chain High Pass A,7,,0,127,
+Source Audio,Atlas,CC,Ratio B,8,,0,127,
+Source Audio,Atlas,CC,Threshold B,9,,0,127,
+Source Audio,Atlas,CC,Attack B,10,,0,127,
+Source Audio,Atlas,CC,Release B,11,,0,127,
+Source Audio,Atlas,CC,Output B,12,,0,127,
+Source Audio,Atlas,CC,Mix B,13,,0,127,
+Source Audio,Atlas,CC,Side Chain High Pass B,14,,0,127,
+Source Audio,Atlas,CC,A/B Crossfade,15,,0,127,
+Source Audio,Atlas,CC,Channel 1 Input Gain,16,,0,127,
+Source Audio,Atlas,CC,Channel 2 Input Gain,17,,0,127,
+Source Audio,Atlas,CC,Bass Level,18,,0,127,
+Source Audio,Atlas,CC,Bass Frequency,19,,0,127,
+Source Audio,Atlas,CC,Mid Frequency,20,,0,127,
+Source Audio,Atlas,CC,Treble (Tone) Level,21,,0,127,
+Source Audio,Atlas,CC,Treble Frequency,22,,0,127,
+Source Audio,Atlas,CC,Noise Gate,23,,0,127,
+Source Audio,Atlas,CC,Noise Gate,24,,0,127,
 Source Audio,C4 Synth,CC,External Tap Tempo,93,,0,127,Externally control the LFO rate
 Source Audio,C4 Synth,CC,External Expression Control,100,,0,127,Assign parameters with Neuro Editor
 Source Audio,C4 Synth,CC,Engage device,102,,64,127,
@@ -25951,6 +26085,78 @@ Walrus Audio,R1,CC,A|B|C| Switch (Bank),28,,0,127,Selects between preset banks
 Walrus Audio,R1,CC,Tune Switch,29,,0,127,Selects the tuning mode
 Walrus Audio,R1,CC,Bypass Switch,30,,0,127,Controls the bypass state of the effect
 Walrus Audio,R1,CC,Sus/Latch,31,,0,127,Controls the sustain/latch function
+Walrus Audio,m1mk2,CC,Rate,3,,0,127,
+Walrus Audio,m1mk2,CC,Depth,9,,0,127,
+Walrus Audio,m1mk2,CC,Lo-Fi Mix,14,,0,127,
+Walrus Audio,m1mk2,CC,Shape,15,,0,2,
+Walrus Audio,m1mk2,CC,Div,16,,0,5,
+Walrus Audio,m1mk2,CC,Type,17,,0,2,
+Walrus Audio,m1mk2,CC,Tone,19,,0,127,
+Walrus Audio,m1mk2,CC,Sym,20,,0,127,
+Walrus Audio,m1mk2,CC,X,21,,0,127,
+Walrus Audio,m1mk2,CC,Lofi Env,22,,0,127,
+Walrus Audio,m1mk2,CC,Lofi Drive,23,,0,127,
+Walrus Audio,m1mk2,CC,Lofi Space,24,,0,127,
+Walrus Audio,m1mk2,CC,Lofi Age,25,,0,4,
+Walrus Audio,m1mk2,CC,Lofi Noise,26,,0,127,
+Walrus Audio,m1mk2,CC,Lofi Warble,27,,0,127,
+Walrus Audio,m1mk2,CC,Program,18,,0,5,
+Walrus Audio,m1mk2,CC,Tap,85,,0,127,
+Walrus Audio,m1mk2,CC,Bypass,31,,0,127,
+Walrus Audio,m1mk2,CC,Tap Held,87,,0,127,
+Walrus Audio,m1mk2,CC,Rotary Speed,86,,0,127,
+Walrus Audio,m1mk2,CC,Output Gain,88,,0,127,
+Walrus Audio,m1mk2,CC,Midi Clock Ignore,89,,0,127,
+Walrus Audio,m1mk2,CC,Wet Dry Mix,104,,0,127,
+Walrus Audio,m1mk2,CC,Flange Feedback,105,,0,127,
+Walrus Audio,m1mk2,CC,Rotary Slow Rate,106,,0,127,
+Walrus Audio,m1mk2,CC,Rotary Fast Rate,107,,0,127,
+Walrus Audio,acs1mk2,CC,Bass Left,3,,0,127,
+Walrus Audio,acs1mk2,CC,Bass Right,9,,0,127,
+Walrus Audio,acs1mk2,CC,Mid Left,14,,0,127,
+Walrus Audio,acs1mk2,CC,Mid Right,15,,0,127,
+Walrus Audio,acs1mk2,CC,Treble Left,20,,0,127,
+Walrus Audio,acs1mk2,CC,Treble Right,21,,0,127,
+Walrus Audio,acs1mk2,CC,Vol Left,22,,0,127,
+Walrus Audio,acs1mk2,CC,Vol Right,23,,0,127,
+Walrus Audio,acs1mk2,CC,Gain Left,24,,0,127,
+Walrus Audio,acs1mk2,CC,Gain Right,25,,0,127,
+Walrus Audio,acs1mk2,CC,Cab Left,26,,0,11,
+Walrus Audio,acs1mk2,CC,Cab Right,27,,0,11,
+Walrus Audio,acs1mk2,CC,Amp Left,28,,0,5,
+Walrus Audio,acs1mk2,CC,Amp Right,29,,0,5,
+Walrus Audio,acs1mk2,CC,Bypass,30,,0,5,
+Walrus Audio,acs1mk2,CC,Boost Engage,31,,0,127,
+Walrus Audio,acs1mk2,CC,Ir Bypass,85,,0,127,
+Walrus Audio,acs1mk2,CC,Amp Bypass,86,,0,127,
+Walrus Audio,acs1mk2,CC,Gate Threshold,89,,0,127,
+Walrus Audio,acs1mk2,CC,Gate Release,90,,0,127,
+Walrus Audio,acs1mk2,CC,Room Select,102,,0,2,
+Walrus Audio,acs1mk2,CC,Room Decay,103,,0,127,
+Walrus Audio,acs1mk2,CC,Presence,104,,0,127,
+Walrus Audio,acs1mk2,CC,Resonance,105,,0,127,
+Walrus Audio,d1mk2,CC,Div Left,28,,0,5,
+Walrus Audio,d1mk2,CC,Div Right,31,,0,5,
+Walrus Audio,d1mk2,CC,Feedback Mode,32,,0,2,
+Walrus Audio,d1mk2,CC,Mod Shape,33,,0,5,
+Walrus Audio,d1mk2,CC,Grain Pitch,34,,0,4,
+Walrus Audio,d1mk2,CC,Reverse Mode,35,,0,1,
+Walrus Audio,d1mk2,CC,Ramp,36,,0,127,
+Walrus Audio,d1mk2,CC,Mod Rate,37,,0,127,
+Walrus Audio,d1mk2,CC,Grain Size,38,,0,127,
+Walrus Audio,d1mk2,CC,Grain X,39,,0,127,
+Walrus Audio,d1mk2,CC,Time,14,,0,127,
+Walrus Audio,d1mk2,CC,Repeats,15,,0,127,
+Walrus Audio,d1mk2,CC,Mix,20,,0,127,
+Walrus Audio,d1mk2,CC,Duck,25,,0,127,
+Walrus Audio,d1mk2,CC,Mod,21,,0,127,
+Walrus Audio,d1mk2,CC,Tone,22,,0,127,
+Walrus Audio,d1mk2,CC,Age,23,,0,127,
+Walrus Audio,d1mk2,CC,Midi Clock Ignore,89,,0,127,
+Walrus Audio,d1mk2,CC,Spread,98,,0,127,
+Walrus Audio,d1mk2,CC,Program,24,,0,5,
+Walrus Audio,d1mk2,CC,Tap,30,,0,127,
+Walrus Audio,d1mk2,CC,Bypass,29,,0,127,
 Walrus Audio,D1 (Old version),CC,Time,0,,0,127,
 Walrus Audio,D1 (Old version),CC,Repeats,1,,0,127,
 Walrus Audio,D1 (Old version),CC,Mix,2,,0,127,
@@ -25972,6 +26178,23 @@ Walrus Audio,D1 (Old version),CC,Bypass Switch: BYPASS,11,,0,0,
 Walrus Audio,D1 (Old version),CC,Bypass Switch: ENGAGED,11,,127,127,
 Walrus Audio,D1 (Old version),CC,Tap Tempo: BYPASS,12,,0,0,
 Walrus Audio,D1 (Old version),CC,Tap Tempo: ENGAGED,12,,127,127,
+Walrus Audio,r1mk2,CC,Decay,3,,0,127,
+Walrus Audio,r1mk2,CC,Pre Delay,9,,0,127,
+Walrus Audio,r1mk2,CC,Mix,14,,0,127,
+Walrus Audio,r1mk2,CC,Rate,15,,0,127,
+Walrus Audio,r1mk2,CC,Depth,20,,0,127,
+Walrus Audio,r1mk2,CC,Swell,21,,0,127,
+Walrus Audio,r1mk2,CC,Duck,22,,0,127,
+Walrus Audio,r1mk2,CC,EQ Low,23,,0,127,
+Walrus Audio,r1mk2,CC,EQ High,24,,0,127,
+Walrus Audio,r1mk2,CC,Size,25,,0,127,
+Walrus Audio,r1mk2,CC,Diffuse,26,,0,127,
+Walrus Audio,r1mk2,CC,Feedback EQ,27,,0,127,
+Walrus Audio,r1mk2,CC,Program,28,,0,127,
+Walrus Audio,r1mk2,CC,Bypass,30,,0,127,
+Walrus Audio,r1mk2,CC,Sustain,31,,0,127,
+Walrus Audio,r1mk2,CC,Time,80,,0,127,
+Walrus Audio,r1mk2,CC,Octave Type,81,,0,127,
 wampler,catacombs,CC,Bypass State,1,,0,127,Controls overall bypass state of delay and reverb
 wampler,catacombs,CC,Delay State,2,,0,127,Controls bypass state of delay section
 wampler,catacombs,CC,Reverb State,3,,0,127,Controls bypass state of reverb section
@@ -26451,90 +26674,92 @@ Chase Bliss Audio,Wombtone MKII,CC,Tap Switch,93,,0,127,
 Chase Bliss Audio,Wombtone MKII,CC,Exp,100,,0,127,
 Chase Bliss Audio,Wombtone MKII,CC,Bypass Switch: Bypass,102,,0,0,
 Chase Bliss Audio,Wombtone MKII,CC,Bypass Switch: Engage,102,,127,127,"Sending a value of 127 with the pedal already engaged will reset any ramping that is happening, if any ramping is happening."
-Chase Bliss Audio,Mood MkII,CC,Bypass Micro-Looper - Off,102,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Bypass Micro-Looper - On,102,,1,127,
-Chase Bliss Audio,Mood MkII,CC,Bypass Wet - Off,103,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Bypass Wet - On,103,,1,127,
-Chase Bliss Audio,Mood MkII,CC,True Bypass Mode - Standard Buffered Bypass,55,,0,0,
-Chase Bliss Audio,Mood MkII,CC,True Bypass Mode - True Bypass,55,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Hidden Menu - Off,104,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Hidden Menu - On,104,,1,127,
-Chase Bliss Audio,Mood MkII,CC,Freeze Wet - Off,105,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Freeze Wet - On,105,,1,127,
-Chase Bliss Audio,Mood MkII,CC,Overdub Micro-Looper - Off,106,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Overdub Micro-Looper - On,106,,1,127,
-Chase Bliss Audio,Mood MkII,CC,Tap Tempo,107,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Tap Tempo - Legacy,93,,0,127,CC93 is also Tap Tempo for continuity between past pedals.
-Chase Bliss Audio,Mood MkII,CC,Wet Channel Mode - Reverb,21,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Wet Channel Mode - Delay,21,,2,2,
-Chase Bliss Audio,Mood MkII,CC,Wet Channel Mode - Slip,21,,3,3,
-Chase Bliss Audio,Mood MkII,CC,Routing - IN,22,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Routing - Micro-Looper + IN,22,,2,2,
-Chase Bliss Audio,Mood MkII,CC,Routing - Micro-Looper,22,,3,3,
-Chase Bliss Audio,Mood MkII,CC,Micro-Looper Channel Mode - Env,23,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Micro-Looper Channel Mode - Tape,23,,2,2,
-Chase Bliss Audio,Mood MkII,CC,Micro-Looper Channel Mode - Stretch,23,,3,3,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Time,14,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Mix,15,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Length,16,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Wet Modify,17,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Clock,18,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Micro-Looper Modify,19,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Knobs - Ramp Speed,20,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Wet Channel Stereo Width,24,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Triangle,25,,0,14,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Square,25,,15,54,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Sine,25,,55,80,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Random,25,,81,126,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Smooth Random,25,,127,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Micro-Looper Channel Fade,26,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Wet Channel Tone,27,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Level Balance,28,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Micro-Looper Channel Direct Micro-Loop,29,,0,127,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Sync - To Wet Channel,31,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Sync - No Sync,31,,2,2,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Sync - To Micro-Looper Channel,31,,3,3,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Spread - Wet Channel Only,32,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Spread - Both Channels,32,,2,2,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Spread - Micro-Looper Channel Only,32,,3,3,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Buffer Length - Half (like MKI),33,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Hidden Options - Buffer Length - Full,33,,2,2,
-Chase Bliss Audio,Mood MkII,CC,MIDI Clock Ignore - Ignore,51,,0,0,
-Chase Bliss Audio,Mood MkII,CC,MIDI Clock Ignore - Follow,51,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Stop Ramping - Stop,52,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Stop Ramping - Resume,52,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Time - Off,61,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Time - On,61,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Wet Channel Modify - Off,62,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Wet Channel Modify - On,62,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Clock - Off,63,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Clock - On,63,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Micro-Looper Channel Modify - Off,64,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Micro-Looper Channel Modify - On,64,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Length - Off,65,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Length - On,65,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Bounce - Off,66,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Bounce - On,66,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Sweep - Off,67,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Sweep - On,67,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Polarity - Off,68,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Polarity - On,68,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Classic - Off,71,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Classic - On,71,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Miso - Off,72,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Miso - On,72,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Spread - Off,73,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Spread - On,73,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Dry Kill - Off,74,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Dry Kill - On,74,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Trails - Off,75,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Trails - On,75,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Latch - Off,76,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Latch - On,76,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - No Dub Micro-Looper - Off,77,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - No Dub Micro-Looper - On,77,,1,1,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Smooth - Off,78,,0,0,
-Chase Bliss Audio,Mood MkII,CC,Dip Switches - Smooth - On,78,,1,1,
+Chase Bliss Audio,Generation Loss MKII,CC,Expression,100,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Preset Save,111,,0,122,
+Chase Bliss Audio,Generation Loss MKII,CC,Aux Onset Time,24,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Bypass: DSP,26,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Bypass: True,26,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,Hiss Level,27,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Mechanical Noise Level,28,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Crinkle Pop Level,29,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Input Gain: Line Level,32,,1,1,
+Chase Bliss Audio,Generation Loss MKII,CC,Input Gain: Instrument Level,32,,2,2,
+Chase Bliss Audio,Generation Loss MKII,CC,Input Gain: High Gain,32,,3,3,
+Chase Bliss Audio,Generation Loss MKII,CC,Ramp/Bounce: On,52,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Ramp/Bounce: Off,52,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: None,16,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: CPR-3300 Gen1,16,,15,15,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: CPR-3300 Gen2,16,,24,24,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: CPR-3300 Gen3,16,,33,33,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: Portamax-RT,16,,43,43,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: Portamax-HT,16,,53,53,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: CAM-8,16,,62,62,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: Dictatron-EX,16,,72,72,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: Dictatron-IN,16,,82,82,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: Fishy 60,16,,91,91,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: MS-Walker,16,,101,101,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: AMU-2,16,,111,111,
+Chase Bliss Audio,Generation Loss MKII,CC,Model: M-PEX,16,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Wow,14,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Volume,15,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Model/LP,16,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Flutter,17,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Saturate/Gen,18,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Failure/HP,19,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Ramp Speed,20,,0,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Aux: 1,21,,1,1,
+Chase Bliss Audio,Generation Loss MKII,CC,Aux: 2,21,,2,2,
+Chase Bliss Audio,Generation Loss MKII,CC,Aux: 3,21,,3,3,
+Chase Bliss Audio,Generation Loss MKII,CC,Dry: 1,22,,1,1,
+Chase Bliss Audio,Generation Loss MKII,CC,Dry: 2,22,,2,2,
+Chase Bliss Audio,Generation Loss MKII,CC,Dry: 3,22,,3,3,
+Chase Bliss Audio,Generation Loss MKII,CC,Noise: 1,23,,1,1,
+Chase Bliss Audio,Generation Loss MKII,CC,Noise: 2,23,,2,2,
+Chase Bliss Audio,Generation Loss MKII,CC,Noise: 3,23,,3,3,
+Chase Bliss Audio,Generation Loss MKII,CC,Bypass Pedal,102,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,Engage Pedal,102,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Aux: On,103,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Aux: Off,103,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,ALT: Enter,104,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,ALT: Exit,104,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Left Switch: On,105,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Left Switch: Off,105,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,Right Switch: On,106,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Right Switch: Off,106,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,Center Switch: On,107,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,Center Switch: Off,107,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Wow: On,61,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Wow: Off,61,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Flutter: On,62,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Flutter: Off,62,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sat/Gen: On,63,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sat/Gen: Off,63,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Failure/HP: On,64,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Failure/HP: Off,64,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Model/LP: On,65,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Model/LP: Off,65,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Bounce: On,66,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Bounce: Off,66,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Random: On,67,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Random: Off,67,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sweep: T,68,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sweep: B,68,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Polarity: R,71,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Polarity: F,71,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Classic: On,72,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Classic: Off,72,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Miso: On,73,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Miso: Off,73,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Spread: On,74,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Spread: Off,74,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Dry Type: On,75,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Dry Type: Off,75,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Drop Byp: On,76,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Drop Byp: Off,76,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Snag Byp: On,77,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Snag Byp: Off,77,,0,0,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Hum Byp: On,78,,127,127,
+Chase Bliss Audio,Generation Loss MKII,CC,DIP - Hum Byp: Off,78,,0,0,
 Chase Bliss Audio,CXM 1978,CC,BASS (Fader),14,,0,127,"(Full down is 0, Full up is 127)"
 Chase Bliss Audio,CXM 1978,CC,MIDS (Fader),15,,0,127,"(Full down is 0, Full up is 127)"
 Chase Bliss Audio,CXM 1978,CC,CROSS (Fader),16,,0,127,"(Full down is 0, Full up is 127)"
@@ -26686,6 +26911,59 @@ Chase Bliss Audio,Onward,CC,Midi Sync Subdivision - Dotted 8th,53,,5,5,
 Chase Bliss Audio,Onward,CC,Midi Sync Subdivision - 8th,53,,6,6,
 Chase Bliss Audio,Onward,CC,Midi Sync Subdivision - 8th note triplet,53,,7,7,
 Chase Bliss Audio,Onward,CC,Midi Sync Subdivision - 16th,53,,8,8,
+Chase Bliss Audio,brothersam,CC,Gain 2,14,,0,127,Channel 2 Gain
+Chase Bliss Audio,brothersam,CC,Volume 2,15,,0,127,Channel 2 Volume
+Chase Bliss Audio,brothersam,CC,Gain 1,16,,0,127,Channel 1 Gain
+Chase Bliss Audio,brothersam,CC,Tone 2,17,,0,127,Channel 2 Tone
+Chase Bliss Audio,brothersam,CC,Volume 1,18,,0,127,Channel 1 Volume
+Chase Bliss Audio,brothersam,CC,Tone 1,19,,0,127,Channel 1 Tone
+Chase Bliss Audio,brothersam,CC,Presence 2,27,,0,127,Channel 2 Presence
+Chase Bliss Audio,brothersam,CC,Presence 1,29,,0,127,Channel 1 Presence
+Chase Bliss Audio,brothersam,CC,Gain 2 Type: Boost,21,,0,1,Channel 2 Gain Type (Boost)
+Chase Bliss Audio,brothersam,CC,Gain 2 Type: OD,21,,2,2,Channel 2 Gain Type (Overdrive)
+Chase Bliss Audio,brothersam,CC,Gain 2 Type: DIST,21,,3,127,Channel 2 Gain Type (Distortion)
+Chase Bliss Audio,brothersam,CC,Gain 1 Type: Boost,23,,0,1,Channel 1 Gain Type (Boost)
+Chase Bliss Audio,brothersam,CC,Gain 1 Type: OD,23,,2,2,Channel 1 Gain Type (Overdrive)
+Chase Bliss Audio,brothersam,CC,Gain 1 Type: DIST,23,,3,127,Channel 1 Gain Type (Distortion)
+Chase Bliss Audio,brothersam,CC,Treble Boost: Full Sun,22,,0,1,Treble Boost (Full Sun)
+Chase Bliss Audio,brothersam,CC,Treble Boost: Off,22,,2,2,Treble Boost (Off)
+Chase Bliss Audio,brothersam,CC,Treble Boost: Half Sun,22,,3,127,Treble Boost (Half Sun)
+Chase Bliss Audio,brothersam,CC,Channel 1 Bypass: On,102,,1,127,Bypass Channel 1 (On)
+Chase Bliss Audio,brothersam,CC,Channel 1 Bypass: Off,102,,0,0,Bypass Channel 1 (Off)
+Chase Bliss Audio,brothersam,CC,Channel 2 Bypass: On,103,,1,127,Bypass Channel 2 (On)
+Chase Bliss Audio,brothersam,CC,Channel 2 Bypass: Off,103,,0,0,Bypass Channel 2 (Off)
+Chase Bliss Audio,brothersam,CC,EOM,100,,0,127,Expression Over Midi
+Chase Bliss Audio,brothersam,CC,Preset Save,111,,1,122,Save a preset
+Chase Bliss Audio,brothersam,CC,Left Bank: Volume 1 (Off),61,,0,0,Left Bank Dip Switch Channel 1 Volume (Off)
+Chase Bliss Audio,brothersam,CC,Left Bank: Volume 2 (Off),62,,0,0,Left Bank Dip Switch Channel 2 Volume (Off)
+Chase Bliss Audio,brothersam,CC,Left Bank: Gain 1 (Off),63,,0,0,Left Bank Dip Switch Channel 1 Gain (Off)
+Chase Bliss Audio,brothersam,CC,Left Bank: Gain 2 (Off),64,,0,0,Left Bank Dip Switch Channel 2 Gain (Off)
+Chase Bliss Audio,brothersam,CC,Left Bank: Tone 1 (Off),65,,0,0,Left Bank Dip Switch Channel 1 Tone (Off)
+Chase Bliss Audio,brothersam,CC,Left Bank: Tone 2 (Off),66,,0,0,Left Bank Dip Switch Channel 2 Tone (Off)
+Chase Bliss Audio,brothersam,CC,Left Bank: Sweep (B),67,,0,0,Left Bank Dip Switch Sweep (Bottom)
+Chase Bliss Audio,brothersam,CC,Left Bank: Polarity (F),68,,0,0,Left Bank Dip Switch Polarity (Fall)
+Chase Bliss Audio,brothersam,CC,Left Bank: Volume 1 (On),61,,1,127,Left Bank Dip Switch Channel 1 Volume (On)
+Chase Bliss Audio,brothersam,CC,Left Bank: Volume 2 (On),62,,1,127,Left Bank Dip Switch Channel 2 Volume (On)
+Chase Bliss Audio,brothersam,CC,Left Bank: Gain 1 (On),63,,1,127,Left Bank Dip Switch Channel 1 Gain (On)
+Chase Bliss Audio,brothersam,CC,Left Bank: Gain 2 (On),64,,1,127,Left Bank Dip Switch Channel 2 Gain (On)
+Chase Bliss Audio,brothersam,CC,Left Bank: Tone 1 (On),65,,1,127,Left Bank Dip Switch Channel 1 Tone (On)
+Chase Bliss Audio,brothersam,CC,Left Bank: Tone 2 (On),66,,1,127,Left Bank Dip Switch Channel 2 Tone (On)
+Chase Bliss Audio,brothersam,CC,Left Bank: Sweep (T),67,,1,127,Left Bank Dip Switch Sweep (Top)
+Chase Bliss Audio,brothersam,CC,Left Bank: Polarity (R),68,,1,127,Left Bank Dip Switch Polarity (Rise)
+Chase Bliss Audio,brothersam,CC,Right Bank: Hi Gain 1 (Off),71,,0,0,Right Bank Dip Switch Channel 1 Hi Gain (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: Hi Gain 2 (Off),72,,0,0,Right Bank Dip Switch Channel 2 Hi Gain (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: MoToByp 1 (Off),73,,0,0,Right Bank Dip Switch Channel 1 Momentary to Bypass (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: MoToByp 2 (Off),74,,0,0,Right Bank Dip Switch Channel 2 Momentary to Bypass (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: Pres Link 1 (Off),75,,0,0,Right Bank Dip Switch Channel 1 Link Presence to Tone (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: Pres Link 2 (Off),76,,0,0,Right Bank Dip Switch Channel 2 Link Presence to Tone (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: Master (Off),77,,0,0,Right Bank Dip Switch Channel 2 Volume to Master (Off)
+Chase Bliss Audio,brothersam,CC,Right Bank: Hi Gain 1 (On),71,,1,127,Right Bank Dip Switch Channel 1 Hi Gain (On)
+Chase Bliss Audio,brothersam,CC,Right Bank: Hi Gain 2 (On),72,,1,127,Right Bank Dip Switch Channel 2 Hi Gain (On)
+Chase Bliss Audio,brothersam,CC,Right Bank: MoToByp 1 (On),73,,1,127,Right Bank Dip Switch Channel 1 Momentary to Bypass (On)
+Chase Bliss Audio,brothersam,CC,Right Bank: MoToByp 2 (On),74,,1,127,Right Bank Dip Switch Channel 2 Momentary to Bypass (On)
+Chase Bliss Audio,brothersam,CC,Right Bank: Pres Link 1 (On),75,,1,127,Right Bank Dip Switch Channel 1 Link Presence to Tone (On)
+Chase Bliss Audio,brothersam,CC,Right Bank: Pres Link 2 (On),76,,1,127,Right Bank Dip Switch Channel 2 Link Presence to Tone (On)
+Chase Bliss Audio,brothersam,CC,Right Bank: Master (On),77,,1,127,Right Bank Dip Switch Channel 2 Volume to Master (On)
 Chase Bliss Audio,Bliss Factory,CC,Volume,14,,0,127,
 Chase Bliss Audio,Bliss Factory,CC,Gate,15,,0,127,
 Chase Bliss Audio,Bliss Factory,CC,Comp,16,,0,127,
@@ -26706,92 +26984,90 @@ Chase Bliss Audio,Bliss Factory,CC,Bypass AUX function,101,,0,0,
 Chase Bliss Audio,Bliss Factory,CC,Engage AUX function,101,,1,127,
 Chase Bliss Audio,Bliss Factory,CC,Bypass Switch: Bypass Pedal,102,,0,0,
 Chase Bliss Audio,Bliss Factory,CC,Bypass Switch: Engage pedal,102,,1,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Expression,100,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Preset Save,111,,0,122,
-Chase Bliss Audio,Generation Loss MKII,CC,Aux Onset Time,24,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Bypass: DSP,26,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Bypass: True,26,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,Hiss Level,27,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Mechanical Noise Level,28,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Crinkle Pop Level,29,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Input Gain: Line Level,32,,1,1,
-Chase Bliss Audio,Generation Loss MKII,CC,Input Gain: Instrument Level,32,,2,2,
-Chase Bliss Audio,Generation Loss MKII,CC,Input Gain: High Gain,32,,3,3,
-Chase Bliss Audio,Generation Loss MKII,CC,Ramp/Bounce: On,52,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Ramp/Bounce: Off,52,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: None,16,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: CPR-3300 Gen1,16,,15,15,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: CPR-3300 Gen2,16,,24,24,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: CPR-3300 Gen3,16,,33,33,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: Portamax-RT,16,,43,43,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: Portamax-HT,16,,53,53,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: CAM-8,16,,62,62,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: Dictatron-EX,16,,72,72,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: Dictatron-IN,16,,82,82,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: Fishy 60,16,,91,91,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: MS-Walker,16,,101,101,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: AMU-2,16,,111,111,
-Chase Bliss Audio,Generation Loss MKII,CC,Model: M-PEX,16,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Wow,14,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Volume,15,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Model/LP,16,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Flutter,17,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Saturate/Gen,18,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Failure/HP,19,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Ramp Speed,20,,0,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Aux: 1,21,,1,1,
-Chase Bliss Audio,Generation Loss MKII,CC,Aux: 2,21,,2,2,
-Chase Bliss Audio,Generation Loss MKII,CC,Aux: 3,21,,3,3,
-Chase Bliss Audio,Generation Loss MKII,CC,Dry: 1,22,,1,1,
-Chase Bliss Audio,Generation Loss MKII,CC,Dry: 2,22,,2,2,
-Chase Bliss Audio,Generation Loss MKII,CC,Dry: 3,22,,3,3,
-Chase Bliss Audio,Generation Loss MKII,CC,Noise: 1,23,,1,1,
-Chase Bliss Audio,Generation Loss MKII,CC,Noise: 2,23,,2,2,
-Chase Bliss Audio,Generation Loss MKII,CC,Noise: 3,23,,3,3,
-Chase Bliss Audio,Generation Loss MKII,CC,Bypass Pedal,102,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,Engage Pedal,102,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Aux: On,103,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Aux: Off,103,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,ALT: Enter,104,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,ALT: Exit,104,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Left Switch: On,105,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Left Switch: Off,105,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,Right Switch: On,106,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Right Switch: Off,106,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,Center Switch: On,107,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,Center Switch: Off,107,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Wow: On,61,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Wow: Off,61,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Flutter: On,62,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Flutter: Off,62,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sat/Gen: On,63,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sat/Gen: Off,63,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Failure/HP: On,64,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Failure/HP: Off,64,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Model/LP: On,65,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Model/LP: Off,65,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Bounce: On,66,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Bounce: Off,66,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Random: On,67,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Random: Off,67,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sweep: T,68,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Sweep: B,68,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Polarity: R,71,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Polarity: F,71,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Classic: On,72,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Classic: Off,72,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Miso: On,73,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Miso: Off,73,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Spread: On,74,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Spread: Off,74,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Dry Type: On,75,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Dry Type: Off,75,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Drop Byp: On,76,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Drop Byp: Off,76,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Snag Byp: On,77,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Snag Byp: Off,77,,0,0,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Hum Byp: On,78,,127,127,
-Chase Bliss Audio,Generation Loss MKII,CC,DIP - Hum Byp: Off,78,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Bypass Micro-Looper - Off,102,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Bypass Micro-Looper - On,102,,1,127,
+Chase Bliss Audio,Mood MkII,CC,Bypass Wet - Off,103,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Bypass Wet - On,103,,1,127,
+Chase Bliss Audio,Mood MkII,CC,True Bypass Mode - Standard Buffered Bypass,55,,0,0,
+Chase Bliss Audio,Mood MkII,CC,True Bypass Mode - True Bypass,55,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Hidden Menu - Off,104,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Hidden Menu - On,104,,1,127,
+Chase Bliss Audio,Mood MkII,CC,Freeze Wet - Off,105,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Freeze Wet - On,105,,1,127,
+Chase Bliss Audio,Mood MkII,CC,Overdub Micro-Looper - Off,106,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Overdub Micro-Looper - On,106,,1,127,
+Chase Bliss Audio,Mood MkII,CC,Tap Tempo,107,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Tap Tempo - Legacy,93,,0,127,CC93 is also Tap Tempo for continuity between past pedals.
+Chase Bliss Audio,Mood MkII,CC,Wet Channel Mode - Reverb,21,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Wet Channel Mode - Delay,21,,2,2,
+Chase Bliss Audio,Mood MkII,CC,Wet Channel Mode - Slip,21,,3,3,
+Chase Bliss Audio,Mood MkII,CC,Routing - IN,22,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Routing - Micro-Looper + IN,22,,2,2,
+Chase Bliss Audio,Mood MkII,CC,Routing - Micro-Looper,22,,3,3,
+Chase Bliss Audio,Mood MkII,CC,Micro-Looper Channel Mode - Env,23,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Micro-Looper Channel Mode - Tape,23,,2,2,
+Chase Bliss Audio,Mood MkII,CC,Micro-Looper Channel Mode - Stretch,23,,3,3,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Time,14,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Mix,15,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Length,16,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Wet Modify,17,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Clock,18,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Micro-Looper Modify,19,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Knobs - Ramp Speed,20,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Wet Channel Stereo Width,24,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Triangle,25,,0,14,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Square,25,,15,54,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Sine,25,,55,80,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Random,25,,81,126,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Ramping Waveform - Smooth Random,25,,127,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Micro-Looper Channel Fade,26,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Wet Channel Tone,27,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Level Balance,28,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Micro-Looper Channel Direct Micro-Loop,29,,0,127,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Sync - To Wet Channel,31,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Sync - No Sync,31,,2,2,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Sync - To Micro-Looper Channel,31,,3,3,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Spread - Wet Channel Only,32,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Spread - Both Channels,32,,2,2,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Spread - Micro-Looper Channel Only,32,,3,3,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Buffer Length - Half (like MKI),33,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Hidden Options - Buffer Length - Full,33,,2,2,
+Chase Bliss Audio,Mood MkII,CC,MIDI Clock Ignore - Ignore,51,,0,0,
+Chase Bliss Audio,Mood MkII,CC,MIDI Clock Ignore - Follow,51,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Stop Ramping - Stop,52,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Stop Ramping - Resume,52,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Time - Off,61,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Time - On,61,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Wet Channel Modify - Off,62,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Wet Channel Modify - On,62,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Clock - Off,63,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Clock - On,63,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Micro-Looper Channel Modify - Off,64,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Micro-Looper Channel Modify - On,64,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Length - Off,65,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Length - On,65,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Bounce - Off,66,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Bounce - On,66,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Sweep - Off,67,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Sweep - On,67,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Polarity - Off,68,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Polarity - On,68,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Classic - Off,71,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Classic - On,71,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Miso - Off,72,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Miso - On,72,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Spread - Off,73,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Spread - On,73,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Dry Kill - Off,74,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Dry Kill - On,74,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Trails - Off,75,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Trails - On,75,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Latch - Off,76,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Latch - On,76,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - No Dub Micro-Looper - Off,77,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - No Dub Micro-Looper - On,77,,1,1,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Smooth - Off,78,,0,0,
+Chase Bliss Audio,Mood MkII,CC,Dip Switches - Smooth - On,78,,1,1,
 Chase Bliss Audio,Dark World,CC,Decay,14,,0,127,
 Chase Bliss Audio,Dark World,CC,Mix,15,,0,127,
 Chase Bliss Audio,Dark World,CC,Dwell,16,,0,127,
@@ -28307,6 +28583,30 @@ Seymour Duncan,Andromeda,CC,BPM MSB,30,,0,127,
 Seymour Duncan,Andromeda,CC,BPM LSB,62,,0,127,
 Seymour Duncan,Andromeda,CC,mS MSB,31,,0,127,
 Seymour Duncan,Andromeda,CC,mS LSB,63,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Dry Volume,14,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Wet Volume,15,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Space,16,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Rate,17,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Depth,18,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Tone,19,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Grit,20,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Time L,21,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Subdivisions L,22,,0,127,"0-21 sixteenth, 22-42 dotted sixteenth, 43-63 eighth, 64-84 triplet, 85-105 dotted eighth, 106-127 quarter"
+Old Blood Noise Endeavors,blackfountain,CC,Time R,23,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Subdivisions R,24,,0,127,"0-21 sixteenth, 22-42 dotted sixteenth, 43-63 eighth, 64-84 triplet, 85-105 dotted eighth, 106-127 quarter"
+Old Blood Noise Endeavors,blackfountain,CC,Feedback,25,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Expression,11,,0,127,
+Old Blood Noise Endeavors,blackfountain,CC,Bypass Switch,26,,0,127,"OFF: 0-63, ON:64-127"
+Old Blood Noise Endeavors,blackfountain,CC,Tap Tempo Switch,27,,0,0,Tap Pulse: 0 (no response to 1-127)
+Old Blood Noise Endeavors,blackfountain,CC,Preset Saving Switch,28,,0,127,"0-42 Cancel Save, 43-85 Start Save, 86-127 Confirm Save"
+Old Blood Noise Endeavors,blackfountain,CC,MIDI Clock Input Mode,29,,0,127,"Accept Clock In and Send
+Clock Thru: 0-31
+Accept Clock In Only: 32-63
+Send Clock Out Only: 64-95
+Deactivate Clock: 96-127"
+Old Blood Noise Endeavors,blackfountain,CC,Trails Setting,81,,0,127,"OFF: 0-63, ON: 64-127"
+Old Blood Noise Endeavors,blackfountain,CC,Stereo Setting,82,,0,127,"0-42 mono, 43-85 mono in, stereo out, 86-127 stereo"
+Old Blood Noise Endeavors,blackfountain,CC,MIDI Channel,102,,1,16,
 Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,CC,Volume,7,,0,127,
 Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,CC,Mix,14,,0,127,
 Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,CC,Decay,15,,0,127,
@@ -29905,7 +30205,37 @@ Singular Sound,BeatBuddy,CC,Normal Time,83,,0,0,Return to normal mode from Doubl
 Singular Sound,BeatBuddy,CC,Double Time,83,,1,127,Double Time. Added 2.7.0
 Singular Sound,BeatBuddy,CC,Increase Tempo (or NRPN target) by 1,96,,1,1,"Increase Tempo by 1. Also referred to as ""Data increment (+1) or INC"""
 Singular Sound,BeatBuddy,CC,Decrease Tempo (or NRPN target) by 1,97,,1,1,"Decrease Tempo by 1. Also referred to as ""Data decrement (-1) or  DEC"""
-Singular Sound,BeatBuddy,CC,Set NRPN to Tempo LSB,98,,107,107,"Set the NRPN LSB
+Singular Sound,BeatBuddy,CC,Set NRPN to Mix LSB,98,,108,108,"Set the NRPN LSB for Mix control
+
+We use the “NRPN Register” (Non-Registered Parameter Number) which is a
+general purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control
+multiple parameters on the BeatBuddy using an MSB sequence, which is usually a
+series of 3 commands: 2 CC commands and one PC.
+
+This can be used to control tempo, any other parameter, or multiple parameters at
+once. Currently we’re only using it to control tempo, but we follow the MIDI
+Standard protocol to leave room for further control in the future.
+
+Optional if the only value control by Inc/Dec is the Tempo. By
+default, the Beatbuddy will increment / decrement the tempo when receiving a INC/
+DEC message.
+"
+Singular Sound,BeatBuddy,CC,Set NRPN to Level LSB,98,,109,109,"Set the NRPN LSB for headphone control
+
+We use the “NRPN Register” (Non-Registered Parameter Number) which is a
+general purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control
+multiple parameters on the BeatBuddy using an MSB sequence, which is usually a
+series of 3 commands: 2 CC commands and one PC.
+
+This can be used to control tempo, any other parameter, or multiple parameters at
+once. Currently we’re only using it to control tempo, but we follow the MIDI
+Standard protocol to leave room for further control in the future.
+
+Optional if the only value control by Inc/Dec is the Tempo. By
+default, the Beatbuddy will increment / decrement the tempo when receiving a INC/
+DEC message.
+"
+Singular Sound,BeatBuddy,CC,Set NRPN to Tempo LSB,98,,107,107,"Set the NRPN LSB for Tempo control
 
 We use the “NRPN Register” (Non-Registered Parameter Number) which is a
 general purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control
@@ -29922,6 +30252,21 @@ DEC message.
 "
 Singular Sound,BeatBuddy,CC,Clear NRPN LSB Register,98,,127,127,Clear NRPN LSB Register
 Singular Sound,BeatBuddy,CC,Set NRPN to Tempo MSB,99,,106,106,"Set the NRPN MSB
+
+We use the “NRPN Register” (Non-Registered Parameter Number) which is a
+general purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control
+multiple parameters on the BeatBuddy using an MSB sequence, which is usually a
+series of 3 commands: 2 CC commands and one PC.
+
+This can be used to control tempo, any other parameter, or multiple parameters at
+once. Currently we’re only using it to control tempo, but we follow the MIDI
+Standard protocol to leave room for further control in the future.
+
+Optional if the only value control by Inc/Dec is the Tempo. By
+default, the Beatbuddy will increment / decrement the tempo when receiving a INC/
+DEC message.
+"
+Singular Sound,BeatBuddy,CC,Set NRPN to Headphone/Mix MSB,99,,0,0,"Set the NRPN MSB for headphone or Mix control
 
 We use the “NRPN Register” (Non-Registered Parameter Number) which is a
 general purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control
@@ -31135,6 +31480,14 @@ G-LAB,BC-1,CC,COMP A ON,111,,3,3,Description of function
 G-LAB,BC-1,CC,COMP B ON,111,,4,4,Description of function
 G-LAB,BC-1,CC,COMP C ON,111,,5,5,Description of function
 G-LAB,BC-1,CC,SEL COMP ON,111,,6,6,Description of function
+G-LAB,midiwoweewahmww1,CC,BASS,104,,0,63,LOW
+G-LAB,midiwoweewahmww1,CC,BASS,104,,64,127,HI
+G-LAB,midiwoweewahmww1,CC,DEEP,105,,0,63,LOW
+G-LAB,midiwoweewahmww1,CC,DEEP,105,,64,127,HI
+G-LAB,midiwoweewahmww1,CC,Q FACT.,106,,0,63,LOW
+G-LAB,midiwoweewahmww1,CC,Q FACT.,106,,64,127,HI
+G-LAB,midiwoweewahmww1,CC,VOLUME,107,,0,63,LOW
+G-LAB,midiwoweewahmww1,CC,VOLUME,107,,64,127,HI
 Headrush,MX5,CC,Footswitch 1,50,,0,127,
 Headrush,MX5,CC,Footswitch 2,51,,0,127,
 Headrush,MX5,CC,Footswitch 3,52,,0,127,
@@ -31344,6 +31697,50 @@ Neunaber,Neuron,CC,Engage/Bypass,112,,0,127,"0: bypass, 1-127: engage"
 Neunaber,Neuron,CC,Save Preset,113,,0,127,
 Neunaber,Neuron,CC,Speaker Simulator,114,,0,127,"0: off, 1-127: on"
 Neunaber,Neuron,CC,Tilt EQ,115,,0,127,
+Kinotone,Ribbons,CC,High Pass Filter,0,,0,127,
+Kinotone,Ribbons,CC,Low Pass Filter,1,,0,127,
+Kinotone,Ribbons,CC,Mix,2,,0,127,
+Kinotone,Ribbons,CC,Compression / Saturation,3,,0,127,
+Kinotone,Ribbons,CC,Wow Frequency,4,,0,127,
+Kinotone,Ribbons,CC,Wow Depth,5,,0,127,
+Kinotone,Ribbons,CC,Flutter Depth,6,,0,127,
+Kinotone,Ribbons,CC,Flutter Frequency,7,,0,127,
+Kinotone,Ribbons,CC,Dropouts Frequency,8,,0,127,
+Kinotone,Ribbons,CC,Dropouts Depth,9,,0,127,
+Kinotone,Ribbons,CC,Crinkle,10,,0,127,
+Kinotone,Ribbons,CC,Noise,11,,0,127,
+Kinotone,Ribbons,CC,Reverb Decay,12,,0,127,
+Kinotone,Ribbons,CC,Reverb Mix & Placement,13,,0,127,
+Kinotone,Ribbons,CC,Touch Param 1,14,,0,127,
+Kinotone,Ribbons,CC,Touch Param 2,15,,0,127,
+Kinotone,Ribbons,CC,Touch Footswitch,16,,0,127,0=Off ; ≥1=On
+Kinotone,Ribbons,CC,Bypass Footswitch,17,,0,127,0=Off ; ≥1=On
+Kinotone,Ribbons,CC,Touch Mode Select,18,,0,5,
+Kinotone,Ribbons,CC,Ribbons Mode Select,19,,0,127,0=Tape Effects ; 1=Looper
+Kinotone,Ribbons,CC,Change Looper Track,20,,0,127,0=Track 1 ; 1=Track 2 ; etc.
+Kinotone,Ribbons,CC,Clear Current Looper Track,21,,0,127,0=False ; ≥1=True
+Kinotone,Ribbons,CC,Clear All Looper Tracks,22,,0,127,0=False ; ≥1=True
+Kinotone,Ribbons,CC,Track 1 Direction,23,,0,127,
+Kinotone,Ribbons,CC,Track 1 Speed,24,,0,127,
+Kinotone,Ribbons,CC,Track 1 Volume,25,,0,127,
+Kinotone,Ribbons,CC,Track 1 Scale,26,,0,127,
+Kinotone,Ribbons,CC,Track 2 Direction,27,,0,127,
+Kinotone,Ribbons,CC,Track 2 Speed,28,,0,127,
+Kinotone,Ribbons,CC,Track 2 Volume,29,,0,127,
+Kinotone,Ribbons,CC,Track 2 Scale,30,,0,127,
+Kinotone,Ribbons,CC,Track 3 Direction,31,,0,127,
+Kinotone,Ribbons,CC,Track 3 Speed,32,,0,127,
+Kinotone,Ribbons,CC,Track 3 Volume,33,,0,127,
+Kinotone,Ribbons,CC,Track 3 Scale,34,,0,127,
+Kinotone,Ribbons,CC,Track 4 Direction,35,,0,127,
+Kinotone,Ribbons,CC,Track 4 Speed,36,,0,127,
+Kinotone,Ribbons,CC,Track 4 Volume,37,,0,127,
+Kinotone,Ribbons,CC,Track 4 Scale,38,,0,127,
+Kinotone,Ribbons,CC,Ignore MIDI Clock,51,,0,127,0=Ignore ; ≥1=Listen
+Kinotone,Ribbons,CC,Compression / Saturation,52,,0,127,0=Comp ; ≥1=Sat
+Kinotone,Ribbons,CC,Synth Attack,53,,0,127,
+Kinotone,Ribbons,CC,Synth Release,54,,0,127,
+Kinotone,Ribbons,CC,Synth Volume,55,,0,127,
 Laney,BBC The Difference Engine,CC,Preset Select,0,,0,100,An alternative to using Program Change Messages.
 Laney,BBC The Difference Engine,CC,Enable,1,,0,1,0 = Bypass ; 1 = Enable
 Laney,BBC The Difference Engine,CC,Freeze,56,,0,1,0 = Disable Freeze; 1 = Enable Freeze

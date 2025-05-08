@@ -67,7 +67,7 @@ Boss,Katana,7,0,0,7,No,No,None
 Boss,md-200,0,0,0,0,No,No,None
 Boss,MD-500,16,0,0,16,No,No,None
 Boss,OD-200,14,0,0,14,No,No,None
-Boss,RC-10R,17,0,0,17,No,No,None
+Boss,RC-10R,18,0,0,18,No,Yes,None
 Boss,RE-202,14,0,0,14,No,No,None
 Boss,RV-500,21,0,0,21,No,No,None
 Boss,sde-3000d/evh,0,0,0,0,No,No,None
@@ -93,6 +93,7 @@ diezel,vhx,45,0,0,45,No,No,None
 Dimehead,NAM,49,0,0,49,No,No,None
 Disaster Area,DPC-8EZ Gen2,19,0,0,19,No,No,None
 Disaster Area,DPC Micro,3,0,0,3,Yes,No,None
+Disaster Area,microclockgen4,6,0,0,6,Yes,Yes,unknown
 Dr Scientist,Dusk,18,0,0,18,No,No,None
 Dr Scientist,The Atmosphere,55,0,0,55,No,No,None
 Dreadbox,Medusa,111,0,0,111,No,No,None
@@ -258,6 +259,7 @@ Meris,Polymoon,25,0,0,25,No,No,None
 Meris,Enzo,25,0,0,25,No,No,None
 Meris,Hedra,27,0,0,27,No,No,None
 Meris,Mercury 7,19,0,0,19,No,No,None
+Meris,enzox,71,0,0,71,Yes,Yes,unknown
 mesa_boogie,jp2c,11,0,0,11,No,No,None
 Modal Electronics,1,166,0,0,166,No,No,None
 Modal Electronics,2,166,0,0,166,No,No,None
@@ -290,7 +292,7 @@ Moog,MF-104M,29,0,0,29,No,No,None
 Moog,Minimoog Voyager XL,186,0,0,186,No,No,None
 Mutable Instruments,Shruthi,39,0,0,39,No,No,None
 nux,tape_echo_ndd-7,16,0,0,16,No,No,None
-Neural DSP,Quad Cortex,35,0,0,35,No,Yes,None
+Neural DSP,Quad Cortex,41,0,0,41,No,Yes,None
 norand,mono,29,0,0,29,No,No,None
 Nord,a1,55,0,0,55,No,No,None
 Nord,C2D,57,0,0,57,No,No,None
@@ -365,10 +367,11 @@ rjm,miniampgizmo,36,0,0,36,No,No,None
 Red Panda,particle,33,0,0,33,No,No,None
 Red Panda,raster,17,0,0,17,No,No,None
 Red Panda,Raster 2,33,0,0,33,No,No,None
-Red Panda,Context 2,135,0,0,135,No,No,None
 Red Panda,Tensor,18,0,0,18,No,No,None
+Red Panda,Context 2,135,0,0,135,No,No,None
 Red Panda,Bitmap 2,20,0,0,20,No,No,None
 Red Panda,Particle 2,36,0,0,36,No,No,None
+Red Panda,radius,28,0,0,28,Yes,Yes,unknown
 Roland,D-05,8,0,0,8,No,No,None
 Roland,GAIA SH-01,8,0,0,8,No,No,None
 Roland,JD-XA,75,16,0,91,No,No,None
@@ -421,7 +424,7 @@ Source Audio,Collider,67,0,0,67,Yes,Yes,None
 Source Audio,Spectrum Intelligence Filter,7,0,0,7,No,No,None
 Source Audio,EQ2,128,0,0,128,Yes,Yes,None
 Source Audio,Programmable EQ,15,0,0,15,No,No,None
-Source Audio,Atlas,5,0,0,5,Yes,Yes,None
+Source Audio,Atlas,25,0,0,25,Yes,Yes,unknown
 Source Audio,C4 Synth,7,0,0,7,No,Yes,None
 Strymon,NightSky,55,0,0,55,Yes,Yes,None
 Strymon,Volante,52,0,0,52,No,No,None
@@ -475,7 +478,11 @@ Walrus Audio,D1 (New version),21,0,0,21,No,No,None
 Walrus Audio,M1,40,0,0,40,No,No,None
 Walrus Audio,Meraki (Stereo Analog Delay),23,0,0,23,No,No,None
 Walrus Audio,R1,15,0,0,15,No,No,None
+Walrus Audio,m1mk2,26,0,0,26,Yes,Yes,unknown
+Walrus Audio,acs1mk2,24,0,0,24,Yes,Yes,unknown
+Walrus Audio,d1mk2,22,0,0,22,Yes,Yes,unknown
 Walrus Audio,D1 (Old version),21,0,0,21,Yes,Yes,None
+Walrus Audio,r1mk2,17,0,0,17,Yes,Yes,unknown
 wampler,catacombs,25,0,0,25,No,No,None
 wampler,metaverse,22,0,0,22,No,No,None
 wampler,pantheon,9,0,0,9,No,No,None
@@ -495,13 +502,14 @@ Chase Bliss Audio,Lossy,43,0,0,43,Yes,No,None
 Chase Bliss Audio,Warped Vinyl HiFi,19,0,0,19,No,Yes,None
 Chase Bliss Audio,Thermae,28,0,0,28,No,Yes,None
 Chase Bliss Audio,Wombtone MKII,19,0,0,19,No,Yes,None
-Chase Bliss Audio,Mood MkII,84,0,0,84,No,Yes,None
+Chase Bliss Audio,Generation Loss MKII,86,0,0,86,No,No,None
 Chase Bliss Audio,CXM 1978,19,0,0,19,Yes,No,None
 Chase Bliss Audio,Mood,12,0,0,12,Yes,No,None
 Chase Bliss Audio,Condor,22,0,0,22,Yes,No,None
 Chase Bliss Audio,Onward,98,0,0,98,No,Yes,None
+Chase Bliss Audio,brothersam,53,0,0,53,Yes,Yes,unknown
 Chase Bliss Audio,Bliss Factory,20,0,0,20,Yes,No,None
-Chase Bliss Audio,Generation Loss MKII,86,0,0,86,No,No,None
+Chase Bliss Audio,Mood MkII,84,0,0,84,No,Yes,None
 Chase Bliss Audio,Dark World,22,0,0,22,No,No,None
 Chase Bliss Audio,Reverse Mode C,109,0,0,109,No,Yes,None
 Chase Bliss Audio,Tonal Recall,19,0,0,19,No,Yes,None
@@ -546,6 +554,7 @@ KSR Amplification,Artemis 100,121,0,0,121,No,No,None
 KSR Amplification,Colossus H-100,121,0,0,121,No,No,None
 KSR Amplification,Gemini 100,121,0,0,121,No,No,None
 Seymour Duncan,Andromeda,25,0,0,25,No,No,None
+Old Blood Noise Endeavors,blackfountain,20,0,0,20,Yes,Yes,unknown
 Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,18,0,0,18,No,No,None
 Sheeran,Looper+,24,0,0,24,No,No,None
 Sheeran,looperx,92,0,0,92,No,No,None
@@ -555,7 +564,7 @@ Two Notes Audio Engineering,Opus,69,0,0,69,No,No,None
 Two Notes Audio Engineering,Torpedo Studio,345,0,0,345,No,No,None
 Two Notes Audio Engineering,Torpedo Captor X,291,0,0,291,No,No,None
 Two Notes Audio Engineering,Torpedo Live v3 firmware,140,0,0,140,No,No,None
-Singular Sound,BeatBuddy,34,0,0,34,Yes,Yes,None
+Singular Sound,BeatBuddy,37,0,0,37,Yes,Yes,None
 Singular Sound,Aeros Looper,111,0,0,111,Yes,Yes,true
 Suhr,Hedgehog,9,0,0,9,No,No,None
 Suhr,PT-100,15,0,0,15,No,No,None
@@ -597,13 +606,14 @@ Morningstar Engineering,ML10X,26,0,0,26,Yes,No,None
 G-LAB,MIDI 4 X LOOP-er,10,0,0,10,No,No,None
 G-LAB,MIDI 2 X LOOP-er,10,0,0,10,No,No,None
 G-LAB,BC-1,13,0,0,13,Yes,No,None
+G-LAB,midiwoweewahmww1,8,0,0,8,Yes,Yes,unknown
 Headrush,MX5,25,0,0,25,No,No,None
 Headrush,Gigboard,26,0,0,26,No,No,None
 Headrush,Looperboard,86,0,0,86,Yes,No,None
 Headrush,Pedalbaord,34,0,0,34,No,No,None
 Neunaber,Illumine,24,0,0,24,No,No,None
 Neunaber,Neuron,14,0,0,14,No,No,None
-Kinotone,Ribbons,0,0,0,0,No,No,None
+Kinotone,Ribbons,44,0,0,44,No,No,None
 Laney,BBC The Difference Engine,52,0,0,52,Yes,Yes,None
 Jet Pedals,Lamb,11,0,0,11,No,No,None
 Jet Pedals,Revelation Reverb 2.0,15,0,0,15,No,No,None

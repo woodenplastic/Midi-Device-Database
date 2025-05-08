@@ -26050,183 +26050,193 @@
       "brand": "Boss",
       "device_name": "RC-10R",
       "midi_thru": false,
-      "midi_in": "",
-      "midi_clock": false,
+      "midi_in": "TRS",
+      "midi_clock": true,
       "phantom_power": "None",
       "midi_channel": {
-        "instructions": ""
+        "instructions": "The RC-10R ships with the default MIDI control channel of 1 and a Note channel of 10. \nThe note channel is for playing the drum sounds via MIDI. \nMIDI CC commands are OFF by default. You need to program the unit with the CC per command. The CC numbers below are just suggestions. CC can be 1-31 and 64-95.\nIn other words, if you just send the commands below nothing will happen. You need to set the CC value for each command on the RC-10R. \nMIDI note mapping is found on the last page of the RC-10R MIDI implimentation guide.\n"
       },
       "instructions": "",
       "cc": [
         {
           "name": "Rhythm Start",
-          "description": "Starts the rhythm playback",
-          "usage": "0-95: Start rhythm",
+          "description": "Start the rhythm",
+          "usage": "",
           "curve": "0-based",
           "value": 1,
           "min": 0,
           "max": 95,
-          "type": "Rhythm"
+          "type": "Parameter"
         },
         {
           "name": "Rhythm Division",
-          "description": "Switches rhythm between Pattern 1 and Pattern 2",
-          "usage": "0-63: PTN1; 64-127: PTN2",
+          "description": "Switch rhythm between PTN1 and PTN2",
+          "usage": "",
           "curve": "0-based",
           "value": 2,
           "min": 0,
           "max": 127,
-          "type": "Rhythm"
+          "type": "Parameter"
         },
         {
           "name": "Rhythm Fill-in",
-          "description": "Plays a fill-in pattern",
-          "usage": "0-63: Off; 64-127: Play fill-in (momentary)",
+          "description": "Play a fill-in",
+          "usage": "",
           "curve": "0-based",
           "value": 3,
           "min": 0,
           "max": 127,
-          "type": "Rhythm"
+          "type": "Parameter"
         },
         {
           "name": "Rhythm Stop",
-          "description": "Stops the rhythm playback",
-          "usage": "0-63: Continue; 64-127: Stop (momentary)",
+          "description": "Stops the rhythm",
+          "usage": "",
           "curve": "0-based",
           "value": 4,
           "min": 0,
           "max": 127,
-          "type": "Rhythm"
+          "type": "Parameter"
         },
         {
           "name": "Rhythm Break",
-          "description": "Temporarily breaks the rhythm playback",
-          "usage": "0-63: Normal play; 64-127: Break (momentary)",
+          "description": "Break the rhythm playback",
+          "usage": "",
           "curve": "0-based",
           "value": 5,
           "min": 0,
           "max": 127,
-          "type": "Rhythm"
+          "type": "Parameter"
         },
         {
           "name": "Rhy Level",
-          "description": "Adjusts the rhythm playback level",
-          "usage": "0-127: Rhythm level",
+          "description": "Adjust the rhythm playback level",
+          "usage": "",
           "curve": "0-based",
           "value": 6,
           "min": 0,
           "max": 127,
-          "type": "Levels"
+          "type": "Parameter"
         },
         {
           "name": "Loop Start",
-          "description": "Starts the looper recording/playback",
-          "usage": "0-63: Stop; 64-127: Start (momentary)",
+          "description": "Start the Looper",
+          "usage": "",
           "curve": "0-based",
           "value": 7,
           "min": 0,
           "max": 127,
-          "type": "Loop"
+          "type": "Parameter"
         },
         {
           "name": "Loop Stop",
-          "description": "Stops the looper playback",
-          "usage": "0-63: Continue; 64-127: Stop (momentary)",
+          "description": "Stop the Looper",
+          "usage": "",
           "curve": "0-based",
           "value": 8,
           "min": 0,
           "max": 127,
-          "type": "Loop"
+          "type": "Parameter"
         },
         {
-          "name": "TRK1 Start",
-          "description": "Starts playback of Track 1",
-          "usage": "0-63: Stop; 64-127: Start (momentary)",
+          "name": "Loop Undo/Redo",
+          "description": "Loop Undo and Redo",
+          "usage": "",
           "curve": "0-based",
           "value": 9,
           "min": 0,
           "max": 127,
-          "type": "Track"
+          "type": "Parameter"
         },
         {
-          "name": "TRK1 Stop",
-          "description": "Stops playback of Track 1",
-          "usage": "0-63: Continue; 64-127: Stop (momentary)",
+          "name": "TRK1 Start",
+          "description": "Play TRK1",
+          "usage": "",
           "curve": "0-based",
           "value": 10,
           "min": 0,
           "max": 127,
-          "type": "Track"
+          "type": "Parameter"
         },
         {
-          "name": "TRK1 UnRedo",
-          "description": "Executes undo/redo on Track 1",
-          "usage": "0-63: Do nothing; 64-127: Undo/Redo (momentary)",
+          "name": "TRK1 Stop",
+          "description": "Stop TRK1",
+          "usage": "",
           "curve": "0-based",
           "value": 11,
           "min": 0,
           "max": 127,
-          "type": "Track"
+          "type": "Parameter"
         },
         {
-          "name": "TRK2 Start",
-          "description": "Starts playback of Track 2",
-          "usage": "0-63: Stop; 64-127: Start (momentary)",
+          "name": "TRK1 UnRedo",
+          "description": "Executes undo/redo on TRK1",
+          "usage": "",
           "curve": "0-based",
           "value": 12,
           "min": 0,
           "max": 127,
-          "type": "Track"
+          "type": "Parameter"
         },
         {
-          "name": "TRK2 Stop",
-          "description": "Stops playback of Track 2",
-          "usage": "0-63: Continue; 64-127: Stop (momentary)",
+          "name": "TRK2 Start",
+          "description": "Play TRK2",
+          "usage": "",
           "curve": "0-based",
           "value": 13,
           "min": 0,
           "max": 127,
-          "type": "Track"
+          "type": "Parameter"
         },
         {
-          "name": "TRK2 UnRedo",
-          "description": "Executes undo/redo on Track 2",
-          "usage": "0-63: Do nothing; 64-127: Undo/Redo (momentary)",
+          "name": "TRK2 Stop",
+          "description": "Stop TRK2",
+          "usage": "",
           "curve": "0-based",
           "value": 14,
           "min": 0,
           "max": 127,
-          "type": "Track"
+          "type": "Parameter"
         },
         {
-          "name": "Loop Level",
-          "description": "Adjusts the looper playback level",
-          "usage": "0-127: Loop level",
+          "name": "TRK2 UnRedo",
+          "description": "Executes undo/redo on TRK2",
+          "usage": "",
           "curve": "0-based",
           "value": 15,
           "min": 0,
           "max": 127,
-          "type": "Levels"
+          "type": "Parameter"
         },
         {
-          "name": "Total Level",
-          "description": "Adjusts the overall level of rhythm and looper together",
-          "usage": "0-127: Total level",
+          "name": "Loop Level",
+          "description": "Adjustes the looper plaback level",
+          "usage": "",
           "curve": "0-based",
           "value": 16,
           "min": 0,
           "max": 127,
-          "type": "Levels"
+          "type": "Parameter"
         },
         {
-          "name": "All Break",
-          "description": "Breaks both rhythm and looper playback simultaneously",
-          "usage": "0-63: Normal play; 64-127: Break all (momentary)",
+          "name": "Total Level",
+          "description": "Adjusts the playback of the rhythm and looper together",
+          "usage": "",
           "curve": "0-based",
           "value": 17,
           "min": 0,
           "max": 127,
-          "type": "Global"
+          "type": "Parameter"
+        },
+        {
+          "name": "All Break",
+          "description": "Breaks the Rhythm and looper together",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
         }
       ],
       "nrpn": [],
@@ -35496,6 +35506,82 @@
           "value": 52,
           "min": 0,
           "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "microclockgen4": {
+      "brand": "Disaster Area",
+      "device_name": "microclockgen4",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Tap Tempo",
+          "description": "Any value triggers tap tempo",
+          "usage": "",
+          "curve": "0-based",
+          "value": 93,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Set BPM",
+          "description": "Sets tempo in BPM, value + 30 (range 30-157)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Set BPM",
+          "description": "Sets tempo in BPM, value + 150 (range 150-277)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output A Subdivision",
+          "description": "Sets subdivision for output A. 0 whole, 1 half, 2 qtr trip, 3 qtr, 4 dot 8th, 5 phi, 6 8th, 7 8th trip, 8 16th, 9 off",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 0,
+          "max": 9,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output B Subdivision",
+          "description": "Sets subdivision for output B. 0 whole, 1 half, 2 qtr trip, 3 qtr, 4 dot 8th, 5 phi, 6 8th, 7 8th trip, 8 16th, 9 off",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 0,
+          "max": 9,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output C Subdivision",
+          "description": "Sets subdivision for output C. 0 whole, 1 half, 2 qtr trip, 3 qtr, 4 dot 8th, 5 phi, 6 8th, 7 8th trip, 8 16th, 9 off",
+          "usage": "",
+          "curve": "0-based",
+          "value": 108,
+          "min": 0,
+          "max": 9,
           "type": "Parameter"
         }
       ],
@@ -130123,6 +130209,732 @@
       ],
       "nrpn": [],
       "pc": []
+    },
+    "enzox": {
+      "brand": "Meris",
+      "device_name": "enzox",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Mix ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dry Trim",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 2,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wet Trim",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Expression Pedal",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Drive Type",
+          "description": "0 - 21 = Off ; 22 - 42 = Volume Pedal ; 43 - 63 = Tube ; 64 - 85 = Transistor ; 86 - 106 = Op-Amp ; 107 - 127 = Bitcrusher",
+          "usage": "",
+          "curve": "0-based",
+          "value": 5,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Drive Location ",
+          "description": "0 - 31 = Pre + Dry ; 32 - 63 = Dry ; 64 - 95 = Pre Ambience ; 96 - 127 = Post Ambience",
+          "usage": "",
+          "curve": "0-based",
+          "value": 6,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain/Volume/Sample Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 7,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Balance/Bits",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 8,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Drive Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ambience Type",
+          "description": "0 - 25 = Off ; 26 - 51 = Echo ; 52 - 76 = Small ; 77 - 102 = Medium ; 103 - 127 = Large",
+          "usage": "",
+          "curve": "0-based",
+          "value": 10,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Feedback/Decay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 11,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Half Speed",
+          "description": "0 - 63 = Half Speed OFF ; 64 - 127 = Half Speed ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 12,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ambience Mod ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 13,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass",
+          "description": "0 - 63 = FX Bypass ; 64 - 127 = FX Enable",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time (Clock, 7 Bit Tempo)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ambience Highs",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Echo Left Division",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Echo Right Division",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ambience + Echo Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ambience Lows",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Midi Clock",
+          "description": "0 - 42 = Use Global ; 43 - 85 = Force Listen ; 86 - 127 = Force Ignore",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Mode",
+          "description": "0 - 25 = Mono Synth ; 26 - 51 = Poly Synth ; 52 - 76 = Arp Synth ; 77 - 102 = Dry Mono ; 103 - 127 = Dry Poly",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Pitch ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Osc 1 Wave Shape ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Osc 2 Wave Shape",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Osc 2 Pitch Offset",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Osc 2 Detune",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Glide (Portamento)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Osc 1 Gain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Osc 2 Gain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Xmod",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Arp Mode",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Arp Steps",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 33,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Arp Octaves",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 34,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 35,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dry Blend",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 36,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Arp Cycle Latch",
+          "description": "0 - 63 = Off ; 64 - 127 = On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 37,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Type",
+          "description": "0 - 42 = Ladder ; 43 - 85 = State Variable ; 86 - 127 = Twin",
+          "usage": "",
+          "curve": "0-based",
+          "value": 38,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 39,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Typology",
+          "description": "0 - 42 = LowPass ; 43 - 85 = BandPass ; 86 - 127 = HighPass",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Resonance",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 41,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Noise",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 42,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Twin Filter Spread",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 43,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Envelope Amount",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 44,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Envelope Type",
+          "description": "0 - 63 = ADSR ; 64 - 127 = Envelope",
+          "usage": "",
+          "curve": "0-based",
+          "value": 46,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Attack Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 47,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Decay Time ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 48,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Sustain Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 49,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Sustain Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Release Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 51,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Direction",
+          "description": "0 - 63 = Up ; 64 - 127 = Down",
+          "usage": "",
+          "curve": "0-based",
+          "value": 52,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 53,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Note Persist",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 54,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amplitude Attack Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 55,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amplitude Decay Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 56,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amplitude Sustain Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 57,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amplitude Sustain Time ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 58,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amplitude Release Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 59,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Oscillator Mod Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 60,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Oscillator Mod Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 61,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Oscillator Mod Ramp Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 62,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Type",
+          "description": "0 - 21 = Off ; 22 - 42 = Chorus ; 43 - 63 = Flanger ; 64 - 85 = Vibrato ; 86 - 106 = Phaser ; 107 - 127 = Ring Mod",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Location ",
+          "description": "0 - 31 = Pre + Dry ; 32 - 63 = Dry ; 64 - 95 = Pre Ambience ; 96 - 127 = Post Ambience",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Speed/Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 88,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Mode/WaveShape/Stages",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 90,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Feedback",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 91,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 92,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Note Div",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 93,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Toggle Tuner Mode",
+          "description": "Press = 127",
+          "usage": "",
+          "curve": "0-based",
+          "value": 117,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Trigger Hold Modifier",
+          "description": "Press = 127 ; Release = 0 ; Note: Be sure to send a release after every press",
+          "usage": "",
+          "curve": "0-based",
+          "value": 118,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
     }
   },
   "mesa_boogie": {
@@ -160073,7 +160885,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Tuner On/Off",
+          "name": "Tuner On/Off (< CorOS 2.1.0)",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -160083,12 +160895,52 @@
           "type": "Parameter"
         },
         {
-          "name": "Open/Close Gig View",
+          "name": "Tuner Off (>= CorOS 2.1.0)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 45,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tuner On (>= CorOS 2.1.0)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 45,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Open/Close Gig View (< CorOS 2.1.0)",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 46,
           "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Close Gig View (>= CorOS 2.1.0)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 46,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "Open Gig View (>= CorOS 2.1.0)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 46,
+          "min": 64,
           "max": 127,
           "type": "Parameter"
         },
@@ -160123,7 +160975,27 @@
           "type": "Parameter"
         },
         {
-          "name": "Open / Close Looper UI",
+          "name": "Open / Close Looper UI (< CorOS 2.1.0)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 48,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Close Looper UI (>= CorOS 2.1.0)",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 48,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "Open Looper UI (>= CorOS 2.1.0)",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -209381,6 +210253,202 @@
       "nrpn": [],
       "pc": []
     },
+    "Tensor": {
+      "brand": "Red Panda",
+      "device_name": "Tensor",
+      "midi_thru": false,
+      "midi_in": "USB MIDI",
+      "midi_clock": false,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": "Please refer to the manual at https://www.redpandalab.com/content/docs/Tensor%20Owners%20Manual.pdf\n\n"
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Expression pedal",
+          "description": "CTRL input",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Speed",
+          "description": "0: Reverse 100%, 64: Stop, 127: Forward 100% ",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time",
+          "description": "0: 1-4 Stretch, 64: 1-1, 127: 4-1 Compress",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch",
+          "description": "0: -2 octaves, 64: Unison, 127: +2 octaves",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Blend",
+          "description": "0: 100% dry, 127: 100% wet",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Random",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop Decay",
+          "description": "0: 0dB, 1: -0.25dB ... 126: -31.5dB, 127: Off",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hold Mode",
+          "description": "0-42: Next, 43-85: Replace, 86-127: Forward",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop direction",
+          "description": "0-42: Reverse, 43-85: Alternate, 86-127: Forward",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Semitones",
+          "description": "40: -2 octaves, 64: unison, 88: +8 octaves",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch glide rate",
+          "description": "0: Minimum, 127: Maximum",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hold footswitch",
+          "description": "0-63: Off (release), 64-127: On (press)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Effect on Footswitch",
+          "description": "0-63: Off (release), 64-127: On (press)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hold momentary/latch",
+          "description": "0-63: Momentary, 64-127: Latching",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Effect momentary/latch",
+          "description": "0-63: Momentary, 64-127: Latching",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hold/Sample (Receive only)",
+          "description": "127: Record, 96: Overdub, 64: Loop play / retrigger, 48: One shot play / retrigger, 24: Stop (save loop), 0: Live (clear loop)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass (Receive only)",
+          "description": "0-63 = Bypass, 64-127 = Effect on",
+          "usage": "",
+          "curve": "0-based",
+          "value": 88,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Drift (Receive only)",
+          "description": "0-63 = Off, 64-127 = On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 90,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "Context 2": {
       "brand": "Red Panda",
       "device_name": "Context 2",
@@ -210747,202 +211815,6 @@
       "nrpn": [],
       "pc": []
     },
-    "Tensor": {
-      "brand": "Red Panda",
-      "device_name": "Tensor",
-      "midi_thru": false,
-      "midi_in": "USB MIDI",
-      "midi_clock": false,
-      "phantom_power": "None",
-      "midi_channel": {
-        "instructions": "Please refer to the manual at https://www.redpandalab.com/content/docs/Tensor%20Owners%20Manual.pdf\n\n"
-      },
-      "instructions": "",
-      "cc": [
-        {
-          "name": "Expression pedal",
-          "description": "CTRL input",
-          "usage": "",
-          "curve": "0-based",
-          "value": 4,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Speed",
-          "description": "0: Reverse 100%, 64: Stop, 127: Forward 100% ",
-          "usage": "",
-          "curve": "0-based",
-          "value": 20,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Time",
-          "description": "0: 1-4 Stretch, 64: 1-1, 127: 4-1 Compress",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch",
-          "description": "0: -2 octaves, 64: Unison, 127: +2 octaves",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Blend",
-          "description": "0: 100% dry, 127: 100% wet",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Random",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop Decay",
-          "description": "0: 0dB, 1: -0.25dB ... 126: -31.5dB, 127: Off",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hold Mode",
-          "description": "0-42: Next, 43-85: Replace, 86-127: Forward",
-          "usage": "",
-          "curve": "0-based",
-          "value": 28,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop direction",
-          "description": "0-42: Reverse, 43-85: Alternate, 86-127: Forward",
-          "usage": "",
-          "curve": "0-based",
-          "value": 29,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Semitones",
-          "description": "40: -2 octaves, 64: unison, 88: +8 octaves",
-          "usage": "",
-          "curve": "0-based",
-          "value": 30,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch glide rate",
-          "description": "0: Minimum, 127: Maximum",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hold footswitch",
-          "description": "0-63: Off (release), 64-127: On (press)",
-          "usage": "",
-          "curve": "0-based",
-          "value": 80,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Effect on Footswitch",
-          "description": "0-63: Off (release), 64-127: On (press)",
-          "usage": "",
-          "curve": "0-based",
-          "value": 81,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hold momentary/latch",
-          "description": "0-63: Momentary, 64-127: Latching",
-          "usage": "",
-          "curve": "0-based",
-          "value": 85,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Effect momentary/latch",
-          "description": "0-63: Momentary, 64-127: Latching",
-          "usage": "",
-          "curve": "0-based",
-          "value": 86,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hold/Sample (Receive only)",
-          "description": "127: Record, 96: Overdub, 64: Loop play / retrigger, 48: One shot play / retrigger, 24: Stop (save loop), 0: Live (clear loop)",
-          "usage": "",
-          "curve": "0-based",
-          "value": 87,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass (Receive only)",
-          "description": "0-63 = Bypass, 64-127 = Effect on",
-          "usage": "",
-          "curve": "0-based",
-          "value": 88,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Drift (Receive only)",
-          "description": "0-63 = Off, 64-127 = On",
-          "usage": "",
-          "curve": "0-based",
-          "value": 90,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        }
-      ],
-      "nrpn": [],
-      "pc": []
-    },
     "Bitmap 2": {
       "brand": "Red Panda",
       "device_name": "Bitmap 2",
@@ -211529,6 +212401,302 @@
           "value": 119,
           "min": 0,
           "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "radius": {
+      "brand": "Red Panda",
+      "device_name": "radius",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Expression",
+          "description": "Sending CC 4 is the same as having an expression\npedal connected to the CTRL input (which does not\nhave to be configured for “expression”). ",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ring mod/freq shift mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Carrier frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Carrier pitch tracking",
+          "description": "0 = -100% ; 64 = Off ; 127 = +100%",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Modulation rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Modulation depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 70,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 71,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 3",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 72,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 4",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 73,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 5",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 74,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 6",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 75,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 7",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step modulator step 8",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 77,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step mod last step",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 78,
+          "min": 1,
+          "max": 8,
+          "type": "Parameter"
+        },
+        {
+          "name": "Step mod ramp",
+          "description": "0 - 63 = Off (step) ; 64 - 127 = On (ramp)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 79,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "AUX footswitch",
+          "description": "Use gated (momentary) mode to send 127 on press and 0 on release. Matches footswitch behavior. 0 - 63 = Release ; 64 - 127 = Press",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "ON footswitch",
+          "description": "Use gated (momentary) mode to send 127 on press and 0 on release. Matches footswitch behavior. 0 - 63 = Release ; 64 - 127 = Press",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod envelope trigger",
+          "description": "0 - 63 = Off ; 64 - 127 = On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 82,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Modulation waveform",
+          "description": "0 = Triangle ; 1 = Square ; 2 = Random step ; 3 = Random 2 ; 4 = Step modulator ; 5 = X- ; 6 = X+ ; 7 = Envelope follower",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 0,
+          "max": 7,
+          "type": "Parameter"
+        },
+        {
+          "name": "Shift 2X",
+          "description": "0 = Down ; 1 = Off ; 2 = Up",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Shift range",
+          "description": "0 = Low ; 1 = High ; 2 = Stepped",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass (receive only)",
+          "description": "0 - 63 = Bypass ; 64 - 127 = Effect on",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap (receive only)",
+          "description": "64 - 127 = Tap",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Modulation note division",
+          "description": "See Radius “Note Divisions” table: https://www.redpandalab.com/content/docs/Radius%20Owners%20Manual.pdf ",
+          "usage": "",
+          "curve": "0-based",
+          "value": 109,
+          "min": 0,
+          "max": 26,
+          "type": "Parameter"
+        },
+        {
+          "name": "Receive MIDI clock (global)",
+          "description": "0 - 63 = Off ; 64 - 127 = Receive MIDI clock",
+          "usage": "",
+          "curve": "0-based",
+          "value": 110,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Play carrier by MIDI note",
+          "description": "0 = Off ; 1 = On ; 2 = Use global setting",
+          "usage": "",
+          "curve": "0-based",
+          "value": 111,
+          "min": 0,
+          "max": 2,
           "type": "Parameter"
         }
       ],
@@ -235844,61 +237012,261 @@
     "Atlas": {
       "brand": "Source Audio",
       "device_name": "Atlas",
-      "midi_thru": true,
-      "midi_in": "",
-      "midi_clock": true,
-      "phantom_power": "None",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
       "midi_channel": {
-        "instructions": "\n"
+        "instructions": ""
       },
       "instructions": "",
       "cc": [
         {
           "name": "Remote Expression Pedal",
-          "description": "position external expression pedal ",
-          "usage": "",
-          "curve": "0-based",
-          "value": 100,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Engaged/Bypass",
-          "description": "(0-63) Engaged     (64-127)  Bypass ",
-          "usage": "",
-          "curve": "0-based",
-          "value": 102,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Preset Recall (OFF)",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 103,
+          "value": 0,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Preset Recall (ON)",
+          "name": "Ratio A",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 104,
+          "value": 1,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Engaged/Bypass Toggle",
+          "name": "Threshold A",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 105,
+          "value": 2,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Attack A",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Release A",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output A",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 5,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix A",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 6,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Side Chain High Pass A",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 7,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ratio B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 8,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Threshold B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Attack B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 10,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Release B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 11,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 12,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 13,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Side Chain High Pass B",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "A/B Crossfade",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Channel 1 Input Gain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Channel 2 Input Gain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bass Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bass Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mid Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble (Tone) Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Noise Gate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Noise Gate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
           "min": 0,
           "max": 127,
           "type": "Parameter"
@@ -258249,6 +259617,774 @@
       "nrpn": [],
       "pc": []
     },
+    "m1mk2": {
+      "brand": "Walrus Audio",
+      "device_name": "m1mk2",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lo-Fi Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Shape",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Div",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Type",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tone",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Sym",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "X",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lofi Env",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lofi Drive",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lofi Space",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lofi Age",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 4,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lofi Noise",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lofi Warble",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Program",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Held",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Rotary Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output Gain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 88,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Midi Clock Ignore",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wet Dry Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Flange Feedback",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Rotary Slow Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Rotary Fast Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "acs1mk2": {
+      "brand": "Walrus Audio",
+      "device_name": "acs1mk2",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Bass Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bass Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mid Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mid Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Vol Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Vol Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Cab Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 11,
+          "type": "Parameter"
+        },
+        {
+          "name": "Cab Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 11,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amp Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amp Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Boost Engage",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ir Bypass",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amp Bypass",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gate Threshold",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gate Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 90,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Room Select",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Room Decay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Presence",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Resonance",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "d1mk2": {
+      "brand": "Walrus Audio",
+      "device_name": "d1mk2",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Div Left",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Div Right",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Feedback Mode",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Shape",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 33,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Grain Pitch",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 34,
+          "min": 0,
+          "max": 4,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverse Mode",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 35,
+          "min": 0,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ramp",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 36,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 37,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Grain Size",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 38,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Grain X",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 39,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Repeats",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Duck",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mod",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tone",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Age",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Midi Clock Ignore",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Spread",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 98,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Program",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "D1 (Old version)": {
       "brand": "Walrus Audio",
       "device_name": "D1 (Old version)",
@@ -258470,6 +260606,192 @@
           "min": 127,
           "max": 127,
           "type": "System"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "r1mk2": {
+      "brand": "Walrus Audio",
+      "device_name": "r1mk2",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Decay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pre Delay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Swell",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Duck",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "EQ Low",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "EQ High",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Size",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Diffuse",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Feedback EQ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Program",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Sustain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Octave Type",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
         }
       ],
       "nrpn": [],
@@ -263580,320 +265902,40 @@
       "nrpn": [],
       "pc": []
     },
-    "Mood MkII": {
+    "Generation Loss MKII": {
       "brand": "Chase Bliss Audio",
-      "device_name": "Mood MkII",
+      "device_name": "Generation Loss MKII",
       "midi_thru": false,
-      "midi_in": "TRS",
-      "midi_clock": true,
+      "midi_in": "",
+      "midi_clock": false,
       "phantom_power": "None",
       "midi_channel": {
-        "instructions": "MOOD MKII is set to MIDI channel 2 by default, but it is easy to change.\nSimply hold down both stomp switches when you power up the pedal. \nThe pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to that channel.\n"
+        "instructions": ""
       },
       "instructions": "",
       "cc": [
         {
-          "name": "Bypass Micro-Looper - Off",
+          "name": "Expression",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 102,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass Micro-Looper - On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 102,
-          "min": 1,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass Wet - Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 103,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass Wet - On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 103,
-          "min": 1,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "True Bypass Mode - Standard Buffered Bypass",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 55,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "True Bypass Mode - True Bypass",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 55,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Menu - Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 104,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Menu - On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 104,
-          "min": 1,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Freeze Wet - Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 105,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Freeze Wet - On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 105,
-          "min": 1,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Overdub Micro-Looper - Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 106,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Overdub Micro-Looper - On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 106,
-          "min": 1,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Tap Tempo",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 107,
+          "value": 100,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Tap Tempo - Legacy",
-          "description": "CC93 is also Tap Tempo for continuity between past pedals.",
+          "name": "Preset Save",
+          "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 93,
+          "value": 111,
           "min": 0,
-          "max": 127,
+          "max": 122,
           "type": "Parameter"
         },
         {
-          "name": "Wet Channel Mode - Reverb",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Wet Channel Mode - Delay",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Wet Channel Mode - Slip",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 3,
-          "max": 3,
-          "type": "Parameter"
-        },
-        {
-          "name": "Routing - IN",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Routing - Micro-Looper + IN",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Routing - Micro-Looper",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 3,
-          "max": 3,
-          "type": "Parameter"
-        },
-        {
-          "name": "Micro-Looper Channel Mode - Env",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Micro-Looper Channel Mode - Tape",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Micro-Looper Channel Mode - Stretch",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 3,
-          "max": 3,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Time",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 14,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Mix",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 15,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Length",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Wet Modify",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 17,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Clock",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 18,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Micro-Looper Modify",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 19,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Knobs - Ramp Speed",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 20,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Wet Channel Stereo Width",
+          "name": "Aux Onset Time",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -263903,67 +265945,27 @@
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Ramping Waveform - Triangle",
+          "name": "Bypass: DSP",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 25,
-          "min": 0,
-          "max": 14,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Ramping Waveform - Square",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 15,
-          "max": 54,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Ramping Waveform - Sine",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 55,
-          "max": 80,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Ramping Waveform - Random",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 81,
-          "max": 126,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Ramping Waveform - Smooth Random",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
+          "value": 26,
           "min": 127,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Micro-Looper Channel Fade",
+          "name": "Bypass: True",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 26,
           "min": 0,
-          "max": 127,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Wet Channel Tone",
+          "name": "Hiss Level",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -263973,7 +265975,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Level Balance",
+          "name": "Mechanical Noise Level",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -263983,7 +265985,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Micro-Looper Channel Direct Micro-Loop",
+          "name": "Crinkle Pop Level",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -263993,47 +265995,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Sync - To Wet Channel",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Sync - No Sync",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Sync - To Micro-Looper Channel",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 3,
-          "max": 3,
-          "type": "Parameter"
-        },
-        {
-          "name": "Hidden Options - Spread - Wet Channel Only",
+          "name": "Input Gain: Line Level",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 32,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Spread - Both Channels",
+          "name": "Input Gain: Instrument Level",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264043,7 +266015,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Spread - Micro-Looper Channel Only",
+          "name": "Input Gain: High Gain",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264053,67 +266025,447 @@
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Buffer Length - Half (like MKI)",
+          "name": "Ramp/Bounce: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 33,
+          "value": 52,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ramp/Bounce: Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 52,
           "min": 0,
           "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Hidden Options - Buffer Length - Full",
+          "name": "Model: None",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 33,
+          "value": 16,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: CPR-3300 Gen1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 15,
+          "max": 15,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: CPR-3300 Gen2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 24,
+          "max": 24,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: CPR-3300 Gen3",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 33,
+          "max": 33,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: Portamax-RT",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 43,
+          "max": 43,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: Portamax-HT",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 53,
+          "max": 53,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: CAM-8",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 62,
+          "max": 62,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: Dictatron-EX",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 72,
+          "max": 72,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: Dictatron-IN",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 82,
+          "max": 82,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: Fishy 60",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 91,
+          "max": 91,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: MS-Walker",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 101,
+          "max": 101,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: AMU-2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 111,
+          "max": 111,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model: M-PEX",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wow",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Model/LP",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Flutter",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Saturate/Gen",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Failure/HP",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ramp Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Aux: 1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Aux: 2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
           "min": 2,
           "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "MIDI Clock Ignore - Ignore",
+          "name": "Aux: 3",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 51,
-          "min": 0,
-          "max": 0,
+          "value": 21,
+          "min": 3,
+          "max": 3,
           "type": "Parameter"
         },
         {
-          "name": "MIDI Clock Ignore - Follow",
+          "name": "Dry: 1",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 51,
+          "value": 22,
           "min": 1,
           "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "Stop Ramping - Stop",
+          "name": "Dry: 2",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 52,
-          "min": 0,
-          "max": 0,
+          "value": 22,
+          "min": 2,
+          "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "Stop Ramping - Resume",
+          "name": "Dry: 3",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 52,
+          "value": 22,
+          "min": 3,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "Noise: 1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
           "min": 1,
           "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Time - Off",
+          "name": "Noise: 2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Noise: 3",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 3,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Pedal",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Engage Pedal",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Aux: On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Aux: Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "ALT: Enter",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "ALT: Exit",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Switch: On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Switch: Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Switch: On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Switch: Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Center Switch: On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Center Switch: Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "DIP - Wow: On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 61,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "DIP - Wow: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264123,17 +266475,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Time - On",
+          "name": "DIP - Flutter: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 61,
-          "min": 1,
-          "max": 1,
+          "value": 62,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Wet Channel Modify - Off",
+          "name": "DIP - Flutter: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264143,17 +266495,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Wet Channel Modify - On",
+          "name": "DIP - Sat/Gen: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 62,
-          "min": 1,
-          "max": 1,
+          "value": 63,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Clock - Off",
+          "name": "DIP - Sat/Gen: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264163,17 +266515,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Clock - On",
+          "name": "DIP - Failure/HP: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 63,
-          "min": 1,
-          "max": 1,
+          "value": 64,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Micro-Looper Channel Modify - Off",
+          "name": "DIP - Failure/HP: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264183,17 +266535,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Micro-Looper Channel Modify - On",
+          "name": "DIP - Model/LP: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 64,
-          "min": 1,
-          "max": 1,
+          "value": 65,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Length - Off",
+          "name": "DIP - Model/LP: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264203,17 +266555,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Length - On",
+          "name": "DIP - Bounce: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 65,
-          "min": 1,
-          "max": 1,
+          "value": 66,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Bounce - Off",
+          "name": "DIP - Bounce: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264223,17 +266575,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Bounce - On",
+          "name": "DIP - Random: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 66,
-          "min": 1,
-          "max": 1,
+          "value": 67,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Sweep - Off",
+          "name": "DIP - Random: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264243,17 +266595,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Sweep - On",
+          "name": "DIP - Sweep: T",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 67,
-          "min": 1,
-          "max": 1,
+          "value": 68,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Polarity - Off",
+          "name": "DIP - Sweep: B",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264263,17 +266615,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Polarity - On",
+          "name": "DIP - Polarity: R",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 68,
-          "min": 1,
-          "max": 1,
+          "value": 71,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Classic - Off",
+          "name": "DIP - Polarity: F",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264283,17 +266635,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Classic - On",
+          "name": "DIP - Classic: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 71,
-          "min": 1,
-          "max": 1,
+          "value": 72,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Miso - Off",
+          "name": "DIP - Classic: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264303,17 +266655,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Miso - On",
+          "name": "DIP - Miso: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 72,
-          "min": 1,
-          "max": 1,
+          "value": 73,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Spread - Off",
+          "name": "DIP - Miso: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264323,17 +266675,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Spread - On",
+          "name": "DIP - Spread: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 73,
-          "min": 1,
-          "max": 1,
+          "value": 74,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Dry Kill - Off",
+          "name": "DIP - Spread: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264343,17 +266695,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Dry Kill - On",
+          "name": "DIP - Dry Type: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 74,
-          "min": 1,
-          "max": 1,
+          "value": 75,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Trails - Off",
+          "name": "DIP - Dry Type: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264363,17 +266715,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Trails - On",
+          "name": "DIP - Drop Byp: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 75,
-          "min": 1,
-          "max": 1,
+          "value": 76,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Latch - Off",
+          "name": "DIP - Drop Byp: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264383,17 +266735,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Latch - On",
+          "name": "DIP - Snag Byp: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 76,
-          "min": 1,
-          "max": 1,
+          "value": 77,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - No Dub Micro-Looper - Off",
+          "name": "DIP - Snag Byp: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -264403,33 +266755,23 @@
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - No Dub Micro-Looper - On",
+          "name": "DIP - Hum Byp: On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 77,
-          "min": 1,
-          "max": 1,
+          "value": 78,
+          "min": 127,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Dip Switches - Smooth - Off",
+          "name": "DIP - Hum Byp: Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 78,
           "min": 0,
           "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Dip Switches - Smooth - On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 78,
-          "min": 1,
-          "max": 1,
           "type": "Parameter"
         }
       ],
@@ -266010,6 +268352,552 @@
       "nrpn": [],
       "pc": []
     },
+    "brothersam": {
+      "brand": "Chase Bliss Audio",
+      "device_name": "brothersam",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Gain 2",
+          "description": "Channel 2 Gain",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Volume 2",
+          "description": "Channel 2 Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 1",
+          "description": "Channel 1 Gain",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tone 2",
+          "description": "Channel 2 Tone",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Volume 1",
+          "description": "Channel 1 Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tone 1",
+          "description": "Channel 1 Tone",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Presence 2",
+          "description": "Channel 2 Presence",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Presence 1",
+          "description": "Channel 1 Presence",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 2 Type: Boost",
+          "description": "Channel 2 Gain Type (Boost)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 2 Type: OD",
+          "description": "Channel 2 Gain Type (Overdrive)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 2 Type: DIST",
+          "description": "Channel 2 Gain Type (Distortion)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 3,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 1 Type: Boost",
+          "description": "Channel 1 Gain Type (Boost)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 1 Type: OD",
+          "description": "Channel 1 Gain Type (Overdrive)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain 1 Type: DIST",
+          "description": "Channel 1 Gain Type (Distortion)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 3,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble Boost: Full Sun",
+          "description": "Treble Boost (Full Sun)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble Boost: Off",
+          "description": "Treble Boost (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Treble Boost: Half Sun",
+          "description": "Treble Boost (Half Sun)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 3,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Channel 1 Bypass: On",
+          "description": "Bypass Channel 1 (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Channel 1 Bypass: Off",
+          "description": "Bypass Channel 1 (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Channel 2 Bypass: On",
+          "description": "Bypass Channel 2 (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Channel 2 Bypass: Off",
+          "description": "Bypass Channel 2 (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "EOM",
+          "description": "Expression Over Midi",
+          "usage": "",
+          "curve": "0-based",
+          "value": 100,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Preset Save",
+          "description": "Save a preset",
+          "usage": "",
+          "curve": "0-based",
+          "value": 111,
+          "min": 1,
+          "max": 122,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Volume 1 (Off)",
+          "description": "Left Bank Dip Switch Channel 1 Volume (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 61,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Volume 2 (Off)",
+          "description": "Left Bank Dip Switch Channel 2 Volume (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 62,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Gain 1 (Off)",
+          "description": "Left Bank Dip Switch Channel 1 Gain (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 63,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Gain 2 (Off)",
+          "description": "Left Bank Dip Switch Channel 2 Gain (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 64,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Tone 1 (Off)",
+          "description": "Left Bank Dip Switch Channel 1 Tone (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 65,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Tone 2 (Off)",
+          "description": "Left Bank Dip Switch Channel 2 Tone (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 66,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Sweep (B)",
+          "description": "Left Bank Dip Switch Sweep (Bottom)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 67,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Polarity (F)",
+          "description": "Left Bank Dip Switch Polarity (Fall)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 68,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Volume 1 (On)",
+          "description": "Left Bank Dip Switch Channel 1 Volume (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 61,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Volume 2 (On)",
+          "description": "Left Bank Dip Switch Channel 2 Volume (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 62,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Gain 1 (On)",
+          "description": "Left Bank Dip Switch Channel 1 Gain (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 63,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Gain 2 (On)",
+          "description": "Left Bank Dip Switch Channel 2 Gain (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 64,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Tone 1 (On)",
+          "description": "Left Bank Dip Switch Channel 1 Tone (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 65,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Tone 2 (On)",
+          "description": "Left Bank Dip Switch Channel 2 Tone (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 66,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Sweep (T)",
+          "description": "Left Bank Dip Switch Sweep (Top)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 67,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Left Bank: Polarity (R)",
+          "description": "Left Bank Dip Switch Polarity (Rise)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 68,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Hi Gain 1 (Off)",
+          "description": "Right Bank Dip Switch Channel 1 Hi Gain (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 71,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Hi Gain 2 (Off)",
+          "description": "Right Bank Dip Switch Channel 2 Hi Gain (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 72,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: MoToByp 1 (Off)",
+          "description": "Right Bank Dip Switch Channel 1 Momentary to Bypass (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 73,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: MoToByp 2 (Off)",
+          "description": "Right Bank Dip Switch Channel 2 Momentary to Bypass (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 74,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Pres Link 1 (Off)",
+          "description": "Right Bank Dip Switch Channel 1 Link Presence to Tone (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 75,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Pres Link 2 (Off)",
+          "description": "Right Bank Dip Switch Channel 2 Link Presence to Tone (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Master (Off)",
+          "description": "Right Bank Dip Switch Channel 2 Volume to Master (Off)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 77,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Hi Gain 1 (On)",
+          "description": "Right Bank Dip Switch Channel 1 Hi Gain (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 71,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Hi Gain 2 (On)",
+          "description": "Right Bank Dip Switch Channel 2 Hi Gain (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 72,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: MoToByp 1 (On)",
+          "description": "Right Bank Dip Switch Channel 1 Momentary to Bypass (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 73,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: MoToByp 2 (On)",
+          "description": "Right Bank Dip Switch Channel 2 Momentary to Bypass (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 74,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Pres Link 1 (On)",
+          "description": "Right Bank Dip Switch Channel 1 Link Presence to Tone (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 75,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Pres Link 2 (On)",
+          "description": "Right Bank Dip Switch Channel 2 Link Presence to Tone (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Right Bank: Master (On)",
+          "description": "Right Bank Dip Switch Channel 2 Volume to Master (On)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 77,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "Bliss Factory": {
       "brand": "Chase Bliss Audio",
       "device_name": "Bliss Factory",
@@ -266226,280 +269114,250 @@
       "nrpn": [],
       "pc": []
     },
-    "Generation Loss MKII": {
+    "Mood MkII": {
       "brand": "Chase Bliss Audio",
-      "device_name": "Generation Loss MKII",
+      "device_name": "Mood MkII",
       "midi_thru": false,
-      "midi_in": "",
-      "midi_clock": false,
+      "midi_in": "TRS",
+      "midi_clock": true,
       "phantom_power": "None",
       "midi_channel": {
-        "instructions": ""
+        "instructions": "MOOD MKII is set to MIDI channel 2 by default, but it is easy to change.\nSimply hold down both stomp switches when you power up the pedal. \nThe pedal is now looking for the first “Program Change” message it sees,\nand it will set itself to that channel.\n"
       },
       "instructions": "",
       "cc": [
         {
-          "name": "Expression",
+          "name": "Bypass Micro-Looper - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 100,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Preset Save",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 111,
-          "min": 0,
-          "max": 122,
-          "type": "Parameter"
-        },
-        {
-          "name": "Aux Onset Time",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass: DSP",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 26,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass: True",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 26,
+          "value": 102,
           "min": 0,
           "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Hiss Level",
+          "name": "Bypass Micro-Looper - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 27,
-          "min": 0,
+          "value": 102,
+          "min": 1,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Mechanical Noise Level",
+          "name": "Bypass Wet - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 28,
+          "value": 103,
           "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Wet - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 1,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Crinkle Pop Level",
+          "name": "True Bypass Mode - Standard Buffered Bypass",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 29,
+          "value": 55,
           "min": 0,
-          "max": 127,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Input Gain: Line Level",
+          "name": "True Bypass Mode - True Bypass",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 32,
+          "value": 55,
           "min": 1,
           "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "Input Gain: Instrument Level",
+          "name": "Hidden Menu - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 32,
+          "value": 104,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Menu - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Freeze Wet - Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Freeze Wet - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Overdub Micro-Looper - Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Overdub Micro-Looper - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo - Legacy",
+          "description": "CC93 is also Tap Tempo for continuity between past pedals.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 93,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wet Channel Mode - Reverb",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wet Channel Mode - Delay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
           "min": 2,
           "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "Input Gain: High Gain",
+          "name": "Wet Channel Mode - Slip",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 32,
+          "value": 21,
           "min": 3,
           "max": 3,
           "type": "Parameter"
         },
         {
-          "name": "Ramp/Bounce: On",
+          "name": "Routing - IN",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 52,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Ramp/Bounce: Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 52,
+          "value": 22,
           "min": 0,
           "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Model: None",
+          "name": "Routing - Micro-Looper + IN",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 16,
+          "value": 22,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Routing - Micro-Looper",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 3,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "Micro-Looper Channel Mode - Env",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
           "min": 0,
           "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Model: CPR-3300 Gen1",
+          "name": "Micro-Looper Channel Mode - Tape",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 16,
-          "min": 15,
-          "max": 15,
+          "value": 23,
+          "min": 2,
+          "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "Model: CPR-3300 Gen2",
+          "name": "Micro-Looper Channel Mode - Stretch",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 16,
-          "min": 24,
-          "max": 24,
+          "value": 23,
+          "min": 3,
+          "max": 3,
           "type": "Parameter"
         },
         {
-          "name": "Model: CPR-3300 Gen3",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 33,
-          "max": 33,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: Portamax-RT",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 43,
-          "max": 43,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: Portamax-HT",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 53,
-          "max": 53,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: CAM-8",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 62,
-          "max": 62,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: Dictatron-EX",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 72,
-          "max": 72,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: Dictatron-IN",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 82,
-          "max": 82,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: Fishy 60",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 91,
-          "max": 91,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: MS-Walker",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 101,
-          "max": 101,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: AMU-2",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 111,
-          "max": 111,
-          "type": "Parameter"
-        },
-        {
-          "name": "Model: M-PEX",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Wow",
+          "name": "Knobs - Time",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266509,7 +269367,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Volume",
+          "name": "Knobs - Mix",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266519,7 +269377,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Model/LP",
+          "name": "Knobs - Length",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266529,7 +269387,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Flutter",
+          "name": "Knobs - Wet Modify",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266539,7 +269397,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Saturate/Gen",
+          "name": "Knobs - Clock",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266549,7 +269407,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Failure/HP",
+          "name": "Knobs - Micro-Looper Modify",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266559,7 +269417,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Ramp Speed",
+          "name": "Knobs - Ramp Speed",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266569,247 +269427,247 @@
           "type": "Parameter"
         },
         {
-          "name": "Aux: 1",
+          "name": "Hidden Options - Wet Channel Stereo Width",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 21,
-          "min": 1,
-          "max": 1,
+          "value": 24,
+          "min": 0,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Aux: 2",
+          "name": "Hidden Options - Ramping Waveform - Triangle",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 21,
+          "value": 25,
+          "min": 0,
+          "max": 14,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Ramping Waveform - Square",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 15,
+          "max": 54,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Ramping Waveform - Sine",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 55,
+          "max": 80,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Ramping Waveform - Random",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 81,
+          "max": 126,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Ramping Waveform - Smooth Random",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Micro-Looper Channel Fade",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Wet Channel Tone",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Level Balance",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Micro-Looper Channel Direct Micro-Loop",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Sync - To Wet Channel",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Hidden Options - Sync - No Sync",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
           "min": 2,
           "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "Aux: 3",
+          "name": "Hidden Options - Sync - To Micro-Looper Channel",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 21,
+          "value": 31,
           "min": 3,
           "max": 3,
           "type": "Parameter"
         },
         {
-          "name": "Dry: 1",
+          "name": "Hidden Options - Spread - Wet Channel Only",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 22,
-          "min": 1,
-          "max": 1,
+          "value": 32,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Dry: 2",
+          "name": "Hidden Options - Spread - Both Channels",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 22,
+          "value": 32,
           "min": 2,
           "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "Dry: 3",
+          "name": "Hidden Options - Spread - Micro-Looper Channel Only",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 22,
+          "value": 32,
           "min": 3,
           "max": 3,
           "type": "Parameter"
         },
         {
-          "name": "Noise: 1",
+          "name": "Hidden Options - Buffer Length - Half (like MKI)",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 23,
-          "min": 1,
-          "max": 1,
+          "value": 33,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Noise: 2",
+          "name": "Hidden Options - Buffer Length - Full",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 23,
+          "value": 33,
           "min": 2,
           "max": 2,
           "type": "Parameter"
         },
         {
-          "name": "Noise: 3",
+          "name": "MIDI Clock Ignore - Ignore",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 23,
-          "min": 3,
-          "max": 3,
-          "type": "Parameter"
-        },
-        {
-          "name": "Bypass Pedal",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 102,
+          "value": 51,
           "min": 0,
           "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "Engage Pedal",
+          "name": "MIDI Clock Ignore - Follow",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 102,
-          "min": 127,
-          "max": 127,
+          "value": 51,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "Aux: On",
+          "name": "Stop Ramping - Stop",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 103,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Aux: Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 103,
+          "value": 52,
           "min": 0,
           "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "ALT: Enter",
+          "name": "Stop Ramping - Resume",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 104,
-          "min": 0,
-          "max": 0,
+          "value": 52,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "ALT: Exit",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 104,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Left Switch: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 105,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Left Switch: Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 105,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Right Switch: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 106,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Right Switch: Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 106,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Center Switch: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 107,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Center Switch: Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 107,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Wow: On",
+          "name": "Dip Switches - Time - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 61,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Wow: Off",
+          "name": "Dip Switches - Time - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 61,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Flutter: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 62,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Flutter: Off",
+          "name": "Dip Switches - Wet Channel Modify - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266819,37 +269677,37 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Sat/Gen: On",
+          "name": "Dip Switches - Wet Channel Modify - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 62,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Clock - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 63,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Sat/Gen: Off",
+          "name": "Dip Switches - Clock - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 63,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Failure/HP: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 64,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Failure/HP: Off",
+          "name": "Dip Switches - Micro-Looper Channel Modify - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266859,37 +269717,37 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Model/LP: On",
+          "name": "Dip Switches - Micro-Looper Channel Modify - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 64,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Length - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 65,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Model/LP: Off",
+          "name": "Dip Switches - Length - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 65,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Bounce: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 66,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Bounce: Off",
+          "name": "Dip Switches - Bounce - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266899,37 +269757,37 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Random: On",
+          "name": "Dip Switches - Bounce - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 66,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Sweep - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 67,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Random: Off",
+          "name": "Dip Switches - Sweep - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 67,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Sweep: T",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 68,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Sweep: B",
+          "name": "Dip Switches - Polarity - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266939,37 +269797,37 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Polarity: R",
+          "name": "Dip Switches - Polarity - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 68,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Classic - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 71,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Polarity: F",
+          "name": "Dip Switches - Classic - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 71,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Classic: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 72,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Classic: Off",
+          "name": "Dip Switches - Miso - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -266979,37 +269837,37 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Miso: On",
+          "name": "Dip Switches - Miso - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 72,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Spread - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 73,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Miso: Off",
+          "name": "Dip Switches - Spread - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 73,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Spread: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 74,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Spread: Off",
+          "name": "Dip Switches - Dry Kill - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -267019,37 +269877,37 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Dry Type: On",
+          "name": "Dip Switches - Dry Kill - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 74,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Trails - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 75,
-          "min": 127,
-          "max": 127,
+          "min": 0,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Dry Type: Off",
+          "name": "Dip Switches - Trails - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 75,
-          "min": 0,
-          "max": 0,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Drop Byp: On",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 76,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "DIP - Drop Byp: Off",
+          "name": "Dip Switches - Latch - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -267059,17 +269917,17 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Snag Byp: On",
+          "name": "Dip Switches - Latch - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 77,
-          "min": 127,
-          "max": 127,
+          "value": 76,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Snag Byp: Off",
+          "name": "Dip Switches - No Dub Micro-Looper - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -267079,23 +269937,33 @@
           "type": "Parameter"
         },
         {
-          "name": "DIP - Hum Byp: On",
+          "name": "Dip Switches - No Dub Micro-Looper - On",
           "description": "",
           "usage": "",
           "curve": "0-based",
-          "value": 78,
-          "min": 127,
-          "max": 127,
+          "value": 77,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         },
         {
-          "name": "DIP - Hum Byp: Off",
+          "name": "Dip Switches - Smooth - Off",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 78,
           "min": 0,
           "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dip Switches - Smooth - On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 78,
+          "min": 1,
+          "max": 1,
           "type": "Parameter"
         }
       ],
@@ -282891,6 +285759,222 @@
     }
   },
   "Old Blood Noise Endeavors": {
+    "blackfountain": {
+      "brand": "Old Blood Noise Endeavors",
+      "device_name": "blackfountain",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Dry Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wet Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Space",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tone",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Grit",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time L",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Subdivisions L",
+          "description": "0-21 sixteenth, 22-42 dotted sixteenth, 43-63 eighth, 64-84 triplet, 85-105 dotted eighth, 106-127 quarter",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time R",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Subdivisions R",
+          "description": "0-21 sixteenth, 22-42 dotted sixteenth, 43-63 eighth, 64-84 triplet, 85-105 dotted eighth, 106-127 quarter",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Feedback",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Expression",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 11,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Switch",
+          "description": "OFF: 0-63, ON:64-127",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo Switch",
+          "description": "Tap Pulse: 0 (no response to 1-127)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Preset Saving Switch",
+          "description": "0-42 Cancel Save, 43-85 Start Save, 86-127 Confirm Save",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "MIDI Clock Input Mode",
+          "description": "Accept Clock In and Send\nClock Thru: 0-31\nAccept Clock In Only: 32-63\nSend Clock Out Only: 64-95\nDeactivate Clock: 96-127",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Trails Setting",
+          "description": "OFF: 0-63, ON: 64-127",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stereo Setting",
+          "description": "0-42 mono, 43-85 mono in, stereo out, 86-127 stereo",
+          "usage": "",
+          "curve": "0-based",
+          "value": 82,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "MIDI Channel",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 1,
+          "max": 16,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "Dark Star Stereo Soundscape Reverb": {
       "brand": "Old Blood Noise Endeavors",
       "device_name": "Dark Star Stereo Soundscape Reverb",
@@ -298584,8 +301668,28 @@
           "type": "system"
         },
         {
+          "name": "Set NRPN to Mix LSB",
+          "description": "Set the NRPN LSB for Mix control\n\nWe use the “NRPN Register” (Non-Registered Parameter Number) which is a\ngeneral purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control\nmultiple parameters on the BeatBuddy using an MSB sequence, which is usually a\nseries of 3 commands: 2 CC commands and one PC.\n\nThis can be used to control tempo, any other parameter, or multiple parameters at\nonce. Currently we’re only using it to control tempo, but we follow the MIDI\nStandard protocol to leave room for further control in the future.\n\nOptional if the only value control by Inc/Dec is the Tempo. By\ndefault, the Beatbuddy will increment / decrement the tempo when receiving a INC/\nDEC message.\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 98,
+          "min": 108,
+          "max": 108,
+          "type": "system"
+        },
+        {
+          "name": "Set NRPN to Level LSB",
+          "description": "Set the NRPN LSB for headphone control\n\nWe use the “NRPN Register” (Non-Registered Parameter Number) which is a\ngeneral purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control\nmultiple parameters on the BeatBuddy using an MSB sequence, which is usually a\nseries of 3 commands: 2 CC commands and one PC.\n\nThis can be used to control tempo, any other parameter, or multiple parameters at\nonce. Currently we’re only using it to control tempo, but we follow the MIDI\nStandard protocol to leave room for further control in the future.\n\nOptional if the only value control by Inc/Dec is the Tempo. By\ndefault, the Beatbuddy will increment / decrement the tempo when receiving a INC/\nDEC message.\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 98,
+          "min": 109,
+          "max": 109,
+          "type": "system"
+        },
+        {
           "name": "Set NRPN to Tempo LSB",
-          "description": "Set the NRPN LSB\n\nWe use the “NRPN Register” (Non-Registered Parameter Number) which is a\ngeneral purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control\nmultiple parameters on the BeatBuddy using an MSB sequence, which is usually a\nseries of 3 commands: 2 CC commands and one PC.\n\nThis can be used to control tempo, any other parameter, or multiple parameters at\nonce. Currently we’re only using it to control tempo, but we follow the MIDI\nStandard protocol to leave room for further control in the future.\n\nOptional if the only value control by Inc/Dec is the Tempo. By\ndefault, the Beatbuddy will increment / decrement the tempo when receiving a INC/\nDEC message.\n",
+          "description": "Set the NRPN LSB for Tempo control\n\nWe use the “NRPN Register” (Non-Registered Parameter Number) which is a\ngeneral purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control\nmultiple parameters on the BeatBuddy using an MSB sequence, which is usually a\nseries of 3 commands: 2 CC commands and one PC.\n\nThis can be used to control tempo, any other parameter, or multiple parameters at\nonce. Currently we’re only using it to control tempo, but we follow the MIDI\nStandard protocol to leave room for further control in the future.\n\nOptional if the only value control by Inc/Dec is the Tempo. By\ndefault, the Beatbuddy will increment / decrement the tempo when receiving a INC/\nDEC message.\n",
           "usage": "",
           "curve": "0-based",
           "value": 98,
@@ -298611,6 +301715,16 @@
           "value": 99,
           "min": 106,
           "max": 106,
+          "type": "system"
+        },
+        {
+          "name": "Set NRPN to Headphone/Mix MSB",
+          "description": "Set the NRPN MSB for headphone or Mix control\n\nWe use the “NRPN Register” (Non-Registered Parameter Number) which is a\ngeneral purpose MSB (CC:99) and LSB (CC:98). All that means is that you can control\nmultiple parameters on the BeatBuddy using an MSB sequence, which is usually a\nseries of 3 commands: 2 CC commands and one PC.\n\nThis can be used to control tempo, any other parameter, or multiple parameters at\nonce. Currently we’re only using it to control tempo, but we follow the MIDI\nStandard protocol to leave room for further control in the future.\n\nOptional if the only value control by Inc/Dec is the Tempo. By\ndefault, the Beatbuddy will increment / decrement the tempo when receiving a INC/\nDEC message.\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 99,
+          "min": 0,
+          "max": 0,
           "type": "system"
         },
         {
@@ -310492,6 +313606,102 @@
       ],
       "nrpn": [],
       "pc": []
+    },
+    "midiwoweewahmww1": {
+      "brand": "G-LAB",
+      "device_name": "midiwoweewahmww1",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "BASS",
+          "description": "LOW",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "BASS",
+          "description": "HI",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "DEEP",
+          "description": "LOW",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "DEEP",
+          "description": "HI",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Q FACT.",
+          "description": "LOW",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "Q FACT.",
+          "description": "HI",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "VOLUME",
+          "description": "LOW",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 0,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "VOLUME",
+          "description": "HI",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
     }
   },
   "Headrush": {
@@ -312696,7 +315906,448 @@
         "instructions": ""
       },
       "instructions": "",
-      "cc": [],
+      "cc": [
+        {
+          "name": "High Pass Filter",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Low Pass Filter",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 2,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Compression / Saturation",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wow Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wow Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 5,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Flutter Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 6,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Flutter Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 7,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dropouts Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 8,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dropouts Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Crinkle",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 10,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Noise",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 11,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverb Decay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 12,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverb Mix & Placement",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 13,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Param 1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Param 2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Footswitch",
+          "description": "0=Off ; ≥1=On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Footswitch",
+          "description": "0=Off ; ≥1=On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode Select",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 5,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ribbons Mode Select",
+          "description": "0=Tape Effects ; 1=Looper",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Change Looper Track",
+          "description": "0=Track 1 ; 1=Track 2 ; etc.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear Current Looper Track",
+          "description": "0=False ; ≥1=True",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear All Looper Tracks",
+          "description": "0=False ; ≥1=True",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Direction",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Scale",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Direction",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Scale",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Direction",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 33,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Scale",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 34,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Direction",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 35,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 36,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 37,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Scale",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 38,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ignore MIDI Clock",
+          "description": "0=Ignore ; ≥1=Listen",
+          "usage": "",
+          "curve": "0-based",
+          "value": 51,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Compression / Saturation",
+          "description": "0=Comp ; ≥1=Sat",
+          "usage": "",
+          "curve": "0-based",
+          "value": 52,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Attack",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 53,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 54,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 55,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
       "nrpn": [],
       "pc": []
     }
