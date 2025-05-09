@@ -32681,6 +32681,26 @@ Blackstar Amplification,Amped 1,CC,Preset Footswitch,99,,0,127,"Preset footswitc
 Blackstar Amplification,Amped 1,CC,Power Level: 1W,110,,127,127,Use 1W power level (127 = On)
 Blackstar Amplification,Amped 1,CC,Power Level: 20W,111,,127,127,Use 20W power level (127 = On)
 Blackstar Amplification,Amped 1,CC,Power Level: 100W,112,,127,127,Use 100W power level (127 = On)
+toneking,imperialtritubepreamp,CC,,1,,0,127,BYPASS ON
+toneking,imperialtritubepreamp,CC,,0,,0,127,BYPASS OFF
+toneking,imperialtritubepreamp,CC,,1,,0,127,LOOP BYPASS ON
+toneking,imperialtritubepreamp,CC,,0,,0,127,LOOP BYPASS OFF
+toneking,imperialtritubepreamp,CC,,127,,0,127,IR BYPASS ON
+toneking,imperialtritubepreamp,CC,,0,,0,127,IR BYPASS OFF
+toneking,imperialtritubepreamp,CC,,1,,0,127,HF COMP ON
+toneking,imperialtritubepreamp,CC,,0,,0,127,HF COMP OFF
+toneking,imperialtritubepreamp,CC,,0,,0,127,LOWPASS 0
+toneking,imperialtritubepreamp,CC,,1,,0,127,LOWPASS 1
+toneking,imperialtritubepreamp,CC,,2,,0,127,LOWPASS 2
+toneking,imperialtritubepreamp,CC,,1,,0,127,REVERB ON
+toneking,imperialtritubepreamp,CC,,0,,0,127,REVERB OFF
+toneking,imperialtritubepreamp,CC,,1,,0,127,TREMELO ON
+toneking,imperialtritubepreamp,CC,,0,,0,127,TREMELO OFF
+toneking,imperialtritubepreamp,CC,,0,,0,127,RHYTHM CHANNEL
+toneking,imperialtritubepreamp,CC,,1,,0,127,LEAD CHANNEL
+toneking,imperialtritubepreamp,CC,,2,,0,127,IR 2
+toneking,imperialtritubepreamp,CC,,0,,0,127,IR 0
+toneking,imperialtritubepreamp,CC,,1,,0,127,IR 1
 JMK Music Pedals,CLOCKstep,CC,Bank Change,0,,0,2,"Send before PC Command.
 1 to load Presets 128-255
 2 to load Presets 256-299

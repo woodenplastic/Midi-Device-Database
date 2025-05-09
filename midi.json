@@ -325936,6 +325936,224 @@
       "pc": []
     }
   },
+  "toneking": {
+    "imperialtritubepreamp": {
+      "brand": "toneking",
+      "device_name": "imperialtritubepreamp",
+      "midi_thru": false,
+      "midi_in": "",
+      "midi_clock": false,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "",
+          "description": "BYPASS ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "BYPASS OFF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "LOOP BYPASS ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "LOOP BYPASS OFF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "IR BYPASS ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 127,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "IR BYPASS OFF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "HF COMP ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "HF COMP OFF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "LOWPASS 0",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "LOWPASS 1",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "LOWPASS 2",
+          "usage": "",
+          "curve": "0-based",
+          "value": 2,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "REVERB ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "REVERB OFF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "TREMELO ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "TREMELO OFF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "RHYTHM CHANNEL",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "LEAD CHANNEL",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "IR 2",
+          "usage": "",
+          "curve": "0-based",
+          "value": 2,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "IR 0",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        },
+        {
+          "name": "",
+          "description": "IR 1",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": 2
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    }
+  },
   "JMK Music Pedals": {
     "CLOCKstep": {
       "brand": "JMK Music Pedals",
