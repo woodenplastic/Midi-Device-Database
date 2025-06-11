@@ -39214,6 +39214,112 @@
     }
   },
   "Electro Harmonix": {
+    "1440": {
+      "brand": "Electro Harmonix",
+      "device_name": "1440",
+      "midi_thru": false,
+      "midi_in": "DIN5",
+      "midi_clock": false,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": "1. Turn on device\n2. Press Mode knob, display text starts to blink\n3. Turn Mode knob until \"MIDI\" blinks on screen\n4. Press Mode knob, the text \"MD.XX\" (XX is a placeholder for the Midi Channel) appears\n5. Turn Mode knob until desired MIDI channel is displayed\n6. Press Mode knob to confirm channel\n7. MIDI setup is done\n\n"
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Button Presses",
+          "description": "Mimic all MIDI PC functions when CC message of matching value is received (check PC Message list)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 1,
+          "max": 70,
+          "type": "Parameter"
+        },
+        {
+          "name": "LEVEL knob",
+          "description": "Adjust loop volume level",
+          "usage": "",
+          "curve": "0-based",
+          "value": 7,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "OVERDUB knob",
+          "description": "Adjust overdub feedback level",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "TEMPO knob",
+          "description": "Adjust tempo if applicable",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "TEMPO knob resolution",
+          "description": "TM.KN setting  0 = Coarse, 1 = Fine",
+          "usage": "",
+          "curve": "0-based",
+          "value": 110,
+          "min": 0,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Fadeout Time setting",
+          "description": "0 = Fadeout disabled, 1 = 1 second fadeout, 2 = 2 second fadeout, etc.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 112,
+          "min": 0,
+          "max": 99,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop Direct Select",
+          "description": "1 = Loop 1, 2 = Loop 2, etc.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 115,
+          "min": 1,
+          "max": 20,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXTC setting",
+          "description": "Select EXTC setting: 0 = CX.4B, 1 = XT.4B, 2 = CX.3B, 3 = XT.3B\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 116,
+          "min": 0,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "SWFX setting",
+          "description": "Select SWFX setting - 0 = STOP, 1 = OCT, 2 = REV, 3 = RV.OC, 4 = TRIG",
+          "usage": "",
+          "curve": "0-based",
+          "value": 117,
+          "min": 0,
+          "max": 4,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "45000": {
       "brand": "Electro Harmonix",
       "device_name": "45000",
@@ -313705,6 +313811,362 @@
     }
   },
   "Headrush": {
+    "Pedalbaord": {
+      "brand": "Headrush",
+      "device_name": "Pedalbaord",
+      "midi_thru": false,
+      "midi_in": "",
+      "midi_clock": false,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Footswitch 1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 49,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 50,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 3",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 51,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 4",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 52,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 5",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 53,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 6",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 54,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 7",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 55,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 8",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 56,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 9",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 57,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 10",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 58,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 11",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 59,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 12",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 60,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 64,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper 1/2 Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 65,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper 2x Speed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 66,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper 1/2 Loop",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 67,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper 2x Loop",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 68,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper Start/Stop",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 69,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper Record",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 70,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper Insert",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 71,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper Peel",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 72,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper Mute/Unmute",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 73,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper Reverse/Forward",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 74,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 1 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 75,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 2 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 3 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 77,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 4 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 78,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 5 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 79,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 6 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 7 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 8 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 82,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 9 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 83,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 10 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 84,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 11 On/Off",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "MX5": {
       "brand": "Headrush",
       "device_name": "MX5",
@@ -315123,20 +315585,30 @@
       "nrpn": [],
       "pc": []
     },
-    "Pedalbaord": {
+    "flexprime": {
       "brand": "Headrush",
-      "device_name": "Pedalbaord",
-      "midi_thru": false,
-      "midi_in": "",
-      "midi_clock": false,
-      "phantom_power": "None",
+      "device_name": "flexprime",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
       "midi_channel": {
         "instructions": ""
       },
       "instructions": "",
       "cc": [
         {
-          "name": "Footswitch 1",
+          "name": "Expression Pedal",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Footswitch 1 ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315156,7 +315628,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Footswitch 3",
+          "name": "Footswitch 3 ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315166,97 +315638,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Footswitch 4",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 52,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 5",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 53,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 6",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 54,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 7",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 55,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 8",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 56,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 9",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 57,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 10",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 58,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 11",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 59,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Footswitch 12",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 60,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Tap Tempo",
+          "name": "Tap Tempo ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315266,7 +315648,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper 1/2 Speed",
+          "name": "Looper 1/2 Speed ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315276,7 +315658,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper 2x Speed",
+          "name": "Looper 2X Speed",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315286,7 +315668,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper 1/2 Loop",
+          "name": "Looper 1/2 Loop ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315296,7 +315678,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper 2x Loop",
+          "name": "Looper 2X Loop ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315306,7 +315688,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper Start/Stop",
+          "name": "Looper Start/Stop ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315316,7 +315698,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper Record",
+          "name": "Looper Record ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315326,7 +315708,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper Insert",
+          "name": "Looper Insert ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315336,7 +315718,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper Peel",
+          "name": "Looper Peel ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315346,7 +315728,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper Mute/Unmute",
+          "name": "Looper Mute",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315356,7 +315738,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Looper Reverse/Forward",
+          "name": "Looper Reverse ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315366,7 +315748,17 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 1 On/Off",
+          "name": "Looper Insert ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 71,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 1 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315376,7 +315768,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 2 On/Off",
+          "name": "Block 2 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315386,7 +315778,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 3 On/Off",
+          "name": "Block 3 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315396,7 +315788,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 4 On/Off",
+          "name": "Block 4 Toggle ON/OFF",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315406,7 +315798,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 5 On/Off",
+          "name": "Block 5 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315416,7 +315808,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 6 On/Off",
+          "name": "Block 6 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315426,7 +315818,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 7 On/Off",
+          "name": "Block 7 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315436,17 +315828,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 8 On/Off",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 82,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Block 9 On/Off",
+          "name": "Block 9 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315456,7 +315838,7 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 10 On/Off",
+          "name": "Block 10 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
@@ -315466,11 +315848,181 @@
           "type": "Parameter"
         },
         {
-          "name": "Block 11 On/Off",
+          "name": "Block 11 Toggle ON/OFF ",
           "description": "",
           "usage": "",
           "curve": "0-based",
           "value": 85,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 12 Toggle ON/OFF ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 13 Toggle ON/OFF ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Block 14 Toggle ON/OFF ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 88,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Open ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 102,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Play",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Volume Down ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Volume Up ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Loop In ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Loop Out ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Speed Down ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 108,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Speed Up ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 109,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Pitch Down ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 110,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Pitch Up ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 111,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Previous",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 112,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Next",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 113,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Practice Tool – Loop On/Off ",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 114,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Metronome On",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 115,
           "min": 127,
           "max": 127,
           "type": "Parameter"
@@ -331077,6 +331629,82 @@
           "value": 64,
           "min": 64,
           "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "syn20ir": {
+      "brand": "Synergy Amps",
+      "device_name": "syn20ir",
+      "midi_thru": false,
+      "midi_in": "DIN5",
+      "midi_clock": false,
+      "phantom_power": true,
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Select channel",
+          "description": "0: CH1, 1:CH2, 2: CH3",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Select Structure",
+          "description": "0: A , 1: B, 2: C",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "IR Bypass",
+          "description": "0: OFF, 127: ON, X: Toggle",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Select IR",
+          "description": "0: IR1, 1: IR2, 2: IR2, 3: IR4",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "Lowpass Level",
+          "description": "0: Level1, 1: Level2, 2: Level3",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Highpass Level",
+          "description": "0: Level1, 1: Level2, 2: Level3",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 2,
           "type": "Parameter"
         }
       ],

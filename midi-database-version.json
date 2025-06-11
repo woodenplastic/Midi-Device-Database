@@ -4,18 +4,18 @@
   "sourceFile": "midi-database-v1.json",
   "databaseStats": {
     "brands": 162,
-    "devices": 655,
+    "devices": 658,
     "parameters": {
-      "cc": 29935,
+      "cc": 29993,
       "nrpn": 1994,
       "pc": 0,
-      "total": 31929
+      "total": 31987
     }
   },
   "sizes": {
-    "prettyJson": "8050.33 KB",
-    "minifiedJson": "4391.67 KB",
-    "gzippedJson": "381.90 KB",
+    "prettyJson": "8065.83 KB",
+    "minifiedJson": "4400.35 KB",
+    "gzippedJson": "382.88 KB",
     "compressionRatio": "4.7%"
   }
 }

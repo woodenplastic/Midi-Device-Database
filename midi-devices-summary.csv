@@ -99,6 +99,7 @@ Dr Scientist,The Atmosphere,55,0,0,55,No,No,None
 Dreadbox,Medusa,111,0,0,111,No,No,None
 Dreadbox,nymphes,82,0,0,82,No,No,None
 Dreadbox,Typhon,88,0,0,88,No,No,None
+Electro Harmonix,1440,9,0,0,9,No,No,None
 Electro Harmonix,45000,29,0,0,29,No,No,None
 Electro Harmonix,95000,67,0,0,67,No,No,None
 Electro Harmonix,ModRex,22,0,0,22,No,No,None
@@ -607,10 +608,11 @@ G-LAB,MIDI 4 X LOOP-er,10,0,0,10,No,No,None
 G-LAB,MIDI 2 X LOOP-er,10,0,0,10,No,No,None
 G-LAB,BC-1,13,0,0,13,Yes,No,None
 G-LAB,midiwoweewahmww1,8,0,0,8,Yes,Yes,unknown
+Headrush,Pedalbaord,34,0,0,34,No,No,None
 Headrush,MX5,25,0,0,25,No,No,None
 Headrush,Gigboard,26,0,0,26,No,No,None
 Headrush,Looperboard,86,0,0,86,Yes,No,None
-Headrush,Pedalbaord,34,0,0,34,No,No,None
+Headrush,flexprime,43,0,0,43,Yes,Yes,unknown
 Neunaber,Illumine,24,0,0,24,No,No,None
 Neunaber,Neuron,14,0,0,14,No,No,None
 Kinotone,Ribbons,44,0,0,44,No,No,None
@@ -651,6 +653,7 @@ Positive Grid,Bias Rack,19,0,0,19,No,No,None
 Poly Effects,Verbs,8,0,0,8,No,No,None
 Poly Effects,Flat V,21,0,0,21,No,No,None
 Synergy Amps,SYN2,7,0,0,7,No,No,None
+Synergy Amps,syn20ir,6,0,0,6,No,No,true
 RJM Music,Overture,18,0,0,18,No,No,None
 RJM Music,Mini Amp Gizmo,16,0,0,16,No,No,None
 RJM Music,Mastermind PBC/10,70,0,0,70,No,No,None
