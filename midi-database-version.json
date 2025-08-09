@@ -3,19 +3,19 @@
   "generatedAt": "2025-03-29T00:47:12.664Z",
   "sourceFile": "midi-database-v1.json",
   "databaseStats": {
-    "brands": 162,
-    "devices": 658,
+    "brands": 163,
+    "devices": 669,
     "parameters": {
-      "cc": 29993,
+      "cc": 30321,
       "nrpn": 1994,
       "pc": 0,
-      "total": 31987
+      "total": 32315
     }
   },
   "sizes": {
-    "prettyJson": "8065.83 KB",
-    "minifiedJson": "4400.35 KB",
-    "gzippedJson": "382.88 KB",
-    "compressionRatio": "4.7%"
+    "prettyJson": "8153.51 KB",
+    "minifiedJson": "4450.19 KB",
+    "gzippedJson": "388.93 KB",
+    "compressionRatio": "4.8%"
   }
 }

@@ -225,24 +225,25 @@ Line 6,HX One,40,0,0,40,No,No,None
 Line 6,HX Stomp,32,0,0,32,Yes,Yes,None
 Line 6,Helix,38,0,0,38,No,No,None
 Line 6,m5,4,0,0,4,No,No,None
-Line 6,M5 Stompbox Modeler,7,0,0,7,No,No,None
-Line 6,M13 v2.0 Sompbox Modeler,43,0,0,43,No,No,None
-Line 6,DT25 112,203,0,0,203,No,No,None
+Line 6,Pocket POD,108,0,0,108,No,No,None
 Line 6,Helix LT,37,0,0,37,No,No,None
-Line 6,POD HD500X,28,0,0,28,No,No,None
 Line 6,DT25 Head,203,0,0,203,No,No,None
-Line 6,POD GO,30,0,0,30,No,No,None
-Line 6,POD HD PRO X,28,0,0,28,No,No,None
-Line 6,Helix Rack and Control,38,0,0,38,No,No,None
-Line 6,Powercab 112 Plus,59,0,0,59,No,No,None
-Line 6,Powercab Plus,28,0,0,28,No,No,None
-Line 6,Helix Floor,39,0,0,39,Yes,Yes,None
 Line 6,HX Stomp XL,34,0,0,34,Yes,Yes,None
 Line 6,HX Effects,28,0,0,28,No,No,None
 Line 6,DL4 MKII,23,0,0,23,Yes,Yes,None
 Line 6,Powercab 212 Plus,114,0,0,114,No,No,None
+Line 6,DT25 112,203,0,0,203,No,No,None
+Line 6,POD GO,30,0,0,30,No,No,None
+Line 6,POD HD PRO X,28,0,0,28,No,No,None
+Line 6,Powercab Plus,28,0,0,28,No,No,None
+Line 6,Helix Rack and Control,38,0,0,38,No,No,None
+Line 6,Powercab 112 Plus,59,0,0,59,No,No,None
+Line 6,POD HD500X,28,0,0,28,No,No,None
+Line 6,Helix Floor,39,0,0,39,Yes,Yes,None
+Line 6,M13 v2.0 Sompbox Modeler,43,0,0,43,No,No,None
+Line 6,catalystcx,30,0,0,30,Yes,Yes,unknown
+Line 6,M5 Stompbox Modeler,7,0,0,7,No,No,None
 Line 6,M9 v2.0 Stompbox Modeler,31,0,0,31,No,No,None
-Line 6,Pocket POD,108,0,0,108,No,No,None
 MFB,synth_ii,34,0,0,34,No,No,None
 MFB,tanzbar_1,63,0,0,63,No,No,None
 MFB,Tanzbar Lite,25,0,0,25,No,No,None
@@ -294,6 +295,7 @@ Moog,Minimoog Voyager XL,186,0,0,186,No,No,None
 Mutable Instruments,Shruthi,39,0,0,39,No,No,None
 nux,tape_echo_ndd-7,16,0,0,16,No,No,None
 Neural DSP,Quad Cortex,41,0,0,41,No,Yes,None
+Neural DSP,nanocortex,11,0,0,11,Yes,Yes,unknown
 norand,mono,29,0,0,29,No,No,None
 Nord,a1,55,0,0,55,No,No,None
 Nord,C2D,57,0,0,57,No,No,None
@@ -425,6 +427,7 @@ Source Audio,Collider,67,0,0,67,Yes,Yes,None
 Source Audio,Spectrum Intelligence Filter,7,0,0,7,No,No,None
 Source Audio,EQ2,128,0,0,128,Yes,Yes,None
 Source Audio,Programmable EQ,15,0,0,15,No,No,None
+Source Audio,artifakt,94,0,0,94,Yes,Yes,unknown
 Source Audio,Atlas,25,0,0,25,Yes,Yes,unknown
 Source Audio,C4 Synth,7,0,0,7,No,Yes,None
 Strymon,NightSky,55,0,0,55,Yes,Yes,None
@@ -439,6 +442,7 @@ Strymon,El Capistan,33,0,0,33,No,No,None
 Strymon,Iridium,16,0,0,16,No,No,None
 Strymon,Flint,36,0,0,36,No,No,None
 Strymon,Mobius,76,0,0,76,Yes,Yes,None
+Strymon,ec1,17,0,0,17,Yes,Yes,unknown
 Strymon,Timeline,65,0,0,65,Yes,Yes,None
 Strymon,Lex,31,0,0,31,No,No,None
 Strymon,Sunset,22,0,0,22,No,No,None
@@ -480,7 +484,8 @@ Walrus Audio,M1,40,0,0,40,No,No,None
 Walrus Audio,Meraki (Stereo Analog Delay),23,0,0,23,No,No,None
 Walrus Audio,R1,15,0,0,15,No,No,None
 Walrus Audio,m1mk2,26,0,0,26,Yes,Yes,unknown
-Walrus Audio,acs1mk2,24,0,0,24,Yes,Yes,unknown
+Walrus Audio,acs1mk2,46,0,0,46,Yes,Yes,unknown
+Walrus Audio,qi,24,0,0,24,Yes,Yes,unknown
 Walrus Audio,d1mk2,22,0,0,22,Yes,Yes,unknown
 Walrus Audio,D1 (Old version),21,0,0,21,Yes,Yes,None
 Walrus Audio,r1mk2,17,0,0,17,Yes,Yes,unknown
@@ -494,8 +499,10 @@ Yamaha,reface CS,30,0,0,30,No,No,None
 Yamaha,reface DX,42,0,0,42,No,No,None
 Yamaha,reface YC,28,0,0,28,No,No,None
 EM Custom,AMI Universal Dual TRS,0,0,0,0,No,No,None
+valeton,gp5,20,0,0,20,Yes,Yes,unknown
 Swindler Effects,Red Mountain Tremolo V2,20,0,0,20,No,No,None
 Swindler Effects,The Gulf Chorus V2,15,0,0,15,No,No,None
+Pigtronix,echolution3,17,0,0,17,Yes,Yes,unknown
 Pigtronix,Infinity,61,0,0,61,No,No,None
 Pigtronix,Echolution 2 Deluxe,27,0,0,27,No,Yes,None
 Chase Bliss Audio,Habit,27,0,0,27,No,No,None
@@ -555,6 +562,7 @@ KSR Amplification,Artemis 100,121,0,0,121,No,No,None
 KSR Amplification,Colossus H-100,121,0,0,121,No,No,None
 KSR Amplification,Gemini 100,121,0,0,121,No,No,None
 Seymour Duncan,Andromeda,25,0,0,25,No,No,None
+Old Blood Noise Endeavors,signalblenderstereo,15,0,0,15,Yes,Yes,unknown
 Old Blood Noise Endeavors,blackfountain,20,0,0,20,Yes,Yes,unknown
 Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,18,0,0,18,No,No,None
 Sheeran,Looper+,24,0,0,24,No,No,None
@@ -595,11 +603,13 @@ Jackson Audio,New Wave,11,0,0,11,No,No,None
 Jackson Audio,Bloom,9,0,0,9,No,No,None
 Jackson Audio,Asabi,5,0,0,5,No,No,None
 the montreal assembly,856forzellersasn,67,0,0,67,No,Yes,None
+Kernom,elipse,11,0,0,11,Yes,Yes,unknown
 Kernom,Moho,9,0,0,9,No,No,None
 Kernom,Ridge,9,0,0,9,No,No,None
+Morningstar Engineering,MC8,38,0,0,38,Yes,No,true
 Morningstar Engineering,MC6 MKII,26,0,0,26,Yes,No,true
 Morningstar Engineering,ML5R,24,0,0,24,Yes,No,None
-Morningstar Engineering,MC8,38,0,0,38,Yes,No,true
+Morningstar Engineering,mc8pro,21,0,0,21,Yes,Yes,unknown
 Morningstar Engineering,MC6 PRO,40,0,0,40,Yes,Yes,true
 Morningstar Engineering,ML5,17,0,0,17,Yes,No,None
 Morningstar Engineering,MC3,19,0,0,19,No,No,None
@@ -608,10 +618,11 @@ G-LAB,MIDI 4 X LOOP-er,10,0,0,10,No,No,None
 G-LAB,MIDI 2 X LOOP-er,10,0,0,10,No,No,None
 G-LAB,BC-1,13,0,0,13,Yes,No,None
 G-LAB,midiwoweewahmww1,8,0,0,8,Yes,Yes,unknown
-Headrush,Pedalbaord,34,0,0,34,No,No,None
-Headrush,MX5,25,0,0,25,No,No,None
+Headrush,core,46,0,0,46,Yes,Yes,unknown
 Headrush,Gigboard,26,0,0,26,No,No,None
 Headrush,Looperboard,86,0,0,86,Yes,No,None
+Headrush,MX5,25,0,0,25,No,No,None
+Headrush,Pedalbaord,34,0,0,34,No,No,None
 Headrush,flexprime,43,0,0,43,Yes,Yes,unknown
 Neunaber,Illumine,24,0,0,24,No,No,None
 Neunaber,Neuron,14,0,0,14,No,No,None
@@ -634,7 +645,7 @@ Blackstar Amplification,Silverline Deluxe,52,0,0,52,No,No,None
 Blackstar Amplification,Amped 3,36,0,0,36,No,No,None
 Blackstar Amplification,Silverline Deluxe Head,52,0,0,52,No,No,None
 Blackstar Amplification,Amped 1,25,0,0,25,No,No,None
-toneking,imperialtritubepreamp,20,0,0,20,No,No,None
+toneking,imperialtritubepreamp,20,0,0,20,Yes,Yes,Unknown
 JMK Music Pedals,CLOCKstep,23,0,0,23,No,No,None
 Mooer,Ocean Machine,88,0,0,88,No,No,None
 Mooer,GE300 LITE,35,0,0,35,No,No,None
