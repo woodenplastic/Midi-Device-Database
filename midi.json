@@ -265931,10 +265931,10 @@
       "pc": []
     }
   },
-  "Pigtronix": {
-    "echolution3": {
-      "brand": "Pigtronix",
-      "device_name": "echolution3",
+  "noiseengineering": {
+    "batverb": {
+      "brand": "noiseengineering",
+      "device_name": "batverb",
       "midi_thru": "unknown",
       "midi_in": "unknown",
       "midi_clock": "unknown",
@@ -265945,28 +265945,18 @@
       "instructions": "",
       "cc": [
         {
-          "name": "Repeats Knob",
-          "description": "",
+          "name": "EXP",
+          "description": "EXP pedal value",
           "usage": "",
           "curve": "0-based",
-          "value": 12,
+          "value": 11,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Time Knob",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 13,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Mix Knob",
-          "description": "",
+          "name": "Input Gain",
+          "description": "Sets input gain level",
           "usage": "",
           "curve": "0-based",
           "value": 14,
@@ -265975,8 +265965,8 @@
           "type": "Parameter"
         },
         {
-          "name": "LFO Speed Knob",
-          "description": "",
+          "name": "DOOM",
+          "description": "Sets DOOM amount",
           "usage": "",
           "curve": "0-based",
           "value": 15,
@@ -265985,8 +265975,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Modulation Depth Knob",
-          "description": "",
+          "name": "Shimmer",
+          "description": "Sets Shimmer amount",
           "usage": "",
           "curve": "0-based",
           "value": 16,
@@ -265995,8 +265985,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Time Button",
-          "description": "3 = Short\n4 = Med\n5 = Long",
+          "name": "Blend",
+          "description": "Sets dry/wet Blend amount",
           "usage": "",
           "curve": "0-based",
           "value": 17,
@@ -266005,8 +265995,8 @@
           "type": "Parameter"
         },
         {
-          "name": "SFX Button",
-          "description": "3 = Off\n4 = Pong\n5 = Halo\n6 = Pong and Halo",
+          "name": "Time",
+          "description": "Sets the delay time",
           "usage": "",
           "curve": "0-based",
           "value": 18,
@@ -266015,8 +266005,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Taps Button",
-          "description": "3 = First Tap Off\n4 = First Tap 1\n5 = First Tap 3/4\n6 = First Tap 2/3\n7 = First Tap 1/2\n8 = First Tap PHI\n9 = Second Tap Off\n10 = Second Tap 1\n11 = Second Tap 3/4\n12 = Second Tap 2/3\n13 = Second Tap 1/2\n14 = Second Tap PHI\n20 = Bit Crusher\n9 = Crush Off\n10 = Crush On",
+          "name": "Regen",
+          "description": "Sets the amount of feedback",
           "usage": "",
           "curve": "0-based",
           "value": 19,
@@ -266025,830 +266015,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Bypass Button",
-          "description": "3 = None",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "LFO Mod Button",
-          "description": "3 = Triangle\n4 = Square\n5 = Saw\n6 = Random\n7 = Super Triangle\n8 = Super Square\n9 = Super Saw\n10 = Super Random",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Tap Tempo Footswitch",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Engage Footswitch",
-          "description": "3 = Explicitly Engaged\n4 = Explicitly Not Engaged",
-          "usage": "",
-          "curve": "0-based",
-          "value": 27,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Jump Footswitch / Preset 1/2",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 29,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Freeze Footswitch / Preset 3/4",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 30,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop Open Close",
-          "description": "1 = open; 1 = close.\nSend a momentary 1 to\nCC#31 to start a loop,\nthen send another to\nclose that loop.",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Second Tap Volume",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 76,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Enable MIDI Clock In",
-          "description": "0=off; 1=on",
-          "usage": "",
-          "curve": "0-based",
-          "value": 79,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        }
-      ],
-      "nrpn": [],
-      "pc": []
-    },
-    "Infinity": {
-      "brand": "Pigtronix",
-      "device_name": "Infinity",
-      "midi_thru": false,
-      "midi_in": "",
-      "midi_clock": false,
-      "phantom_power": "None",
-      "midi_channel": {
-        "instructions": ""
-      },
-      "instructions": "",
-      "cc": [
-        {
-          "name": "Varispeed",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 3,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Expression",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 4,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Global Volume",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 7,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop Aging",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 9,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 1 Volume",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 12,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 2 Volume",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 13,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop Mode: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 17,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop Mode: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 17,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop Mode: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 17,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop Mode: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 17,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Series Loops",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 19,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Input Split",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 20,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Click Kill",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 4,
-          "max": 4,
-          "type": "Parameter"
-        },
-        {
-          "name": "No Click Kill",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 21,
-          "min": 3,
-          "max": 3,
-          "type": "Parameter"
-        },
-        {
-          "name": "Sync Multi: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Sync Multi: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Sync Multi: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Sync Multi: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 22,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop FSW: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop FSW: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop FSW: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop FSW: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 23,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 1 FSW: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 1 FSW: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 1 FSW: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 1 FSW: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 24,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 2 FSW: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 2 FSW: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 2 FSW: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop 2 FSW: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 25,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Undo FSW: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 27,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Undo FSW: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 27,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Undo FSW: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 27,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Undo FSW: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 27,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Reverse FSW: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 28,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Reverse FSW: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 28,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Reverse FSW: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 28,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Reverse FSW: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 28,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Up: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 29,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Up: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 29,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Up: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 29,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Up: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 29,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Down: Short Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 30,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Down: Long Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 30,
-          "min": 2,
-          "max": 2,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Down: Release",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 30,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Down: Press",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 30,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Pitch Recall",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stutter",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 75,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Erase",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 76,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Erase+Rec",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 77,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Reverse",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 78,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Undo",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 79,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Stop",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 80,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Set Multiplier",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 82,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Erase Other",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 83,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Preset Decrement",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 85,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Preset Increment",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 86,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "One Shot",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 87,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "MIDI Clock: Listen",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 88,
-          "min": 1,
-          "max": 1,
-          "type": "Parameter"
-        },
-        {
-          "name": "MIDI Clock: Ignore",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 88,
-          "min": 0,
-          "max": 0,
-          "type": "Parameter"
-        },
-        {
-          "name": "Erase All",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 89,
-          "min": 127,
-          "max": 127,
-          "type": "Parameter"
-        }
-      ],
-      "nrpn": [],
-      "pc": []
-    },
-    "Echolution 2 Deluxe": {
-      "brand": "Pigtronix",
-      "device_name": "Echolution 2 Deluxe",
-      "midi_thru": false,
-      "midi_in": "",
-      "midi_clock": true,
-      "phantom_power": "None",
-      "midi_channel": {
-        "instructions": "More info here: https://www.pigtronix.com/uploads/pigtronix/2020/11/Echolution-2_D-manual_15-1.pdf\n\n"
-      },
-      "instructions": "",
-      "cc": [
-        {
-          "name": "Exp pedal input",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 4,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Repeats knob",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 12,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Time knob",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 13,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Mix knob",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 14,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "LFO Speed knob",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 15,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Modulation Depth knob",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 16,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Time Button",
-          "description": "3: Short, 4: Med, 5: Long",
-          "usage": "",
-          "curve": "0-based",
-          "value": 17,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "SFX Button",
-          "description": "3: Off, 3: Pong, 5: Halo, 6: Pong and Halo",
-          "usage": "",
-          "curve": "0-based",
-          "value": 18,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Taps Button",
-          "description": "3: First tap off, 3: First tap 1, 5: First tap 3/4, 6: First tap 2/3, First tap 1/2, 8: First tap PHI, 9: Second tap off, 10: Second tap 1 , 11: Second Tap 3/4, 12: Second Tap 2/3, 13: Second Tap 1/2, 14: Second Tap PHI ",
-          "usage": "",
-          "curve": "0-based",
-          "value": 19,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Filter Button",
-          "description": "3: Filter Off, 4 LP On, 5: Tape On, 6: Comb On, 7: Sweep Off, 8: Sweep On, 9: Crush Off, 10: Crush On",
+          "name": "Output Gain",
+          "description": "Sets the output gain level",
           "usage": "",
           "curve": "0-based",
           "value": 20,
@@ -266857,8 +266025,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Bypass Button",
-          "description": "3: None, 4: Trails On, 5: Listen On, 6: Dry Kill Off, 7: Dry Kill Off",
+          "name": "HPF",
+          "description": "Sets the amount of low-frequency\ndamping",
           "usage": "",
           "curve": "0-based",
           "value": 21,
@@ -266867,8 +266035,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Ducking Button",
-          "description": "3: Ducking Off, 4: Reverse Only, 5: Duck Only",
+          "name": "LPF",
+          "description": "Sets the amount of high-frequency\ndamping",
           "usage": "",
           "curve": "0-based",
           "value": 22,
@@ -266877,28 +266045,98 @@
           "type": "Parameter"
         },
         {
-          "name": "Exp Button",
-          "description": "3: None, 4: Repeasts, 5: Time, 6: Mix, 7: Speed, 8: Depth, 9: Envelope Selector On, 10: Envelope Selector Off",
+          "name": "EXP: Default",
+          "description": "Maps EXP to the default Regen parameter",
           "usage": "",
           "curve": "0-based",
           "value": 23,
           "min": 0,
-          "max": 127,
+          "max": 0,
           "type": "Parameter"
         },
         {
-          "name": "LFO Mod Button",
-          "description": "3: Triangle, 4: Square, 5: Saw, 6: Random, 7: Super Triangle, 8: Super Square, 9: Super Saw, 10: Random",
+          "name": "EXP: Doom",
+          "description": "Maps EXP to DOOM",
           "usage": "",
           "curve": "0-based",
-          "value": 24,
-          "min": 0,
-          "max": 127,
+          "value": 23,
+          "min": 15,
+          "max": 15,
           "type": "Parameter"
         },
         {
-          "name": "Tap Tempo Footswitch",
-          "description": "",
+          "name": "EXP: Shimmer",
+          "description": "Maps EXP to Shimmer",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 30,
+          "max": 30,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXP: Blend",
+          "description": "Maps EXP to Blend",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 45,
+          "max": 45,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXP: Time",
+          "description": "Maps EXP to Time",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 60,
+          "max": 60,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXP: Regen",
+          "description": "Maps EXP to Regen",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 75,
+          "max": 75,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXP: HPF",
+          "description": "Maps EXP to HPF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 90,
+          "max": 90,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXP: LPF",
+          "description": "Maps EXP to LPF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 105,
+          "max": 105,
+          "type": "Parameter"
+        },
+        {
+          "name": "EXP: Duck",
+          "description": "Maps EXP to Duck Amount",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 120,
+          "max": 120,
+          "type": "Parameter"
+        },
+        {
+          "name": "Duck Amt",
+          "description": "Sets the amount of tail ducking",
           "usage": "",
           "curve": "0-based",
           "value": 25,
@@ -266907,121 +266145,81 @@
           "type": "Parameter"
         },
         {
-          "name": "Engage Footswitch",
-          "description": "3: Explicitly Engaged, 4: Explicitly Not Engagedd",
+          "name": "Focus switch Left",
+          "description": "Set Focus switch position to Left",
           "usage": "",
           "curve": "0-based",
-          "value": 27,
+          "value": 26,
           "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Focus switch Center",
+          "description": "Sets Focus switch position to Center",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 64,
+          "max": 64,
+          "type": "Parameter"
+        },
+        {
+          "name": "Focus switch Right",
+          "description": "Sets Focus switch position to Right",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 127,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Preset Save",
-          "description": "",
+          "name": "Duck switch Left",
+          "description": "Sets Duck switch position to Left",
           "usage": "",
           "curve": "0-based",
           "value": 28,
           "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Duck switch Center",
+          "description": "Sets Duck switch position to Center",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 64,
+          "max": 64,
+          "type": "Parameter"
+        },
+        {
+          "name": "Duck switch Right",
+          "description": "Sets Duck switch position to Right",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 127,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Jump Footswitch / Preset 1/2",
-          "description": "",
+          "name": "Hold",
+          "description": "Engage: 127 / Disengage: 0",
           "usage": "",
           "curve": "0-based",
-          "value": 29,
+          "value": 102,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Freeze Footswitch / Preset 3/4",
-          "description": "",
+          "name": "Bypass",
+          "description": "Engage: 127 / Disengage: 0",
           "usage": "",
           "curve": "0-based",
-          "value": 30,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Loop Open Close",
-          "description": "1: Open, 2: Close",
-          "usage": "",
-          "curve": "0-based",
-          "value": 31,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Adjust Filter Cutoff Frequency",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 74,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Second Tap Volume",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 76,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Set Jump Interval for First Tap",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 77,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Set Jump Interval for Second Tap",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 78,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Enable MIDI Clock In",
-          "description": "0: off, 1: on",
-          "usage": "",
-          "curve": "0-based",
-          "value": 79,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Enable MIDI Clock Out",
-          "description": "0: off, 1: on",
-          "usage": "",
-          "curve": "0-based",
-          "value": 80,
-          "min": 0,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Copy MIDI Clock",
-          "description": "0: off, 1: on",
-          "usage": "",
-          "curve": "0-based",
-          "value": 81,
+          "value": 103,
           "min": 0,
           "max": 127,
           "type": "Parameter"
@@ -314050,6 +313248,1106 @@
       "pc": []
     }
   },
+  "Pigtronix": {
+    "echolution3": {
+      "brand": "Pigtronix",
+      "device_name": "echolution3",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Repeats Knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 12,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time Knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 13,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix Knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Speed Knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Modulation Depth Knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time Button",
+          "description": "3 = Short\n4 = Med\n5 = Long",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "SFX Button",
+          "description": "3 = Off\n4 = Pong\n5 = Halo\n6 = Pong and Halo",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Taps Button",
+          "description": "3 = First Tap Off\n4 = First Tap 1\n5 = First Tap 3/4\n6 = First Tap 2/3\n7 = First Tap 1/2\n8 = First Tap PHI\n9 = Second Tap Off\n10 = Second Tap 1\n11 = Second Tap 3/4\n12 = Second Tap 2/3\n13 = Second Tap 1/2\n14 = Second Tap PHI\n20 = Bit Crusher\n9 = Crush Off\n10 = Crush On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Button",
+          "description": "3 = None",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Mod Button",
+          "description": "3 = Triangle\n4 = Square\n5 = Saw\n6 = Random\n7 = Super Triangle\n8 = Super Square\n9 = Super Saw\n10 = Super Random",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo Footswitch",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Engage Footswitch",
+          "description": "3 = Explicitly Engaged\n4 = Explicitly Not Engaged",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Jump Footswitch / Preset 1/2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Freeze Footswitch / Preset 3/4",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop Open Close",
+          "description": "1 = open; 1 = close.\nSend a momentary 1 to\nCC#31 to start a loop,\nthen send another to\nclose that loop.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Second Tap Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Enable MIDI Clock In",
+          "description": "0=off; 1=on",
+          "usage": "",
+          "curve": "0-based",
+          "value": 79,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "Infinity": {
+      "brand": "Pigtronix",
+      "device_name": "Infinity",
+      "midi_thru": false,
+      "midi_in": "",
+      "midi_clock": false,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Varispeed",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Expression",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Global Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 7,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop Aging",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 9,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 1 Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 12,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 2 Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 13,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop Mode: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop Mode: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop Mode: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop Mode: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Series Loops",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Input Split",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Click Kill",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 4,
+          "max": 4,
+          "type": "Parameter"
+        },
+        {
+          "name": "No Click Kill",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 3,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "Sync Multi: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Sync Multi: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Sync Multi: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Sync Multi: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop FSW: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop FSW: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop FSW: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop FSW: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 1 FSW: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 1 FSW: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 1 FSW: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 1 FSW: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 2 FSW: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 2 FSW: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 2 FSW: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop 2 FSW: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Undo FSW: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Undo FSW: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Undo FSW: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Undo FSW: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverse FSW: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverse FSW: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverse FSW: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverse FSW: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Up: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Up: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Up: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Up: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Down: Short Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Down: Long Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 2,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Down: Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Down: Press",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch Recall",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stutter",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 75,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Erase",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Erase+Rec",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 77,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverse",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 78,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Undo",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 79,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Stop",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Set Multiplier",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 82,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Erase Other",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 83,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Preset Decrement",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Preset Increment",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "One Shot",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "MIDI Clock: Listen",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 88,
+          "min": 1,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "MIDI Clock: Ignore",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 88,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Erase All",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 127,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "Echolution 2 Deluxe": {
+      "brand": "Pigtronix",
+      "device_name": "Echolution 2 Deluxe",
+      "midi_thru": false,
+      "midi_in": "",
+      "midi_clock": true,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": "More info here: https://www.pigtronix.com/uploads/pigtronix/2020/11/Echolution-2_D-manual_15-1.pdf\n\n"
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Exp pedal input",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Repeats knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 12,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 13,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Speed knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Modulation Depth knob",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Time Button",
+          "description": "3: Short, 4: Med, 5: Long",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "SFX Button",
+          "description": "3: Off, 3: Pong, 5: Halo, 6: Pong and Halo",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Taps Button",
+          "description": "3: First tap off, 3: First tap 1, 5: First tap 3/4, 6: First tap 2/3, First tap 1/2, 8: First tap PHI, 9: Second tap off, 10: Second tap 1 , 11: Second Tap 3/4, 12: Second Tap 2/3, 13: Second Tap 1/2, 14: Second Tap PHI ",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Button",
+          "description": "3: Filter Off, 4 LP On, 5: Tape On, 6: Comb On, 7: Sweep Off, 8: Sweep On, 9: Crush Off, 10: Crush On",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Button",
+          "description": "3: None, 4: Trails On, 5: Listen On, 6: Dry Kill Off, 7: Dry Kill Off",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ducking Button",
+          "description": "3: Ducking Off, 4: Reverse Only, 5: Duck Only",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Exp Button",
+          "description": "3: None, 4: Repeasts, 5: Time, 6: Mix, 7: Speed, 8: Depth, 9: Envelope Selector On, 10: Envelope Selector Off",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Mod Button",
+          "description": "3: Triangle, 4: Square, 5: Saw, 6: Random, 7: Super Triangle, 8: Super Square, 9: Super Saw, 10: Random",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo Footswitch",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Engage Footswitch",
+          "description": "3: Explicitly Engaged, 4: Explicitly Not Engagedd",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Preset Save",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Jump Footswitch / Preset 1/2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Freeze Footswitch / Preset 3/4",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Loop Open Close",
+          "description": "1: Open, 2: Close",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Adjust Filter Cutoff Frequency",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 74,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Second Tap Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 76,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Set Jump Interval for First Tap",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 77,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Set Jump Interval for Second Tap",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 78,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Enable MIDI Clock In",
+          "description": "0: off, 1: on",
+          "usage": "",
+          "curve": "0-based",
+          "value": 79,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Enable MIDI Clock Out",
+          "description": "0: off, 1: on",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Copy MIDI Clock",
+          "description": "0: off, 1: on",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    }
+  },
   "Morningstar Engineering": {
     "MC8": {
       "brand": "Morningstar Engineering",
@@ -319905,6 +320203,612 @@
     }
   },
   "Kinotone": {
+    "sparks": {
+      "brand": "Kinotone",
+      "device_name": "sparks",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Synth Attack",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Decay",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Sustain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Release",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Waveform",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Bits",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Mod Option",
+          "description": "0 = LFO Pitch 1 = LFO Pulse Width 2 = Glide",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Mod Depth",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Hard Sync / Ring Mod",
+          "description": "0 = None\n1 = Hard Sync\n2 = Ring Mod",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Voice Mode",
+          "description": "0 = Poly\n1 = Mono",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 1,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Cutoff",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Mode",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Resonance",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gain",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Level",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Drive / Fold",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Blend",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Low Cut",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "ENV Attack",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 33,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "ENV Sens",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 34,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Rate",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 35,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Shape",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 36,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Spin",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 37,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Filter Cutoff",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 38,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Filter",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 39,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map Filter Resonance",
+          "description": "0-64 [-]\n65-127 [+]\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 40,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Gain",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 41,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Level",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 42,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Drive / Fold",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 43,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Blend",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 44,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Low Cut",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 45,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Gate",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 46,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO ENV Attack",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 47,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO ENV Sens",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 48,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map LFO Spin",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 49,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "ENV Style",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 50,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ignore MIDI Clock",
+          "description": "0 = Ignore. ≥1 = Listen",
+          "usage": "",
+          "curve": "0-based",
+          "value": 51,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Filter Cutoff",
+          "description": "0-64 [-]\n65-127 [+]\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 52,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Filter Mode",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 53,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Filter Resonance",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 54,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Gain",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 55,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Level",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 56,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Drive / Fold",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 57,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Blend",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 58,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Low Cut",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 59,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Gate",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 60,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV LFO Rate",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 61,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV LFO Shape",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 62,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Map ENV Spin",
+          "description": "0-64 [-]\n65-127 [+]",
+          "usage": "",
+          "curve": "0-based",
+          "value": 63,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Preset Footswitch",
+          "description": "0 = OFF\n≥1 = ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Footswitch",
+          "description": "0 = OFF\n≥1 = ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "LFO Range",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 82,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reset Black + White Controls",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 85,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Currently Selected Preset",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 83,
+          "min": 0,
+          "max": 31,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear LFO Mappings",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 86,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear ENV Mappings",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 87,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "GATE Dry Signal",
+          "description": "0 = No\n≥1 = Yes",
+          "usage": "",
+          "curve": "0-based",
+          "value": 89,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Gate Response Style",
+          "description": "0 = Smooth\n(default)\n≥1 = Choppy",
+          "usage": "",
+          "curve": "0-based",
+          "value": 90,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
     "Ribbons": {
       "brand": "Kinotone",
       "device_name": "Ribbons",
@@ -320354,6 +321258,652 @@
           "curve": "0-based",
           "value": 55,
           "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    },
+    "ribbonsfw2": {
+      "brand": "Kinotone",
+      "device_name": "ribbonsfw2",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
+      "midi_channel": {
+        "instructions": ""
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "High-Pass Filter\t",
+          "description": "Control value of the High-Pass Filter.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 14,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Low-Pass Filter",
+          "description": "Control value of the Low-Pass Filter.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 15,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Mix",
+          "description": "Control value of the wet/dry Mix",
+          "usage": "",
+          "curve": "0-based",
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Compression / Saturation",
+          "description": "Control value of the Compression or Saturation option. Note: Value corresponds to CC #59, hidden utility option to choose between using Compression or Saturation effect.",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wow Frequency",
+          "description": "Control value of Wow Frequency",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Wow Depth",
+          "description": "Control value of Wow Depth",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Flutter Depth",
+          "description": "Control value of Flutter Depth",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Flutter Frequency",
+          "description": "Control value of Flutter Frequency",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dropouts Frequency",
+          "description": "Control value of Dropouts Frequency",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Dropouts Depth",
+          "description": "Control value of Dropouts Depth",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Crinkle",
+          "description": "Control value of Crinkle",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Noise",
+          "description": "Control value of Noise",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverb Decay",
+          "description": "Control value of Reverb Decay",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reverb Mix & Placement",
+          "description": "Control value of Reverb Mix & Placement",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Param 1",
+          "description": "Control value of Touch Parameter 1",
+          "usage": "",
+          "curve": "0-based",
+          "value": 28,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Param 2",
+          "description": "Control value of Touch Parameter 2",
+          "usage": "",
+          "curve": "0-based",
+          "value": 29,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: Magnetic Dance",
+          "description": "Touch Mode selection: Magnetic Dance",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 0,
+          "max": 18,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: Tape Stop",
+          "description": "Touch Mode selection: Tape Stop",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 19,
+          "max": 36,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: Broken Machine",
+          "description": "Touch Mode selection: Broken Machine",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 37,
+          "max": 54,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: Repeater",
+          "description": "Touch Mode selection: Repeater",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 50,
+          "max": 73,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: Crushed Cassette",
+          "description": "Touch Mode selection: Crushed Cassette",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 74,
+          "max": 91,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: Disintegration Loop",
+          "description": "Touch Mode selection: Disintegration Loop",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 92,
+          "max": 109,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Mode: UnrealPlayer",
+          "description": "Touch Mode selection: UnrealPlayer",
+          "usage": "",
+          "curve": "0-based",
+          "value": 30,
+          "min": 110,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ribbons Mode: Tape Effects",
+          "description": "Ribbons Mode selection: Tape Effects",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 0,
+          "max": 64,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ribbons Mode: Looper",
+          "description": "Ribbons Mode selection: Looper",
+          "usage": "",
+          "curve": "0-based",
+          "value": 31,
+          "min": 65,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Change Looper Track",
+          "description": "Change Looper Track: 1",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 0,
+          "max": 31,
+          "type": "Parameter"
+        },
+        {
+          "name": "Change Looper Track",
+          "description": "Change Looper Track: 2",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 32,
+          "max": 63,
+          "type": "Parameter"
+        },
+        {
+          "name": "Change Looper Track",
+          "description": "Change Looper Track: 3",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 64,
+          "max": 95,
+          "type": "Parameter"
+        },
+        {
+          "name": "Change Looper Track",
+          "description": "Change Looper Track: 4",
+          "usage": "",
+          "curve": "0-based",
+          "value": 32,
+          "min": 96,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear Current Looper Track",
+          "description": "Clear Current Looper Track",
+          "usage": "",
+          "curve": "0-based",
+          "value": 33,
+          "min": 65,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear All Looper Tracks",
+          "description": "Clear all Looper Tracks",
+          "usage": "",
+          "curve": "0-based",
+          "value": 34,
+          "min": 65,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Direction",
+          "description": "Control Track 1 Direction",
+          "usage": "",
+          "curve": "0-based",
+          "value": 35,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Speed",
+          "description": "Control Track 1 Speed",
+          "usage": "",
+          "curve": "0-based",
+          "value": 36,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Volume",
+          "description": "Control Track 1 Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 37,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 1 Scale",
+          "description": "Control Track 1 Scale",
+          "usage": "",
+          "curve": "0-based",
+          "value": 38,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Direction",
+          "description": "Control Track 2 Direction",
+          "usage": "",
+          "curve": "0-based",
+          "value": 39,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Speed",
+          "description": "Control Track 2 Speed",
+          "usage": "",
+          "curve": "0-based",
+          "value": 40,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Volume",
+          "description": "Control Track 2 Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 41,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 2 Scale",
+          "description": "Control Track 2 Scale",
+          "usage": "",
+          "curve": "0-based",
+          "value": 42,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Direction",
+          "description": "Control Track 3 Direction",
+          "usage": "",
+          "curve": "0-based",
+          "value": 43,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Speed",
+          "description": "Control Track 3 Speed",
+          "usage": "",
+          "curve": "0-based",
+          "value": 44,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Volume",
+          "description": "Control Track 3 Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 45,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 3 Scale",
+          "description": "Control Track 3 Scale\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 46,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Direction",
+          "description": "Control Track 4 Direction",
+          "usage": "",
+          "curve": "0-based",
+          "value": 47,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Speed",
+          "description": "Control Track 4 Speed\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 48,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Volume",
+          "description": "Control Track 4 Volume\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 49,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Track 4 Scale",
+          "description": "Control Track 4 Scale",
+          "usage": "",
+          "curve": "0-based",
+          "value": 50,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Ignore MIDI Clock",
+          "description": "Ignore MIDI Clock (Persistent setting)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 51,
+          "min": 0,
+          "max": 0,
+          "type": "Parameter"
+        },
+        {
+          "name": "Listen MIDI Clock",
+          "description": "Listen to MIDI Clock (Persistent setting)\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 51,
+          "min": 1,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Attack",
+          "description": "Control Synth Attack",
+          "usage": "",
+          "curve": "0-based",
+          "value": 52,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Release",
+          "description": "Control Synth Release",
+          "usage": "",
+          "curve": "0-based",
+          "value": 53,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Synth Volume",
+          "description": "Control Synth Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 54,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "UnrealPlayer Fidelity - LoFi",
+          "description": "Select UnrealPlayer Fidelity mode - LoFi",
+          "usage": "",
+          "curve": "0-based",
+          "value": 55,
+          "min": 0,
+          "max": 64,
+          "type": "Parameter"
+        },
+        {
+          "name": "UnrealPlayer Fidelity - HiFi",
+          "description": "Select UnrealPlayer Fidelity mode - HiFi",
+          "usage": "",
+          "curve": "0-based",
+          "value": 55,
+          "min": 65,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Reserved",
+          "description": "Reserved",
+          "usage": "",
+          "curve": "0-based",
+          "value": 56,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Filter Resonance",
+          "description": "Control Filter Resonance",
+          "usage": "",
+          "curve": "0-based",
+          "value": 57,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Makeup Gain",
+          "description": "Control Makeup Gain",
+          "usage": "",
+          "curve": "0-based",
+          "value": 58,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Switch Between Compression or Saturation",
+          "description": "Choose between using Compression or Saturation effect for Page1 options - 0-64 = Compression, 65-127 = Saturation\n",
+          "usage": "",
+          "curve": "0-based",
+          "value": 59,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Clear Touch Mode Loops\t",
+          "description": "Clear Touch Mode Loops (>= 65 = True)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 60,
+          "min": 65,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Footswitch Off",
+          "description": "Control Touch Footswitch",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 0,
+          "max": 64,
+          "type": "Parameter"
+        },
+        {
+          "name": "Touch Footswitch On",
+          "description": "Control Touch Footswitch",
+          "usage": "",
+          "curve": "0-based",
+          "value": 80,
+          "min": 65,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Footswitch Off",
+          "description": "Control Bypass Footswitch",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 0,
+          "max": 64,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Footswitch On",
+          "description": "Control Bypass Footswitch",
+          "usage": "",
+          "curve": "0-based",
+          "value": 81,
+          "min": 65,
           "max": 127,
           "type": "Parameter"
         }
@@ -332222,32 +333772,32 @@
       "pc": []
     }
   },
-  "Fender": {
-    "Tone Master Pro": {
-      "brand": "Fender",
-      "device_name": "Tone Master Pro",
-      "midi_thru": false,
-      "midi_in": "TRS",
-      "midi_clock": false,
-      "phantom_power": "None",
+  "cornerstonemusicgear": {
+    "nucleo": {
+      "brand": "cornerstonemusicgear",
+      "device_name": "nucleo",
+      "midi_thru": "unknown",
+      "midi_in": "unknown",
+      "midi_clock": "unknown",
+      "phantom_power": "unknown",
       "midi_channel": {
-        "instructions": "\n"
+        "instructions": ""
       },
       "instructions": "",
       "cc": [
         {
-          "name": "Bank Change",
-          "description": "",
+          "name": "Bypass",
+          "description": "0 - 63 : Effect off ; 64 - 127 : Effect On ;",
           "usage": "",
           "curve": "0-based",
           "value": 0,
           "min": 0,
-          "max": 3,
+          "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Expression Pedal 1",
-          "description": "",
+          "name": "Bypass Type",
+          "description": "0 - 63 : True Bypass ; 64 - 127 : Buffered Bypass ;",
           "usage": "",
           "curve": "0-based",
           "value": 1,
@@ -332256,8 +333806,8 @@
           "type": "Parameter"
         },
         {
-          "name": "Expression Pedal 2",
-          "description": "",
+          "name": "Bypass on Change",
+          "description": "0 - 63 : Off ; 65 - 127 : On ;",
           "usage": "",
           "curve": "0-based",
           "value": 2,
@@ -332266,8 +333816,8 @@
           "type": "Parameter"
         },
         {
-          "name": "MIDI Expression Pedal 3",
-          "description": "",
+          "name": "Dry Mode",
+          "description": "0 : Analog Dry ; 1: Hybrid Dry ; 2: Digital Dry ;",
           "usage": "",
           "curve": "0-based",
           "value": 3,
@@ -332276,8 +333826,8 @@
           "type": "Parameter"
         },
         {
-          "name": "MIDI Expression Pedal 4",
-          "description": "",
+          "name": "Volume On Bypass",
+          "description": "0 - 63: Fixed Unity ; 65 - 127 : User setting ;",
           "usage": "",
           "curve": "0-based",
           "value": 4,
@@ -332286,8 +333836,18 @@
           "type": "Parameter"
         },
         {
-          "name": "Master Volume",
-          "description": "",
+          "name": "MIDI Channel",
+          "description": "Selects the MIDI Channel between 1-16",
+          "usage": "",
+          "curve": "0-based",
+          "value": 5,
+          "min": 0,
+          "max": 16,
+          "type": "Parameter"
+        },
+        {
+          "name": "Bypass Switch",
+          "description": "0 : Switch Released ; 1 - 63 : Switch Pressed ; 64 - 127 : Switch Held ;",
           "usage": "",
           "curve": "0-based",
           "value": 7,
@@ -332296,122 +333856,192 @@
           "type": "Parameter"
         },
         {
-          "name": "Tap Tempo",
-          "description": "",
+          "name": "Freeze Switch",
+          "description": "0 : Switch Released ; 1 - 63 : Switch Pressed ; 64 - 127 : Switch Held ;",
           "usage": "",
           "curve": "0-based",
-          "value": 64,
-          "min": 64,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Toe Switch",
-          "description": "0-63: OFF, 64-127: ON",
-          "usage": "",
-          "curve": "0-based",
-          "value": 65,
+          "value": 8,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Amp Control 1 (Tip)",
-          "description": "0-63: OFF, 64-127: ON",
+          "name": "Mode Switch",
+          "description": "0 : Room ; 1 : Hall ; 2 : Reactor ;",
           "usage": "",
           "curve": "0-based",
-          "value": 66,
+          "value": 9,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Blend Knob",
+          "description": "Blend parameter of reverb",
+          "usage": "",
+          "curve": "0-based",
+          "value": 11,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Amp Control 1 (Ring)",
-          "description": "0-63: OFF, 64-127: ON",
+          "name": "Mod Knob",
+          "description": "Modulation parameter of reverb",
           "usage": "",
           "curve": "0-based",
-          "value": 67,
+          "value": 12,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Looper REC/DUB",
-          "description": "",
+          "name": "Air Knob",
+          "description": "Air parameter of reverb",
           "usage": "",
           "curve": "0-based",
-          "value": 103,
-          "min": 64,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Looper PLAY/STOP",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 104,
-          "min": 64,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Looper 1-SHOT",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 105,
-          "min": 64,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Looper UNDO",
-          "description": "",
-          "usage": "",
-          "curve": "0-based",
-          "value": 106,
-          "min": 64,
-          "max": 127,
-          "type": "Parameter"
-        },
-        {
-          "name": "Looper 1/2 SPEED",
-          "description": "0-63: FULL, 64-127: HALF",
-          "usage": "",
-          "curve": "0-based",
-          "value": 107,
+          "value": 13,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Looper REVERSE",
-          "description": "0-63: FWD, 64-127: REV",
+          "name": "Flux Knob",
+          "description": "Flux parameter of reverb",
           "usage": "",
           "curve": "0-based",
-          "value": 108,
+          "value": 14,
           "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Looper VOLUME UP",
-          "description": "",
+          "name": "Decay Knob",
+          "description": "Decay parameter of reverb",
           "usage": "",
           "curve": "0-based",
-          "value": 109,
-          "min": 64,
+          "value": 15,
+          "min": 0,
           "max": 127,
           "type": "Parameter"
         },
         {
-          "name": "Looper VOLUME DOWN",
-          "description": "",
+          "name": "Tone Knob",
+          "description": "Master Tone parameter of reverb",
           "usage": "",
           "curve": "0-based",
-          "value": 110,
-          "min": 64,
+          "value": 16,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Frz Pch Knob",
+          "description": "Freeze Pitch parameter of reverb",
+          "usage": "",
+          "curve": "0-based",
+          "value": 17,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Rate",
+          "description": "Ranges from 0.5Hz to 20Hz",
+          "usage": "",
+          "curve": "0-based",
+          "value": 18,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pitch",
+          "description": "Blends between -1 octave and +1 octave in Air Knob",
+          "usage": "",
+          "curve": "0-based",
+          "value": 19,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Speed",
+          "description": "Speed of Granular",
+          "usage": "",
+          "curve": "0-based",
+          "value": 20,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Pre Delay",
+          "description": "Pre Delay parameter of reverb (max 290mS)",
+          "usage": "",
+          "curve": "0-based",
+          "value": 21,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Diffusion",
+          "description": "Reverb's diffusion parameter",
+          "usage": "",
+          "curve": "0-based",
+          "value": 22,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Freeze Level",
+          "description": "Volume of frozen signal",
+          "usage": "",
+          "curve": "0-based",
+          "value": 23,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Output Volume",
+          "description": "Overall Output Volume",
+          "usage": "",
+          "curve": "0-based",
+          "value": 24,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Character",
+          "description": "0 : Lo-Fi ; 1 : Vintage ; 2 : Normal ;",
+          "usage": "",
+          "curve": "0-based",
+          "value": 25,
+          "min": 0,
+          "max": 2,
+          "type": "Parameter"
+        },
+        {
+          "name": "Speed BPM",
+          "description": "0 - 256BPM",
+          "usage": "",
+          "curve": "0-based",
+          "value": 26,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Freeze Pitch Reset",
+          "description": "0 - 63 : Off ; 65 - 127 : On ;",
+          "usage": "",
+          "curve": "0-based",
+          "value": 27,
+          "min": 0,
           "max": 127,
           "type": "Parameter"
         }
@@ -336253,6 +337883,204 @@
           "value": 75,
           "min": 15,
           "max": 15,
+          "type": "Parameter"
+        }
+      ],
+      "nrpn": [],
+      "pc": []
+    }
+  },
+  "Fender": {
+    "Tone Master Pro": {
+      "brand": "Fender",
+      "device_name": "Tone Master Pro",
+      "midi_thru": false,
+      "midi_in": "TRS",
+      "midi_clock": false,
+      "phantom_power": "None",
+      "midi_channel": {
+        "instructions": "\n"
+      },
+      "instructions": "",
+      "cc": [
+        {
+          "name": "Bank Change",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 0,
+          "min": 0,
+          "max": 3,
+          "type": "Parameter"
+        },
+        {
+          "name": "Expression Pedal 1",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 1,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Expression Pedal 2",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 2,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "MIDI Expression Pedal 3",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 3,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "MIDI Expression Pedal 4",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 4,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Master Volume",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 7,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Tap Tempo",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 64,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Toe Switch",
+          "description": "0-63: OFF, 64-127: ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 65,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amp Control 1 (Tip)",
+          "description": "0-63: OFF, 64-127: ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 66,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Amp Control 1 (Ring)",
+          "description": "0-63: OFF, 64-127: ON",
+          "usage": "",
+          "curve": "0-based",
+          "value": 67,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper REC/DUB",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 103,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper PLAY/STOP",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 104,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper 1-SHOT",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 105,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper UNDO",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 106,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper 1/2 SPEED",
+          "description": "0-63: FULL, 64-127: HALF",
+          "usage": "",
+          "curve": "0-based",
+          "value": 107,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper REVERSE",
+          "description": "0-63: FWD, 64-127: REV",
+          "usage": "",
+          "curve": "0-based",
+          "value": 108,
+          "min": 0,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper VOLUME UP",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 109,
+          "min": 64,
+          "max": 127,
+          "type": "Parameter"
+        },
+        {
+          "name": "Looper VOLUME DOWN",
+          "description": "",
+          "usage": "",
+          "curve": "0-based",
+          "value": 110,
+          "min": 64,
+          "max": 127,
           "type": "Parameter"
         }
       ],

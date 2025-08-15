@@ -26703,142 +26703,36 @@ Swindler Effects,The Gulf Chorus V2,CC,Division: 1/16,59,,4,4,
 Swindler Effects,The Gulf Chorus V2,CC,Waveform: Sine,60,,0,0,
 Swindler Effects,The Gulf Chorus V2,CC,Waveform: Triangle,60,,1,1,
 Swindler Effects,The Gulf Chorus V2,CC,Waveform: Square,60,,2,2,
-Pigtronix,echolution3,CC,Repeats Knob,12,,0,127,
-Pigtronix,echolution3,CC,Time Knob,13,,0,127,
-Pigtronix,echolution3,CC,Mix Knob,14,,0,127,
-Pigtronix,echolution3,CC,LFO Speed Knob,15,,0,127,
-Pigtronix,echolution3,CC,Modulation Depth Knob,16,,0,127,
-Pigtronix,echolution3,CC,Time Button,17,,0,127,"3 = Short
-4 = Med
-5 = Long"
-Pigtronix,echolution3,CC,SFX Button,18,,0,127,"3 = Off
-4 = Pong
-5 = Halo
-6 = Pong and Halo"
-Pigtronix,echolution3,CC,Taps Button,19,,0,127,"3 = First Tap Off
-4 = First Tap 1
-5 = First Tap 3/4
-6 = First Tap 2/3
-7 = First Tap 1/2
-8 = First Tap PHI
-9 = Second Tap Off
-10 = Second Tap 1
-11 = Second Tap 3/4
-12 = Second Tap 2/3
-13 = Second Tap 1/2
-14 = Second Tap PHI
-20 = Bit Crusher
-9 = Crush Off
-10 = Crush On"
-Pigtronix,echolution3,CC,Bypass Button,21,,0,127,3 = None
-Pigtronix,echolution3,CC,LFO Mod Button,24,,0,127,"3 = Triangle
-4 = Square
-5 = Saw
-6 = Random
-7 = Super Triangle
-8 = Super Square
-9 = Super Saw
-10 = Super Random"
-Pigtronix,echolution3,CC,Tap Tempo Footswitch,25,,0,127,
-Pigtronix,echolution3,CC,Engage Footswitch,27,,0,127,"3 = Explicitly Engaged
-4 = Explicitly Not Engaged"
-Pigtronix,echolution3,CC,Jump Footswitch / Preset 1/2,29,,0,127,
-Pigtronix,echolution3,CC,Freeze Footswitch / Preset 3/4,30,,0,127,
-Pigtronix,echolution3,CC,Loop Open Close,31,,0,127,"1 = open; 1 = close.
-Send a momentary 1 to
-CC#31 to start a loop,
-then send another to
-close that loop."
-Pigtronix,echolution3,CC,Second Tap Volume,76,,0,127,
-Pigtronix,echolution3,CC,Enable MIDI Clock In,79,,0,127,0=off; 1=on
-Pigtronix,Infinity,CC,Varispeed,3,,0,127,
-Pigtronix,Infinity,CC,Expression,4,,0,127,
-Pigtronix,Infinity,CC,Global Volume,7,,0,127,
-Pigtronix,Infinity,CC,Loop Aging,9,,0,127,
-Pigtronix,Infinity,CC,Loop 1 Volume,12,,0,127,
-Pigtronix,Infinity,CC,Loop 2 Volume,13,,0,127,
-Pigtronix,Infinity,CC,Stop Mode: Short Press,17,,1,1,
-Pigtronix,Infinity,CC,Stop Mode: Long Press,17,,2,2,
-Pigtronix,Infinity,CC,Stop Mode: Release,17,,0,0,
-Pigtronix,Infinity,CC,Stop Mode: Press,17,,127,127,
-Pigtronix,Infinity,CC,Series Loops,19,,127,127,
-Pigtronix,Infinity,CC,Input Split,20,,127,127,
-Pigtronix,Infinity,CC,Click Kill,21,,4,4,
-Pigtronix,Infinity,CC,No Click Kill,21,,3,3,
-Pigtronix,Infinity,CC,Sync Multi: Short Press,22,,1,1,
-Pigtronix,Infinity,CC,Sync Multi: Long Press,22,,2,2,
-Pigtronix,Infinity,CC,Sync Multi: Release,22,,0,0,
-Pigtronix,Infinity,CC,Sync Multi: Press,22,,127,127,
-Pigtronix,Infinity,CC,Stop FSW: Short Press,23,,1,1,
-Pigtronix,Infinity,CC,Stop FSW: Long Press,23,,2,2,
-Pigtronix,Infinity,CC,Stop FSW: Release,23,,0,0,
-Pigtronix,Infinity,CC,Stop FSW: Press,23,,127,127,
-Pigtronix,Infinity,CC,Loop 1 FSW: Short Press,24,,1,1,
-Pigtronix,Infinity,CC,Loop 1 FSW: Long Press,24,,2,2,
-Pigtronix,Infinity,CC,Loop 1 FSW: Release,24,,0,0,
-Pigtronix,Infinity,CC,Loop 1 FSW: Press,24,,127,127,
-Pigtronix,Infinity,CC,Loop 2 FSW: Short Press,25,,1,1,
-Pigtronix,Infinity,CC,Loop 2 FSW: Long Press,25,,2,2,
-Pigtronix,Infinity,CC,Loop 2 FSW: Release,25,,0,0,
-Pigtronix,Infinity,CC,Loop 2 FSW: Press,25,,127,127,
-Pigtronix,Infinity,CC,Undo FSW: Short Press,27,,1,1,
-Pigtronix,Infinity,CC,Undo FSW: Long Press,27,,2,2,
-Pigtronix,Infinity,CC,Undo FSW: Release,27,,0,0,
-Pigtronix,Infinity,CC,Undo FSW: Press,27,,127,127,
-Pigtronix,Infinity,CC,Reverse FSW: Short Press,28,,1,1,
-Pigtronix,Infinity,CC,Reverse FSW: Long Press,28,,2,2,
-Pigtronix,Infinity,CC,Reverse FSW: Release,28,,0,0,
-Pigtronix,Infinity,CC,Reverse FSW: Press,28,,127,127,
-Pigtronix,Infinity,CC,Pitch Up: Short Press,29,,1,1,
-Pigtronix,Infinity,CC,Pitch Up: Long Press,29,,2,2,
-Pigtronix,Infinity,CC,Pitch Up: Release,29,,0,0,
-Pigtronix,Infinity,CC,Pitch Up: Press,29,,127,127,
-Pigtronix,Infinity,CC,Pitch Down: Short Press,30,,1,1,
-Pigtronix,Infinity,CC,Pitch Down: Long Press,30,,2,2,
-Pigtronix,Infinity,CC,Pitch Down: Release,30,,0,0,
-Pigtronix,Infinity,CC,Pitch Down: Press,30,,127,127,
-Pigtronix,Infinity,CC,Pitch Recall,31,,127,127,
-Pigtronix,Infinity,CC,Stutter,75,,127,127,
-Pigtronix,Infinity,CC,Erase,76,,127,127,
-Pigtronix,Infinity,CC,Erase+Rec,77,,127,127,
-Pigtronix,Infinity,CC,Reverse,78,,127,127,
-Pigtronix,Infinity,CC,Undo,79,,127,127,
-Pigtronix,Infinity,CC,Stop,80,,127,127,
-Pigtronix,Infinity,CC,Set Multiplier,82,,0,127,
-Pigtronix,Infinity,CC,Erase Other,83,,127,127,
-Pigtronix,Infinity,CC,Preset Decrement,85,,127,127,
-Pigtronix,Infinity,CC,Preset Increment,86,,127,127,
-Pigtronix,Infinity,CC,One Shot,87,,127,127,
-Pigtronix,Infinity,CC,MIDI Clock: Listen,88,,1,1,
-Pigtronix,Infinity,CC,MIDI Clock: Ignore,88,,0,0,
-Pigtronix,Infinity,CC,Erase All,89,,127,127,
-Pigtronix,Echolution 2 Deluxe,CC,Exp pedal input,4,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Repeats knob,12,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Time knob,13,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Mix knob,14,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,LFO Speed knob,15,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Modulation Depth knob,16,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Time Button,17,,0,127,"3: Short, 4: Med, 5: Long"
-Pigtronix,Echolution 2 Deluxe,CC,SFX Button,18,,0,127,"3: Off, 3: Pong, 5: Halo, 6: Pong and Halo"
-Pigtronix,Echolution 2 Deluxe,CC,Taps Button,19,,0,127,"3: First tap off, 3: First tap 1, 5: First tap 3/4, 6: First tap 2/3, First tap 1/2, 8: First tap PHI, 9: Second tap off, 10: Second tap 1 , 11: Second Tap 3/4, 12: Second Tap 2/3, 13: Second Tap 1/2, 14: Second Tap PHI "
-Pigtronix,Echolution 2 Deluxe,CC,Filter Button,20,,0,127,"3: Filter Off, 4 LP On, 5: Tape On, 6: Comb On, 7: Sweep Off, 8: Sweep On, 9: Crush Off, 10: Crush On"
-Pigtronix,Echolution 2 Deluxe,CC,Bypass Button,21,,0,127,"3: None, 4: Trails On, 5: Listen On, 6: Dry Kill Off, 7: Dry Kill Off"
-Pigtronix,Echolution 2 Deluxe,CC,Ducking Button,22,,0,127,"3: Ducking Off, 4: Reverse Only, 5: Duck Only"
-Pigtronix,Echolution 2 Deluxe,CC,Exp Button,23,,0,127,"3: None, 4: Repeasts, 5: Time, 6: Mix, 7: Speed, 8: Depth, 9: Envelope Selector On, 10: Envelope Selector Off"
-Pigtronix,Echolution 2 Deluxe,CC,LFO Mod Button,24,,0,127,"3: Triangle, 4: Square, 5: Saw, 6: Random, 7: Super Triangle, 8: Super Square, 9: Super Saw, 10: Random"
-Pigtronix,Echolution 2 Deluxe,CC,Tap Tempo Footswitch,25,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Engage Footswitch,27,,0,127,"3: Explicitly Engaged, 4: Explicitly Not Engagedd"
-Pigtronix,Echolution 2 Deluxe,CC,Preset Save,28,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Jump Footswitch / Preset 1/2,29,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Freeze Footswitch / Preset 3/4,30,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Loop Open Close,31,,0,127,"1: Open, 2: Close"
-Pigtronix,Echolution 2 Deluxe,CC,Adjust Filter Cutoff Frequency,74,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Second Tap Volume,76,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Set Jump Interval for First Tap,77,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Set Jump Interval for Second Tap,78,,0,127,
-Pigtronix,Echolution 2 Deluxe,CC,Enable MIDI Clock In,79,,0,127,"0: off, 1: on"
-Pigtronix,Echolution 2 Deluxe,CC,Enable MIDI Clock Out,80,,0,127,"0: off, 1: on"
-Pigtronix,Echolution 2 Deluxe,CC,Copy MIDI Clock,81,,0,127,"0: off, 1: on"
+noiseengineering,batverb,CC,EXP,11,,0,127,EXP pedal value
+noiseengineering,batverb,CC,Input Gain,14,,0,127,Sets input gain level
+noiseengineering,batverb,CC,DOOM,15,,0,127,Sets DOOM amount
+noiseengineering,batverb,CC,Shimmer,16,,0,127,Sets Shimmer amount
+noiseengineering,batverb,CC,Blend,17,,0,127,Sets dry/wet Blend amount
+noiseengineering,batverb,CC,Time,18,,0,127,Sets the delay time
+noiseengineering,batverb,CC,Regen,19,,0,127,Sets the amount of feedback
+noiseengineering,batverb,CC,Output Gain,20,,0,127,Sets the output gain level
+noiseengineering,batverb,CC,HPF,21,,0,127,"Sets the amount of low-frequency
+damping"
+noiseengineering,batverb,CC,LPF,22,,0,127,"Sets the amount of high-frequency
+damping"
+noiseengineering,batverb,CC,EXP: Default,23,,0,0,Maps EXP to the default Regen parameter
+noiseengineering,batverb,CC,EXP: Doom,23,,15,15,Maps EXP to DOOM
+noiseengineering,batverb,CC,EXP: Shimmer,23,,30,30,Maps EXP to Shimmer
+noiseengineering,batverb,CC,EXP: Blend,23,,45,45,Maps EXP to Blend
+noiseengineering,batverb,CC,EXP: Time,23,,60,60,Maps EXP to Time
+noiseengineering,batverb,CC,EXP: Regen,23,,75,75,Maps EXP to Regen
+noiseengineering,batverb,CC,EXP: HPF,23,,90,90,Maps EXP to HPF
+noiseengineering,batverb,CC,EXP: LPF,23,,105,105,Maps EXP to LPF
+noiseengineering,batverb,CC,EXP: Duck,23,,120,120,Maps EXP to Duck Amount
+noiseengineering,batverb,CC,Duck Amt,25,,0,127,Sets the amount of tail ducking
+noiseengineering,batverb,CC,Focus switch Left,26,,0,0,Set Focus switch position to Left
+noiseengineering,batverb,CC,Focus switch Center,26,,64,64,Sets Focus switch position to Center
+noiseengineering,batverb,CC,Focus switch Right,26,,127,127,Sets Focus switch position to Right
+noiseengineering,batverb,CC,Duck switch Left,28,,0,0,Sets Duck switch position to Left
+noiseengineering,batverb,CC,Duck switch Center,28,,64,64,Sets Duck switch position to Center
+noiseengineering,batverb,CC,Duck switch Right,28,,127,127,Sets Duck switch position to Right
+noiseengineering,batverb,CC,Hold,102,,0,127,Engage: 127 / Disengage: 0
+noiseengineering,batverb,CC,Bypass,103,,0,127,Engage: 127 / Disengage: 0
 Chase Bliss Audio,Habit,CC,Volume,14,,0,127,
 Chase Bliss Audio,Habit,CC,Repeats,15,,0,127,
 Chase Bliss Audio,Habit,CC,Size,16,,0,127,
@@ -31585,6 +31479,142 @@ Kernom,Ridge,CC,Drive,25,,0,127,
 Kernom,Ridge,CC,Expression,26,,0,127,
 Kernom,Ridge,CC,FS Preset,27,,0,127,
 Kernom,Ridge,CC,FS On/Off,28,,0,127,
+Pigtronix,echolution3,CC,Repeats Knob,12,,0,127,
+Pigtronix,echolution3,CC,Time Knob,13,,0,127,
+Pigtronix,echolution3,CC,Mix Knob,14,,0,127,
+Pigtronix,echolution3,CC,LFO Speed Knob,15,,0,127,
+Pigtronix,echolution3,CC,Modulation Depth Knob,16,,0,127,
+Pigtronix,echolution3,CC,Time Button,17,,0,127,"3 = Short
+4 = Med
+5 = Long"
+Pigtronix,echolution3,CC,SFX Button,18,,0,127,"3 = Off
+4 = Pong
+5 = Halo
+6 = Pong and Halo"
+Pigtronix,echolution3,CC,Taps Button,19,,0,127,"3 = First Tap Off
+4 = First Tap 1
+5 = First Tap 3/4
+6 = First Tap 2/3
+7 = First Tap 1/2
+8 = First Tap PHI
+9 = Second Tap Off
+10 = Second Tap 1
+11 = Second Tap 3/4
+12 = Second Tap 2/3
+13 = Second Tap 1/2
+14 = Second Tap PHI
+20 = Bit Crusher
+9 = Crush Off
+10 = Crush On"
+Pigtronix,echolution3,CC,Bypass Button,21,,0,127,3 = None
+Pigtronix,echolution3,CC,LFO Mod Button,24,,0,127,"3 = Triangle
+4 = Square
+5 = Saw
+6 = Random
+7 = Super Triangle
+8 = Super Square
+9 = Super Saw
+10 = Super Random"
+Pigtronix,echolution3,CC,Tap Tempo Footswitch,25,,0,127,
+Pigtronix,echolution3,CC,Engage Footswitch,27,,0,127,"3 = Explicitly Engaged
+4 = Explicitly Not Engaged"
+Pigtronix,echolution3,CC,Jump Footswitch / Preset 1/2,29,,0,127,
+Pigtronix,echolution3,CC,Freeze Footswitch / Preset 3/4,30,,0,127,
+Pigtronix,echolution3,CC,Loop Open Close,31,,0,127,"1 = open; 1 = close.
+Send a momentary 1 to
+CC#31 to start a loop,
+then send another to
+close that loop."
+Pigtronix,echolution3,CC,Second Tap Volume,76,,0,127,
+Pigtronix,echolution3,CC,Enable MIDI Clock In,79,,0,127,0=off; 1=on
+Pigtronix,Infinity,CC,Varispeed,3,,0,127,
+Pigtronix,Infinity,CC,Expression,4,,0,127,
+Pigtronix,Infinity,CC,Global Volume,7,,0,127,
+Pigtronix,Infinity,CC,Loop Aging,9,,0,127,
+Pigtronix,Infinity,CC,Loop 1 Volume,12,,0,127,
+Pigtronix,Infinity,CC,Loop 2 Volume,13,,0,127,
+Pigtronix,Infinity,CC,Stop Mode: Short Press,17,,1,1,
+Pigtronix,Infinity,CC,Stop Mode: Long Press,17,,2,2,
+Pigtronix,Infinity,CC,Stop Mode: Release,17,,0,0,
+Pigtronix,Infinity,CC,Stop Mode: Press,17,,127,127,
+Pigtronix,Infinity,CC,Series Loops,19,,127,127,
+Pigtronix,Infinity,CC,Input Split,20,,127,127,
+Pigtronix,Infinity,CC,Click Kill,21,,4,4,
+Pigtronix,Infinity,CC,No Click Kill,21,,3,3,
+Pigtronix,Infinity,CC,Sync Multi: Short Press,22,,1,1,
+Pigtronix,Infinity,CC,Sync Multi: Long Press,22,,2,2,
+Pigtronix,Infinity,CC,Sync Multi: Release,22,,0,0,
+Pigtronix,Infinity,CC,Sync Multi: Press,22,,127,127,
+Pigtronix,Infinity,CC,Stop FSW: Short Press,23,,1,1,
+Pigtronix,Infinity,CC,Stop FSW: Long Press,23,,2,2,
+Pigtronix,Infinity,CC,Stop FSW: Release,23,,0,0,
+Pigtronix,Infinity,CC,Stop FSW: Press,23,,127,127,
+Pigtronix,Infinity,CC,Loop 1 FSW: Short Press,24,,1,1,
+Pigtronix,Infinity,CC,Loop 1 FSW: Long Press,24,,2,2,
+Pigtronix,Infinity,CC,Loop 1 FSW: Release,24,,0,0,
+Pigtronix,Infinity,CC,Loop 1 FSW: Press,24,,127,127,
+Pigtronix,Infinity,CC,Loop 2 FSW: Short Press,25,,1,1,
+Pigtronix,Infinity,CC,Loop 2 FSW: Long Press,25,,2,2,
+Pigtronix,Infinity,CC,Loop 2 FSW: Release,25,,0,0,
+Pigtronix,Infinity,CC,Loop 2 FSW: Press,25,,127,127,
+Pigtronix,Infinity,CC,Undo FSW: Short Press,27,,1,1,
+Pigtronix,Infinity,CC,Undo FSW: Long Press,27,,2,2,
+Pigtronix,Infinity,CC,Undo FSW: Release,27,,0,0,
+Pigtronix,Infinity,CC,Undo FSW: Press,27,,127,127,
+Pigtronix,Infinity,CC,Reverse FSW: Short Press,28,,1,1,
+Pigtronix,Infinity,CC,Reverse FSW: Long Press,28,,2,2,
+Pigtronix,Infinity,CC,Reverse FSW: Release,28,,0,0,
+Pigtronix,Infinity,CC,Reverse FSW: Press,28,,127,127,
+Pigtronix,Infinity,CC,Pitch Up: Short Press,29,,1,1,
+Pigtronix,Infinity,CC,Pitch Up: Long Press,29,,2,2,
+Pigtronix,Infinity,CC,Pitch Up: Release,29,,0,0,
+Pigtronix,Infinity,CC,Pitch Up: Press,29,,127,127,
+Pigtronix,Infinity,CC,Pitch Down: Short Press,30,,1,1,
+Pigtronix,Infinity,CC,Pitch Down: Long Press,30,,2,2,
+Pigtronix,Infinity,CC,Pitch Down: Release,30,,0,0,
+Pigtronix,Infinity,CC,Pitch Down: Press,30,,127,127,
+Pigtronix,Infinity,CC,Pitch Recall,31,,127,127,
+Pigtronix,Infinity,CC,Stutter,75,,127,127,
+Pigtronix,Infinity,CC,Erase,76,,127,127,
+Pigtronix,Infinity,CC,Erase+Rec,77,,127,127,
+Pigtronix,Infinity,CC,Reverse,78,,127,127,
+Pigtronix,Infinity,CC,Undo,79,,127,127,
+Pigtronix,Infinity,CC,Stop,80,,127,127,
+Pigtronix,Infinity,CC,Set Multiplier,82,,0,127,
+Pigtronix,Infinity,CC,Erase Other,83,,127,127,
+Pigtronix,Infinity,CC,Preset Decrement,85,,127,127,
+Pigtronix,Infinity,CC,Preset Increment,86,,127,127,
+Pigtronix,Infinity,CC,One Shot,87,,127,127,
+Pigtronix,Infinity,CC,MIDI Clock: Listen,88,,1,1,
+Pigtronix,Infinity,CC,MIDI Clock: Ignore,88,,0,0,
+Pigtronix,Infinity,CC,Erase All,89,,127,127,
+Pigtronix,Echolution 2 Deluxe,CC,Exp pedal input,4,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Repeats knob,12,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Time knob,13,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Mix knob,14,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,LFO Speed knob,15,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Modulation Depth knob,16,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Time Button,17,,0,127,"3: Short, 4: Med, 5: Long"
+Pigtronix,Echolution 2 Deluxe,CC,SFX Button,18,,0,127,"3: Off, 3: Pong, 5: Halo, 6: Pong and Halo"
+Pigtronix,Echolution 2 Deluxe,CC,Taps Button,19,,0,127,"3: First tap off, 3: First tap 1, 5: First tap 3/4, 6: First tap 2/3, First tap 1/2, 8: First tap PHI, 9: Second tap off, 10: Second tap 1 , 11: Second Tap 3/4, 12: Second Tap 2/3, 13: Second Tap 1/2, 14: Second Tap PHI "
+Pigtronix,Echolution 2 Deluxe,CC,Filter Button,20,,0,127,"3: Filter Off, 4 LP On, 5: Tape On, 6: Comb On, 7: Sweep Off, 8: Sweep On, 9: Crush Off, 10: Crush On"
+Pigtronix,Echolution 2 Deluxe,CC,Bypass Button,21,,0,127,"3: None, 4: Trails On, 5: Listen On, 6: Dry Kill Off, 7: Dry Kill Off"
+Pigtronix,Echolution 2 Deluxe,CC,Ducking Button,22,,0,127,"3: Ducking Off, 4: Reverse Only, 5: Duck Only"
+Pigtronix,Echolution 2 Deluxe,CC,Exp Button,23,,0,127,"3: None, 4: Repeasts, 5: Time, 6: Mix, 7: Speed, 8: Depth, 9: Envelope Selector On, 10: Envelope Selector Off"
+Pigtronix,Echolution 2 Deluxe,CC,LFO Mod Button,24,,0,127,"3: Triangle, 4: Square, 5: Saw, 6: Random, 7: Super Triangle, 8: Super Square, 9: Super Saw, 10: Random"
+Pigtronix,Echolution 2 Deluxe,CC,Tap Tempo Footswitch,25,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Engage Footswitch,27,,0,127,"3: Explicitly Engaged, 4: Explicitly Not Engagedd"
+Pigtronix,Echolution 2 Deluxe,CC,Preset Save,28,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Jump Footswitch / Preset 1/2,29,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Freeze Footswitch / Preset 3/4,30,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Loop Open Close,31,,0,127,"1: Open, 2: Close"
+Pigtronix,Echolution 2 Deluxe,CC,Adjust Filter Cutoff Frequency,74,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Second Tap Volume,76,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Set Jump Interval for First Tap,77,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Set Jump Interval for Second Tap,78,,0,127,
+Pigtronix,Echolution 2 Deluxe,CC,Enable MIDI Clock In,79,,0,127,"0: off, 1: on"
+Pigtronix,Echolution 2 Deluxe,CC,Enable MIDI Clock Out,80,,0,127,"0: off, 1: on"
+Pigtronix,Echolution 2 Deluxe,CC,Copy MIDI Clock,81,,0,127,"0: off, 1: on"
 Morningstar Engineering,MC8,CC,Bank Up,0,,0,127,
 Morningstar Engineering,MC8,CC,Bank Down,1,,0,127,
 Morningstar Engineering,MC8,CC,Set Toggle (All Presets),2,,127,127,
@@ -32200,6 +32230,98 @@ Neunaber,Neuron,CC,Engage/Bypass,112,,0,127,"0: bypass, 1-127: engage"
 Neunaber,Neuron,CC,Save Preset,113,,0,127,
 Neunaber,Neuron,CC,Speaker Simulator,114,,0,127,"0: off, 1-127: on"
 Neunaber,Neuron,CC,Tilt EQ,115,,0,127,
+Kinotone,sparks,CC,Synth Attack,14,,0,127,
+Kinotone,sparks,CC,Synth Decay,15,,0,127,
+Kinotone,sparks,CC,Synth Sustain,16,,0,127,
+Kinotone,sparks,CC,Synth Release,17,,0,127,
+Kinotone,sparks,CC,Synth Waveform,18,,0,127,
+Kinotone,sparks,CC,Synth Bits,19,,0,127,
+Kinotone,sparks,CC,Synth Mod Option,20,,0,2,0 = LFO Pitch 1 = LFO Pulse Width 2 = Glide
+Kinotone,sparks,CC,Synth Mod Depth,21,,0,127,
+Kinotone,sparks,CC,Synth Hard Sync / Ring Mod,22,,0,2,"0 = None
+1 = Hard Sync
+2 = Ring Mod"
+Kinotone,sparks,CC,Synth Voice Mode,23,,0,1,"0 = Poly
+1 = Mono"
+Kinotone,sparks,CC,Filter Cutoff,24,,0,127,
+Kinotone,sparks,CC,Filter Mode,25,,0,127,
+Kinotone,sparks,CC,Filter Resonance,26,,0,127,
+Kinotone,sparks,CC,Gain,27,,0,127,
+Kinotone,sparks,CC,Level,28,,0,127,
+Kinotone,sparks,CC,Drive / Fold,29,,0,127,
+Kinotone,sparks,CC,Blend,30,,0,127,
+Kinotone,sparks,CC,Low Cut,31,,0,127,
+Kinotone,sparks,CC,Gate,32,,0,127,
+Kinotone,sparks,CC,ENV Attack,33,,0,127,
+Kinotone,sparks,CC,ENV Sens,34,,0,127,
+Kinotone,sparks,CC,LFO Rate,35,,0,127,
+Kinotone,sparks,CC,LFO Shape,36,,0,127,
+Kinotone,sparks,CC,Spin,37,,0,127,
+Kinotone,sparks,CC,Map LFO Filter Cutoff,38,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO Filter,39,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map Filter Resonance,40,,0,127,"0-64 [-]
+65-127 [+]
+"
+Kinotone,sparks,CC,Map LFO Gain,41,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO Level,42,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO Drive / Fold,43,,0,127,
+Kinotone,sparks,CC,Map LFO Blend,44,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO Low Cut,45,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO Gate,46,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO ENV Attack,47,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO ENV Sens,48,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map LFO Spin,49,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,ENV Style,50,,0,127,
+Kinotone,sparks,CC,Ignore MIDI Clock,51,,0,127,0 = Ignore. ≥1 = Listen
+Kinotone,sparks,CC,Map ENV Filter Cutoff,52,,0,127,"0-64 [-]
+65-127 [+]
+"
+Kinotone,sparks,CC,Map ENV Filter Mode,53,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Filter Resonance,54,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Gain,55,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Level,56,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Drive / Fold,57,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Blend,58,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Low Cut,59,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Gate,60,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV LFO Rate,61,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV LFO Shape,62,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Map ENV Spin,63,,0,127,"0-64 [-]
+65-127 [+]"
+Kinotone,sparks,CC,Preset Footswitch,80,,0,127,"0 = OFF
+≥1 = ON"
+Kinotone,sparks,CC,Bypass Footswitch,81,,0,127,"0 = OFF
+≥1 = ON"
+Kinotone,sparks,CC,LFO Range,82,,0,2,
+Kinotone,sparks,CC,Reset Black + White Controls,85,,0,0,
+Kinotone,sparks,CC,Currently Selected Preset,83,,0,31,
+Kinotone,sparks,CC,Clear LFO Mappings,86,,0,0,
+Kinotone,sparks,CC,Clear ENV Mappings,87,,0,0,
+Kinotone,sparks,CC,GATE Dry Signal,89,,0,127,"0 = No
+≥1 = Yes"
+Kinotone,sparks,CC,Gate Response Style,90,,0,127,"0 = Smooth
+(default)
+≥1 = Choppy"
 Kinotone,Ribbons,CC,High Pass Filter,0,,0,127,
 Kinotone,Ribbons,CC,Low Pass Filter,1,,0,127,
 Kinotone,Ribbons,CC,Mix,2,,0,127,
@@ -32244,6 +32366,74 @@ Kinotone,Ribbons,CC,Compression / Saturation,52,,0,127,0=Comp ; ≥1=Sat
 Kinotone,Ribbons,CC,Synth Attack,53,,0,127,
 Kinotone,Ribbons,CC,Synth Release,54,,0,127,
 Kinotone,Ribbons,CC,Synth Volume,55,,0,127,
+Kinotone,ribbonsfw2,CC,High-Pass Filter	,14,,0,127,Control value of the High-Pass Filter.
+Kinotone,ribbonsfw2,CC,Low-Pass Filter,15,,0,127,Control value of the Low-Pass Filter.
+Kinotone,ribbonsfw2,CC,Mix,16,,0,127,Control value of the wet/dry Mix
+Kinotone,ribbonsfw2,CC,Compression / Saturation,17,,0,127,"Control value of the Compression or Saturation option. Note: Value corresponds to CC #59, hidden utility option to choose between using Compression or Saturation effect."
+Kinotone,ribbonsfw2,CC,Wow Frequency,18,,0,127,Control value of Wow Frequency
+Kinotone,ribbonsfw2,CC,Wow Depth,19,,0,127,Control value of Wow Depth
+Kinotone,ribbonsfw2,CC,Flutter Depth,20,,0,127,Control value of Flutter Depth
+Kinotone,ribbonsfw2,CC,Flutter Frequency,21,,0,127,Control value of Flutter Frequency
+Kinotone,ribbonsfw2,CC,Dropouts Frequency,20,,0,127,Control value of Dropouts Frequency
+Kinotone,ribbonsfw2,CC,Dropouts Depth,23,,0,127,Control value of Dropouts Depth
+Kinotone,ribbonsfw2,CC,Crinkle,24,,0,127,Control value of Crinkle
+Kinotone,ribbonsfw2,CC,Noise,25,,0,127,Control value of Noise
+Kinotone,ribbonsfw2,CC,Reverb Decay,26,,0,127,Control value of Reverb Decay
+Kinotone,ribbonsfw2,CC,Reverb Mix & Placement,27,,0,127,Control value of Reverb Mix & Placement
+Kinotone,ribbonsfw2,CC,Touch Param 1,28,,0,127,Control value of Touch Parameter 1
+Kinotone,ribbonsfw2,CC,Touch Param 2,29,,0,127,Control value of Touch Parameter 2
+Kinotone,ribbonsfw2,CC,Touch Mode: Magnetic Dance,30,,0,18,Touch Mode selection: Magnetic Dance
+Kinotone,ribbonsfw2,CC,Touch Mode: Tape Stop,30,,19,36,Touch Mode selection: Tape Stop
+Kinotone,ribbonsfw2,CC,Touch Mode: Broken Machine,30,,37,54,Touch Mode selection: Broken Machine
+Kinotone,ribbonsfw2,CC,Touch Mode: Repeater,30,,50,73,Touch Mode selection: Repeater
+Kinotone,ribbonsfw2,CC,Touch Mode: Crushed Cassette,30,,74,91,Touch Mode selection: Crushed Cassette
+Kinotone,ribbonsfw2,CC,Touch Mode: Disintegration Loop,30,,92,109,Touch Mode selection: Disintegration Loop
+Kinotone,ribbonsfw2,CC,Touch Mode: UnrealPlayer,30,,110,127,Touch Mode selection: UnrealPlayer
+Kinotone,ribbonsfw2,CC,Ribbons Mode: Tape Effects,31,,0,64,Ribbons Mode selection: Tape Effects
+Kinotone,ribbonsfw2,CC,Ribbons Mode: Looper,31,,65,127,Ribbons Mode selection: Looper
+Kinotone,ribbonsfw2,CC,Change Looper Track,32,,0,31,Change Looper Track: 1
+Kinotone,ribbonsfw2,CC,Change Looper Track,32,,32,63,Change Looper Track: 2
+Kinotone,ribbonsfw2,CC,Change Looper Track,32,,64,95,Change Looper Track: 3
+Kinotone,ribbonsfw2,CC,Change Looper Track,32,,96,127,Change Looper Track: 4
+Kinotone,ribbonsfw2,CC,Clear Current Looper Track,33,,65,127,Clear Current Looper Track
+Kinotone,ribbonsfw2,CC,Clear All Looper Tracks,34,,65,127,Clear all Looper Tracks
+Kinotone,ribbonsfw2,CC,Track 1 Direction,35,,0,127,Control Track 1 Direction
+Kinotone,ribbonsfw2,CC,Track 1 Speed,36,,0,127,Control Track 1 Speed
+Kinotone,ribbonsfw2,CC,Track 1 Volume,37,,0,127,Control Track 1 Volume
+Kinotone,ribbonsfw2,CC,Track 1 Scale,38,,0,127,Control Track 1 Scale
+Kinotone,ribbonsfw2,CC,Track 2 Direction,39,,0,127,Control Track 2 Direction
+Kinotone,ribbonsfw2,CC,Track 2 Speed,40,,0,127,Control Track 2 Speed
+Kinotone,ribbonsfw2,CC,Track 2 Volume,41,,0,127,Control Track 2 Volume
+Kinotone,ribbonsfw2,CC,Track 2 Scale,42,,0,127,Control Track 2 Scale
+Kinotone,ribbonsfw2,CC,Track 3 Direction,43,,0,127,Control Track 3 Direction
+Kinotone,ribbonsfw2,CC,Track 3 Speed,44,,0,127,Control Track 3 Speed
+Kinotone,ribbonsfw2,CC,Track 3 Volume,45,,0,127,Control Track 3 Volume
+Kinotone,ribbonsfw2,CC,Track 3 Scale,46,,0,127,"Control Track 3 Scale
+"
+Kinotone,ribbonsfw2,CC,Track 4 Direction,47,,0,127,Control Track 4 Direction
+Kinotone,ribbonsfw2,CC,Track 4 Speed,48,,0,127,"Control Track 4 Speed
+"
+Kinotone,ribbonsfw2,CC,Track 4 Volume,49,,0,127,"Control Track 4 Volume
+"
+Kinotone,ribbonsfw2,CC,Track 4 Scale,50,,0,127,Control Track 4 Scale
+Kinotone,ribbonsfw2,CC,Ignore MIDI Clock,51,,0,0,Ignore MIDI Clock (Persistent setting)
+Kinotone,ribbonsfw2,CC,Listen MIDI Clock,51,,1,127,"Listen to MIDI Clock (Persistent setting)
+"
+Kinotone,ribbonsfw2,CC,Synth Attack,52,,0,127,Control Synth Attack
+Kinotone,ribbonsfw2,CC,Synth Release,53,,0,127,Control Synth Release
+Kinotone,ribbonsfw2,CC,Synth Volume,54,,0,127,Control Synth Volume
+Kinotone,ribbonsfw2,CC,UnrealPlayer Fidelity - LoFi,55,,0,64,Select UnrealPlayer Fidelity mode - LoFi
+Kinotone,ribbonsfw2,CC,UnrealPlayer Fidelity - HiFi,55,,65,127,Select UnrealPlayer Fidelity mode - HiFi
+Kinotone,ribbonsfw2,CC,Reserved,56,,0,127,Reserved
+Kinotone,ribbonsfw2,CC,Filter Resonance,57,,0,127,Control Filter Resonance
+Kinotone,ribbonsfw2,CC,Makeup Gain,58,,0,127,Control Makeup Gain
+Kinotone,ribbonsfw2,CC,Switch Between Compression or Saturation,59,,0,127,"Choose between using Compression or Saturation effect for Page1 options - 0-64 = Compression, 65-127 = Saturation
+"
+Kinotone,ribbonsfw2,CC,Clear Touch Mode Loops	,60,,65,127,Clear Touch Mode Loops (>= 65 = True)
+Kinotone,ribbonsfw2,CC,Touch Footswitch Off,80,,0,64,Control Touch Footswitch
+Kinotone,ribbonsfw2,CC,Touch Footswitch On,80,,65,127,Control Touch Footswitch
+Kinotone,ribbonsfw2,CC,Bypass Footswitch Off,81,,0,64,Control Bypass Footswitch
+Kinotone,ribbonsfw2,CC,Bypass Footswitch On,81,,65,127,Control Bypass Footswitch
 Laney,BBC The Difference Engine,CC,Preset Select,0,,0,100,An alternative to using Program Change Messages.
 Laney,BBC The Difference Engine,CC,Enable,1,,0,1,0 = Bypass ; 1 = Enable
 Laney,BBC The Difference Engine,CC,Freeze,56,,0,1,0 = Disable Freeze; 1 = Enable Freeze
@@ -33489,24 +33679,32 @@ Ramble FX,Kismet,CC,Volume Setting,109,,0,127,
 Ramble FX,Kismet,CC,Expression,110,,0,127,
 Ramble FX,Kismet,CC,Omni mode OFF,124,,0,0,
 Ramble FX,Kismet,CC,Omni mode ON,125,,0,0,
-Fender,Tone Master Pro,CC,Bank Change,0,,0,3,
-Fender,Tone Master Pro,CC,Expression Pedal 1,1,,0,127,
-Fender,Tone Master Pro,CC,Expression Pedal 2,2,,0,127,
-Fender,Tone Master Pro,CC,MIDI Expression Pedal 3,3,,0,127,
-Fender,Tone Master Pro,CC,MIDI Expression Pedal 4,4,,0,127,
-Fender,Tone Master Pro,CC,Master Volume,7,,0,127,
-Fender,Tone Master Pro,CC,Tap Tempo,64,,64,127,
-Fender,Tone Master Pro,CC,Toe Switch,65,,0,127,"0-63: OFF, 64-127: ON"
-Fender,Tone Master Pro,CC,Amp Control 1 (Tip),66,,0,127,"0-63: OFF, 64-127: ON"
-Fender,Tone Master Pro,CC,Amp Control 1 (Ring),67,,0,127,"0-63: OFF, 64-127: ON"
-Fender,Tone Master Pro,CC,Looper REC/DUB,103,,64,127,
-Fender,Tone Master Pro,CC,Looper PLAY/STOP,104,,64,127,
-Fender,Tone Master Pro,CC,Looper 1-SHOT,105,,64,127,
-Fender,Tone Master Pro,CC,Looper UNDO,106,,64,127,
-Fender,Tone Master Pro,CC,Looper 1/2 SPEED,107,,0,127,"0-63: FULL, 64-127: HALF"
-Fender,Tone Master Pro,CC,Looper REVERSE,108,,0,127,"0-63: FWD, 64-127: REV"
-Fender,Tone Master Pro,CC,Looper VOLUME UP,109,,64,127,
-Fender,Tone Master Pro,CC,Looper VOLUME DOWN,110,,64,127,
+cornerstonemusicgear,nucleo,CC,Bypass,0,,0,127,0 - 63 : Effect off ; 64 - 127 : Effect On ;
+cornerstonemusicgear,nucleo,CC,Bypass Type,1,,0,127,0 - 63 : True Bypass ; 64 - 127 : Buffered Bypass ;
+cornerstonemusicgear,nucleo,CC,Bypass on Change,2,,0,127,0 - 63 : Off ; 65 - 127 : On ;
+cornerstonemusicgear,nucleo,CC,Dry Mode,3,,0,127,0 : Analog Dry ; 1: Hybrid Dry ; 2: Digital Dry ;
+cornerstonemusicgear,nucleo,CC,Volume On Bypass,4,,0,127,0 - 63: Fixed Unity ; 65 - 127 : User setting ;
+cornerstonemusicgear,nucleo,CC,MIDI Channel,5,,0,16,Selects the MIDI Channel between 1-16
+cornerstonemusicgear,nucleo,CC,Bypass Switch,7,,0,127,0 : Switch Released ; 1 - 63 : Switch Pressed ; 64 - 127 : Switch Held ;
+cornerstonemusicgear,nucleo,CC,Freeze Switch,8,,0,127,0 : Switch Released ; 1 - 63 : Switch Pressed ; 64 - 127 : Switch Held ;
+cornerstonemusicgear,nucleo,CC,Mode Switch,9,,0,2,0 : Room ; 1 : Hall ; 2 : Reactor ;
+cornerstonemusicgear,nucleo,CC,Blend Knob,11,,0,127,Blend parameter of reverb
+cornerstonemusicgear,nucleo,CC,Mod Knob,12,,0,127,Modulation parameter of reverb
+cornerstonemusicgear,nucleo,CC,Air Knob,13,,0,127,Air parameter of reverb
+cornerstonemusicgear,nucleo,CC,Flux Knob,14,,0,127,Flux parameter of reverb
+cornerstonemusicgear,nucleo,CC,Decay Knob,15,,0,127,Decay parameter of reverb
+cornerstonemusicgear,nucleo,CC,Tone Knob,16,,0,127,Master Tone parameter of reverb
+cornerstonemusicgear,nucleo,CC,Frz Pch Knob,17,,0,127,Freeze Pitch parameter of reverb
+cornerstonemusicgear,nucleo,CC,Rate,18,,0,127,Ranges from 0.5Hz to 20Hz
+cornerstonemusicgear,nucleo,CC,Pitch,19,,0,127,Blends between -1 octave and +1 octave in Air Knob
+cornerstonemusicgear,nucleo,CC,Speed,20,,0,127,Speed of Granular
+cornerstonemusicgear,nucleo,CC,Pre Delay,21,,0,127,Pre Delay parameter of reverb (max 290mS)
+cornerstonemusicgear,nucleo,CC,Diffusion,22,,0,127,Reverb's diffusion parameter
+cornerstonemusicgear,nucleo,CC,Freeze Level,23,,0,127,Volume of frozen signal
+cornerstonemusicgear,nucleo,CC,Output Volume,24,,0,127,Overall Output Volume
+cornerstonemusicgear,nucleo,CC,Character,25,,0,2,0 : Lo-Fi ; 1 : Vintage ; 2 : Normal ;
+cornerstonemusicgear,nucleo,CC,Speed BPM,26,,0,127,0 - 256BPM
+cornerstonemusicgear,nucleo,CC,Freeze Pitch Reset,27,,0,127,0 - 63 : Off ; 65 - 127 : On ;
 Wampler Pedals,Terraform,CC,Tap Tempo,81,,0,0,
 Wampler Pedals,pantheon,CC,Channel 1 on/off State,0,,0,127,Sets the on/off state of Channel 1 (Ch1)
 Wampler Pedals,pantheon,CC,Channel 2 on/off State,1,,0,127,Sets the on/off state of Channel 2 (Ch2)
@@ -33933,3 +34131,21 @@ RJM Music,Mastermind PBC/10,CC,Select Page 13,75,,12,12,
 RJM Music,Mastermind PBC/10,CC,Select Page 14,75,,13,13,
 RJM Music,Mastermind PBC/10,CC,Select Page 15,75,,14,14,
 RJM Music,Mastermind PBC/10,CC,Select Page 16,75,,15,15,
+Fender,Tone Master Pro,CC,Bank Change,0,,0,3,
+Fender,Tone Master Pro,CC,Expression Pedal 1,1,,0,127,
+Fender,Tone Master Pro,CC,Expression Pedal 2,2,,0,127,
+Fender,Tone Master Pro,CC,MIDI Expression Pedal 3,3,,0,127,
+Fender,Tone Master Pro,CC,MIDI Expression Pedal 4,4,,0,127,
+Fender,Tone Master Pro,CC,Master Volume,7,,0,127,
+Fender,Tone Master Pro,CC,Tap Tempo,64,,64,127,
+Fender,Tone Master Pro,CC,Toe Switch,65,,0,127,"0-63: OFF, 64-127: ON"
+Fender,Tone Master Pro,CC,Amp Control 1 (Tip),66,,0,127,"0-63: OFF, 64-127: ON"
+Fender,Tone Master Pro,CC,Amp Control 1 (Ring),67,,0,127,"0-63: OFF, 64-127: ON"
+Fender,Tone Master Pro,CC,Looper REC/DUB,103,,64,127,
+Fender,Tone Master Pro,CC,Looper PLAY/STOP,104,,64,127,
+Fender,Tone Master Pro,CC,Looper 1-SHOT,105,,64,127,
+Fender,Tone Master Pro,CC,Looper UNDO,106,,64,127,
+Fender,Tone Master Pro,CC,Looper 1/2 SPEED,107,,0,127,"0-63: FULL, 64-127: HALF"
+Fender,Tone Master Pro,CC,Looper REVERSE,108,,0,127,"0-63: FWD, 64-127: REV"
+Fender,Tone Master Pro,CC,Looper VOLUME UP,109,,64,127,
+Fender,Tone Master Pro,CC,Looper VOLUME DOWN,110,,64,127,

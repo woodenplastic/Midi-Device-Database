@@ -502,9 +502,7 @@ EM Custom,AMI Universal Dual TRS,0,0,0,0,No,No,None
 valeton,gp5,20,0,0,20,Yes,Yes,unknown
 Swindler Effects,Red Mountain Tremolo V2,20,0,0,20,No,No,None
 Swindler Effects,The Gulf Chorus V2,15,0,0,15,No,No,None
-Pigtronix,echolution3,17,0,0,17,Yes,Yes,unknown
-Pigtronix,Infinity,61,0,0,61,No,No,None
-Pigtronix,Echolution 2 Deluxe,27,0,0,27,No,Yes,None
+noiseengineering,batverb,28,0,0,28,Yes,Yes,unknown
 Chase Bliss Audio,Habit,27,0,0,27,No,No,None
 Chase Bliss Audio,Lossy,43,0,0,43,Yes,No,None
 Chase Bliss Audio,Warped Vinyl HiFi,19,0,0,19,No,Yes,None
@@ -606,6 +604,9 @@ the montreal assembly,856forzellersasn,67,0,0,67,No,Yes,None
 Kernom,elipse,11,0,0,11,Yes,Yes,unknown
 Kernom,Moho,9,0,0,9,No,No,None
 Kernom,Ridge,9,0,0,9,No,No,None
+Pigtronix,echolution3,17,0,0,17,Yes,Yes,unknown
+Pigtronix,Infinity,61,0,0,61,No,No,None
+Pigtronix,Echolution 2 Deluxe,27,0,0,27,No,Yes,None
 Morningstar Engineering,MC8,38,0,0,38,Yes,No,true
 Morningstar Engineering,MC6 MKII,26,0,0,26,Yes,No,true
 Morningstar Engineering,ML5R,24,0,0,24,Yes,No,None
@@ -626,7 +627,9 @@ Headrush,Pedalbaord,34,0,0,34,No,No,None
 Headrush,flexprime,43,0,0,43,Yes,Yes,unknown
 Neunaber,Illumine,24,0,0,24,No,No,None
 Neunaber,Neuron,14,0,0,14,No,No,None
+Kinotone,sparks,59,0,0,59,Yes,Yes,unknown
 Kinotone,Ribbons,44,0,0,44,No,No,None
+Kinotone,ribbonsfw2,63,0,0,63,Yes,Yes,unknown
 Laney,BBC The Difference Engine,52,0,0,52,Yes,Yes,None
 Jet Pedals,Lamb,11,0,0,11,No,No,None
 Jet Pedals,Revelation Reverb 2.0,15,0,0,15,No,No,None
@@ -651,7 +654,7 @@ Mooer,Ocean Machine,88,0,0,88,No,No,None
 Mooer,GE300 LITE,35,0,0,35,No,No,None
 Mooer,GE300,39,0,0,39,No,No,None
 Ramble FX,Kismet,12,0,0,12,No,No,None
-Fender,Tone Master Pro,18,0,0,18,No,No,None
+cornerstonemusicgear,nucleo,26,0,0,26,Yes,Yes,unknown
 Wampler Pedals,Terraform,1,0,0,1,No,No,None
 Wampler Pedals,pantheon,8,0,0,8,Yes,No,None
 Wampler Pedals,Metaverse,24,0,0,24,No,No,None
@@ -668,3 +671,4 @@ Synergy Amps,syn20ir,6,0,0,6,No,No,true
 RJM Music,Overture,18,0,0,18,No,No,None
 RJM Music,Mini Amp Gizmo,16,0,0,16,No,No,None
 RJM Music,Mastermind PBC/10,70,0,0,70,No,No,None
+Fender,Tone Master Pro,18,0,0,18,No,No,None
