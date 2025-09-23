@@ -1,2 +1,1494 @@
 id,device_id,name,description,value,min,max
+mfb_tanzbar_lite_pc_0,mfb_tanzbar_lite,Program Change,,0,0,127
+meris_enzo_pc_0,meris_enzo,Program Change,,0,0,127
+meris_polymoon_pc_0,meris_polymoon,Program Change,,0,0,127
+meris_hedra_pc_0,meris_hedra,Program Change,,0,0,127
+meris_mercury_7_pc_0,meris_mercury_7,Program Change,,0,0,127
+meris_lvx_pc_0,meris_lvx,Program Change,,0,0,127
+meris_enzox_pc_0,meris_enzox,Program Change,,0,0,127
+meris_ottobit_jr_pc_0,meris_ottobit_jr,Program Change,,0,0,127
+meris_mercury_x_pc_0,meris_mercury_x,Program Change,PC 1-99 selects presets,0,0,127
+elektron_model:samples_pc_0,elektron_model:samples,Program Change,,0,0,127
+elektron_model:cycles_pc_0,elektron_model:cycles,Program Change,,0,0,127
+elektron_analog_drive_pc_0,elektron_analog_drive,Program Change,,0,0,127
+elektron_digitone_pc_0,elektron_digitone,Program Change,,0,0,127
+elektron_analog_rytm_mkii_pc_0,elektron_analog_rytm_mkii,Program Change,,0,0,127
+elektron_analog_heat_mkii_pc_0,elektron_analog_heat_mkii,Program Change,,0,0,127
+elektron_digitone_keys_pc_0,elektron_digitone_keys,Program Change,,0,0,127
+elektron_digitakt_pc_0,elektron_digitakt,Program Change,,0,0,127
+elektron_octatrack_mkii_pc_0,elektron_octatrack_mkii,Program Change,,0,0,127
+elektron_analog_four_mkii_pc_0,elektron_analog_four_mkii,Program Change,,0,0,127
+atomic_amplifire_3_pc_0,atomic_amplifire_3,Program Change,,0,0,127
+atomic_amplifire_12_pc_0,atomic_amplifire_12,Program Change,,0,0,127
+atomic_amplifire_pc_0,atomic_amplifire,Program Change,"Activates the preset at the OC value MIDI PROGRAM CHANGES are mapped one-to-one, meaning that AMPLIFIRE will switch to the same preset as the incoming MIDI program change message . Likewise, if you change presets in AMPLIFIRE using the ENCODER or FOOTSWITCH, AMPLIFIRE will transmit the same preset number in the outgoing MIDI program change.",0,0,127
+atomic_amplifire_6_pc_0,atomic_amplifire_6,Program Change,,0,0,127
+valeton_gp5_pc_0,valeton_gp5,Program Change,,0,0,127
+idoru_p1_pc_0,idoru_p1,Program Change,"
+",0,0,127
+avid_eleven_rack_pc_0,avid_eleven_rack,Program Change,,0,0,127
+dr_scientist_the_atmosphere_pc_0,dr_scientist_the_atmosphere,Program Change,,0,0,127
+dr_scientist_dusk_pc_0,dr_scientist_dusk,,"PC# 0 = Bypass
+PC# 1 – 4 = Internal Preset # 1 – 4
+PC# 5 – 99 = Presets saved with MIDI CC #55
 
+
+",,0,127
+3_degrees_audio_hue_stereo_multi_effect_pedal_pc_0,3_degrees_audio_hue_stereo_multi_effect_pedal,Program Change,,0,0,127
+swindler_effects_red_mountain_tremolo_v2_pc_0,swindler_effects_red_mountain_tremolo_v2,Program Change,,0,0,127
+swindler_effects_the_gulf_chorus_v2_pc_0,swindler_effects_the_gulf_chorus_v2,Program Change,,0,0,127
+noiseengineering_batverb_pc_0,noiseengineering_batverb,Program Change,,0,0,127
+nord_lead_4r_pc_0,nord_lead_4r,Program Change,,0,0,127
+nord_electro_6_pc_0,nord_electro_6,Program Change,,0,0,127
+nord_stage_2_pc_0,nord_stage_2,Program Change,,0,0,127
+nord_electro_3_hp_pc_0,nord_electro_3_hp,Program Change,,0,0,127
+nord_electro_2_pc_0,nord_electro_2,Program Change,,0,0,127
+nord_electro_3_pc_0,nord_electro_3,Program Change,,0,0,127
+nord_electro_5hp_73_pc_0,nord_electro_5hp_73,Program Change,,0,0,127
+nord_wave_2_pc_0,nord_wave_2,Program Change,,0,0,127
+nord_drum_2_pc_0,nord_drum_2,Program Change,,0,0,127
+nord_rack_3_pc_0,nord_rack_3,Program Change,,0,0,127
+nord_piano_2_ha88_pc_0,nord_piano_2_ha88,Program Change,,0,0,127
+nord_lead_pc_0,nord_lead,Program Change,,0,0,127
+nord_c2d_pc_0,nord_c2d,Program Change,,0,0,127
+nord_grand_pc_0,nord_grand,Program Change,,0,0,127
+nord_lead_a1r_pc_0,nord_lead_a1r,Program Change,,0,0,127
+nord_stage_3_pc_0,nord_stage_3,Program Change,,0,0,127
+nord_electro_5d_73_pc_0,nord_electro_5d_73,Program Change,,0,0,127
+nord_electro_4_hp_pc_0,nord_electro_4_hp,Program Change,,0,0,127
+nord_stage_2_ex_pc_0,nord_stage_2_ex,Program Change,,0,0,127
+nord_piano_3_pc_0,nord_piano_3,Program Change,,0,0,127
+nord_piano_4_pc_0,nord_piano_4,Program Change,,0,0,127
+nord_lead_3_pc_0,nord_lead_3,Program Change,,0,0,127
+nord_lead_2_pc_0,nord_lead_2,Program Change,,0,0,127
+nord_lead_4_pc_0,nord_lead_4,Program Change,,0,0,127
+nord_c2_pc_0,nord_c2,Program Change,,0,0,127
+nord_c1_pc_0,nord_c1,Program Change,,0,0,127
+nord_wave_pc_0,nord_wave,Program Change,,0,0,127
+nord_piano_pc_0,nord_piano,Program Change,,0,0,127
+nord_stage_pc_0,nord_stage,Program Change,,0,0,127
+nord_lead_a1_pc_0,nord_lead_a1,Program Change,,0,0,127
+nord_electro_4_sw_pc_0,nord_electro_4_sw,Program Change,,0,0,127
+nord_electro_4d_pc_0,nord_electro_4d,Program Change,,0,0,127
+nord_lead_2x_pc_0,nord_lead_2x,Program Change,,0,0,127
+nord_electro_5d_61__pc_0,nord_electro_5d_61_,Program Change,,0,0,127
+nord_piano_2_hp_pc_0,nord_piano_2_hp,Program Change,,0,0,127
+nord_stage_ex_pc_0,nord_stage_ex,Program Change,,0,0,127
+chase_bliss_audio_habit_pc_0,chase_bliss_audio_habit,Program Change,,0,0,127
+chase_bliss_audio_lossy_pc_0,chase_bliss_audio_lossy,Program Change,"
+",0,0,127
+chase_bliss_audio_warped_vinyl_hifi_pc_0,chase_bliss_audio_warped_vinyl_hifi,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_thermae_pc_0,chase_bliss_audio_thermae,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_wombtone_mkii_pc_0,chase_bliss_audio_wombtone_mkii,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both the TAP and BYPASS switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_generation_loss_mkii_pc_0,chase_bliss_audio_generation_loss_mkii,Program Change,,0,0,127
+chase_bliss_audio_cxm_1978_pc_0,chase_bliss_audio_cxm_1978,Program Change,"SAVING A PRESET VIA MIDI
+
+You can save your current settings via MIDI to any of the 30 preset slots. Send CC#27 and the value (0-29) will save the current configuration to the 
+intended preset slot. Remember, you can also save a preset to the current slot at any time by pressing and holding the SAVE stomp switch on the pedal.
+
+RECALLING A PRESET VIA MIDI
+
+Presets 0-29 are recalled using Program Changes 0-29. You can do this by sending the corresponding Program Change message
+from your MIDI controller. For example, sending a Program Change message of “4” loads bank one (left LED off), preset four.
+Sending a message of “17” loads bank two (left LED red), preset seven. Sending a program change of “20” loads bank three (left LED green), preset zero.
+
+ 
+",0,0,127
+chase_bliss_audio_mood_pc_0,chase_bliss_audio_mood,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_condor_pc_0,chase_bliss_audio_condor,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_onward_pc_0,chase_bliss_audio_onward,Program Change,"SAVING A PRESET VIA MIDI
+There are 122 total slots.
+Slots 1 and 2 correspond to the preset toggle on the pedal.
+Slot 1 is the right slot. Slot 2 is the left slot.
+
+RECALLING A PRESET VIA MIDI
+To recall a preset, simply send Onward a Program Change message.
+If the target slot is empty, then nothing will be recalled.
+There are no factory presets besides
+the two that come loaded in slots 1 and 2.
+Sending a Program Change message of 0 puts the pedal in “Live” mode,
+matching the current settings of the pedal.
+
+",0,0,127
+chase_bliss_audio_brothersam_pc_0,chase_bliss_audio_brothersam,Program Change,,0,0,127
+chase_bliss_audio_bliss_factory_pc_0,chase_bliss_audio_bliss_factory,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_mood_mkii_pc_0,chase_bliss_audio_mood_mkii,Program Change,"SAVING A PRESET VIA MIDI
+Presets are both saved and recalled by using Program Change (PC) messages.
+To save a preset, send a PC messag  while holding down both foot switches.
+Sending a Program Change message of 45, for example,
+will save your current settings to preset 45.
+There are 122 total slots.
+Slots 1 and 2 correspond to the preset toggle on the pedal.
+Slot 1 is the right slot. Slot 2 is the left slot.
+
+RECALLING A PRESET VIA MIDI
+To recall a preset, simply send MOOD MKII a Program Change message.
+If the target slot is empty, then nothing  gwill be recalled.
+There are no factory presets besides
+the two that come loaded in slots 1 and 2.
+Sending a Program Change message of 0 puts the pedal in “Live” mode,
+matching the current settings of the pedal.
+
+",0,0,127
+chase_bliss_audio_dark_world_pc_0,chase_bliss_audio_dark_world,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_reverse_mode_c_pc_0,chase_bliss_audio_reverse_mode_c,Program Change,"SAVING A PRESET VIA MIDI
+Presets are both saved and recalled by using Program Change (PC) messages.
+To save a preset, send a PC messag  while holding down both foot switches.
+Sending a Program Change message of 45, for example,
+will save your current settings to preset 45.
+There are 122 total slots.
+Slots 1 and 2 correspond to the preset toggle on the pedal.
+Slot 1 is the right slot. Slot 2 is the left slot.
+
+RECALLING A PRESET VIA MIDI
+To recall a preset, simply send Reverse Mode C a Program Change message.
+If the target slot is empty, then nothing will be recalled.
+There are no factory presets besides
+the two that come loaded in slots 1 and 2.
+Sending a Program Change message of 0 puts the pedal in “Live” mode,
+matching the current settings of the pedal.
+
+",0,0,127
+chase_bliss_audio_tonal_recall_pc_0,chase_bliss_audio_tonal_recall,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_brothers_pc_0,chase_bliss_audio_brothers,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_blooper_pc_0,chase_bliss_audio_blooper,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_preamp_mkii_pc_0,chase_bliss_audio_preamp_mkii,Program Change,"RECALLING A PRESET VIA MIDI
+
+Presets 0-29 are recalled using Program Changes 0-29. You can do this by sending the corresponding Program Change message
+from your MIDI controller. For example, sending a Program Change message of “4” loads bank one (left LED off), preset four.
+Sending a message of “17” loads bank two (left LED red), preset seven. Sending a program change of “20” loads bank three (left LED green), preset zero.
+
+SAVING A PRESET
+
+Once you get the tone you want, hold down the Bypass foot switch
+and your settings will be saved to the current preset slot. 
+",0,0,127
+chase_bliss_audio_generation_loss_mki_pc_0,chase_bliss_audio_generation_loss_mki,Program Change,,0,0,127
+chase_bliss_audio_ayahuasca_pc_0,chase_bliss_audio_ayahuasca,Program Change,,0,0,127
+chase_bliss_audio_gravitas_pc_0,chase_bliss_audio_gravitas,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_spectre_pc_0,chase_bliss_audio_spectre,Program Change,"RECALLING A PRESET VIA MIDI
+
+You can activate a preset by sending a MIDI Program Change message. For example, sending a Program Change message
+of 1 activates preset 1. There are 122 total preset slots available. Slots 1 and 2 are the presets that can be saved
+and activateddirectly from the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+
+Sending a Program Change message of 0 puts the pedal in “Live” mode which is identical to when the preset toggle
+switch is in the middle position, in normal pedal operation.
+
+If you do not save something into presets 3 through 122, nothing will be recalled. There are no factory presets
+besides the two that come loaded in slots 1 and 2. The idea is for you to create your own.
+
+SAVING A PRESET VIA MIDI
+
+You save a preset by sending a MIDI Program Change message while holding down both stomp switches. For example,
+sending a Program Change message of 45 while holding down both stomp switches will save your current settings to
+preset 45. There are 122 total slots. Slots 1 and 2 are the presets that can be saved and activated directly from
+the pedal via the preset toggle. Slot 1 is the right slot. Slot 2 is the left slot.
+",0,0,127
+chase_bliss_audio_clean_pc_0,chase_bliss_audio_clean,Program Change,,0,0,127
+fractal_audio_systems_axe-fx_ii_xl+_pc_0,fractal_audio_systems_axe-fx_ii_xl+,Program Change,,0,0,127
+fractal_audio_systems_ax8_pc_0,fractal_audio_systems_ax8,Program Change,,0,0,127
+fractal_audio_systems_axe-fx_ii_xl_pc_0,fractal_audio_systems_axe-fx_ii_xl,Program Change,,0,0,127
+fractal_audio_systems_axe-fx_ii_pc_0,fractal_audio_systems_axe-fx_ii,Program Change,,0,0,127
+fractal_audio_systems_fx8_pc_0,fractal_audio_systems_fx8,Program Change,,0,0,127
+wmd_geiger_counter_pro_pc_0,wmd_geiger_counter_pro,Program Change,,0,0,127
+modor_nf-1_pc_0,modor_nf-1,Program Change,,0,0,127
+hughes_&_kettner_grandmeister_deluxe_40_pc_0,hughes_&_kettner_grandmeister_deluxe_40,Program Change,,0,0,127
+hughes_&_kettner_triamp_mk3_pc_0,hughes_&_kettner_triamp_mk3,Program Change,,0,0,127
+digitech_whammy_dt_pc_0,digitech_whammy_dt,Program Change,"WHAMMY
+0 - ▲2 OCT (Active) | 21 - (Bypass)
+1 -  ▲ OCT (Active) | 22 - (Bypass)
+2 -  ▲ 5TH (Active) | 23 - (Bypass)
+3 -  ▲ 4TH (Active) | 24 - (Bypass)
+4 -  ▼ 2ND (Active) | 25 - (Bypass)
+5 -  ▼ 4TH (Active) | 26 - (Bypass)
+6 -  ▼ 5TH (Active) | 27 - (Bypass)
+7 -  ▼ OCT (Active) | 28 - (Bypass)
+8 - ▼2 OCT (Active) | 29 - (Bypass)
+9 - DIVE BOMB (Active) | 30 - (Bypass)
+
+DETUNE    
+10 - Deep (Active) | 31 (Bypass)
+11 - Shallow (Active) | 32 (Bypass)
+
+HAROMONY    
+12 - ▲2ND▼3RD (Active) | 33 (Bypass)
+13 - ▲♭3RD▲3RD (Active) | 34 (Bypass)
+14 - ▲3RD▲4TH (Active) | 35 (Bypass)
+15 - ▲4TH▲5TH (Active) | 36 (Bypass)
+16 - ▲5TH▲6TH (Active) | 37 (Bypass)
+17 - ▲5TH▲7TH (Active) | 38 (Bypass)
+18 - ▼4TH▼3RD (Active) | 39 (Bypass)
+19 - ▼5TH▼4TH (Active) | 40 (Bypass)
+20 - ▼OCT▲OCT (Active) | 41 (Bypass)
+
+DROP TUNE 
+Shift Up: 
+42 - 1 (Active) | 60 (Bypass)
+43 - 2 (Active) | 61 (Bypass)
+44 - 3 (Active) | 62 (Bypass)
+45 - 4 (Active) | 63 (Bypass)
+46 - 5 (Active) | 64 (Bypass)
+47 - 6 (Active) | 65 (Bypass)
+48 - 7 (Active) | 66 (Bypass)
+49 - OCT (Active) | 67 (Bypass)
+50 - OCT + Dry (Active) | 68 (Bypass)
+
+Shift Down: 
+51 - OCT + Dry (Active) | 69 (Bypass)
+52 - OCT (Active) | 70 (Bypass)
+53 - 7 (Active) | 71 (Bypass)
+54 - 6 (Active) | 72 (Bypass)
+55 - 5 (Active) | 73 (Bypass)
+56 - 4 (Active) | 74 (Bypass)
+57 - 3 (Active) | 75 (Bypass)
+58 - 2 (Active) | 76 (Bypass)
+59 - 1 (Active) | 77 (Bypass)
+
+",0,0,127
+digitech_bass_whammy_pc_0,digitech_bass_whammy,Program Change,,0,0,127
+digitech_whammy_pc_0,digitech_whammy,Program Change,,0,0,127
+adrenalinn_iii_pc_0,adrenalinn_iii,Program Change,,0,0,127
+dreadbox_typhon_pc_0,dreadbox_typhon,Program Change,,0,0,127
+dreadbox_medusa_pc_0,dreadbox_medusa,Program Change,,0,0,127
+alexander_space_race_pc_0,alexander_space_race,Program Change,,0,0,127
+alexander_superball_pc_0,alexander_superball,Program Change,"Sending PC mesages will load Presets 0-15
+0-3 are the Red bank, also accessible by holding the Bypass / Preset footswitch
+4-7 are the Green bank
+8-11 are the Blue bank
+12-15 are the White bank
+
+",0,0,127
+alexander_marshmallow_pc_0,alexander_marshmallow,Program Change,,0,0,127
+alexander_f.13_neo_pc_0,alexander_f.13_neo,Program Change,,0,0,127
+alexander_wavelength_pc_0,alexander_wavelength,Program Change,,0,0,127
+alexander_syntax_error_pc_0,alexander_syntax_error,Program Change,,0,0,127
+alexander_colour_theory__pc_0,alexander_colour_theory_,Program Change,,0,0,127
+alexander_super_neo-matic_pc_0,alexander_super_neo-matic,Program Change,,0,0,127
+alexander_quadrant_pc_0,alexander_quadrant,Program Change,"Sending PC mesages will load Presets 0-15
+0-3 are the four Red presets on the pedal itself.
+4-7 are the Green bank
+8-11 are the Blue bank
+12-15 are the White bank
+",0,0,127
+alexander_defender_neo_pc_0,alexander_defender_neo,Program Change,,0,0,127
+alexander_quadrant_audio_mirror_pc_0,alexander_quadrant_audio_mirror,Program Change,,0,0,127
+alexander_super_radical_delay_pc_0,alexander_super_radical_delay,Program Change,,0,0,127
+alexander_oblivion_vintage_delay_pc_0,alexander_oblivion_vintage_delay,Program Change,,0,0,127
+alexander_fever_pitch_pc_0,alexander_fever_pitch,Program Change,"
+",0,0,127
+alexander_radical_delay_dx_pc_0,alexander_radical_delay_dx,Program Change,,0,0,127
+alexander_sky_5000_pc_0,alexander_sky_5000,Program Change,,0,0,127
+evh_5150iii_100s_head_pc_0,evh_5150iii_100s_head,Program Change,,0,0,127
+evh_5150iii_50w_head_pc_0,evh_5150iii_50w_head,Program Change,,0,0,127
+evh_5150iii_50w_el34_2x12_combo_pc_0,evh_5150iii_50w_el34_2x12_combo,Program Change,,0,0,127
+evh_5150iii_50w_el34_head_pc_0,evh_5150iii_50w_el34_head,Program Change,,0,0,127
+evh_5150iii_50w_6l6_1x12_combo_pc_0,evh_5150iii_50w_6l6_1x12_combo,Program Change,,0,0,127
+evh_5150iii_50s_6l6_head_pc_0,evh_5150iii_50s_6l6_head,Program Change,,0,0,127
+evh_5150iii_50w_el34_1x12_combo_pc_0,evh_5150iii_50w_el34_1x12_combo,Program Change,,0,0,127
+evh_5150iii_50w_6l6_2x12_combo_pc_0,evh_5150iii_50w_6l6_2x12_combo,Program Change,,0,0,127
+evh_5150iii_50w_6l6_head_pc_0,evh_5150iii_50w_6l6_head,Program Change,,0,0,127
+evh_5150iii_100w_head_pc_0,evh_5150iii_100w_head,Program Change,,0,0,127
+evh_5150iiis_100w_el34_head_pc_0,evh_5150iiis_100w_el34_head,Program Change,,0,0,127
+free_the_tone_ta-1h_tri_avatar_pc_0,free_the_tone_ta-1h_tri_avatar,Program Change,,0,0,127
+free_the_tone_flight_time_ft-2y_pc_0,free_the_tone_flight_time_ft-2y,Program Change,,0,0,127
+free_the_tone_pa-1qg_pc_0,free_the_tone_pa-1qg,Program Change,,0,0,127
+free_the_tone_pa-1qb_pc_0,free_the_tone_pa-1qb,Program Change,,0,0,127
+free_the_tone_pa-1qa_pc_0,free_the_tone_pa-1qa,Program Change,,0,0,127
+free_the_tone_ff-1y_pc_0,free_the_tone_ff-1y,Program Change,,0,0,127
+free_the_tone_as-1r_ambi_space_pc_0,free_the_tone_as-1r_ambi_space,Program Change,,0,0,127
+disaster_area_microclockgen4_pc_0,disaster_area_microclockgen4,Program Change,,0,0,127
+disaster_area_dpc-8ez_gen2_pc_0,disaster_area_dpc-8ez_gen2,,Loads Presets 0 - 127,,0,127
+oscillator_devices_minerva_pc_0,oscillator_devices_minerva,Program Change,,0,0,127
+oscillator_devices_siren_pc_0,oscillator_devices_siren,Program Change,,0,0,127
+oscillator_devices_goblin-exp_in_ehx_pitch_fork_pc_0,oscillator_devices_goblin-exp_in_ehx_pitch_fork,Program Change,,0,0,127
+darkglass_electronics_microtubes_infinity_pc_0,darkglass_electronics_microtubes_infinity,Program Change,,0,0,127
+ksr_amplification_artemis_100_pc_0,ksr_amplification_artemis_100,Program Change,,0,0,127
+ksr_amplification_colossus_h-100_pc_0,ksr_amplification_colossus_h-100,Program Change,,0,0,127
+ksr_amplification_gemini_100_pc_0,ksr_amplification_gemini_100,Program Change,,0,0,127
+seymour_duncan_andromeda_pc_0,seymour_duncan_andromeda,Program Change,,0,0,127
+tc_electronic_plethora_x5_pc_0,tc_electronic_plethora_x5,Program Change,"You can directly recall any BOARD on PLETHORA by sending it a PC (Program Change) message with the corresponding number.
+",0,0,127
+tc_electronic_plethora_x3_pc_0,tc_electronic_plethora_x3,Program Change,"You can directly recall any BOARD on PLETHORA by sending it a PC (Program Change) message with the corresponding number.
+",0,0,127
+tc_electronic_hall_of_fame_2_x4_reverb_pc_0,tc_electronic_hall_of_fame_2_x4_reverb,Program Change,,0,0,127
+tc_electronic_nova_drive_pc_0,tc_electronic_nova_drive,Program Change,"PC Messages load the corresponding preset. For example PC1 loads Preset 2.
+",0,0,127
+tc_electronic_flashback_2_x4_delay_pc_0,tc_electronic_flashback_2_x4_delay,Program Change,,0,0,127
+tc_electronic_ditto_x4_pc_0,tc_electronic_ditto_x4,Program Change,"
+",0,0,127
+kemper_profiler_player_pc_0,kemper_profiler_player,Program Change,"The PROFILER Player storage offers ten banks with five Rigs each - fifty Rigs overall. These can be loaded via MIDI program changes # 1-50 respectively.
+
+",0,0,127
+kemper_profiler_pc_0,kemper_profiler,Program Change,"Performance Mode:
+There are 128 program changes available in MIDI and these are assigned to each Slot as they occur within the Performances, in linear fashion:
+
+Rig in Performance 1, Slot 1 loaded by program change 0
+Rig in Performance 1, Slot 2 loaded by program change 1
+...
+Rig in Performance 2, Slot 5 loaded by program change 9
+...
+Rig in Performance 26, Slot 3 loaded by program change 127
+
+You could also use the following formula: (#Performance * 5) - 5 + (#Slot - 1)
+
+Due to the limit of 128 different program change values you can only address about 25 Performances. If you need more, you must use the MIDI bank select controllers which allow you to address multiple pages of 128 program changes each.
+
+Instead of calculating the appropriate MIDI bank select, LSB and program change, you could simply read it from the screen. If no PROFILER Remote is connected, both items are displayed for the current Slot on the left-hand side of the home screen in Performance Mode.
+
+While program changes are required to initiate the Rig load, bank select MSB and LSB are redundant. You don’t need to send bank select MSB because Performance Mode always assumes value “0”. Bank select LSB is not required if you navigate within the same MIDI bank.
+
+These two MIDI control change numbers are associated with MIDI bank select: #0 Bank select MSB (always 0), #32 Bank select LSB (values 0-4).
+
+Browser Mode:
+You can assign up to 128 MIDI program change numbers to Rigs in your browse pool. These assignments are set in the System Settings on page “Browser Mode PrgChg”.
+
+To assign a program change number to a Rig, first load the Rig in the Browser Mode. Then press the SYSTEM button. Navigate to the page “Browser Mode PrgChg” using the PAGE buttons.
+
+Select a desired program change number using soft knob “MIDI PrgChg#” and then press the soft button “Assign”. Use the soft button labeled “Unassign” to erase assignments.
+
+Without leaving this page you can use the RIG navigation cross to load other Rigs from your browse pool and perform more assignments.
+
+Instead of using MIDI program changes, you can use control changes (#48-54) to load Slots in Performance Mode and Rigs in Browser Mode.
+",0,0,127
+old_blood_noise_endeavors_signalblenderstereo_pc_0,old_blood_noise_endeavors_signalblenderstereo,Program Change,,0,0,127
+old_blood_noise_endeavors_blackfountain_pc_0,old_blood_noise_endeavors_blackfountain,Program Change,,0,0,127
+old_blood_noise_endeavors_dark_star_stereo_soundscape_reverb_pc_0,old_blood_noise_endeavors_dark_star_stereo_soundscape_reverb,Program Change,,0,0,127
+sheeran_looper+_pc_0,sheeran_looper+,Program Change,,0,0,127
+sheeran_looperx_pc_0,sheeran_looperx,Program Change,,0,0,127
+vongon_polyphrase_pc_0,vongon_polyphrase,Program Change,"Polyphrase has 9 onboard user preset slots that can be read and written to via MIDI
+PROGRAM CHANGE (PC) messages. These presets are saved between power cycles.
+PC #1 to read corresponds to PC #11 for write, #2 to read and #12 for write, and so on
+through #9 to read and #19 to write at the end.
+
+Example Read/Write to preset 1:
+  ● Write to Preset 1: Adjust pedal to desired sound, send a MIDI PC# 11. That
+  sound is now saved into preset slot #1.
+  ● Recall Preset 1: Send a MIDI PC#1 message, the pedal will read the sound
+  stored in preset slot #1 and internally reset parameters.
+",0,0,127
+two_notes_audio_engineering_torpedo_c.a.b._(v4_firmware)_pc_0,two_notes_audio_engineering_torpedo_c.a.b._(v4_firmware),Program Change,,0,0,127
+two_notes_audio_engineering_torpedo_live_v4_firmware_pc_0,two_notes_audio_engineering_torpedo_live_v4_firmware,Program Change,,0,0,127
+two_notes_audio_engineering_opus_pc_0,two_notes_audio_engineering_opus,Program Change,,0,0,127
+two_notes_audio_engineering_torpedo_studio_pc_0,two_notes_audio_engineering_torpedo_studio,Program Change,,0,0,127
+two_notes_audio_engineering_torpedo_captor_x_pc_0,two_notes_audio_engineering_torpedo_captor_x,Program Change,,0,0,127
+two_notes_audio_engineering_torpedo_live_v3_firmware_pc_0,two_notes_audio_engineering_torpedo_live_v3_firmware,Program Change,,0,0,127
+moog_mother-32_pc_0,moog_mother-32,Program Change,,0,0,127
+moog_sub_phatty_pc_0,moog_sub_phatty,Program Change,,0,0,127
+moog_matriarch_pc_0,moog_matriarch,Program Change,"TO SET A PARAMETER TO A VALUE:
+
+  F0 04 17 23 [Parameter ID], [value MSB], [value LSB], 00 00 00 00 00 00 00 00 [Unit ID] F7
+
+  • Values above are shown in hexadecimal format.
+  • If the intended parameter value is less than 128, then [value MSB] is 0 and [value LSB] is the intended
+    parameter value. If the intended parameter value is 128 or higher, then the value MSB is the intended
+    value divided by 128, and the value LSB is the remainder (intended value modulo 128).
+  • The Unit ID byte must be set to match the Unit ID of the synth you want to edit (all synths are set to
+    Unit ID 0 by default; this value will be 0 unless you change it) or set the Unit ID value to 0x7F to
+    address any Unit ID, or multiple units with different IDs sharing the same MIDI port.
+  • Note: The byte before Unit ID (byte 14 if counting from F0 = 0) must be set to zero or the message
+    will be ignored. This is because the same kind of SysEx message is output by the unit in reply to a
+    request to get the value of a parameter (see below). Replies output by the unit have the byte before
+    Unit ID set to 1, to avoid getting stuck in a MIDI feedback loop if these messages are echoed back
+    to the unit.
+
+TO REQUEST A PARAMETER VALUE:
+  F0 04 17 3E [Parameter ID] 00 00 00 00 00 00 00 00 00 00 [Unit ID] F7
+
+  • Values above are shown in hexadecimal format.
+  • Unit ID must match the Unit ID of the Matriarch, or set Unit ID = 7F (all).
+  • The Matriarch will reply with a “set parameter” SysEx message for the requested Parameter ID with its
+    current value, with the byte before the Unit ID (byte 14 if counting from F0 = 0) set to 1 to indicate that
+    the message is a reply coming from the Matriarch.
+",0,0,127
+moog_mf-108m_cluster_flux_pc_0,moog_mf-108m_cluster_flux,Program Change,,0,0,127
+moog_subsequent_25_pc_0,moog_subsequent_25,Program Change,,0,0,127
+moog_mf-105m_midi_murf_pc_0,moog_mf-105m_midi_murf,Program Change,,0,0,127
+moog_grandmother_pc_0,moog_grandmother,Program Change,,0,0,127
+moog_minimoog_voyager_pc_0,moog_minimoog_voyager,Program Change,,0,0,127
+moog_subharmonicon_pc_0,moog_subharmonicon,Program Change,,0,0,127
+moog_minitaur_pc_0,moog_minitaur,Program Change,,0,0,127
+moog_mf-104m_pc_0,moog_mf-104m,Program Change,"The Moogerfooger does not have preset capabilities but you can send multiple CC messages to it to change different parameters simlultaneously.
+This allows you to create Moogerfooger presets on your Morningstar controller.
+
+",0,0,127
+moog_minimoog_voyager_xl_pc_0,moog_minimoog_voyager_xl,Program Change,,0,0,127
+moog_subsequent_37_pc_0,moog_subsequent_37,Program Change,,0,0,127
+singular_sound_beatbuddy_pc_0,singular_sound_beatbuddy,Program Change,,0,0,127
+singular_sound_aeros_looper_pc_0,singular_sound_aeros_looper,Program Change,"The Aeros can open any song using a combination of MSB and PC commands.  Added in 4.1.2
+
+MSB value 0-127
+PC value 0-12
+
+Pay close attention this is a brain twister: MSB stands for Most Significant Bit, it is a concept used in MIDI that allows a user to do all sorts of things like change parameters, change banks, and—in the Aeros' case—song select .
+
+MSB is not a traditional MIDI command, it is actually activated by using a CC:0 (Control Change) command, the value decides which MSB bank is chosen. So, CC:0 value 4 represents MSB bank 4.
+
+PC (Program Change) is another type of MIDI command typically used in conjunction with MSB and/or LSB commands. LSB (Least Significant Bit; CC:32 values 0-127) is not relevant to the Aeros, but is relevant to the BeatBuddy's song select scheme. It is often also used without an MSB (CC:0) and/or LSB (CC:32) command, but that is not the case for the Aeros.
+
+The Aeros requires the user to send an MSB + and a PC command—in that order—to open a song.
+
+First, the user must open the song, and edit the song. Then, you will find the MIDI song Select enabled setting. Once enabled, the user can set which MSB (0-127) bank and which PC command will be required to open the song.
+
+Then, using a MIDI controller capable of sending CC:0 (MSB) + PC commands in a sequence, you can open that song at any time.
+
+KNOWN BUG v4.1.2: Aeros is currently not responding to commands sent in the Home Screen before a song has been opened, you must open a song before the Aeros can register the commands and open a song via MIDI select.
+",0,0,127
+suhr_hedgehog_pc_0,suhr_hedgehog,Program Change,,0,0,127
+suhr_pt-100_pc_0,suhr_pt-100,Program Change,,0,0,127
+suhr_discovery_pc_0,suhr_discovery,Program Change,"
+",0,0,127
+access_virus_ti_pc_0,access_virus_ti,Program Change,,0,0,127
+sequential_prophet_12_pc_0,sequential_prophet_12,Program Change,,0,0,127
+sequential_pro_3_pc_0,sequential_pro_3,Program Change,,0,0,127
+sequential_ob-6_pc_0,sequential_ob-6,Program Change,,0,0,127
+sequential_prophet_6_pc_0,sequential_prophet_6,Program Change,,0,0,127
+sequential_prophet_x_pc_0,sequential_prophet_x,Program Change,,0,0,127
+sequential_rev_2_pc_0,sequential_rev_2,Program Change,,0,0,127
+aerospace_audio_atmosphere_v2_pc_0,aerospace_audio_atmosphere_v2,Program Change,,0,0,127
+freds_labs_buzzy!_pc_0,freds_labs_buzzy!,Program Change,,0,0,127
+oto_machines_boum_pc_0,oto_machines_boum,Program Change,,0,0,127
+oto_machines_bim_pc_0,oto_machines_bim,Program Change,,0,0,127
+oto_machines_bam_pc_0,oto_machines_bam,Program Change,,0,0,127
+oto_machines_biscuit_pc_0,oto_machines_biscuit,Program Change,,0,0,127
+that_worship_sound_worship_essentials_2_pc_0,that_worship_sound_worship_essentials_2,Program Change,,0,0,127
+that_worship_sound_worship_guitar_essentials_2_pc_0,that_worship_sound_worship_guitar_essentials_2,Program Change,,0,0,127
+studiologic_sledge_pc_0,studiologic_sledge,Program Change,,0,0,127
+boss_rv-500_pc_0,boss_rv-500,Program Change,,0,0,127
+boss_katana_artist_pc_0,boss_katana_artist,Program Change,,0,0,127
+boss_md-500_pc_0,boss_md-500,Program Change,,0,0,127
+boss_katana_pc_0,boss_katana,Program Change,"PC#1 (00H) activates BANK A CH1
+PC#2 (01H) activates BANK A CH2
+PC#3 (02H) activates BANK A CH3
+PC#4 (03H) activates BANK A CH4
+PC#5 (04H) activates the PANEL
+PC#6 (00H) activates BANK B CH1
+PC#7 (01H) activates BANK B CH2
+PC#8 (02H) activates BANK B CH3
+PC#9 (03H) activates BANK B CH4
+
+",0,0,127
+boss_gt1000_core_pc_0,boss_gt1000_core,Program Change,"
+",0,0,127
+boss_katana_head_pc_0,boss_katana_head,Program Change,,0,0,127
+boss_dm-101_pc_0,boss_dm-101,Program Change,,0,0,127
+boss_od-200_pc_0,boss_od-200,Program Change,,0,0,127
+boss_rc-10r_pc_0,boss_rc-10r,Program Change,"PC#1 (00H) activates Memory 1
+PC#2 (01H) activates Memory 2
+etc
+can transmit Program Changes from the RC-10R by enabling PC IN/OUT.
+",0,0,127
+boss_re-202_pc_0,boss_re-202,Program Change,,0,0,127
+boss_dd-500_pc_0,boss_dd-500,Program Change,,0,0,127
+flower_pedals_dahlia_dual_analog_delay_pc_0,flower_pedals_dahlia_dual_analog_delay,Program Change,"
+",0,0,127
+flower_pedals_sunflower_pc_0,flower_pedals_sunflower,Program Change,"
+",0,0,127
+electronic_audio_experiments_sending_v2_(firmware_2.0)_pc_0,electronic_audio_experiments_sending_v2_(firmware_2.0),Program Change,,0,0,127
+electronic_audio_experiments_sending_v2_pc_0,electronic_audio_experiments_sending_v2,Program Change,,0,0,127
+sound_sculpture_switchblade_8f_pc_0,sound_sculpture_switchblade_8f,Program Change,,0,0,127
+decibel_eleven_loop_expander_pc_0,decibel_eleven_loop_expander,Program Change,,0,0,127
+behringer_x-air_pc_0,behringer_x-air,Program Change,"PC#1 (00H) recalls snapshot 1
+PC#2 (01H) recalls snapshot 2
+etc through 64
+
+",0,0,127
+behringer_deepmind_6_pc_0,behringer_deepmind_6,Program Change,,0,0,127
+behringer_pro-800_pc_0,behringer_pro-800,Program Change,"
+
+",0,0,127
+behringer_ac112_pc_0,behringer_ac112,Program Change,"The list below shows the PC number and the accompanied Description of the effect, based on Factory Defaults. 
+The default settings can be modified by the user, which may impact the accuracy of adjectives like ""short"" or ""long"". 
+However the Effect type should be accurate regardless. 
+Number     Description   
+0          1 - Spring Reverb - Short Pre-Delay
+1          2 - Spring Reverb - Long Pre-Delay
+2          3 - Studio - Short Pre-Delay
+3          4 - Studio - Long Pre-Delay
+4          5 - Chamber - Short Pre-Delay
+5          6 - Chamber - Long Pre-Delay
+6          7 - Stage - Short Pre-Delay
+7          8 - Stage - Long Pre-Delay
+8          9 - Concert - Short Pre-Delay
+9          10 - Concert - Long Pre-Delay
+10         11 - Plate - Short Pre-Delay
+11         12 - Plate - Long Pre-Delay
+12         13 - Gated Reverb - Min. Density
+13         14 - Gated Reverb - Max. Density
+14         15 - Ambience - Min. Reflections
+15         16 - Ambience - Max. Reflections
+16         17 - Wah/Delay/Distortion - Feedback 0%
+17         18 - Wah/Delay/Distortion - Feedback 10%
+18         19 - Wah/Delay/Distortion - Feedback 30%
+19         20 - Delay/Reverb
+20         21 - Delay (Stereo) - Min. Feedback
+21         22 - Delay (Stereo) - Low Feedback
+22         23 - Delay (Stereo) - High Feedback
+23         24 - Delay (Stereo) - Max. Feedback
+24         25 - Delay (long mono) A
+25         26 - Delay (long mono) B
+26         27 - Delay (long mono) C
+27         28 - Delay (long mono) D
+28         29 - Delay (long mono) E
+29         30- Phaser - Feedback 0%
+30         31- Phaser - Feedback 62% A
+31         32 - Phaser - Feedback 62% B
+32         33 - Phaser - Feedback 77%
+33         34 - Chorus - Fat
+34         35 - Chorus - Slow
+35         36 - Chorus - Stereo Fast
+36         37 - Chorus - Stereo Slow
+37         38 - Chorus/Reverb - Ultra
+38         39 - Chorus/Reverb - Slow
+39         40 - Chorus/Reverb - Medium I
+40         41 - Chorus/Reverb - Medium II
+41         42 - Chorus/Reverb - Fast
+42         43 - Chorus/Delay - Ultra
+43         44 - Chorus/Delay - Slow
+44         45 - Chorus/Delay - Medium I
+45         46 - Chorus/Delay - Medium II
+46         47 - Chorus/Delay - Hold
+47         48 - Flanger - Fat
+48         49 - Flanger - Classic
+49         50 - Flanger - Stereo Fast
+50         51 - Flanger - Stereo Slow
+51         52 - Flanger/Reverb - Ultra
+52         53 - Flanger/Reverb - Slow
+53         54 - Flanger/Reverb - Medium I
+54         55 - Flanger/Reverb - Medium II
+55         56 - Flanger/Reverb - Fast
+56         57 - Flanger/Delay - Ultra
+57         58 - Flanger/Delay - Slow
+58         59 - Flanger/Delay - Medium I
+59         60 - Flanger/Delay - Medium II
+60         61 - Flanger/Delay - Fast
+61         62 - Stereo Tremolo - Slow
+62         63 - Stereo Tremolo - Fast
+63         64 - Tremolo/Delay - Slow
+64         65 - Tremolo/Delay - Ultra
+65        66 - Tremolo/Delay - Medium
+66         67 - Rotary Speaker - Slow
+67         68 - Rotary Speaker - Fast
+68         69 - Magic Drive - Fast
+69         70 - Magic Drive - Slow
+70         71 - Auto Wah - Fast
+71         72 - Auto Wah - Slow
+72         73 - LFO Wah - Slow
+73         74 - LFO Wah - Fast
+74         75 - Pitch Shifter (-12)
+75         76 - Pitch Shifter (-5)
+76         77 - Pitch Shifter (+3)
+77         78 - Pitch Shifter (+4)
+78         79 - Pitch Shifter (+9)
+79         80 - Pitch Shifter (+4%)
+80         81 - Pitch Shifter (+8%)
+81         82 - Pitch Shifter/Reverb (-12)
+82         83 - Pitch Shifter/Reverb (+3)
+83         84 - Pitch Shifter/Reverb (+4%)
+84         85 - Pitch Shifter/Reverb (+8%)
+85         86 - Pitch Shifter/Delay (-12)
+86         87 - Pitch Shifter/Delay (-5)
+87         88 - Pitch Shifter/Delay (+4)
+88         89 - Pitch Shifter/Delay (+7)
+89         90 - Compressor - Fast
+90         91 - Compressor - Slow
+91         92 - Expander - Hell
+92         93 - Expander - Heaven
+93         94 - Guitar Combo A
+94         95 - Guitar Combo B
+95         96 - Guitar Combo C
+96         97 - Speaker Cabinet - Stack A
+97         98 - Speaker Cabinet - Stack B
+98         99 - Speaker Cabinet - Combo
+",0,0,127
+behringer_deepmind_12d_pc_0,behringer_deepmind_12d,Program Change,,0,0,127
+behringer_deepmind_12_pc_0,behringer_deepmind_12,Program Change,,0,0,127
+hologram_electronics_chroma_console_pc_0,hologram_electronics_chroma_console,Program Change,"bank A, 1-4 PC# 0-3
+bank A, 5-8 PC# 4-7
+bank A, 9-12 PC# 8-11
+bank A, 13-16 PC# 12-15
+bank A, 17-20 PC# 16-19
+bank B, 1-4 PC# 20-23
+bank B, 5-8 PC# 24-27
+bank B, 9-12 PC# 28-31
+bank B, 13-16 PC# 32-35
+bank B, 17-20 PC# 36-39
+bank C, 1-4 PC# 40-43
+bank C, 5-8 PC# 44-47
+bank C, 9-12 PC# 48-51
+bank C, 13-16 PC# 52-55
+bank C, 17-20 PC# 56-59
+bank D, 1-4 PC# 60-63
+bank D, 5-8 PC# 64-67
+bank D, 9-12 PC# 68-71
+bank D, 13-16 PC# 72-75
+bank D, 17-20PC# 76-79",0,0,127
+hologram_electronics_dream_sequence_pc_0,hologram_electronics_dream_sequence,Program Change,"PROGRAM CHANGE 001-012 – User Bank Presets 1-12
+PROGRAM CHANGE 013-024 – Factory Bank Presets 1-12
+PROGRAM CHANGE 025-035 – Saved Bank Presets 1-11",0,0,127
+hologram_electronics_microcosm_pc_0,hologram_electronics_microcosm,Program Change,"Sending a Program Change message to the pedal will allow the user to switch
+between any of the 44 effect variations and 16 user presets.
+
+PC #1-4	    ARP - (A-D)
+PC #5-8	    INTERRUPT - (A-D)
+PC #9-12	BLOCKS - (A-D)
+PC #13-16	GLIDE - (A-D)
+PC #17-20	SEQ - (A-D)
+PC #21-24	MOSAIC - (A-D)
+PC #25-28	HAZE - (A-D)
+PC #29-32	TUNNEL - (A-D)
+PC #33-36	STRUM - (A-D)
+PC #37-40	PATTERN - (A-D)
+PC #41-44	WARP - (A-D)
+PC #45-48	USER BANK 1 - (A-D)
+PC #49-52	USER BANK 2 - (A-D)
+PC #53-56	USER BANK 3 - (A-D)
+PC #57-60	USER BANK 4 - (A-D)",0,0,127
+gamechanger_audio_bigsby_pc_0,gamechanger_audio_bigsby,Program Change,"List of Program Change options with associated values
+EXP out modulated toggle (Auto Mode) 80
+EXP out MIDI override ON 81
+EXP out MIDI override OFF 82
+EXP out MIDI override toggle 83
+Synced beat division OFF 84
+Synced beat division 2 notes 85
+Synced beat division 1.5 notes 86
+Synced beat division whole note 87
+Synced beat division 3/4 88
+Synced beat division 1/2 89
+Synced beat division 3/8 90
+Synced beat division 1/3 91
+Synced beat division 1/4 92
+Synced beat division 3/16 93
+Synced beat division 1/6 94
+Synced beat division 1/8 95
+Synced beat division 1/12 96
+Synced beat division 1/16 97
+Synced beat division 1/24 98
+Synced beat division 1/32 99
+Audio bypass ON 100
+Audio bypass OFF 101
+Audio bypass toggle 102
+EXP bypass ON 103
+EXP bypass OFF 104
+EXP bypass toggle 105
+Audio and EXP bypass ON 106
+Audio and EXP bypass OFF 107
+Audio and EXP bypass toggle 108
+Toggle between audio and EXP bypass 109
+Latch ON 110
+Latch OFF 111
+Latch toggle 112
+Latch direction up 113
+Latch direction down 114
+Latch direction toggle 115
+Knob lock ON 116
+Knob lock OFF 117
+Knob lock toggle 118
+",0,0,127
+opfxs_v-uno_pc_0,opfxs_v-uno,Program Change,,0,0,127
+red_panda_raster_2_pc_0,red_panda_raster_2,Program Change,,0,0,127
+red_panda_tensor_pc_0,red_panda_tensor,Program Change,,0,0,127
+red_panda_context_2_pc_0,red_panda_context_2,Program Change,,0,0,127
+red_panda_bitmap_2_pc_0,red_panda_bitmap_2,Program Change,,0,0,127
+red_panda_particle_2_pc_0,red_panda_particle_2,Program Change,,0,0,127
+red_panda_radius_pc_0,red_panda_radius,Program Change,,0,0,127
+tastychips_gr1_pc_0,tastychips_gr1,Program Change,,0,0,127
+melbourne_instruments_nina_pc_0,melbourne_instruments_nina,Program Change,,0,0,127
+mutable_instruments_shruthi_pc_0,mutable_instruments_shruthi,Program Change,,0,0,127
+marshall_dsl40cr_pc_0,marshall_dsl40cr,Program Change,,0,0,127
+empress_zoia_pc_0,empress_zoia,Program Change,,0,0,127
+empress_echo_system_pc_0,empress_echo_system,Program Change,"You can activate a preset by sending a MIDI program change message. For example, sending a program change message
+of 7 activates preset 7.
+",0,0,127
+empress_phaser_pc_0,empress_phaser,Program Change,"Empress Phaser does not support presets or Program Change messages.
+",0,0,127
+empress_reverb_pc_0,empress_reverb,Program Change,"You can activate a preset by sending a MIDI program change message. For example, sending a program change message
+of 7 activates preset 7.
+",0,0,127
+empress_tremolo2_pc_0,empress_tremolo2,Program Change,,0,0,127
+bondi_effects_art_van_delay_pc_0,bondi_effects_art_van_delay,Program Change,,0,0,127
+jackson_audio_el_guapo_pc_0,jackson_audio_el_guapo,Program Change,,0,0,127
+jackson_audio_the_optimist_pc_0,jackson_audio_the_optimist,Program Change,,0,0,127
+jackson_audio_golden_boy_pc_0,jackson_audio_golden_boy,Program Change,,0,0,127
+jackson_audio_broken_arrow_pc_0,jackson_audio_broken_arrow,Program Change,,0,0,127
+jackson_audio_new_wave_pc_0,jackson_audio_new_wave,Program Change,,0,0,127
+jackson_audio_bloom_pc_0,jackson_audio_bloom,Program Change,"PROGRAM CHANGE #1 – LIMITER MODE
+PROGRAM CHANGE #2 – COUNTRY MODE
+PROGRAM CHANGE #3 – R&B MODE
+PROGRAM CHANGE #4 – BALLAD MODE
+PROGRAM CHANGE #5 – JOEY (SLIDE) MODE
+PROGRAM CHANGE #6 – AUX MODE",0,0,127
+jackson_audio_asabi_pc_0,jackson_audio_asabi,Program Change,,0,0,127
+the_montreal_assembly_856forzellersasn_pc_0,the_montreal_assembly_856forzellersasn,Program Change,"
+
+
+",0,0,127
+kernom_elipse_pc_0,kernom_elipse,Program Change,,0,0,127
+kernom_moho_pc_0,kernom_moho,Program Change,,0,0,127
+kernom_ridge_pc_0,kernom_ridge,Program Change,,0,0,127
+pigtronix_echolution3_pc_0,pigtronix_echolution3,Program Change,,0,0,127
+pigtronix_infinity_pc_0,pigtronix_infinity,Program Change,,0,0,127
+pigtronix_echolution_2_deluxe_pc_0,pigtronix_echolution_2_deluxe,Program Change,,0,0,127
+morningstar_engineering_mc8_pc_0,morningstar_engineering_mc8,Program Change,Send PC#0 to PC#29 to access Banks 1 - 30.,0,0,127
+morningstar_engineering_mc6_mkii_pc_0,morningstar_engineering_mc6_mkii,Program Change,Send PC#0 to PC#29 to access Banks 1 - 30.,0,0,127
+morningstar_engineering_ml5r_pc_0,morningstar_engineering_ml5r,Program Change,The ML5R has 128 presets. PC#0 to PC#127 will recall each preset.,0,0,127
+morningstar_engineering_mc8pro_pc_0,morningstar_engineering_mc8pro,Program Change,,0,0,127
+morningstar_engineering_mc6_pro_pc_0,morningstar_engineering_mc6_pro,Program Change,Send PC#0 to PC#127 to access Banks 1 - 128.,0,0,127
+morningstar_engineering_ml5_pc_0,morningstar_engineering_ml5,Program Change,The ML5 has 128 presets. PC#0 to PC#127 will recall each preset.,0,0,127
+morningstar_engineering_mc3_pc_0,morningstar_engineering_mc3,Program Change,Send PC#0 to PC#29 to access Banks 1 - 30.,0,0,127
+morningstar_engineering_ml10x_pc_0,morningstar_engineering_ml10x,Program Change,The ML10X has 128 presets in each of the 4 banks. PC#0 to PC#127 will recall each preset. Send CC#0-3 to recall Banks 1-4.,0,0,127
+novation_bass_station_keyboard_pc_0,novation_bass_station_keyboard,Program Change,,0,0,127
+novation_ultranova_pc_0,novation_ultranova,Program Change,,0,0,127
+novation_circuit_mono_station_pc_0,novation_circuit_mono_station,Program Change,,0,0,127
+novation_summit_pc_0,novation_summit,Program Change,,0,0,127
+novation_circuit_rhythm_pc_0,novation_circuit_rhythm,Program Change,PC messages need to be send to MIDI channel 16. Values 0 - 63 will select projects instantly Values 64 - 127 will select projects queued,0,0,127
+novation_peak_pc_0,novation_peak,Program Change,,0,0,127
+novation_circuit_pc_0,novation_circuit,Program Change,,0,0,127
+novation_bass_station_ii_pc_0,novation_bass_station_ii,Program Change,,0,0,127
+novation_mininova_pc_0,novation_mininova,Program Change,,0,0,127
+beetronics_seabee_harmochorus_pc_0,beetronics_seabee_harmochorus,Program Change,,0,0,127
+arturia_minifreak_pc_0,arturia_minifreak,Program Change,,0,0,127
+arturia_matrixbrute_pc_0,arturia_matrixbrute,Program Change,,0,0,127
+arturia_microfreak_pc_0,arturia_microfreak,Program Change,,0,0,127
+chaos_audio_stratus_pc_0,chaos_audio_stratus,Program Change,,0,0,127
+ik_multimedia_tonex_pc_0,ik_multimedia_tonex,Program Change,,0,0,127
+ik_multimedia_uno_synth_pc_0,ik_multimedia_uno_synth,Program Change,,0,0,127
+g-lab_midi_4_x_loop-er_pc_0,g-lab_midi_4_x_loop-er,Program Change,,0,0,127
+g-lab_midi_2_x_loop-er_pc_0,g-lab_midi_2_x_loop-er,Program Change,,0,0,127
+g-lab_bc-1_pc_0,g-lab_bc-1,Program Change,"The BC1 responds to following PC messages:
+PC1 -> BYPASS ON
+PC2 -> BUFFER ON
+PC3 -> COMP A ON
+PC4 -> COMP B ON
+PC5 -> COMP C ON
+PC6 -> SELECTED COMP ON
+",0,0,127
+g-lab_midiwoweewahmww1_pc_0,g-lab_midiwoweewahmww1,Program Change,,0,0,127
+headrush_core_pc_0,headrush_core,Program Change,,0,0,127
+headrush_gigboard_pc_0,headrush_gigboard,Program Change,,0,0,127
+headrush_looperboard_pc_0,headrush_looperboard,Program Change,,0,0,127
+headrush_mx5_pc_0,headrush_mx5,Program Change,"Enable Program Change Receive under GLOBAL SETTINGS > MIDI SETTINGS > PROG CHANGE to receive PC messages to load rigs.
+
+",0,0,127
+headrush_pedalbaord_pc_0,headrush_pedalbaord,Program Change,,0,0,127
+headrush_flexprime_pc_0,headrush_flexprime,Program Change,,0,0,127
+neunaber_illumine_pc_0,neunaber_illumine,Program Change,"PC messages 0-99 are received, and 100-127 are ignored.
+PC 0-99 recall presets 0-99, respectively.
+
+",0,0,127
+neunaber_neuron_pc_0,neunaber_neuron,Program Change,"Program Change numbers 0 - 24 are recognized; 25 - 127 are ignored.
+
+",0,0,127
+kinotone_sparks_pc_0,kinotone_sparks,Program Change,,0,0,127
+kinotone_ribbonsfw2_pc_0,kinotone_ribbonsfw2,Program Change,,0,0,127
+laney_bbc_the_difference_engine_pc_0,laney_bbc_the_difference_engine,Program Change,,0,0,127
+jet_pedals_lamb_pc_0,jet_pedals_lamb,Program Change,,0,0,127
+jet_pedals_revelation_reverb_2.0_pc_0,jet_pedals_revelation_reverb_2.0,Program Change,,0,0,127
+bluguitar_amp1_(mercury_&_iridium_edition)_pc_0,bluguitar_amp1_(mercury_&_iridium_edition),Program Change,"Sending PC mesages will load Presets 1-127 (Using program change number 0-127)
+
+",0,0,127
+sunday_sounds_sunday_guitar_2_pc_0,sunday_sounds_sunday_guitar_2,Program Change,,0,0,127
+sunday_sounds_sunday_keys_2020_pc_0,sunday_sounds_sunday_keys_2020,Program Change,,0,0,127
+teenage_engineering_op-z_pc_0,teenage_engineering_op-z,Program Change,,0,0,127
+walrus_audio_m1mk2_pc_0,walrus_audio_m1mk2,Program Change,,0,0,127
+walrus_audio_acs1mk2_pc_0,walrus_audio_acs1mk2,Program Change,,0,0,127
+walrus_audio_acs1_pc_0,walrus_audio_acs1,Program Change,"Bank A (Red) PC#0
+Bank A (Green) PC#1
+Bank A (Blue) PC#2
+Bank B (Red) PC#3
+Bank B (Green) PC#4
+Bank B (Blue) PC#5
+Bank C (Red) PC#6
+Bank C (Green) PC#7
+Bank C (Blue) PC#8 and so on
+All presets accessible via PC# 0-127",0,0,127
+walrus_audio_qi_pc_0,walrus_audio_qi,Program Change,,0,0,127
+walrus_audio_r1_pc_0,walrus_audio_r1,Program Change,"Bank A (Red) PC#0
+Bank A (Green) PC#1
+Bank A (Blue) PC#2
+Bank B (Red) PC#3
+Bank B (Green) PC#4
+Bank B (Blue) PC#5
+Bank C (Red) PC#6
+Bank C (Green) PC#7
+Bank C (Blue) PC#8 and so on
+All presets accessible via PC# 0-127",0,0,127
+walrus_audio_m1_pc_0,walrus_audio_m1,Program Change,"Bank A: Red 0, Green 1, Blue 2
+Bank B: Red 3, Green 4, Blue 5
+Bank C: Red 6, Green 7, Blue 8",0,0,127
+walrus_audio_d1mk2_pc_0,walrus_audio_d1mk2,Program Change,,0,0,127
+walrus_audio_d1_(old_version)_pc_0,walrus_audio_d1_(old_version),Program Change,,0,0,127
+walrus_audio_meraki_(stereo_analog_delay)_pc_0,walrus_audio_meraki_(stereo_analog_delay),Program Change,,0,0,127
+walrus_audio_r1mk2_pc_0,walrus_audio_r1mk2,Program Change,,0,0,127
+walrus_audio_d1_(new_version)_pc_0,walrus_audio_d1_(new_version),Program Change,,0,0,127
+tc_helicon_voicelive_3_extreme_pc_0,tc_helicon_voicelive_3_extreme,Program Change,,0,0,127
+tc_helicon_voicelive_touch_2_pc_0,tc_helicon_voicelive_touch_2,Program Change,,0,0,127
+tc_helicon_voicelive_rack_pc_0,tc_helicon_voicelive_rack,Program Change,,0,0,127
+tc_helicon_voicelive_3_pc_0,tc_helicon_voicelive_3,Program Change,"
+
+",0,0,127
+peavey_mini_mega_pc_0,peavey_mini_mega,Program Change,,0,0,127
+panda_audio_future_impact_pc_0,panda_audio_future_impact,Program Change,Responds to PC 1-99. Other values are ignored.,0,0,127
+hotone_ampero_pc_0,hotone_ampero,Program Change,,0,0,127
+hotone_ampero_2_stomp_pc_0,hotone_ampero_2_stomp,Program Change,,0,0,127
+meeblip_triode_pc_0,meeblip_triode,Program Change,,0,0,127
+meeblip_geode_pc_0,meeblip_geode,Program Change,,0,0,127
+gfi_system_solis_ventus_pc_0,gfi_system_solis_ventus,Program Change,"
+",0,0,127
+gfi_system_enieqma_pc_0,gfi_system_enieqma,Program Change,"
+",0,0,127
+gfi_system_synesthesia_pc_0,gfi_system_synesthesia,Program Change,"PC#0 activates Bank 1 Patch A
+PC#1 activates Bank 1 Patch B
+PC#2 activates Bank 2 Patch A
+PC#3 activates Bank 2 Patch B
+
+and so on...
+
+There are 23 Presets in total.
+",0,0,127
+gfi_system_duophony_pc_0,gfi_system_duophony,Program Change,"
+",0,0,127
+gfi_system_specular_tempus_pc_0,gfi_system_specular_tempus,Program Change,"Specular Tempus contains 32 preset locations.
+
+PC#0 activates Bank 1 Patch A
+PC#1 activates Bank 1 Patch B
+PC#2 activates Bank 2 Patch A
+PC#3 activates Bank 2 Patch B
+
+and so on...
+
+PC#30 activates Bank 16 Patch A
+PC#31 activates Bank 16 Patch B  
+",0,0,127
+blackstar_amplification_silverline_stereo_deluxe_pc_0,blackstar_amplification_silverline_stereo_deluxe,Program Change,,0,0,127
+blackstar_amplification_silverline_deluxe_pc_0,blackstar_amplification_silverline_deluxe,Program Change,,0,0,127
+blackstar_amplification_amped_3_pc_0,blackstar_amplification_amped_3,Program Change,"
+",0,0,127
+blackstar_amplification_silverline_deluxe_head_pc_0,blackstar_amplification_silverline_deluxe_head,Program Change,,0,0,127
+blackstar_amplification_amped_1_pc_0,blackstar_amplification_amped_1,Program Change,"The Amped 1 has no support for Program Change. Only CC messages can be used.
+
+",0,0,127
+dave_smith_instruments_evolver_pc_0,dave_smith_instruments_evolver,Program Change,,0,0,127
+engl_savage_60_mark_ii_e630ii_pc_0,engl_savage_60_mark_ii_e630ii,Program Change,,0,0,127
+engl_savage_120_mark_ii_e610ii_pc_0,engl_savage_120_mark_ii_e610ii,Program Change,,0,0,127
+engl_invader_ii_e642ii_pc_0,engl_invader_ii_e642ii,Program Change,,0,0,127
+engl_steve_morse_signature_e662_pc_0,engl_steve_morse_signature_e662,Program Change,,0,0,127
+engl_steve_morse_signature_e663_pc_0,engl_steve_morse_signature_e663,Program Change,,0,0,127
+engl_steve_morse_signature_e661_pc_0,engl_steve_morse_signature_e661,Program Change,,0,0,127
+engl_steve_morse_signature_e660_pc_0,engl_steve_morse_signature_e660,Program Change,,0,0,127
+engl_steve_morse_signature_e656_pc_0,engl_steve_morse_signature_e656,Program Change,,0,0,127
+engl_steve_morse_signature_e657_pc_0,engl_steve_morse_signature_e657,Program Change,,0,0,127
+engl_steve_morse_signature_e665_pc_0,engl_steve_morse_signature_e665,Program Change,,0,0,127
+engl_steve_morse_signature_e664_pc_0,engl_steve_morse_signature_e664,Program Change,,0,0,127
+engl_steve_morse_signature_e667_pc_0,engl_steve_morse_signature_e667,Program Change,,0,0,127
+engl_steve_morse_signature_e666_pc_0,engl_steve_morse_signature_e666,Program Change,,0,0,127
+engl_steve_morse_signature_e669_pc_0,engl_steve_morse_signature_e669,Program Change,,0,0,127
+engl_steve_morse_signature_e668_pc_0,engl_steve_morse_signature_e668,Program Change,,0,0,127
+engl_steve_morse_signature_e658_pc_0,engl_steve_morse_signature_e658,Program Change,,0,0,127
+engl_steve_morse_signature_e659_pc_0,engl_steve_morse_signature_e659,Program Change,,0,0,127
+engl_steve_morse_signature_e670_pc_0,engl_steve_morse_signature_e670,Program Change,,0,0,127
+engl_steve_morse_signature_e671_pc_0,engl_steve_morse_signature_e671,Program Change,,0,0,127
+neural_dsp_nanocortex_pc_0,neural_dsp_nanocortex,Program Change,,0,0,127
+neural_dsp_quad_cortex_pc_0,neural_dsp_quad_cortex,Program Change,,0,0,127
+toneking_imperialtritubepreamp_pc_0,toneking_imperialtritubepreamp,Program Change,,0,0,127
+jmk_music_pedals_clockstep_pc_0,jmk_music_pedals_clockstep,Program Change,"
+",0,0,127
+mooer_ocean_machine_pc_0,mooer_ocean_machine,Program Change,,0,0,127
+mooer_ge300_lite_pc_0,mooer_ge300_lite,Program Change,,0,0,127
+mooer_ge300_pc_0,mooer_ge300,Program Change,,0,0,127
+ramble_fx_kismet_pc_0,ramble_fx_kismet,Program Change,,0,0,127
+source_audio_ultrawave_pc_0,source_audio_ultrawave,Program Change,,0,0,127
+source_audio_nemesis_pc_0,source_audio_nemesis,Program Change,,0,0,127
+source_audio_collider_pc_0,source_audio_collider,Program Change,"The 128 user presets on the Collider can be recalled via program change messages. Presets 1 to 128 are mapped to MIDI Program Change messages 1 to 128. It is possible to save presets with the Collider bypassed. This means a preset can be recalled without actually engaging one or both of the effects. The effect can then be engaged either by pressing the footswitches or by sending the proper MIDI Continuous Control message.
+
+",0,0,127
+source_audio_spectrum_intelligence_filter_pc_0,source_audio_spectrum_intelligence_filter,Program Change,,0,0,127
+source_audio_eq2_pc_0,source_audio_eq2,Program Change,,0,0,127
+source_audio_ventris_pc_0,source_audio_ventris,Program Change,,0,0,127
+source_audio_programmable_eq_pc_0,source_audio_programmable_eq,Program Change,,0,0,127
+source_audio_artifakt_pc_0,source_audio_artifakt,Program Change,,0,0,127
+source_audio_atlas_pc_0,source_audio_atlas,Program Change,,0,0,127
+source_audio_c4_synth_pc_0,source_audio_c4_synth,Program Change,,0,0,127
+line_6_pocket_pod_pc_0,line_6_pocket_pod,Program Change,,0,0,127
+line_6_helix_lt_pc_0,line_6_helix_lt,Program Change,,0,0,127
+line_6_hx_stomp_pc_0,line_6_hx_stomp,Program Change,,0,0,127
+line_6_dt25_head_pc_0,line_6_dt25_head,Program Change,,0,0,127
+line_6_hx_stomp_xl_pc_0,line_6_hx_stomp_xl,Program Change,,0,0,127
+line_6_hx_effects_pc_0,line_6_hx_effects,Program Change,,0,0,127
+line_6_dl4_mkii_pc_0,line_6_dl4_mkii,Program Change,"Access any of the 128 preset locations.
+
+PC 000 = Preset A
+PC 001 = Preset B
+PC 002 = Preset C
+PC 003 = Preset D
+PC 004 = Preset E
+PC 005 = Preset F
+PC 006 ~ 127 = Presets 7 ~ 128
+
+NOTE: Presets 7 through 128 are not accessible on the DL4 MkII
+device itself—only via MIDI!",0,0,127
+line_6_powercab_212_plus_pc_0,line_6_powercab_212_plus,Program Change,,0,0,127
+line_6_dt25_112_pc_0,line_6_dt25_112,Program Change,,0,0,127
+line_6_pod_go_pc_0,line_6_pod_go,Program Change,,0,0,127
+line_6_pod_hd_pro_x_pc_0,line_6_pod_hd_pro_x,Program Change,,0,0,127
+line_6_helix_pc_0,line_6_helix,Program Change,,0,0,127
+line_6_powercab_plus_pc_0,line_6_powercab_plus,Program Change,"PC#1 (00H) recalls preset 0
+PC#2 (01H) recalls preset 1
+etc through 127
+
+",0,0,127
+line_6_helix_rack_and_control_pc_0,line_6_helix_rack_and_control,Program Change,,0,0,127
+line_6_hx_one_pc_0,line_6_hx_one,Program Change,,0,0,127
+line_6_powercab_112_plus_pc_0,line_6_powercab_112_plus,Program Change,,0,0,127
+line_6_pod_hd500x_pc_0,line_6_pod_hd500x,Program Change,,0,0,127
+line_6_helix_floor_pc_0,line_6_helix_floor,Program Change,,0,0,127
+line_6_m13_v2.0_sompbox_modeler_pc_0,line_6_m13_v2.0_sompbox_modeler,Program Change,,0,0,127
+line_6_catalystcx_pc_0,line_6_catalystcx,Program Change,,0,0,127
+line_6_m5_stompbox_modeler_pc_0,line_6_m5_stompbox_modeler,Program Change,,0,0,127
+line_6_m9_v2.0_stompbox_modeler_pc_0,line_6_m9_v2.0_stompbox_modeler,Program Change,,0,0,127
+cornerstonemusicgear_nucleo_pc_0,cornerstonemusicgear_nucleo,Program Change,,0,0,127
+roland_se-02_pc_0,roland_se-02,Program Change,,0,0,127
+roland_d-05_pc_0,roland_d-05,Program Change,,0,0,127
+roland_tb-03_pc_0,roland_tb-03,Program Change,,0,0,127
+roland_sh-01a_pc_0,roland_sh-01a,Program Change,,0,0,127
+roland_tr-08_pc_0,roland_tr-08,Program Change,,0,0,127
+roland_ju-06_pc_0,roland_ju-06,Program Change,,0,0,127
+roland_jx-03_pc_0,roland_jx-03,Program Change,,0,0,127
+roland_jp-08_pc_0,roland_jp-08,Program Change,,0,0,127
+roland_bk-7m_pc_0,roland_bk-7m,Program Change,,0,0,127
+roland_system-8_pc_0,roland_system-8,Program Change,,0,0,127
+roland_vp-03_pc_0,roland_vp-03,Program Change,,0,0,127
+roland_tr-8_pc_0,roland_tr-8,Program Change,,0,0,127
+roland_jd-xa_pc_0,roland_jd-xa,Program Change,,0,0,127
+roland_fr-06/07/08_pc_0,roland_fr-06/07/08,Program Change,,0,0,127
+roland_tr-09_pc_0,roland_tr-09,Program Change,,0,0,127
+roland_gaia_sh-01_pc_0,roland_gaia_sh-01,Program Change,,0,0,127
+roland_system-1_pc_0,roland_system-1,Program Change,,0,0,127
+roland_jd-xi_pc_0,roland_jd-xi,Program Change,,0,0,127
+wampler_pedals_terraform_pc_0,wampler_pedals_terraform,Program Change,,0,0,127
+wampler_pedals_pantheon_pc_0,wampler_pedals_pantheon,Program Change,,0,0,127
+wampler_pedals_metaverse_pc_0,wampler_pedals_metaverse,Program Change,,0,0,127
+make_noise_co._0-coast_pc_0,make_noise_co._0-coast,Program Change,,0,0,127
+stone_deaf_syncopy_pc_0,stone_deaf_syncopy,Program Change,,0,0,127
+stone_deaf_tremotron_pc_0,stone_deaf_tremotron,Program Change,,0,0,127
+yamaha_reface_yc_pc_0,yamaha_reface_yc,Program Change,,0,0,127
+yamaha_reface_cp_pc_0,yamaha_reface_cp,Program Change,,0,0,127
+yamaha_reface_cs_pc_0,yamaha_reface_cs,Program Change,,0,0,127
+yamaha_reface_dx_pc_0,yamaha_reface_dx,Program Change,,0,0,127
+korg_microkorg_xl+_pc_0,korg_microkorg_xl+,Program Change,,0,0,127
+korg_volca_keys_pc_0,korg_volca_keys,Program Change,,0,0,127
+korg_volca_drum_pc_0,korg_volca_drum,Program Change,,0,0,127
+korg_volca_bass_pc_0,korg_volca_bass,Program Change,,0,0,127
+korg_volca_kick_pc_0,korg_volca_kick,Program Change,,0,0,127
+korg_microkorg_pc_0,korg_microkorg,Program Change,,0,0,127
+korg_ms2000_pc_0,korg_ms2000,Program Change,,0,0,127
+korg_volca_nubass_pc_0,korg_volca_nubass,Program Change,,0,0,127
+korg_wavestate_pc_0,korg_wavestate,Program Change,,0,0,127
+korg_volca_sample_pc_0,korg_volca_sample,Program Change,,0,0,127
+korg_minilogue_pc_0,korg_minilogue,Program Change,,0,0,127
+korg_volca_fm_pc_0,korg_volca_fm,Program Change,,0,0,127
+korg_minilogue_xd_pc_0,korg_minilogue_xd,Program Change,,0,0,127
+korg_kaoss_pad_3_pc_0,korg_kaoss_pad_3,Program Change,,0,0,127
+korg_kaoss_pad_2_pc_0,korg_kaoss_pad_2,Program Change,,0,0,127
+korg_monologue_pc_0,korg_monologue,Program Change,,0,0,127
+korg_volca_beats_pc_0,korg_volca_beats,Program Change,,0,0,127
+electro_harmonix_1440_pc_0,electro_harmonix_1440,Program Change,"PC Messages 1 to 20: select desired Loop
+PC Message 21: Initiates a press of the LOOP footswitch 
+PC Message 22: Initiates a press of the STOP footswitch
+PC Message 23: Initiates the undo/redo function
+PC Message 24: Initiates a press of the REVERSE button
+PC Message 25: Initiates a press of the OCTAVE button
+PC Message 26: Initiates a press of the 1 SHOT button
+PC Message 27: Initiates a press of the EXT CLK button
+PC Message 28: Initiates a press of the MODE knob
+PC Message 29: Equivalent to turning the MODE knob clockwise by one click
+PC Message 30: Equivalent to turning the MODE knob counterclockwise by one click
+PC Message 31: Always stops the current loop no matter the setting for SW.FX. If fade is enabled then this command starts the fadeout.
+PC Message 32: Always toggles Reverse and Octave modes, no matter the setting for SW.FX.
+PC Message 33: Always performs the retrigger function, no matter the setting for SW.FX.
+PC Message 34: Must receive three (3) consecutive Loop Erase PC 34 commands to initiate loop erase function, otherwise PC 34 is ignored.
+PC Message 35: Loop Select Down -  Increments the current loop bank by one
+PC Message 36: Loop Select Up - Decrements the current loop bank by one
+PC Message 37: Selects CX.4B for the EXTC mode setting
+PC Message 38: Selects XT.4B for the EXTC mode setting
+PC Message 39: Selects CX.3B for the EXTC mode setting
+PC Message 40: Selects XT.3B for the EXTC mode setting
+PC Message 41: Selects STOP for the SW.FX mode setting
+PC Message 42: Selects OCT for the SW.FX mode setting
+PC Message 43: Selects REV for the SW.FX mode setting
+PC Message 44: Selects RV.OC for the SW.FX mode setting
+PC Message 45: Selects TRIG for the SW.FX mode setting
+PC Message 46: Selects COAR for the TM.KN mode setting
+PC Message 47: Selects FINE for the TM.KN mode setting
+PC Message 48: Disables fadeout
+PC Message 49: Sets fadeout to 2 seconds
+PC Message 50: Sets fadeout to 4 seconds
+PC Message 51: Disables fadeout
+PC Message 52: Sets fadeout to 1 second
+PC Message 53: Sets fadeout to 3 seconds
+PC Message 54: Sets fadeout to 5 seconds
+PC Message 55: Sets fadeout to 6 seconds
+PC Message 56: Sets fadeout to 7 seconds
+PC Message 57: Sets fadeout to 8 seconds
+PC Message 58: Sets fadeout to 9 seconds
+PC Message 59: Sets fadeout to 10 seconds
+PC Message 60: Sets fadeout to 15 seconds
+PC Message 61: Disables fadeout
+PC Message 62: Sets fadeout to 20 seconds
+PC Message 63: Sets fadeout to 30 seconds
+PC Message 64: Sets fadeout to 40 seconds
+PC Message 65: Sets fadeout to 50 seconds
+PC Message 66: Sets fadeout to 60 seconds
+PC Message 67: Sets fadeout to 70 seconds
+PC Message 68: Sets fadeout to 80 seconds
+PC Message 69: Sets fadeout to 90 seconds
+PC Message 70: Sets fadeout to 99 seconds
+
+",0,0,127
+electro_harmonix_45000_pc_0,electro_harmonix_45000,Program Change,,0,0,127
+electro_harmonix_95000_pc_0,electro_harmonix_95000,Program Change,,0,0,127
+electro_harmonix_8-step_program_pc_0,electro_harmonix_8-step_program,Program Change,,0,0,127
+electro_harmonix_hog2_pc_0,electro_harmonix_hog2,Program Change,"PC Messages 0 to 119 will load the associated preset. For example, PC3 will load preset number 3. 
+PC Messages 120 to 127 have special functions.
+120 - BYPASS/EFFECT toggle
+121 - EXP. BUTTON Footswitch toggles press/release
+122 - ENVELOPE On/Off toggle
+123 - SPECTRAL GATE On/Off toggle
+124 - EXP. MODE Button Select -> cycles through the 7 Expression modes
+125 - EXP. REVERSE On/Off toggle
+126 - Load/Unload Current Preset
+127 - Bypass/Reset Function -> Puts the HOG2 into a seset state. Enters Bypass, releases EXP. Button footswitch, ENVELOPE set to off, SPECTRAL GATE set to off, EXP. MODE set to OCTAVE BEND, Preset is unloaded - enters WYSIWYG mode. This reset is not a factory reset, it does not overwrite your presets.
+
+",0,0,127
+electro_harmonix_modrex_pc_0,electro_harmonix_modrex,Program Change,,0,0,127
+positive_grid_bias_head_pc_0,positive_grid_bias_head,Program Change,Responds to PC 0-24. Other values are ignored.,0,0,127
+positive_grid_bias_distortion_pro_pc_0,positive_grid_bias_distortion_pro,Program Change,Responds to PC 0-19. Other values are ignored.,0,0,127
+positive_grid_bias_rack_pc_0,positive_grid_bias_rack,Program Change,,0,0,127
+modal_electronics_1_pc_0,modal_electronics_1,Program Change,,0,0,127
+modal_electronics_2_pc_0,modal_electronics_2,Program Change,,0,0,127
+modal_electronics_8_pc_0,modal_electronics_8,Program Change,,0,0,127
+modal_electronics_002r_pc_0,modal_electronics_002r,Program Change,,0,0,127
+modal_electronics_craftsynth_2.0_pc_0,modal_electronics_craftsynth_2.0,Program Change,,0,0,127
+modal_electronics_argon_8x_pc_0,modal_electronics_argon_8x,Program Change,,0,0,127
+modal_electronics_skulptsynthesiser_pc_0,modal_electronics_skulptsynthesiser,Program Change,,0,0,127
+modal_electronics_argon_8_pc_0,modal_electronics_argon_8,Program Change,,0,0,127
+modal_electronics_argon_8m_pc_0,modal_electronics_argon_8m,Program Change,,0,0,127
+modal_electronics_008r_pc_0,modal_electronics_008r,Program Change,,0,0,127
+poly_effects_verbs_pc_0,poly_effects_verbs,Program Change,"
+",0,0,127
+poly_effects_flat_v_pc_0,poly_effects_flat_v,Program Change,"Send a program change message to change presets from MIDI. 
+PC 5 will change to preset 5 bank 1, 
+PC 7 will change to preset 1 bank 2.  
+The PC number is (bank number - 1)  * 6 + preset number.
+",0,0,127
+synergy_amps_syn2_pc_0,synergy_amps_syn2,Program Change,"
+",0,0,127
+synergy_amps_syn20ir_pc_0,synergy_amps_syn20ir,Program Change,"SYN-20IR do not respond to PC messages. Only CC messages are used.
+
+",0,0,127
+waldorf_blofeld_pc_0,waldorf_blofeld,Program Change,,0,0,127
+dimehead_nam_pc_0,dimehead_nam,Program Change,,0,0,127
+eventide_knifedrop_pc_0,eventide_knifedrop,Program Change,,0,0,127
+eventide_h9_pc_0,eventide_h9,Program Change,,0,0,127
+eventide_rose_pc_0,eventide_rose,Program Change,,0,0,127
+eventide_blackhole_pc_0,eventide_blackhole,Program Change,,0,0,127
+eventide_tricerachorus_pc_0,eventide_tricerachorus,Program Change,,0,0,127
+eventide_ultratap_pc_0,eventide_ultratap,Program Change,,0,0,127
+rjm_music_overture_pc_0,rjm_music_overture,Program Change,"The Overture responds to standard MIDI program changes on its speciﬁed MIDI channel. Please refer to the Setup 
+Mode section for details on how to set the MIDI channel. PC numbers 0 through 99 are accepted, for a total of 100 
+presets. Receiving PC#127 will cause the Overture to bypass itself. After bypassing the Overture using this 
+method, the next PC message received (in the range of 0-99) will re-activate the pedal.
+
+Please note that PC numbers are one lower than preset numbers on the Overture. For example, send PC#0 to 
+recall the ﬁrst preset, send PC#1 to recall the second preset, etc.
+",0,0,127
+rjm_music_mini_amp_gizmo_pc_0,rjm_music_mini_amp_gizmo,Program Change,,0,0,127
+rjm_music_mastermind_pbc/10_pc_0,rjm_music_mastermind_pbc/10,Program Change,,0,0,127
+fender_tone_master_pro_pc_0,fender_tone_master_pro,Program Change,"
+",0,0,127
+strymon_ultraviolet_pc_0,strymon_ultraviolet,Program Change,"
+",0,0,127
+strymon_deco_pc_0,strymon_deco,Program Change,,0,0,127
+strymon_bluesky_pc_0,strymon_bluesky,Program Change,,0,0,127
+strymon_dig_pc_0,strymon_dig,Program Change,,0,0,127
+strymon_zelzah_pc_0,strymon_zelzah,Program Change,,0,0,127
+strymon_cloudburst_pc_0,strymon_cloudburst,Program Change,"Your cloudburst pedal contains 300 preset locations, numbered
+sequentially from 0-299. Because MIDI Program Change messages have
+a maximum number of 128 (0-127), the presets are grouped into three
+MIDI patch banks
+MIDI BANK 0 = PRESETS 0-127
+MIDI BANK 1 = PRESETS 128-255
+MIDI BANK 2 = PRESETS 256-299
+",0,0,127
+strymon_nightsky_pc_0,strymon_nightsky,Program Change,"NightSky contains 300 preset locations, numbered sequentially from 0-299. Because MIDI Program Change messages have
+a maximum number of 128 (0-127), the presets are grouped into three MIDI patch banks.
+
+ - MIDI BANK 0 = PRESETS 0-127
+ - MIDI BANK 1 = PRESETS 128-255
+ - MIDI BANK 2 = PRESETS 256-299
+
+NightSky always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets, simply send a
+standard MIDI Program Change message to load a preset.
+
+ - MIDI Program Change #’s 0-7 will illuminate the PRESET BUTTONS GREEN to correspond with presets 1-8.
+ - MIDI Program Change #’s 8-15 will illuminate the PRESET BUTTONS AMBER to correspond with presets 9-16.
+ - MIDI Program Change #’s 16-126 will NOT change the color of the PRESET BUTTONS, but it will change the color of
+   the FAVORITE LED to AMBER.
+
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a standard MIDI Bank Change message (MIDI CC# 0
+with a value equal to the MIDI Bank#) before each MIDI Program Change.
+
+Selecting bank 0, patch 127 will put NightSky into Manual mode. In this mode, the pedal will be set to the current
+knob and button settings. No preset data can be stored at this preset location.
+",0,0,127
+strymon_el_capistan_pc_0,strymon_el_capistan,Program Change,,0,0,127
+strymon_volante_pc_0,strymon_volante,Program Change,"Volante contains 300 preset locations, numbered sequentially from 0-299. Because MIDI Program Change messages have
+a maximum number of 128 (0-127) the presets are grouped into three MIDI patch banks.
+
+- MIDI BANK 0 = PRESETS 0-127
+- MIDI BANK 1 = PRESETS 128-255
+- MIDI BANK 2 = PRESETS 256-299
+
+Volante always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets, simply send a
+standard MIDI Program Change message to load a preset.
+
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a standard MIDI Bank Change message
+(MIDI CC# 0 with a value equal to the MIDI Bank#) before each MIDI Program Change.
+
+Selecting bank 0, patch 127 will put Volante into Manual mode. In this mode, the pedal will be set to the current
+knob and switch settings. No preset data can be stored at this preset location.
+",0,0,127
+strymon_iridium_pc_0,strymon_iridium,Program Change,"Iridium contains 300 preset locations, numbered sequentially from 0-299. Because MIDI Program Change
+messages have a maximum number of 128 (0-127) the presets are grouped into three MIDI patch banks.
+
+- MIDI BANK 0 = PRESETS 0-127
+- MIDI BANK 1 = PRESETS 128-255
+- MIDI BANK 2 = PRESETS 256-299
+
+Iridium always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets,
+simply send a standard MIDI Program Change message to load a preset.
+
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a standard MIDI Bank Change message
+(MIDI CC# 0 with a value equal to the MIDI Bank#) before each MIDI Program Change.
+",0,0,127
+strymon_flint_pc_0,strymon_flint,Program Change,,0,0,127
+strymon_mobius_pc_0,strymon_mobius,Program Change,"Mobius presets are arranged in a grid of 100 numbered Banks (00-99) with 2 presets (A and B) within each Bank for
+a total of 200 presets.
+
+Because MIDI Program Change messages have a maximum number of 128 (0-127), the presets are grouped into 2 MIDI
+Patch Banks:
+MIDI BANK 0 = PRESETS 00A-63B
+MIDI BANK 1 = PRESETS 64A-99B
+
+The presets are numbered sequentially within each bank:
+PRESET 00A = MIDI program # 0
+PRESET 00B = MIDI program # 1
+PRESET 01A = MIDI program # 2
+PRESET 01B = MIDI program # 3
+PRESET 02A = MIDI program # 4 etc. up to #127...
+
+Mobius always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets (00A-63B),
+simply send a standard MIDI Program Change message to load a preset.
+
+If you will be using MIDI Bank 1, it is advisable to send a standard MIDI Bank Change message [MIDI CC# 0 with a
+value equal to the MIDI Bank #] before each MIDI Program Change.
+",0,0,127
+strymon_ec1_pc_0,strymon_ec1,Program Change,,0,0,127
+strymon_timeline_pc_0,strymon_timeline,Program Change,"Timeline presets are arranged in a grid of 100 numbered Banks (00-99) with 2 presets (A and B) within each Bank for
+a total of 200 presets. Because MIDI Program Change messages have a maximum number of 128 (0-127), the presets are
+grouped into 2 MIDI
+
+Patch Banks:
+MIDI BANK 0 = PRESETS 00A-63B
+MIDI BANK 1 = PRESETS 64A-99B
+
+The presets are numbered sequentially within each bank:
+PRESET 00A = MIDI program # 0
+PRESET 00B = MIDI program # 1
+PRESET 01A = MIDI program # 2
+PRESET 01B = MIDI program # 3
+PRESET 02A = MIDI program # 4 etc. up to #127...
+
+TimeLine always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets (00A-63B),
+simply send a standard MIDI Program Change message to load a preset.
+
+If you will be using MIDI Bank 1, it is advisable to send a standard MIDI Bank Change message [MIDI CC# 0 with a
+value equal to the MIDI B
+",0,0,127
+strymon_lex_pc_0,strymon_lex,Program Change,,0,0,127
+strymon_sunset_pc_0,strymon_sunset,Program Change,"Sunset contains 300 preset locations, numbered sequentially from 0-299. Because MIDI Program Change messages have
+a maximum number of 128 (0-127) the presets are grouped into three MIDI patch banks.
+
+- MIDI BANK 0 = PRESETS 0-127
+- MIDI BANK 1 = PRESETS 128-255
+- MIDI BANK 2 = PRESETS 256-299
+
+Sunset always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets, simply send a
+standard MIDI Program Change message to load a preset.
+
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a standard MIDI Bank Change message
+(MIDI CC# 0 with a value equal to the MIDI Bank#) before each MIDI Program Change.
+
+Selecting bank 0, patch 127 will put Sunset into Manual mode. In this mode, the pedal will be set to the current
+knob and switch settings. No preset data can be stored at this preset location.
+",0,0,127
+strymon_riverside_pc_0,strymon_riverside,Program Change,"Riverside contains 300 preset locations, numbered sequentially from
+0-299. Because MIDI Program Change messages have a maximum
+number of 128 (0-127) the presets are grouped into three MIDI patch
+banks.
+- MIDI BANK 0 = PRESETS 0-127
+- MIDI BANK 1 = PRESETS 128-255
+- MIDI BANK 2 = PRESETS 256-299
+Riverside always powers up in MIDI Patch Bank 0, so if you plan to
+stay within the first 127 presets, simply send a standard MIDI Program
+Change message to load a preset.
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a
+standard MIDI Bank Change message “MIDI CC# 0 with a value equal
+to the MIDI Bank#” before each MIDI Program Change.
+Selecting bank 0, patch 127 will put Riverside into Manual mode. In this
+mode, the pedal will be set to the current knob and switch settings. No
+preset data can be stored at this preset location.
+
+",0,0,127
+strymon_bigsky_pc_0,strymon_bigsky,Program Change,"BigSky presets are arranged in a grid of 100 numbered banks (00-99) with
+3 presets (A,B and C) within each bank for a total of 300 presets.
+
+Because MIDI Program Change messages have a maximum number of 128 (0-127), the presets are grouped into 3 MIDI
+Patch Banks:
+MIDI BANK 0 = PRESETS 00A-42B
+MIDI BANK 1 = PRESETS 42C-85A
+MIDI BANK 2 = PRESETS 85B-99C
+
+The presets are numbered sequentially within each bank:
+PRESET 00A = MIDI program # 0
+PRESET 00B = MIDI program # 1
+PRESET 00C = MIDI program # 2
+PRESET 01A = MIDI program # 3
+PRESET 01B = MIDI program # 4 etc. up to #127...
+
+BigSky always powers up in MIDI Patch Bank 0, so if you plan to stay within the first 127 presets (00A-42B),
+simply send a standard MIDI Program Change message to load a preset.
+
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a standard MIDI Bank Change message
+[MIDI CC# 0 with a value equal to the MIDI Bank #] before each MIDI Program Change.
+",0,0,127
+strymon_brig_pc_0,strymon_brig,Program Change,,0,0,127
+strymon_compadre_pc_0,strymon_compadre,Program Change,"Compadre contains 300 preset locations, numbered sequentially from 0-299.
+Because MIDI Program Change messages have a maximum number of 128 (0-127) the presets are grouped into three MIDI patch
+banks.
+
+MIDI BANK 0 = PRESETS 0-127
+MIDI BANK 1 = PRESETS 128-255
+MIDI BANK 2 = PRESETS 256-299
+
+Compadre always powers up in MIDI Patch Bank 0, so if you plan to
+stay within the first 127 presets, simply send a standard MIDI Program
+Change message to load a preset.
+
+If you will be using MIDI Banks 1 and/or 2, it is advisable to send a
+standard MIDI Bank Change message (MIDI CC# 0 with a value equal
+to the MIDI Bank#) before each MIDI Program Change.
+
+Selecting bank 0, patch 127 will put Compadre into Manual mode.
+In this mode, the pedal will be set to the current knob and switch
+settings. No preset data can be stored at this preset location.
+",0,0,127
+strymon_bigsky_mx_pc_0,strymon_bigsky_mx,Program Change,"
+",0,0,127
