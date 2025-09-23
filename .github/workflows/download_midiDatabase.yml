@@ -73,6 +73,17 @@ jobs:
       - name: Download and commit updated file
         if: steps.check.outputs.update_needed == 'true'
         run: |
+          # Find and remove old MIDI database files
+          OLD_FILES=""
+          if ls midi-database-v*.json 1> /dev/null 2>&1; then
+            OLD_FILES=$(ls midi-database-v*.json)
+            echo "Found old MIDI database files to remove:"
+            for file in $OLD_FILES; do
+              echo "  - $file"
+              git rm "$file" || rm "$file"  # Try git rm first, fallback to regular rm
+            done
+          fi
+          
           DOWNLOAD_URL="https://raw.githubusercontent.com/woodenplastic/MidiDeviceDefinitions/main/Json/${{ steps.check.outputs.download_file }}"
           echo "Downloading: $DOWNLOAD_URL"
           curl -L -o "${{ steps.check.outputs.download_file }}" "$DOWNLOAD_URL"
@@ -131,13 +142,24 @@ jobs:
           
           # Add and commit all files
           git add "${{ steps.check.outputs.download_file }}" midi-database-version.json midi.min.json.gz
-          git commit -m "Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
+          
+          # Create commit message with old files info
+          COMMIT_MSG="Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
 
           - Downloaded ${{ steps.check.outputs.download_file }}
           - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
           - Created minified/gzipped version: midi.min.json.gz (${COMPRESSION_RATIO}% of original size)
-          - Updated version info in midi-database-version.json
+          - Updated version info in midi-database-version.json"
+          
+          if [ -n "$OLD_FILES" ]; then
+            COMMIT_MSG="$COMMIT_MSG
+          - Removed old files: $(echo $OLD_FILES | tr '\n' ' ')"
+          fi
+          
+          COMMIT_MSG="$COMMIT_MSG
           - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}"
+          
+          git commit -m "$COMMIT_MSG"
           
           # Push the changes
           git push
