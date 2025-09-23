@@ -1,21 +1,21 @@
 {
   "version": 1,
   "generatedAt": "2025-03-29T00:47:12.664Z",
-  "sourceFile": "midi-database-v1.json",
+  "sourceFile": "midi-database-version.json",
   "databaseStats": {
-    "brands": 165,
-    "devices": 673,
+    "brands": 118,
+    "devices": 535,
     "parameters": {
-      "cc": 30497,
-      "nrpn": 1994,
-      "pc": 0,
-      "total": 32491
+      "cc": 22469,
+      "nrpn": 0,
+      "pc": 501,
+      "total": 22970
     }
   },
   "sizes": {
-    "prettyJson": "8199.33 KB",
-    "minifiedJson": "4475.91 KB",
-    "gzippedJson": "391.86 KB",
-    "compressionRatio": "4.8%"
+    "prettyJson": "5726.43 KB",
+    "minifiedJson": "3095.92 KB",
+    "gzippedJson": "259.37 KB",
+    "compressionRatio": "4.5%"
   }
 }

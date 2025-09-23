@@ -1,674 +1,536 @@
 Brand,Device,CC Count,NRPN Count,PC Count,Total Parameters,MIDI Thru,MIDI Clock,Phantom Power
-1010_music,blackbox,0,0,0,0,No,No,None
-3 Degrees Audio,hue_stereo_multi_fx,17,0,0,17,No,No,None
-3 Degrees Audio,Hue Stereo Multi Effect Pedal,17,0,0,17,No,No,None
-art,sgx_2000/nitro/t2,13,0,0,13,No,No,None
-asm,hydrasynth,115,0,0,115,No,No,None
-abildgard,droid-3,33,0,0,33,No,No,None
-Access,virus_a,93,0,0,93,No,No,None
-Access,Virus TI,131,0,0,131,No,No,None
-Adrenalinn,III,10,0,0,10,No,No,None
-Aerospace Audio,Atmosphere v2,60,0,0,60,No,No,None
-alesis,q20,16,0,0,16,No,No,None
-Alexander,Fever Pitch,44,0,0,44,No,No,None
-Alexander,Quadrant,15,0,0,15,No,No,None
-Alexander,Space Race,16,0,0,16,No,No,None
-Alexander,Superball,43,0,0,43,Yes,No,None
-Alexander,Marshmallow,22,0,0,22,No,No,None
-Alexander,F.13 Neo,21,0,0,21,No,No,None
-Alexander,Wavelength,18,0,0,18,No,No,None
-Alexander,Syntax Error,21,0,0,21,No,No,None
-Alexander,Colour Theory ,31,0,0,31,No,No,None
-Alexander,Super Neo-Matic,15,0,0,15,No,No,None
-Alexander,Defender Neo,20,0,0,20,No,No,None
-Alexander,Quadrant Audio Mirror,21,0,0,21,No,No,None
-Alexander,Super Radical Delay,24,0,0,24,No,No,None
-Alexander,Oblivion Vintage Delay,24,0,0,24,No,No,None
-Alexander,Radical Delay DX,19,0,0,19,No,No,None
-Alexander,SKY 5000,24,0,0,24,No,No,None
-Arturia,MatrixBrute,80,0,0,80,No,No,None
-Arturia,MicroFreak,21,0,0,21,No,No,None
-Arturia,MiniFreak,41,0,0,41,No,No,None
-Arturia,polybrute,74,0,0,74,No,No,None
-Atomic,Amplifire 12,59,0,0,59,No,No,None
-Atomic,Amplifire 3,50,0,0,50,No,No,None
-Atomic,Amplifire 6,50,0,0,50,No,No,None
-Atomic,Amplifire,39,0,0,39,Yes,Yes,true
-audiothingies,doctor_a,20,0,0,20,No,No,None
-audiothingies,micromonsta,79,0,0,79,No,No,None
-AVID,Eleven Rack,25,0,0,25,No,No,None
-Beetronics,Seabee Harmochorus,24,0,0,24,No,No,None
-Behringer,Deepmind 12,113,0,0,113,No,No,None
-Behringer,Deepmind 12D,113,0,0,113,No,No,None
-Behringer,neutron,2,0,0,2,No,No,None
-Behringer,Pro-800,73,0,0,73,No,No,None
-Behringer,td-3-mo,2,0,0,2,No,No,None
-Behringer,ac112,8,0,0,8,No,No,None
-Behringer,wing,58,0,0,58,No,No,None
-Behringer,X-Air,62,0,0,62,No,No,None
-Behringer,x32,66,0,0,66,No,No,None
-Behringer,Deepmind 6,113,0,0,113,No,No,None
-black_corporation,deckard's_dream_mk2,75,0,0,75,No,No,None
-black_corporation,deckard's_dream,78,0,0,78,No,No,None
-blackstar,amped_1,25,0,0,25,No,No,None
-blackstar,amped_2,31,0,0,31,No,No,None
-blackstar,amped_3,36,0,0,36,No,No,None
-blackstar,silverlinedeluxe,52,0,0,52,No,No,None
-BluGuitar,amp1,6,0,0,6,No,No,None
-BluGuitar,Amp1 (Mercury & Iridium Edition),6,0,0,6,Yes,No,None
-Bondi Effects,Art Van Delay,13,0,0,13,No,No,None
-Boss,dd-200,8,0,0,8,No,No,None
-Boss,DD-500,26,0,0,26,No,No,None
-Boss,DM-101,8,0,0,8,No,No,None
-Boss,eq-200,0,0,0,0,No,No,None
-Boss,gt-pro,36,0,0,36,No,No,None
-Boss,ir-200,0,0,0,0,No,No,None
-Boss,Katana,7,0,0,7,No,No,None
-Boss,md-200,0,0,0,0,No,No,None
-Boss,MD-500,16,0,0,16,No,No,None
-Boss,OD-200,14,0,0,14,No,No,None
-Boss,RC-10R,18,0,0,18,No,Yes,None
-Boss,RE-202,14,0,0,14,No,No,None
-Boss,RV-500,21,0,0,21,No,No,None
-Boss,sde-3000d/evh,0,0,0,0,No,No,None
-Boss,Katana Artist,13,0,0,13,No,No,None
-Boss,Slicer SL-2,0,0,0,0,No,No,None
-Boss,GT1000 Core,1,0,0,1,No,Yes,None
-Boss,Katana Head,13,0,0,13,No,No,None
-Chaos Audio,Stratus,6,0,0,6,No,No,None
-chase_bliss,cxm1978_vintage_studioverb,18,0,0,18,No,No,None
-chase_bliss,clean,43,0,0,43,No,No,None
-chase_bliss,preampmkii,14,0,0,14,No,No,None
-conductive_labs,ndlr,50,0,0,50,No,No,None
-Darkglass Electronics,Microtubes Infinity,15,0,0,15,No,No,None
-Dave Smith Instruments,Evolver,53,0,0,53,No,No,None
-Dave Smith Instruments,ob-6,51,0,0,51,No,No,None
-Dave Smith Instruments,prophet_'08,40,0,0,40,No,No,None
-Dave Smith Instruments,prophet12,114,0,0,114,No,No,None
-Dave Smith Instruments,prophet_rev2,63,111,0,174,No,No,None
-Dave Smith Instruments,prophet_x_(prophet_xl),87,0,0,87,No,No,None
-dawner_prince,boonar_tube_deluxe,23,0,0,23,No,No,None
-Decibel Eleven,Loop Expander,8,0,0,8,No,No,None
-diezel,vhx,45,0,0,45,No,No,None
-Dimehead,NAM,49,0,0,49,No,No,None
-Disaster Area,DPC-8EZ Gen2,19,0,0,19,No,No,None
-Disaster Area,DPC Micro,3,0,0,3,Yes,No,None
-Disaster Area,microclockgen4,6,0,0,6,Yes,Yes,unknown
-Dr Scientist,Dusk,18,0,0,18,No,No,None
-Dr Scientist,The Atmosphere,55,0,0,55,No,No,None
-Dreadbox,Medusa,111,0,0,111,No,No,None
-Dreadbox,nymphes,82,0,0,82,No,No,None
-Dreadbox,Typhon,88,0,0,88,No,No,None
-Electro Harmonix,1440,9,0,0,9,No,No,None
-Electro Harmonix,45000,29,0,0,29,No,No,None
-Electro Harmonix,95000,67,0,0,67,No,No,None
-Electro Harmonix,ModRex,22,0,0,22,No,No,None
-Electro Harmonix,8-Step Program,63,0,0,63,No,No,None
-Electro Harmonix,hog_2,29,0,0,29,No,No,None
-Electro Harmonix,holiest_grail,10,0,0,10,No,No,None
-Electro Harmonix,v256_vocoder,18,0,0,18,No,No,None
-Electro Harmonix,HOG2,40,0,0,40,No,No,None
-Electronic Audio Experiments,Sending v2,51,0,0,51,No,No,None
-Electronic Audio Experiments,Sending v2 (Firmware 2.0),51,0,0,51,No,No,None
-Elektron,Analog Four MKII,71,226,0,297,No,No,None
-Elektron,analog_four,32,0,0,32,No,No,None
-Elektron,analog_heat_+fx,103,103,0,206,No,No,None
-Elektron,analog_heat,0,42,0,42,No,No,None
-Elektron,Analog Rytm MKII,315,299,0,614,No,No,None
-Elektron,digitakt_ii,68,0,0,68,No,No,None
-Elektron,Digitakt,73,54,0,127,No,No,None
-Elektron,digitone_ii,152,165,0,317,No,No,None
-Elektron,Digitone,119,114,0,233,No,No,None
-Elektron,machinedrum,104,0,0,104,No,No,None
-Elektron,model_cycles,30,0,0,30,No,No,None
-Elektron,monomachine,61,0,0,61,No,No,None
-Elektron,octatrack,219,0,0,219,No,No,None
-Elektron,syntakt,391,374,0,765,No,No,None
-Elektron,Model:Samples,29,0,0,29,No,No,None
-Elektron,Model:Cycles,29,0,0,29,No,No,None
-Elektron,Analog Drive,26,0,0,26,No,No,None
-Elektron,Analog Heat MKII,65,0,0,65,No,No,None
-Elektron,Digitone Keys,111,0,0,111,No,No,None
-Elektron,Octatrack MKII,116,0,0,116,No,No,None
-Empress,Echo System,43,0,0,43,No,Yes,None
-Empress,Reverb,53,0,0,53,No,Yes,None
-Empress,ZOIA,2,0,0,2,No,No,None
-Empress,Phaser,10,0,0,10,No,Yes,None
-Empress,Tremolo2,30,0,0,30,No,No,None
-ENGL,e658,19,0,0,19,No,No,None
-ENGL,Savage 60 Mark II E630II,28,0,0,28,No,No,None
-ENGL,Savage 120 Mark II E610II,28,0,0,28,No,No,None
-ENGL,Invader II E642II,12,0,0,12,No,No,None
-ENGL,Steve Morse Signature E662,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E663,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E661,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E660,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E656,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E657,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E665,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E664,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E667,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E666,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E669,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E668,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E658,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E659,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E670,1,0,0,1,No,No,None
-ENGL,Steve Morse Signature E671,1,0,0,1,No,No,None
-ensoniq,asr-x_pro,15,0,0,15,No,No,None
-erica_synths,lxr-02,121,0,0,121,No,No,None
-Eventide,H9,29,0,0,29,Yes,Yes,None
-Eventide,Knifedrop,11,0,0,11,No,No,None
-Eventide,Rose,41,0,0,41,No,No,None
-Eventide,Blackhole,17,0,0,17,No,No,None
-Eventide,Tricerachorus,18,0,0,18,No,No,None
-Eventide,Ultratap,16,0,0,16,No,No,None
-expert_sleepers,fh-2,119,0,0,119,No,No,None
-flame,curves,27,0,0,27,No,No,None
-flame,mäander,33,0,0,33,No,No,None
-fractal_audio,ax-8,65,0,0,65,No,No,None
-fractal_audio,axe-fxii,117,0,0,117,No,No,None
-fractal_audio,axe-fx_iii,0,0,0,0,No,No,None
-fractal_audio,standard,54,0,0,54,No,No,None
-fractal_audio,ultra,89,0,0,89,No,No,None
-fred's_lab,buzzzy!,31,0,0,31,No,No,None
-gem,rp-x,20,0,0,20,No,No,None
-GFI System,Duophony,25,0,0,25,No,No,None
-GFI System,Enieqma,96,0,0,96,No,No,None
-GFI System,Specular Tempus,15,0,0,15,No,Yes,None
-GFI System,Synesthesia,39,0,0,39,Yes,Yes,None
-GFI System,Solis Ventus,76,0,0,76,Yes,Yes,None
-gsmusic,e7,66,0,0,66,No,No,None
-generic,midi_device,64,6,0,70,No,No,None
-gotharman,spazedrum_black,67,0,0,67,No,No,None
-hologram,microcosm,35,0,0,35,No,No,None
-IK Multimedia,ToneX,107,0,0,107,No,No,None
-IK Multimedia,uno_synth_pro_x,104,0,0,104,No,No,None
-IK Multimedia,uno_drum,70,0,0,70,No,No,None
-IK Multimedia,UNO Synth,67,0,0,67,No,No,None
-IK Multimedia,x-series,5,0,0,5,No,No,None
-Idoru,p-1,8,0,0,8,No,No,None
-Idoru,P1,8,0,0,8,No,No,None
-intellijel,umidi,10,0,0,10,No,No,None
-jomox,airbase_99,58,0,0,58,No,No,None
-Korg,arp_2600_m,5,0,0,5,No,No,None
-Korg,electribe_er-1,2,15,0,17,No,No,None
-Korg,grandstage,12,0,0,12,No,No,None
-Korg,MS2000,65,0,0,65,No,No,None
-Korg,nts-1,29,0,0,29,No,No,None
-Korg,opsix,39,0,0,39,No,No,None
-Korg,wavestate,118,0,0,118,No,No,None
-Korg,micro_korg,47,0,0,47,No,No,None
-Korg,minilogue xd,66,0,0,66,No,No,None
-Korg,minilogue,41,0,0,41,No,No,None
-Korg,monologue,22,0,0,22,No,No,None
-Korg,volca bass,12,0,0,12,No,No,None
-Korg,volca beats,20,0,0,20,No,No,None
-Korg,volca drum,31,0,0,31,No,No,None
-Korg,volca fm,11,0,0,11,No,No,None
-Korg,volca keys,16,0,0,16,No,No,None
-Korg,volca kick,10,0,0,10,No,No,None
-Korg,volca nubass,11,0,0,11,No,No,None
-Korg,volca sample,11,0,0,11,No,No,None
-Korg,pa4x,56,19,0,75,No,No,None
-Korg,microKORG XL+,92,0,0,92,No,No,None
-Korg,microKORG,74,0,0,74,No,No,None
-Korg,Kaoss Pad 3,10,0,0,10,No,No,None
-Korg,Kaoss Pad 2,5,0,0,5,No,No,None
-Kemper,Profiler,42,0,0,42,Yes,Yes,None
-Kemper,Profiler Player,25,0,0,25,No,Yes,None
-kodamo,essencefm,29,0,0,29,No,No,None
-kurzweil,k2661,28,0,0,28,No,No,None
-lpzw,tram8,8,0,0,8,No,No,None
-lexicon,mx200,15,0,0,15,No,No,None
-Line 6,HX One,40,0,0,40,No,No,None
-Line 6,HX Stomp,32,0,0,32,Yes,Yes,None
-Line 6,Helix,38,0,0,38,No,No,None
-Line 6,m5,4,0,0,4,No,No,None
-Line 6,Pocket POD,108,0,0,108,No,No,None
-Line 6,Helix LT,37,0,0,37,No,No,None
-Line 6,DT25 Head,203,0,0,203,No,No,None
-Line 6,HX Stomp XL,34,0,0,34,Yes,Yes,None
-Line 6,HX Effects,28,0,0,28,No,No,None
-Line 6,DL4 MKII,23,0,0,23,Yes,Yes,None
-Line 6,Powercab 212 Plus,114,0,0,114,No,No,None
-Line 6,DT25 112,203,0,0,203,No,No,None
-Line 6,POD GO,30,0,0,30,No,No,None
-Line 6,POD HD PRO X,28,0,0,28,No,No,None
-Line 6,Powercab Plus,28,0,0,28,No,No,None
-Line 6,Helix Rack and Control,38,0,0,38,No,No,None
-Line 6,Powercab 112 Plus,59,0,0,59,No,No,None
-Line 6,POD HD500X,28,0,0,28,No,No,None
-Line 6,Helix Floor,39,0,0,39,Yes,Yes,None
-Line 6,M13 v2.0 Sompbox Modeler,43,0,0,43,No,No,None
-Line 6,catalystcx,30,0,0,30,Yes,Yes,unknown
-Line 6,M5 Stompbox Modeler,7,0,0,7,No,No,None
-Line 6,M9 v2.0 Stompbox Modeler,31,0,0,31,No,No,None
-MFB,synth_ii,34,0,0,34,No,No,None
-MFB,tanzbar_1,63,0,0,63,No,No,None
-MFB,Tanzbar Lite,25,0,0,25,No,No,None
-MFB,tanzmaus,33,0,0,33,No,No,None
-mlc,ls10/6,26,0,0,26,No,No,None
-mlc,ls12/2,14,0,0,14,No,No,None
-make_noise,0-coast,17,0,0,17,No,No,None
-Meeblip,Geode,22,0,0,22,No,No,None
-Meeblip,Triode,28,0,0,28,No,No,None
-Melbourne Instruments,Nina,39,0,0,39,No,No,None
-Meris,LVX,106,0,0,106,No,No,None
-Meris,Mercury X,127,0,0,127,No,No,None
-Meris,Ottobit JR,22,0,0,22,No,No,None
-Meris,Polymoon,25,0,0,25,No,No,None
-Meris,Enzo,25,0,0,25,No,No,None
-Meris,Hedra,27,0,0,27,No,No,None
-Meris,Mercury 7,19,0,0,19,No,No,None
-Meris,enzox,71,0,0,71,Yes,Yes,unknown
-mesa_boogie,jp2c,11,0,0,11,No,No,None
-Modal Electronics,1,166,0,0,166,No,No,None
-Modal Electronics,2,166,0,0,166,No,No,None
-Modal Electronics,8,80,0,0,80,No,No,None
-Modal Electronics,ARGON 8M,117,0,0,117,No,No,None
-Modal Electronics,cobalt5s,100,0,0,100,No,No,None
-Modal Electronics,CRAFTsynth 2.0,107,0,0,107,No,No,None
-Modal Electronics,craft,45,0,0,45,No,No,None
-Modal Electronics,skulpt,95,0,0,95,No,No,None
-Modal Electronics,002R,166,0,0,166,No,No,None
-Modal Electronics,ARGON 8X,117,0,0,117,No,No,None
-Modal Electronics,SKULPTsynthesiser,114,0,0,114,No,No,None
-Modal Electronics,ARGON 8,117,0,0,117,No,No,None
-Modal Electronics,008R,80,0,0,80,No,No,None
-Modor,NF-1,106,0,0,106,No,No,None
-Moog,Grandmother,75,0,0,75,No,No,None
-Moog,Matriarch,112,0,0,112,Yes,Yes,None
-Moog,Minitaur,74,0,0,74,No,No,None
-Moog,Mother-32,9,0,0,9,No,No,None
-Moog,muse,102,0,0,102,No,No,None
-Moog,sirin,40,0,0,40,No,No,None
-Moog,Sub Phatty,139,0,0,139,No,No,None
-Moog,Subsequent 25,142,0,0,142,No,No,None
-Moog,Subsequent 37,161,0,0,161,No,No,None
-Moog,MF-108M Cluster Flux,65,0,0,65,No,No,None
-Moog,MF-105M MIDI MuRF,42,0,0,42,No,No,None
-Moog,Minimoog Voyager,96,0,0,96,No,No,None
-Moog,Subharmonicon,12,0,0,12,No,No,None
-Moog,MF-104M,29,0,0,29,No,No,None
-Moog,Minimoog Voyager XL,186,0,0,186,No,No,None
-Mutable Instruments,Shruthi,39,0,0,39,No,No,None
-nux,tape_echo_ndd-7,16,0,0,16,No,No,None
-Neural DSP,Quad Cortex,41,0,0,41,No,Yes,None
-Neural DSP,nanocortex,11,0,0,11,Yes,Yes,unknown
-norand,mono,29,0,0,29,No,No,None
-Nord,a1,55,0,0,55,No,No,None
-Nord,C2D,57,0,0,57,No,No,None
-Nord,Drum 2,36,0,0,36,No,No,None
-Nord,drum_3p,36,0,0,36,No,No,None
-Nord,Electro 3,62,0,0,62,No,No,None
-Nord,electro_5,74,1,0,75,No,No,None
-Nord,lead_(rack)_2x,42,0,0,42,No,No,None
-Nord,lead_(rack),41,0,0,41,No,No,None
-Nord,Stage 2,112,0,0,112,No,No,None
-Nord,Stage 3,109,0,0,109,No,No,None
-Nord,Wave 2,85,0,0,85,No,No,None
-Nord,Lead 4R,90,0,0,90,No,No,None
-Nord,Electro 6,77,0,0,77,No,No,None
-Nord,Electro 3 HP,67,0,0,67,No,No,None
-Nord,Electro 2,57,0,0,57,No,No,None
-Nord,Electro 5HP 73,80,0,0,80,No,No,None
-Nord,Rack 3,93,0,0,93,No,No,None
-Nord,Piano 2 HA88,47,0,0,47,No,No,None
-Nord,Lead,44,0,0,44,No,No,None
-Nord,Grand,54,0,0,54,No,No,None
-Nord,Lead A1R,58,0,0,58,No,No,None
-Nord,Electro 5D 73,80,0,0,80,No,No,None
-Nord,Electro 4 HP,68,0,0,68,No,No,None
-Nord,Stage 2 EX,112,0,0,112,No,No,None
-Nord,Piano 3,56,0,0,56,No,No,None
-Nord,Piano 4,54,0,0,54,No,No,None
-Nord,Lead 3,93,0,0,93,No,No,None
-Nord,Lead 2,45,0,0,45,No,No,None
-Nord,Lead 4,90,0,0,90,No,No,None
-Nord,C2,44,0,0,44,No,No,None
-Nord,C1,40,0,0,40,No,No,None
-Nord,Wave,69,0,0,69,No,No,None
-Nord,Piano,27,0,0,27,No,No,None
-Nord,Stage,98,0,0,98,No,No,None
-Nord,Lead A1,58,0,0,58,No,No,None
-Nord,Electro 4 SW,68,0,0,68,No,No,None
-Nord,Electro 4D,67,0,0,67,No,No,None
-Nord,Lead 2X,45,0,0,45,No,No,None
-Nord,Electro 5D 61 ,4,0,0,4,No,No,None
-Nord,Piano 2 HP,47,0,0,47,No,No,None
-Nord,Stage EX,98,0,0,98,No,No,None
-Novation,Bass Station II,64,31,0,95,No,No,None
-Novation,bass_station_rack,16,0,0,16,No,No,None
-Novation,Circuit,113,256,0,369,No,No,None
-Novation,nova,110,0,0,110,No,No,None
-Novation,summit_and_peak,74,145,0,219,No,No,None
-Novation,Bass Station Keyboard,7,0,0,7,No,No,None
-Novation,UltraNova,114,0,0,114,No,No,None
-Novation,Circuit Mono Station,150,0,0,150,No,No,None
-Novation,Summit,57,0,0,57,No,No,None
-Novation,Circuit Rhythm,64,0,0,64,Yes,Yes,None
-Novation,Peak,59,0,0,59,No,No,None
-Novation,MiniNova,104,0,0,104,No,No,None
-oto_machines_fx,bam,12,0,0,12,No,No,None
-oto_machines_fx,bim,20,0,0,20,No,No,None
-oto_machines_fx,boum,13,0,0,13,No,No,None
-oberheim,ob-6,57,17,0,74,No,No,None
-oberheim,ob-x8,121,0,0,121,No,No,None
-Oscillator Devices,Minerva,30,0,0,30,Yes,Yes,No
-Oscillator Devices,Siren,95,0,0,95,Yes,Yes,No
-Oscillator Devices,Goblin-EXP in EHX Pitch Fork,12,0,0,12,Yes,Yes,No
-pioneer_dj,toraiz_as-1,38,0,0,38,No,No,None
-poly,josh_smith_flat_v,34,0,0,34,No,No,None
-poly,verbs,6,0,0,6,No,No,None
-polyend,tracker,32,0,0,32,No,No,None
-quilter,illumine_reverb,13,0,0,13,No,No,None
-revv,d20,55,0,0,55,No,No,None
-revv,g20,9,0,0,9,No,No,None
-revv,generator,28,0,0,28,No,No,None
-rjm,miniampgizmo,36,0,0,36,No,No,None
-Red Panda,particle,33,0,0,33,No,No,None
-Red Panda,raster,17,0,0,17,No,No,None
-Red Panda,Raster 2,33,0,0,33,No,No,None
-Red Panda,Tensor,18,0,0,18,No,No,None
-Red Panda,Context 2,135,0,0,135,No,No,None
-Red Panda,Bitmap 2,20,0,0,20,No,No,None
-Red Panda,Particle 2,36,0,0,36,No,No,None
-Red Panda,radius,28,0,0,28,Yes,Yes,unknown
-Roland,D-05,8,0,0,8,No,No,None
-Roland,GAIA SH-01,8,0,0,8,No,No,None
-Roland,JD-XA,75,16,0,91,No,No,None
-Roland,JD-Xi,20,0,0,20,No,No,None
-Roland,JP-08,48,0,0,48,No,No,None
-Roland,JU-06,34,0,0,34,No,No,None
-Roland,ju-06a,39,0,0,39,No,No,None
-Roland,jv-1010,24,0,0,24,No,No,None
-Roland,JX-03,42,0,0,42,No,No,None
-Roland,jx-08,49,0,0,49,No,No,None
-Roland,jupiter-x_(jupiter-xm),22,0,0,22,No,No,None
-Roland,mc-101,25,0,0,25,No,No,None
-Roland,mc-2oh2,43,0,0,43,No,No,None
-Roland,mx-1,55,0,0,55,No,No,None
-Roland,s-1,54,0,0,54,No,No,None
-Roland,SE-02,58,0,0,58,No,No,None
-Roland,SH-01A,42,0,0,42,No,No,None
-Roland,sh-4d,31,0,0,31,No,No,None
-Roland,system-1_(system-1m),56,0,0,56,No,No,None
-Roland,SYSTEM-8,79,0,0,79,No,No,None
-Roland,TB-03,10,0,0,10,No,No,None
-Roland,tb-3,13,0,0,13,No,No,None
-Roland,tr-06,43,0,0,43,No,No,None
-Roland,TR-08,38,0,0,38,No,No,None
-Roland,TR-09,39,0,0,39,No,No,None
-Roland,tr-6s,34,0,0,34,No,No,None
-Roland,TR-8,50,0,0,50,No,No,None
-Roland,tr-8s,55,0,0,55,No,No,None
-Roland,VP-03,31,0,0,31,No,No,None
-Roland,xv-5050,33,0,0,33,No,No,None
-Roland,FR-18D,0,0,0,0,No,No,None
-Roland,BK-7m,26,0,0,26,No,No,None
-Roland,FR-06/07/08,3,0,0,3,No,No,None
-Roland,SYSTEM-1,54,0,0,54,No,No,None
-Sequential,Pro 3,115,0,0,115,No,No,None
-Sequential,Prophet 6,60,0,0,60,No,No,None
-Sequential,take_5,89,0,0,89,No,No,None
-Sequential,Prophet 12,106,0,0,106,No,No,None
-Sequential,OB-6,50,0,0,50,No,No,None
-Sequential,Prophet X,87,0,0,87,No,No,None
-Sequential,Rev 2,63,0,0,63,No,No,None
-sherman,filterbank,10,0,0,10,No,No,None
-sonicware,liven_lofi-12,43,0,0,43,No,No,None
-sonicware,liven_xfm,43,0,0,43,No,No,None
-sonicware,smpltrek,33,0,0,33,No,No,None
-Source Audio,Nemesis,52,0,0,52,Yes,Yes,None
-Source Audio,Ventris,101,0,0,101,Yes,Yes,None
-Source Audio,Ultrawave,18,0,0,18,No,No,None
-Source Audio,Collider,67,0,0,67,Yes,Yes,None
-Source Audio,Spectrum Intelligence Filter,7,0,0,7,No,No,None
-Source Audio,EQ2,128,0,0,128,Yes,Yes,None
-Source Audio,Programmable EQ,15,0,0,15,No,No,None
-Source Audio,artifakt,94,0,0,94,Yes,Yes,unknown
-Source Audio,Atlas,25,0,0,25,Yes,Yes,unknown
-Source Audio,C4 Synth,7,0,0,7,No,Yes,None
-Strymon,NightSky,55,0,0,55,Yes,Yes,None
-Strymon,Volante,52,0,0,52,No,No,None
-Strymon,Ultraviolet,11,0,0,11,No,No,None
-Strymon,Deco,33,0,0,33,No,No,None
-Strymon,blueSky,22,0,0,22,No,No,None
-Strymon,DIG,37,0,0,37,No,No,None
-Strymon,Zelzah,36,0,0,36,No,No,None
-Strymon,Cloudburst,14,0,0,14,No,No,None
-Strymon,El Capistan,33,0,0,33,No,No,None
-Strymon,Iridium,16,0,0,16,No,No,None
-Strymon,Flint,36,0,0,36,No,No,None
-Strymon,Mobius,76,0,0,76,Yes,Yes,None
-Strymon,ec1,17,0,0,17,Yes,Yes,unknown
-Strymon,Timeline,65,0,0,65,Yes,Yes,None
-Strymon,Lex,31,0,0,31,No,No,None
-Strymon,Sunset,22,0,0,22,No,No,None
-Strymon,Riverside,23,0,0,23,No,No,None
-Strymon,Bigsky,68,0,0,68,Yes,Yes,None
-Strymon,Brig,13,0,0,13,No,No,None
-Strymon,Compadre,12,0,0,12,No,No,None
-Strymon,Bigsky MX,122,0,0,122,Yes,Yes,None
-studio_electronics,atc-1,34,0,0,34,No,No,None
-studio_electronics,se-1x,50,0,0,50,No,No,None
-Studiologic,Sledge,67,0,0,67,No,No,None
-TC Electronic,d-two,43,0,0,43,No,No,None
-TC Electronic,Plethora X5,69,0,0,69,Yes,Yes,None
-TC Electronic,Plethora X3,45,0,0,45,Yes,Yes,None
-TC Electronic,Hall of Fame 2 X4 Reverb,8,0,0,8,No,No,None
-TC Electronic,Nova Drive,15,0,0,15,No,No,None
-TC Electronic,Flashback 2 X4 Delay,14,0,0,14,No,No,None
-TC Electronic,Ditto X4,17,0,0,17,Yes,Yes,None
-tasty_chips,gr-1,37,0,0,37,No,No,None
-Teenage Engineering,op-1,4,0,0,4,No,No,None
-Teenage Engineering,OP-Z,48,0,0,48,No,No,None
-twisted_electrons,megafm,41,0,0,41,No,No,None
-twisted_electrons,therapsid,58,0,0,58,No,No,None
-udo_audio,super_6,91,0,0,91,No,No,None
-voodoolab,control_switcher,32,0,0,32,No,No,None
-voodoolab,gcx,16,0,0,16,No,No,None
-voodoolab,hex,24,0,0,24,No,No,None
-Vongon,Polyphrase,14,0,0,14,No,No,None
-WMD,Geiger Counter Pro,48,0,0,48,No,No,None
-Waldorf,Blofeld,177,0,0,177,No,No,None
-Waldorf,iridium,115,0,0,115,No,No,None
-Waldorf,m,46,0,0,46,No,No,None
-Waldorf,pulse_2,90,0,0,90,No,No,None
-Waldorf,rocket,23,0,0,23,No,No,None
-Waldorf,streichfett,23,0,0,23,No,No,None
-Walrus Audio,ACS1,11,0,0,11,No,No,None
-Walrus Audio,D1 (New version),21,0,0,21,No,No,None
-Walrus Audio,M1,40,0,0,40,No,No,None
-Walrus Audio,Meraki (Stereo Analog Delay),23,0,0,23,No,No,None
-Walrus Audio,R1,15,0,0,15,No,No,None
-Walrus Audio,m1mk2,26,0,0,26,Yes,Yes,unknown
-Walrus Audio,acs1mk2,46,0,0,46,Yes,Yes,unknown
-Walrus Audio,qi,24,0,0,24,Yes,Yes,unknown
-Walrus Audio,d1mk2,22,0,0,22,Yes,Yes,unknown
-Walrus Audio,D1 (Old version),21,0,0,21,Yes,Yes,None
-Walrus Audio,r1mk2,17,0,0,17,Yes,Yes,unknown
-wampler,catacombs,25,0,0,25,No,No,None
-wampler,metaverse,22,0,0,22,No,No,None
-wampler,pantheon,9,0,0,9,No,No,None
-wampler,terraform,1,0,0,1,No,No,None
-Yamaha,nsx-1,40,0,0,40,No,No,None
-Yamaha,reface CP,23,0,0,23,No,No,None
-Yamaha,reface CS,30,0,0,30,No,No,None
-Yamaha,reface DX,42,0,0,42,No,No,None
-Yamaha,reface YC,28,0,0,28,No,No,None
+sourceFile,0,0,0,0,0,No,No,None
+sourceFile,1,0,0,0,0,No,No,None
+sourceFile,2,0,0,0,0,No,No,None
+sourceFile,3,0,0,0,0,No,No,None
+sourceFile,4,0,0,0,0,No,No,None
+sourceFile,5,0,0,0,0,No,No,None
+sourceFile,6,0,0,0,0,No,No,None
+sourceFile,7,0,0,0,0,No,No,None
+sourceFile,8,0,0,0,0,No,No,None
+sourceFile,9,0,0,0,0,No,No,None
+sourceFile,10,0,0,0,0,No,No,None
+sourceFile,11,0,0,0,0,No,No,None
+sourceFile,12,0,0,0,0,No,No,None
+sourceFile,13,0,0,0,0,No,No,None
+sourceFile,14,0,0,0,0,No,No,None
+sourceFile,15,0,0,0,0,No,No,None
+sourceFile,16,0,0,0,0,No,No,None
+sourceFile,17,0,0,0,0,No,No,None
+sourceFile,18,0,0,0,0,No,No,None
+sourceFile,19,0,0,0,0,No,No,None
+sourceFile,20,0,0,0,0,No,No,None
+databaseStats,brands,0,0,0,0,No,No,None
+databaseStats,devices,0,0,0,0,No,No,None
+databaseStats,parameters,0,0,0,0,No,No,None
+sizes,prettyjson,0,0,0,0,No,No,None
+sizes,minifiedjson,0,0,0,0,No,No,None
+sizes,gzippedjson,0,0,0,0,No,No,None
+sizes,compressionratio,0,0,0,0,No,No,None
+MFB,Tanzbar Lite,25,0,1,26,No,No,None
+Meris,Enzo,25,0,1,26,No,No,None
+Meris,Polymoon,25,0,1,26,No,No,None
+Meris,Hedra,27,0,1,28,No,No,None
+Meris,Mercury 7,19,0,1,20,No,No,None
+Meris,LVX,102,0,1,103,No,No,None
+Meris,enzox,71,0,1,72,Yes,Yes,unknown
+Meris,Ottobit JR,22,0,1,23,No,No,None
+Meris,Mercury X,127,0,1,128,No,No,None
+Elektron,Model:Samples,29,0,1,30,No,No,None
+Elektron,Model:Cycles,29,0,1,30,No,No,None
+Elektron,Analog Drive,26,0,1,27,No,No,None
+Elektron,Digitone,111,0,1,112,No,No,None
+Elektron,Analog Rytm MKII,92,0,1,93,No,No,None
+Elektron,Analog Heat MKII,65,0,1,66,No,No,None
+Elektron,Digitone Keys,111,0,1,112,No,No,None
+Elektron,Digitakt,73,0,1,74,No,No,None
+Elektron,Octatrack MKII,116,0,1,117,No,No,None
+Elektron,Analog Four MKII,70,0,1,71,No,No,None
+Atomic,Amplifire 3,50,0,1,51,No,No,None
+Atomic,Amplifire 12,59,0,1,60,No,No,None
+Atomic,Amplifire,39,0,1,40,Yes,Yes,true
+Atomic,Amplifire 6,50,0,1,51,No,No,None
 EM Custom,AMI Universal Dual TRS,0,0,0,0,No,No,None
-valeton,gp5,20,0,0,20,Yes,Yes,unknown
-Swindler Effects,Red Mountain Tremolo V2,20,0,0,20,No,No,None
-Swindler Effects,The Gulf Chorus V2,15,0,0,15,No,No,None
-noiseengineering,batverb,28,0,0,28,Yes,Yes,unknown
-Chase Bliss Audio,Habit,27,0,0,27,No,No,None
-Chase Bliss Audio,Lossy,43,0,0,43,Yes,No,None
-Chase Bliss Audio,Warped Vinyl HiFi,19,0,0,19,No,Yes,None
-Chase Bliss Audio,Thermae,28,0,0,28,No,Yes,None
-Chase Bliss Audio,Wombtone MKII,19,0,0,19,No,Yes,None
-Chase Bliss Audio,Generation Loss MKII,86,0,0,86,No,No,None
-Chase Bliss Audio,CXM 1978,19,0,0,19,Yes,No,None
-Chase Bliss Audio,Mood,12,0,0,12,Yes,No,None
-Chase Bliss Audio,Condor,22,0,0,22,Yes,No,None
-Chase Bliss Audio,Onward,98,0,0,98,No,Yes,None
-Chase Bliss Audio,brothersam,53,0,0,53,Yes,Yes,unknown
-Chase Bliss Audio,Bliss Factory,20,0,0,20,Yes,No,None
-Chase Bliss Audio,Mood MkII,84,0,0,84,No,Yes,None
-Chase Bliss Audio,Dark World,22,0,0,22,No,No,None
-Chase Bliss Audio,Reverse Mode C,109,0,0,109,No,Yes,None
-Chase Bliss Audio,Tonal Recall,19,0,0,19,No,Yes,None
-Chase Bliss Audio,Brothers,22,0,0,22,Yes,No,None
-Chase Bliss Audio,Blooper,26,0,0,26,Yes,No,None
+valeton,gp5,20,0,1,21,Yes,Yes,unknown
+Idoru,P1,8,0,1,9,No,No,None
+AVID,Eleven Rack,25,0,1,26,No,No,None
+Dr Scientist,The Atmosphere,55,0,1,56,No,No,None
+Dr Scientist,Dusk,18,0,1,19,No,No,None
+3 Degrees Audio,Hue Stereo Multi Effect Pedal,17,0,1,18,No,No,None
+Swindler Effects,Red Mountain Tremolo V2,20,0,1,21,No,No,None
+Swindler Effects,The Gulf Chorus V2,15,0,1,16,No,No,None
+noiseengineering,batverb,28,0,1,29,Yes,Yes,unknown
+Nord,Lead 4R,90,0,1,91,No,No,None
+Nord,Electro 6,77,0,1,78,No,No,None
+Nord,Stage 2,112,0,1,113,No,No,None
+Nord,Electro 3 HP,67,0,1,68,No,No,None
+Nord,Electro 2,57,0,1,58,No,No,None
+Nord,Electro 3,62,0,1,63,No,No,None
+Nord,Electro 5HP 73,80,0,1,81,No,No,None
+Nord,Wave 2,85,0,1,86,No,No,None
+Nord,Drum 2,33,0,1,34,No,No,None
+Nord,Rack 3,93,0,1,94,No,No,None
+Nord,Piano 2 HA88,47,0,1,48,No,No,None
+Nord,Lead,44,0,1,45,No,No,None
+Nord,C2D,53,0,1,54,No,No,None
+Nord,Grand,54,0,1,55,No,No,None
+Nord,Lead A1R,58,0,1,59,No,No,None
+Nord,Stage 3,109,0,1,110,No,No,None
+Nord,Electro 5D 73,80,0,1,81,No,No,None
+Nord,Electro 4 HP,68,0,1,69,No,No,None
+Nord,Stage 2 EX,112,0,1,113,No,No,None
+Nord,Piano 3,56,0,1,57,No,No,None
+Nord,Piano 4,54,0,1,55,No,No,None
+Nord,Lead 3,93,0,1,94,No,No,None
+Nord,Lead 2,45,0,1,46,No,No,None
+Nord,Lead 4,90,0,1,91,No,No,None
+Nord,C2,44,0,1,45,No,No,None
+Nord,C1,40,0,1,41,No,No,None
+Nord,Wave,69,0,1,70,No,No,None
+Nord,Piano,27,0,1,28,No,No,None
+Nord,Stage,98,0,1,99,No,No,None
+Nord,Lead A1,58,0,1,59,No,No,None
+Nord,Electro 4 SW,68,0,1,69,No,No,None
+Nord,Electro 4D,67,0,1,68,No,No,None
+Nord,Lead 2X,45,0,1,46,No,No,None
+Nord,Electro 5D 61 ,4,0,1,5,No,No,None
+Nord,Piano 2 HP,47,0,1,48,No,No,None
+Nord,Stage EX,98,0,1,99,No,No,None
+Chase Bliss Audio,Habit,27,0,1,28,No,No,None
+Chase Bliss Audio,Lossy,43,0,1,44,Yes,No,None
+Chase Bliss Audio,Warped Vinyl HiFi,19,0,1,20,No,Yes,None
+Chase Bliss Audio,Thermae,28,0,1,29,No,Yes,None
+Chase Bliss Audio,Wombtone MKII,19,0,1,20,No,Yes,None
+Chase Bliss Audio,Generation Loss MKII,86,0,1,87,No,No,None
+Chase Bliss Audio,CXM 1978,19,0,1,20,Yes,No,None
+Chase Bliss Audio,Mood,12,0,1,13,Yes,No,None
+Chase Bliss Audio,Condor,22,0,1,23,Yes,No,None
+Chase Bliss Audio,Onward,98,0,1,99,No,Yes,None
+Chase Bliss Audio,brothersam,53,0,1,54,Yes,Yes,unknown
+Chase Bliss Audio,Bliss Factory,20,0,1,21,Yes,No,None
+Chase Bliss Audio,Mood MkII,84,0,1,85,No,Yes,None
+Chase Bliss Audio,Dark World,22,0,1,23,No,No,None
+Chase Bliss Audio,Reverse Mode C,109,0,1,110,No,Yes,None
+Chase Bliss Audio,Tonal Recall,19,0,1,20,No,Yes,None
+Chase Bliss Audio,Brothers,22,0,1,23,Yes,No,None
+Chase Bliss Audio,Blooper,26,0,1,27,Yes,No,None
 Chase Bliss Audio,Billy Strings Wombtone,0,0,0,0,No,No,None
-Chase Bliss Audio,Preamp MkII,14,0,0,14,Yes,No,None
-Chase Bliss Audio,Generation Loss MKI,13,0,0,13,No,No,None
-Chase Bliss Audio,Ayahuasca,15,0,0,15,No,No,None
-Chase Bliss Audio,Gravitas,19,0,0,19,No,Yes,None
-Chase Bliss Audio,Spectre,19,0,0,19,No,Yes,None
-Chase Bliss Audio,Clean,75,0,0,75,Yes,Yes,unknown
-Fractal Audio Systems,Axe-Fx II XL+,114,0,0,114,No,No,None
-Fractal Audio Systems,AX8,72,0,0,72,No,No,None
-Fractal Audio Systems,Axe-Fx II XL,114,0,0,114,No,No,None
-Fractal Audio Systems,Axe-Fx II,114,0,0,114,No,No,None
-Fractal Audio Systems,FX8,87,0,0,87,No,No,None
-Hughes & Kettner,GrandMeister Deluxe 40,39,0,0,39,No,No,None
-Hughes & Kettner,TriAmp Mk3,23,0,0,23,No,No,None
-DigiTech,Whammy DT,1,0,0,1,No,No,None
-DigiTech,Bass Whammy,1,0,0,1,No,No,None
-DigiTech,Whammy,1,0,0,1,No,No,None
-EVH,5150III 100S HEAD,2,0,0,2,No,No,None
-EVH,5150III 50W HEAD,2,0,0,2,No,No,None
-EVH,5150III 50W EL34 2X12 COMBO,2,0,0,2,No,No,None
-EVH,5150III 50W EL34 HEAD,2,0,0,2,No,No,None
-EVH,5150III 50W 6L6 1X12 COMBO,2,0,0,2,No,No,None
-EVH,5150III 50S 6L6 HEAD,2,0,0,2,No,No,None
-EVH,5150III 50W EL34 1X12 COMBO,2,0,0,2,No,No,None
-EVH,5150III 50W 6L6 2X12 COMBO,2,0,0,2,No,No,None
-EVH,5150III 50W 6L6 HEAD,2,0,0,2,No,No,None
-EVH,5150III 100W HEAD,2,0,0,2,No,No,None
-EVH,5150IIIS 100W EL34 HEAD,2,0,0,2,No,No,None
-Free The Tone,TA-1H Tri Avatar,9,0,0,9,No,No,None
-Free The Tone,Flight Time FT-2Y,75,0,0,75,No,No,None
-Free The Tone,PA-1QG,13,0,0,13,No,No,None
-Free The Tone,PA-1QB,13,0,0,13,No,No,None
-Free The Tone,PA-1QA,13,0,0,13,No,No,None
-Free The Tone,FF-1Y,43,0,0,43,Yes,No,None
-Free The Tone,AS-1R Ambi Space,12,0,0,12,No,No,None
-KSR Amplification,Artemis 100,121,0,0,121,No,No,None
-KSR Amplification,Colossus H-100,121,0,0,121,No,No,None
-KSR Amplification,Gemini 100,121,0,0,121,No,No,None
-Seymour Duncan,Andromeda,25,0,0,25,No,No,None
-Old Blood Noise Endeavors,signalblenderstereo,15,0,0,15,Yes,Yes,unknown
-Old Blood Noise Endeavors,blackfountain,20,0,0,20,Yes,Yes,unknown
-Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,18,0,0,18,No,No,None
-Sheeran,Looper+,24,0,0,24,No,No,None
-Sheeran,looperx,92,0,0,92,No,No,None
-Two Notes Audio Engineering,Torpedo C.A.B. (v4 firmware),282,0,0,282,No,No,None
-Two Notes Audio Engineering,Torpedo Live v4 firmware,282,0,0,282,No,No,None
-Two Notes Audio Engineering,Opus,69,0,0,69,No,No,None
-Two Notes Audio Engineering,Torpedo Studio,345,0,0,345,No,No,None
-Two Notes Audio Engineering,Torpedo Captor X,291,0,0,291,No,No,None
-Two Notes Audio Engineering,Torpedo Live v3 firmware,140,0,0,140,No,No,None
-Singular Sound,BeatBuddy,37,0,0,37,Yes,Yes,None
-Singular Sound,Aeros Looper,111,0,0,111,Yes,Yes,true
-Suhr,Hedgehog,9,0,0,9,No,No,None
-Suhr,PT-100,15,0,0,15,No,No,None
-Suhr,Discovery,20,0,0,20,Yes,No,None
-Freds Labs,Buzzy!,31,0,0,31,No,No,None
-OTO Machines,BOUM,13,0,0,13,No,No,None
-OTO Machines,BIM,20,0,0,20,No,No,None
-OTO Machines,BAM,12,0,0,12,No,No,None
-OTO Machines,Biscuit,78,0,0,78,No,No,None
-That Worship Sound,Worship Essentials 2,48,0,0,48,No,No,None
-That Worship Sound,Worship Guitar Essentials 2,80,0,0,80,No,No,None
-Flower Pedals,Dahlia Dual Analog Delay,35,0,0,35,No,No,None
-Flower Pedals,Sunflower,20,0,0,20,No,No,None
-Sound Sculpture,Switchblade 8F,12,0,0,12,Yes,No,None
-Hologram Electronics,Chroma Console,61,0,0,61,Yes,Yes,None
-Hologram Electronics,Dream Sequence,5,0,0,5,No,No,None
-Hologram Electronics,Microcosm,35,0,0,35,Yes,Yes,None
-Gamechanger Audio,Bigsby,31,0,0,31,No,No,None
-OPFXS,v-uno,24,0,0,24,No,No,None
-TastyChips,GR1,63,0,0,63,No,No,None
-Marshall,DSL40CR,6,0,0,6,No,No,None
-Jackson Audio,El Guapo,16,0,0,16,No,No,None
-Jackson Audio,The Optimist,3,0,0,3,No,No,None
-Jackson Audio,Golden Boy,7,0,0,7,No,No,None
-Jackson Audio,Broken Arrow,7,0,0,7,No,No,None
-Jackson Audio,New Wave,11,0,0,11,No,No,None
-Jackson Audio,Bloom,9,0,0,9,No,No,None
-Jackson Audio,Asabi,5,0,0,5,No,No,None
-the montreal assembly,856forzellersasn,67,0,0,67,No,Yes,None
-Kernom,elipse,11,0,0,11,Yes,Yes,unknown
-Kernom,Moho,9,0,0,9,No,No,None
-Kernom,Ridge,9,0,0,9,No,No,None
-Pigtronix,echolution3,17,0,0,17,Yes,Yes,unknown
-Pigtronix,Infinity,61,0,0,61,No,No,None
-Pigtronix,Echolution 2 Deluxe,27,0,0,27,No,Yes,None
-Morningstar Engineering,MC8,38,0,0,38,Yes,No,true
-Morningstar Engineering,MC6 MKII,26,0,0,26,Yes,No,true
-Morningstar Engineering,ML5R,24,0,0,24,Yes,No,None
-Morningstar Engineering,mc8pro,21,0,0,21,Yes,Yes,unknown
-Morningstar Engineering,MC6 PRO,40,0,0,40,Yes,Yes,true
-Morningstar Engineering,ML5,17,0,0,17,Yes,No,None
-Morningstar Engineering,MC3,19,0,0,19,No,No,None
-Morningstar Engineering,ML10X,26,0,0,26,Yes,No,None
-G-LAB,MIDI 4 X LOOP-er,10,0,0,10,No,No,None
-G-LAB,MIDI 2 X LOOP-er,10,0,0,10,No,No,None
-G-LAB,BC-1,13,0,0,13,Yes,No,None
-G-LAB,midiwoweewahmww1,8,0,0,8,Yes,Yes,unknown
-Headrush,core,46,0,0,46,Yes,Yes,unknown
-Headrush,Gigboard,26,0,0,26,No,No,None
-Headrush,Looperboard,86,0,0,86,Yes,No,None
-Headrush,MX5,25,0,0,25,No,No,None
-Headrush,Pedalbaord,34,0,0,34,No,No,None
-Headrush,flexprime,43,0,0,43,Yes,Yes,unknown
-Neunaber,Illumine,24,0,0,24,No,No,None
-Neunaber,Neuron,14,0,0,14,No,No,None
-Kinotone,sparks,59,0,0,59,Yes,Yes,unknown
+Chase Bliss Audio,Preamp MkII,14,0,1,15,Yes,No,None
+Chase Bliss Audio,Generation Loss MKI,13,0,1,14,No,No,None
+Chase Bliss Audio,Ayahuasca,15,0,1,16,No,No,None
+Chase Bliss Audio,Gravitas,19,0,1,20,No,Yes,None
+Chase Bliss Audio,Spectre,19,0,1,20,No,Yes,None
+Chase Bliss Audio,Clean,75,0,1,76,Yes,Yes,unknown
+Fractal Audio Systems,Axe-Fx II XL+,114,0,1,115,No,No,None
+Fractal Audio Systems,AX8,72,0,1,73,No,No,None
+Fractal Audio Systems,Axe-Fx II XL,114,0,1,115,No,No,None
+Fractal Audio Systems,Axe-Fx II,114,0,1,115,No,No,None
+Fractal Audio Systems,FX8,87,0,1,88,No,No,None
+WMD,Geiger Counter Pro,48,0,1,49,No,No,None
+Modor,NF-1,106,0,1,107,No,No,None
+Hughes & Kettner,GrandMeister Deluxe 40,39,0,1,40,No,No,None
+Hughes & Kettner,TriAmp Mk3,23,0,1,24,No,No,None
+DigiTech,Whammy DT,1,0,1,2,No,No,None
+DigiTech,Bass Whammy,1,0,1,2,No,No,None
+DigiTech,Whammy,1,0,1,2,No,No,None
+Adrenalinn,III,10,0,1,11,No,No,None
+Dreadbox,Typhon,19,0,1,20,No,No,None
+Dreadbox,Medusa,111,0,1,112,No,No,None
+Alexander,Space Race,16,0,1,17,No,No,None
+Alexander,Superball,43,0,1,44,Yes,No,None
+Alexander,Marshmallow,22,0,1,23,No,No,None
+Alexander,F.13 Neo,21,0,1,22,No,No,None
+Alexander,Wavelength,18,0,1,19,No,No,None
+Alexander,Syntax Error,21,0,1,22,No,No,None
+Alexander,Colour Theory ,31,0,1,32,No,No,None
+Alexander,Super Neo-Matic,15,0,1,16,No,No,None
+Alexander,Quadrant,15,0,1,16,Yes,No,None
+Alexander,Defender Neo,20,0,1,21,No,No,None
+Alexander,Quadrant Audio Mirror,21,0,1,22,No,No,None
+Alexander,Super Radical Delay,24,0,1,25,No,No,None
+Alexander,Oblivion Vintage Delay,24,0,1,25,No,No,None
+Alexander,Fever Pitch,44,0,1,45,Yes,No,None
+Alexander,Radical Delay DX,19,0,1,20,No,No,None
+Alexander,SKY 5000,24,0,1,25,No,No,None
+EVH,5150III 100S HEAD,2,0,1,3,No,No,None
+EVH,5150III 50W HEAD,2,0,1,3,No,No,None
+EVH,5150III 50W EL34 2X12 COMBO,2,0,1,3,No,No,None
+EVH,5150III 50W EL34 HEAD,2,0,1,3,No,No,None
+EVH,5150III 50W 6L6 1X12 COMBO,2,0,1,3,No,No,None
+EVH,5150III 50S 6L6 HEAD,2,0,1,3,No,No,None
+EVH,5150III 50W EL34 1X12 COMBO,2,0,1,3,No,No,None
+EVH,5150III 50W 6L6 2X12 COMBO,2,0,1,3,No,No,None
+EVH,5150III 50W 6L6 HEAD,2,0,1,3,No,No,None
+EVH,5150III 100W HEAD,2,0,1,3,No,No,None
+EVH,5150IIIS 100W EL34 HEAD,2,0,1,3,No,No,None
+Free The Tone,TA-1H Tri Avatar,9,0,1,10,No,No,None
+Free The Tone,Flight Time FT-2Y,75,0,1,76,No,No,None
+Free The Tone,PA-1QG,13,0,1,14,No,No,None
+Free The Tone,PA-1QB,13,0,1,14,No,No,None
+Free The Tone,PA-1QA,13,0,1,14,No,No,None
+Free The Tone,FF-1Y,43,0,1,44,Yes,No,None
+Free The Tone,AS-1R Ambi Space,12,0,1,13,No,No,None
+Disaster Area,DPC Micro,3,0,0,3,Yes,No,None
+Disaster Area,microclockgen4,6,0,1,7,Yes,Yes,unknown
+Disaster Area,DPC-8EZ Gen2,19,0,1,20,Yes,No,None
+Oscillator Devices,Minerva,30,0,1,31,Yes,Yes,No
+Oscillator Devices,Siren,95,0,1,96,Yes,Yes,No
+Oscillator Devices,Goblin-EXP in EHX Pitch Fork,12,0,1,13,Yes,Yes,No
+Darkglass Electronics,Microtubes Infinity,15,0,1,16,No,No,None
+KSR Amplification,Artemis 100,121,0,1,122,No,No,None
+KSR Amplification,Colossus H-100,121,0,1,122,No,No,None
+KSR Amplification,Gemini 100,121,0,1,122,No,No,None
+Seymour Duncan,Andromeda,25,0,1,26,No,No,None
+TC Electronic,Plethora X5,69,0,1,70,Yes,Yes,None
+TC Electronic,Plethora X3,45,0,1,46,Yes,Yes,None
+TC Electronic,Hall of Fame 2 X4 Reverb,8,0,1,9,No,No,None
+TC Electronic,Nova Drive,15,0,1,16,No,No,None
+TC Electronic,Flashback 2 X4 Delay,14,0,1,15,No,No,None
+TC Electronic,Ditto X4,17,0,1,18,Yes,Yes,None
+Kemper,Profiler Player,25,0,1,26,No,Yes,None
+Kemper,Profiler,42,0,1,43,Yes,Yes,None
+Old Blood Noise Endeavors,signalblenderstereo,15,0,1,16,Yes,Yes,unknown
+Old Blood Noise Endeavors,blackfountain,20,0,1,21,Yes,Yes,unknown
+Old Blood Noise Endeavors,Dark Star Stereo Soundscape Reverb,18,0,1,19,No,No,None
+Sheeran,Looper+,24,0,1,25,No,No,None
+Sheeran,looperx,92,0,1,93,No,No,None
+Vongon,Polyphrase,14,0,1,15,No,Yes,None
+Two Notes Audio Engineering,Torpedo C.A.B. (v4 firmware),282,0,1,283,No,No,None
+Two Notes Audio Engineering,Torpedo Live v4 firmware,282,0,1,283,No,No,None
+Two Notes Audio Engineering,Opus,69,0,1,70,No,No,None
+Two Notes Audio Engineering,Torpedo Studio,345,0,1,346,No,No,None
+Two Notes Audio Engineering,Torpedo Captor X,291,0,1,292,No,No,None
+Two Notes Audio Engineering,Torpedo Live v3 firmware,140,0,1,141,No,No,None
+Moog,Mother-32,9,0,1,10,No,No,None
+Moog,Sub Phatty,139,0,1,140,No,No,None
+Moog,Matriarch,112,0,1,113,Yes,Yes,None
+Moog,MF-108M Cluster Flux,65,0,1,66,No,No,None
+Moog,Subsequent 25,142,0,1,143,No,No,None
+Moog,MF-105M MIDI MuRF,42,0,1,43,No,No,None
+Moog,Grandmother,75,0,1,76,No,No,None
+Moog,Minimoog Voyager,96,0,1,97,No,No,None
+Moog,Subharmonicon,12,0,1,13,No,No,None
+Moog,Minitaur,74,0,1,75,No,No,None
+Moog,MF-104M,29,0,1,30,No,No,None
+Moog,Minimoog Voyager XL,186,0,1,187,No,No,None
+Moog,Subsequent 37,161,0,1,162,No,No,None
+Singular Sound,BeatBuddy,37,0,1,38,Yes,Yes,None
+Singular Sound,Aeros Looper,111,0,1,112,Yes,Yes,true
+Suhr,Hedgehog,9,0,1,10,No,No,None
+Suhr,PT-100,15,0,1,16,No,No,None
+Suhr,Discovery,20,0,1,21,Yes,No,None
+Access,Virus TI,131,0,1,132,No,No,None
+Sequential,Prophet 12,106,0,1,107,No,No,None
+Sequential,Pro 3,114,0,1,115,No,No,None
+Sequential,OB-6,50,0,1,51,No,No,None
+Sequential,Prophet 6,53,0,1,54,No,No,None
+Sequential,Prophet X,87,0,1,88,No,No,None
+Sequential,Rev 2,63,0,1,64,No,No,None
+Aerospace Audio,Atmosphere v2,60,0,1,61,No,No,None
+Freds Labs,Buzzy!,31,0,1,32,No,No,None
+OTO Machines,BOUM,13,0,1,14,No,No,None
+OTO Machines,BIM,20,0,1,21,No,No,None
+OTO Machines,BAM,12,0,1,13,No,No,None
+OTO Machines,Biscuit,78,0,1,79,No,No,None
+That Worship Sound,Worship Essentials 2,48,0,1,49,No,No,None
+That Worship Sound,Worship Guitar Essentials 2,80,0,1,81,No,No,None
+Studiologic,Sledge,67,0,1,68,No,No,None
+Boss,RV-500,21,0,1,22,No,No,None
+Boss,Katana Artist,13,0,1,14,No,No,None
+Boss,Slicer SL-2,0,0,0,0,No,No,None
+Boss,MD-500,16,0,1,17,No,No,None
+Boss,Katana,7,0,1,8,No,No,None
+Boss,GT1000 Core,1,0,1,2,No,Yes,None
+Boss,Katana Head,13,0,1,14,No,No,None
+Boss,DM-101,8,0,1,9,No,No,None
+Boss,OD-200,14,0,1,15,No,No,None
+Boss,RC-10R,18,0,1,19,No,Yes,None
+Boss,RE-202,14,0,1,15,Yes,No,No
+Boss,DD-500,26,0,1,27,No,No,None
+Flower Pedals,Dahlia Dual Analog Delay,35,0,1,36,No,No,None
+Flower Pedals,Sunflower,20,0,1,21,No,No,None
+Electronic Audio Experiments,Sending v2 (Firmware 2.0),51,0,1,52,No,No,None
+Electronic Audio Experiments,Sending v2,20,0,1,21,No,No,None
+Sound Sculpture,Switchblade 8F,12,0,1,13,Yes,No,None
+Decibel Eleven,Loop Expander,8,0,1,9,No,No,None
+Behringer,X-Air,33,0,1,34,No,No,None
+Behringer,Deepmind 6,113,0,1,114,No,No,None
+Behringer,Pro-800,22,0,1,23,No,No,None
+Behringer,ac112,8,0,1,9,No,No,None
+Behringer,Deepmind 12D,113,0,1,114,No,No,None
+Behringer,Deepmind 12,113,0,1,114,No,No,None
+Hologram Electronics,Chroma Console,61,0,1,62,Yes,Yes,None
+Hologram Electronics,Dream Sequence,5,0,1,6,No,No,None
+Hologram Electronics,Microcosm,35,0,1,36,Yes,Yes,None
+Gamechanger Audio,Bigsby,31,0,1,32,No,No,None
+OPFXS,v-uno,24,0,1,25,No,No,None
+Red Panda,Raster 2,33,0,1,34,No,No,None
+Red Panda,Tensor,18,0,1,19,No,No,None
+Red Panda,Context 2,135,0,1,136,No,No,None
+Red Panda,Bitmap 2,20,0,1,21,No,No,None
+Red Panda,Particle 2,36,0,1,37,No,No,None
+Red Panda,radius,28,0,1,29,Yes,Yes,unknown
+TastyChips,GR1,63,0,1,64,No,No,None
+Melbourne Instruments,Nina,39,0,1,40,No,No,None
+Mutable Instruments,Shruthi,39,0,1,40,No,No,None
+Marshall,DSL40CR,6,0,1,7,No,No,None
+Empress,ZOIA,2,0,1,3,No,No,None
+Empress,Echo System,43,0,1,44,No,Yes,None
+Empress,Phaser,10,0,1,11,No,Yes,None
+Empress,Reverb,53,0,1,54,No,Yes,None
+Empress,Tremolo2,30,0,1,31,No,No,None
+Bondi Effects,Art Van Delay,13,0,1,14,No,No,None
+Jackson Audio,El Guapo,16,0,1,17,No,No,None
+Jackson Audio,The Optimist,3,0,1,4,No,No,None
+Jackson Audio,Golden Boy,7,0,1,8,No,No,None
+Jackson Audio,Broken Arrow,7,0,1,8,No,No,None
+Jackson Audio,New Wave,11,0,1,12,No,No,None
+Jackson Audio,Bloom,9,0,1,10,No,No,None
+Jackson Audio,Asabi,5,0,1,6,No,No,None
+the montreal assembly,856forzellersasn,67,0,1,68,No,Yes,None
+Kernom,elipse,11,0,1,12,Yes,Yes,unknown
+Kernom,Moho,9,0,1,10,No,No,None
+Kernom,Ridge,9,0,1,10,No,No,None
+Pigtronix,echolution3,17,0,1,18,Yes,Yes,unknown
+Pigtronix,Infinity,61,0,1,62,No,No,None
+Pigtronix,Echolution 2 Deluxe,27,0,1,28,No,Yes,None
+Morningstar Engineering,MC8,38,0,1,39,Yes,No,true
+Morningstar Engineering,MC6 MKII,26,0,1,27,Yes,No,true
+Morningstar Engineering,ML5R,24,0,1,25,Yes,No,None
+Morningstar Engineering,mc8pro,21,0,1,22,Yes,Yes,unknown
+Morningstar Engineering,MC6 PRO,40,0,1,41,Yes,Yes,true
+Morningstar Engineering,ML5,17,0,1,18,Yes,No,None
+Morningstar Engineering,MC3,19,0,1,20,No,No,None
+Morningstar Engineering,ML10X,26,0,1,27,Yes,No,None
+Novation,Bass Station Keyboard,7,0,1,8,No,No,None
+Novation,UltraNova,114,0,1,115,No,No,None
+Novation,Circuit Mono Station,150,0,1,151,No,No,None
+Novation,Summit,57,0,1,58,No,No,None
+Novation,Circuit Rhythm,64,0,1,65,Yes,Yes,None
+Novation,Peak,59,0,1,60,No,No,None
+Novation,Circuit,113,0,1,114,No,No,None
+Novation,Bass Station II,64,0,1,65,No,No,None
+Novation,MiniNova,104,0,1,105,No,No,None
+Beetronics,Seabee Harmochorus,24,0,1,25,No,No,None
+Arturia,MiniFreak,41,0,1,42,No,No,None
+Arturia,MatrixBrute,80,0,1,81,No,No,None
+Arturia,MicroFreak,20,0,1,21,No,No,None
+Chaos Audio,Stratus,6,0,1,7,No,No,None
+IK Multimedia,ToneX,107,0,1,108,No,No,None
+IK Multimedia,UNO Synth,67,0,1,68,No,No,None
+G-LAB,MIDI 4 X LOOP-er,10,0,1,11,No,No,None
+G-LAB,MIDI 2 X LOOP-er,10,0,1,11,No,No,None
+G-LAB,BC-1,13,0,1,14,Yes,No,None
+G-LAB,midiwoweewahmww1,8,0,1,9,Yes,Yes,unknown
+Headrush,core,46,0,1,47,Yes,Yes,unknown
+Headrush,Gigboard,26,0,1,27,No,No,None
+Headrush,Looperboard,86,0,1,87,Yes,No,None
+Headrush,MX5,25,0,1,26,No,No,None
+Headrush,Pedalbaord,34,0,1,35,No,No,None
+Headrush,flexprime,43,0,1,44,Yes,Yes,unknown
+Neunaber,Illumine,24,0,1,25,No,No,None
+Neunaber,Neuron,14,0,1,15,No,No,None
+Kinotone,sparks,59,0,1,60,Yes,Yes,unknown
 Kinotone,Ribbons,44,0,0,44,No,No,None
-Kinotone,ribbonsfw2,63,0,0,63,Yes,Yes,unknown
-Laney,BBC The Difference Engine,52,0,0,52,Yes,Yes,None
-Jet Pedals,Lamb,11,0,0,11,No,No,None
-Jet Pedals,Revelation Reverb 2.0,15,0,0,15,No,No,None
-Sunday Sounds,Sunday Guitar 2,125,0,0,125,No,No,None
-Sunday Sounds,Sunday Keys 2020,66,0,0,66,No,No,None
-TC Helicon,Voicelive 3 Extreme,51,0,0,51,No,No,None
-TC Helicon,Voicelive Touch 2,110,0,0,110,No,No,None
-TC Helicon,Voicelive Rack,113,0,0,113,No,No,None
-TC Helicon,Voicelive 3,27,0,0,27,Yes,Yes,None
-Peavey,Mini MEGA,11,0,0,11,No,No,None
-Panda Audio,Future Impact,16,0,0,16,No,No,None
-Hotone,Ampero,60,0,0,60,No,No,None
-Hotone,Ampero 2 Stomp,54,0,0,54,No,No,None
-Blackstar Amplification,Silverline Stereo Deluxe,52,0,0,52,No,No,None
-Blackstar Amplification,Silverline Deluxe,52,0,0,52,No,No,None
-Blackstar Amplification,Amped 3,36,0,0,36,No,No,None
-Blackstar Amplification,Silverline Deluxe Head,52,0,0,52,No,No,None
-Blackstar Amplification,Amped 1,25,0,0,25,No,No,None
-toneking,imperialtritubepreamp,20,0,0,20,Yes,Yes,Unknown
-JMK Music Pedals,CLOCKstep,23,0,0,23,No,No,None
-Mooer,Ocean Machine,88,0,0,88,No,No,None
-Mooer,GE300 LITE,35,0,0,35,No,No,None
-Mooer,GE300,39,0,0,39,No,No,None
-Ramble FX,Kismet,12,0,0,12,No,No,None
-cornerstonemusicgear,nucleo,26,0,0,26,Yes,Yes,unknown
-Wampler Pedals,Terraform,1,0,0,1,No,No,None
-Wampler Pedals,pantheon,8,0,0,8,Yes,No,None
-Wampler Pedals,Metaverse,24,0,0,24,No,No,None
-Make Noise Co.,0-COAST,73,0,0,73,No,No,None
-Stone Deaf,Syncopy,26,0,0,26,No,No,None
-Stone Deaf,Tremotron,19,0,0,19,No,No,None
-Positive Grid,Bias Head,26,0,0,26,No,No,None
-Positive Grid,Bias Distortion Pro,15,0,0,15,No,No,None
-Positive Grid,Bias Rack,19,0,0,19,No,No,None
-Poly Effects,Verbs,8,0,0,8,No,No,None
-Poly Effects,Flat V,21,0,0,21,No,No,None
-Synergy Amps,SYN2,7,0,0,7,No,No,None
-Synergy Amps,syn20ir,6,0,0,6,No,No,true
-RJM Music,Overture,18,0,0,18,No,No,None
-RJM Music,Mini Amp Gizmo,16,0,0,16,No,No,None
-RJM Music,Mastermind PBC/10,70,0,0,70,No,No,None
-Fender,Tone Master Pro,18,0,0,18,No,No,None
+Kinotone,ribbonsfw2,63,0,1,64,Yes,Yes,unknown
+Laney,BBC The Difference Engine,52,0,1,53,Yes,Yes,None
+Jet Pedals,Lamb,11,0,1,12,No,No,None
+Jet Pedals,Revelation Reverb 2.0,15,0,1,16,No,No,None
+BluGuitar,Amp1 (Mercury & Iridium Edition),6,0,1,7,Yes,No,None
+Sunday Sounds,Sunday Guitar 2,125,0,1,126,No,No,None
+Sunday Sounds,Sunday Keys 2020,66,0,1,67,No,No,None
+Teenage Engineering,OP-Z,48,0,1,49,No,No,None
+Walrus Audio,m1mk2,26,0,1,27,Yes,Yes,unknown
+Walrus Audio,acs1mk2,46,0,1,47,Yes,Yes,unknown
+Walrus Audio,ACS1,11,0,1,12,Yes,No,None
+Walrus Audio,qi,24,0,1,25,Yes,Yes,unknown
+Walrus Audio,R1,15,0,1,16,Yes,No,None
+Walrus Audio,M1,40,0,1,41,Yes,No,None
+Walrus Audio,d1mk2,22,0,1,23,Yes,Yes,unknown
+Walrus Audio,D1 (Old version),21,0,1,22,Yes,Yes,None
+Walrus Audio,Meraki (Stereo Analog Delay),23,0,1,24,No,No,None
+Walrus Audio,r1mk2,17,0,1,18,Yes,Yes,unknown
+Walrus Audio,D1 (New version),21,0,1,22,Yes,Yes,None
+TC Helicon,Voicelive 3 Extreme,51,0,1,52,No,No,None
+TC Helicon,Voicelive Touch 2,110,0,1,111,No,No,None
+TC Helicon,Voicelive Rack,113,0,1,114,No,No,None
+TC Helicon,Voicelive 3,27,0,1,28,Yes,Yes,None
+Peavey,Mini MEGA,11,0,1,12,No,No,None
+Panda Audio,Future Impact,16,0,1,17,No,No,None
+Hotone,Ampero,60,0,1,61,No,No,None
+Hotone,Ampero 2 Stomp,54,0,1,55,No,No,None
+Meeblip,Triode,28,0,1,29,No,No,None
+Meeblip,Geode,22,0,1,23,No,No,None
+GFI System,Solis Ventus,76,0,1,77,Yes,Yes,None
+GFI System,Enieqma,96,0,1,97,Yes,Yes,None
+GFI System,Synesthesia,39,0,1,40,Yes,Yes,None
+GFI System,Duophony,25,0,1,26,Yes,Yes,None
+GFI System,Specular Tempus,15,0,1,16,No,Yes,None
+Blackstar Amplification,Silverline Stereo Deluxe,52,0,1,53,No,No,None
+Blackstar Amplification,Silverline Deluxe,52,0,1,53,No,No,None
+Blackstar Amplification,Amped 3,36,0,1,37,No,No,None
+Blackstar Amplification,Silverline Deluxe Head,52,0,1,53,No,No,None
+Blackstar Amplification,Amped 1,25,0,1,26,No,No,None
+Dave Smith Instruments,Evolver,53,0,1,54,No,No,None
+ENGL,Savage 60 Mark II E630II,28,0,1,29,No,No,None
+ENGL,Savage 120 Mark II E610II,28,0,1,29,No,No,None
+ENGL,Invader II E642II,12,0,1,13,No,No,None
+ENGL,Steve Morse Signature E662,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E663,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E661,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E660,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E656,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E657,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E665,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E664,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E667,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E666,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E669,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E668,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E658,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E659,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E670,1,0,1,2,No,No,None
+ENGL,Steve Morse Signature E671,1,0,1,2,No,No,None
+Neural DSP,nanocortex,11,0,1,12,Yes,Yes,unknown
+Neural DSP,Quad Cortex,41,0,1,42,No,Yes,None
+toneking,imperialtritubepreamp,20,0,1,21,Yes,Yes,Unknown
+JMK Music Pedals,CLOCKstep,23,0,1,24,No,No,None
+Mooer,Ocean Machine,88,0,1,89,No,No,None
+Mooer,GE300 LITE,35,0,1,36,No,No,None
+Mooer,GE300,39,0,1,40,No,No,None
+Ramble FX,Kismet,12,0,1,13,No,No,None
+Source Audio,Ultrawave,18,0,1,19,No,No,None
+Source Audio,Nemesis,52,0,1,53,Yes,Yes,None
+Source Audio,Collider,67,0,1,68,Yes,Yes,None
+Source Audio,Spectrum Intelligence Filter,7,0,1,8,No,No,None
+Source Audio,EQ2,128,0,1,129,Yes,Yes,None
+Source Audio,Ventris,101,0,1,102,Yes,Yes,None
+Source Audio,Programmable EQ,15,0,1,16,No,No,None
+Source Audio,artifakt,94,0,1,95,Yes,Yes,unknown
+Source Audio,Atlas,25,0,1,26,Yes,Yes,unknown
+Source Audio,C4 Synth,7,0,1,8,No,Yes,None
+Line 6,Pocket POD,108,0,1,109,No,No,None
+Line 6,Helix LT,37,0,1,38,No,No,None
+Line 6,HX Stomp,32,0,1,33,Yes,Yes,None
+Line 6,DT25 Head,203,0,1,204,No,No,None
+Line 6,HX Stomp XL,34,0,1,35,Yes,Yes,None
+Line 6,HX Effects,28,0,1,29,No,No,None
+Line 6,DL4 MKII,23,0,1,24,Yes,Yes,None
+Line 6,Powercab 212 Plus,114,0,1,115,No,No,None
+Line 6,DT25 112,203,0,1,204,No,No,None
+Line 6,POD GO,30,0,1,31,No,No,None
+Line 6,POD HD PRO X,28,0,1,29,No,No,None
+Line 6,Helix,38,0,1,39,No,No,None
+Line 6,Powercab Plus,28,0,1,29,No,No,None
+Line 6,Helix Rack and Control,38,0,1,39,No,No,None
+Line 6,HX One,40,0,1,41,Yes,Yes,None
+Line 6,Powercab 112 Plus,59,0,1,60,No,No,None
+Line 6,POD HD500X,28,0,1,29,No,No,None
+Line 6,Helix Floor,39,0,1,40,Yes,Yes,None
+Line 6,M13 v2.0 Sompbox Modeler,43,0,1,44,No,No,None
+Line 6,catalystcx,30,0,1,31,Yes,Yes,unknown
+Line 6,M5 Stompbox Modeler,7,0,1,8,No,No,None
+Line 6,M9 v2.0 Stompbox Modeler,31,0,1,32,No,No,None
+cornerstonemusicgear,nucleo,26,0,1,27,Yes,Yes,unknown
+Roland,SE-02,58,0,1,59,No,No,None
+Roland,D-05,8,0,1,9,No,No,None
+Roland,TB-03,10,0,1,11,No,No,None
+Roland,SH-01A,42,0,1,43,No,No,None
+Roland,FR-18D,0,0,0,0,No,No,None
+Roland,TR-08,38,0,1,39,No,No,None
+Roland,JU-06,34,0,1,35,No,No,None
+Roland,JX-03,42,0,1,43,No,No,None
+Roland,JP-08,48,0,1,49,No,No,None
+Roland,BK-7m,26,0,1,27,No,No,None
+Roland,SYSTEM-8,79,0,1,80,No,No,None
+Roland,VP-03,31,0,1,32,No,No,None
+Roland,TR-8,50,0,1,51,No,No,None
+Roland,JD-XA,19,0,1,20,No,No,None
+Roland,FR-06/07/08,3,0,1,4,No,No,None
+Roland,TR-09,39,0,1,40,No,No,None
+Roland,GAIA SH-01,8,0,1,9,No,No,None
+Roland,SYSTEM-1,54,0,1,55,No,No,None
+Roland,JD-Xi,20,0,1,21,No,No,None
+Wampler Pedals,Terraform,1,0,1,2,No,No,None
+Wampler Pedals,pantheon,8,0,1,9,Yes,No,None
+Wampler Pedals,Metaverse,24,0,1,25,No,No,None
+Make Noise Co.,0-COAST,73,0,1,74,No,No,None
+Stone Deaf,Syncopy,26,0,1,27,No,No,None
+Stone Deaf,Tremotron,19,0,1,20,No,No,None
+Yamaha,reface YC,28,0,1,29,No,No,None
+Yamaha,reface CP,23,0,1,24,No,No,None
+Yamaha,reface CS,30,0,1,31,No,No,None
+Yamaha,reface DX,42,0,1,43,No,No,None
+Korg,microKORG XL+,92,0,1,93,No,No,None
+Korg,volca keys,16,0,1,17,No,No,None
+Korg,volca drum,31,0,1,32,No,No,None
+Korg,volca bass,12,0,1,13,No,No,None
+Korg,volca kick,10,0,1,11,No,No,None
+Korg,microKORG,74,0,1,75,No,No,None
+Korg,MS2000,65,0,1,66,No,No,None
+Korg,volca nubass,11,0,1,12,No,No,None
+Korg,wavestate,52,0,1,53,No,No,None
+Korg,volca sample,11,0,1,12,No,No,None
+Korg,minilogue,41,0,1,42,No,No,None
+Korg,volca fm,11,0,1,12,No,No,None
+Korg,minilogue xd,60,0,1,61,No,No,None
+Korg,Kaoss Pad 3,10,0,1,11,No,No,None
+Korg,Kaoss Pad 2,5,0,1,6,No,No,None
+Korg,monologue,22,0,1,23,No,No,None
+Korg,volca beats,20,0,1,21,No,No,None
+Electro Harmonix,1440,9,0,1,10,No,No,None
+Electro Harmonix,45000,29,0,1,30,No,No,None
+Electro Harmonix,95000,67,0,1,68,No,No,None
+Electro Harmonix,8-Step Program,63,0,1,64,No,No,None
+Electro Harmonix,HOG2,40,0,1,41,No,No,None
+Electro Harmonix,ModRex,22,0,1,23,No,No,None
+Positive Grid,Bias Head,26,0,1,27,No,No,None
+Positive Grid,Bias Distortion Pro,15,0,1,16,No,No,None
+Positive Grid,Bias Rack,19,0,1,20,No,No,None
+Modal Electronics,1,166,0,1,167,No,No,None
+Modal Electronics,2,166,0,1,167,No,No,None
+Modal Electronics,8,80,0,1,81,No,No,None
+Modal Electronics,002R,166,0,1,167,No,No,None
+Modal Electronics,CRAFTsynth 2.0,107,0,1,108,No,No,None
+Modal Electronics,ARGON 8X,117,0,1,118,No,No,None
+Modal Electronics,SKULPTsynthesiser,114,0,1,115,No,No,None
+Modal Electronics,ARGON 8,117,0,1,118,No,No,None
+Modal Electronics,ARGON 8M,117,0,1,118,No,No,None
+Modal Electronics,008R,80,0,1,81,No,No,None
+Poly Effects,Verbs,8,0,1,9,No,No,None
+Poly Effects,Flat V,21,0,1,22,No,No,None
+Synergy Amps,SYN2,7,0,1,8,No,No,None
+Synergy Amps,syn20ir,6,0,1,7,No,No,true
+Waldorf,Blofeld,177,0,1,178,No,No,None
+Dimehead,NAM,49,0,1,50,No,No,None
+Eventide,Knifedrop,11,0,1,12,No,No,None
+Eventide,H9,29,0,1,30,Yes,Yes,None
+Eventide,Rose,41,0,1,42,No,No,None
+Eventide,Blackhole,17,0,1,18,No,No,None
+Eventide,Tricerachorus,18,0,1,19,No,No,None
+Eventide,Ultratap,16,0,1,17,No,No,None
+RJM Music,Overture,18,0,1,19,No,No,None
+RJM Music,Mini Amp Gizmo,16,0,1,17,No,No,None
+RJM Music,Mastermind PBC/10,70,0,1,71,No,No,None
+Fender,Tone Master Pro,18,0,1,19,No,No,None
+Strymon,Ultraviolet,11,0,1,12,No,No,None
+Strymon,Deco,33,0,1,34,No,No,None
+Strymon,blueSky,22,0,1,23,No,No,None
+Strymon,DIG,37,0,1,38,No,No,None
+Strymon,Zelzah,36,0,1,37,No,No,None
+Strymon,Cloudburst,14,0,1,15,No,No,None
+Strymon,NightSky,55,0,1,56,Yes,Yes,None
+Strymon,El Capistan,33,0,1,34,No,No,None
+Strymon,Volante,52,0,1,53,Yes,Yes,None
+Strymon,Iridium,16,0,1,17,No,No,None
+Strymon,Flint,36,0,1,37,No,No,None
+Strymon,Mobius,76,0,1,77,Yes,Yes,None
+Strymon,ec1,17,0,1,18,Yes,Yes,unknown
+Strymon,Timeline,65,0,1,66,Yes,Yes,None
+Strymon,Lex,31,0,1,32,No,No,None
+Strymon,Sunset,22,0,1,23,No,No,None
+Strymon,Riverside,23,0,1,24,No,No,None
+Strymon,Bigsky,68,0,1,69,Yes,Yes,None
+Strymon,Brig,13,0,1,14,No,No,None
+Strymon,Compadre,12,0,1,13,No,No,None
+Strymon,Bigsky MX,122,0,1,123,Yes,Yes,None

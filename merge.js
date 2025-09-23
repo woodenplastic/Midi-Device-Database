@@ -226,6 +226,41 @@ function mergeDevices(deviceA, deviceB) {
 
 // Function to create a standardized device object
 function createStandardDevice(deviceData, brandName, deviceName) {
+    // Ensure cc, nrpn, and pc are arrays or convert them from objects if needed
+    let ccArray = [];
+    let nrpnArray = [];
+    let pcArray = [];
+
+    // Handle CC parameters
+    if (deviceData.cc) {
+        if (Array.isArray(deviceData.cc)) {
+            ccArray = deviceData.cc;
+        } else if (typeof deviceData.cc === 'object') {
+            // Convert object to array format
+            ccArray = [deviceData.cc];
+        }
+    }
+
+    // Handle NRPN parameters
+    if (deviceData.nrpn) {
+        if (Array.isArray(deviceData.nrpn)) {
+            nrpnArray = deviceData.nrpn;
+        } else if (typeof deviceData.nrpn === 'object') {
+            // Convert object to array format
+            nrpnArray = [deviceData.nrpn];
+        }
+    }
+
+    // Handle PC parameters
+    if (deviceData.pc) {
+        if (Array.isArray(deviceData.pc)) {
+            pcArray = deviceData.pc;
+        } else if (typeof deviceData.pc === 'object') {
+            // Convert object to array format
+            pcArray = [deviceData.pc];
+        }
+    }
+
     return {
         brand: brandName,
         device_name: deviceName,
@@ -238,7 +273,7 @@ function createStandardDevice(deviceData, brandName, deviceName) {
             instructions: deviceData.midi_channel?.instructions || ""
         },
         instructions: deviceData.instructions || "",
-        cc: (deviceData.cc || []).map(cc => ({
+        cc: ccArray.map(cc => ({
             name: cc.name || "",
             description: cc.description || "",
             usage: cc.usage || "",
@@ -248,7 +283,7 @@ function createStandardDevice(deviceData, brandName, deviceName) {
             max: typeof cc.max === 'string' ? parseInt(cc.max, 10) : (cc.max !== undefined ? cc.max : 127),
             type: cc.type || "Parameter"
         })),
-        nrpn: (deviceData.nrpn || []).map(nrpn => ({
+        nrpn: nrpnArray.map(nrpn => ({
             name: nrpn.name || "",
             description: nrpn.description || "",
             usage: nrpn.usage || "",
@@ -259,7 +294,16 @@ function createStandardDevice(deviceData, brandName, deviceName) {
             max: typeof nrpn.max === 'string' ? parseInt(nrpn.max, 10) : (nrpn.max !== undefined ? nrpn.max : 16383),
             type: nrpn.type || "Parameter"
         })),
-        pc: []
+        pc: pcArray.map(pc => ({
+            name: pc.name || "",
+            description: pc.description || "",
+            usage: pc.usage || "",
+            curve: pc.curve || "0-based",
+            value: typeof pc.value === 'string' ? parseInt(pc.value, 10) : pc.value,
+            min: typeof pc.min === 'string' ? parseInt(pc.min, 10) : (pc.min !== undefined ? pc.min : 0),
+            max: typeof pc.max === 'string' ? parseInt(pc.max, 10) : (pc.max !== undefined ? pc.max : 127),
+            type: pc.type || "Parameter"
+        }))
     };
 }
 
