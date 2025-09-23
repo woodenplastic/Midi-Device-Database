@@ -1,0 +1,128 @@
+name: Check MIDI Database Updates
+
+on:
+  schedule:
+    # Run every day at 09:00 UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Check for updates
+        id: check
+        run: |
+          # Function to extract version number from filename
+          extract_version() {
+            echo "$1" | grep -o 'v[0-9]\+' | sed 's/v//' || echo "0"
+          }
+          
+          # Find current highest version in our repository
+          CURRENT_VERSION=0
+          if ls midi-database-v*.json 1> /dev/null 2>&1; then
+            for file in midi-database-v*.json; do
+              VERSION=$(extract_version "$file")
+              if [ "$VERSION" -gt "$CURRENT_VERSION" ]; then
+                CURRENT_VERSION=$VERSION
+              fi
+            done
+          fi
+          
+          echo "Current version: $CURRENT_VERSION"
+          echo "current_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+          
+          # Check remote repository for available versions
+          REPO_URL="https://api.github.com/repos/woodenplastic/MidiDeviceDefinitions/contents/Json"
+          REMOTE_FILES=$(curl -s "$REPO_URL" | jq -r '.[].name | select(test("midi-database-v[0-9]+\\.json"))')
+          
+          HIGHEST_REMOTE_VERSION=0
+          DOWNLOAD_FILE=""
+          
+          for file in $REMOTE_FILES; do
+            VERSION=$(extract_version "$file")
+            if [ "$VERSION" -gt "$HIGHEST_REMOTE_VERSION" ]; then
+              HIGHEST_REMOTE_VERSION=$VERSION
+              DOWNLOAD_FILE=$file
+            fi
+          done
+          
+          echo "Highest remote version: $HIGHEST_REMOTE_VERSION"
+          echo "highest_remote_version=$HIGHEST_REMOTE_VERSION" >> $GITHUB_OUTPUT
+          echo "download_file=$DOWNLOAD_FILE" >> $GITHUB_OUTPUT
+          
+          # Check if update is needed
+          if [ "$HIGHEST_REMOTE_VERSION" -gt "$CURRENT_VERSION" ]; then
+            echo "update_needed=true" >> $GITHUB_OUTPUT
+            echo "Update needed: v$CURRENT_VERSION -> v$HIGHEST_REMOTE_VERSION"
+          else
+            echo "update_needed=false" >> $GITHUB_OUTPUT
+            echo "No update needed"
+          fi
+
+      - name: Download updated file
+        if: steps.check.outputs.update_needed == 'true'
+        run: |
+          DOWNLOAD_URL="https://raw.githubusercontent.com/woodenplastic/MidiDeviceDefinitions/main/Json/${{ steps.check.outputs.download_file }}"
+          echo "Downloading: $DOWNLOAD_URL"
+          curl -L -o "${{ steps.check.outputs.download_file }}" "$DOWNLOAD_URL"
+          
+          # Verify the file was downloaded and is valid JSON
+          if ! jq empty "${{ steps.check.outputs.download_file }}" 2>/dev/null; then
+            echo "Error: Downloaded file is not valid JSON"
+            exit 1
+          fi
+          
+          echo "Successfully downloaded and validated ${{ steps.check.outputs.download_file }}"
+
+      - name: Create Pull Request
+        if: steps.check.outputs.update_needed == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: |
+            Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
+            
+            - Downloaded ${{ steps.check.outputs.download_file }}
+            - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
+          title: "Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}"
+          body: |
+            ## MIDI Database Update
+            
+            This PR updates the MIDI database file from the upstream repository.
+            
+            **Changes:**
+            - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
+            - Downloaded: `${{ steps.check.outputs.download_file }}`
+            - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}
+            
+            **Verification:**
+            - ✅ File downloaded successfully
+            - ✅ JSON format validated
+            
+            This update was automatically detected and downloaded by the GitHub Action workflow.
+          branch: update-midi-database-v${{ steps.check.outputs.highest_remote_version }}
+          delete-branch: true
+          draft: false
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.check.outputs.update_needed }}" == "true" ]; then
+            echo "✅ Update found and PR created for v${{ steps.check.outputs.highest_remote_version }}"
+          else
+            echo "ℹ️ No updates available. Current version v${{ steps.check.outputs.current_version }} is up to date."
+          fi
