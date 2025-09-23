@@ -85,16 +85,29 @@ jobs:
           
           echo "Successfully downloaded and validated ${{ steps.check.outputs.download_file }}"
           
+          # Create version info file
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
+          cat > midi-database-version.json << EOF
+          {
+            "version": ${{ steps.check.outputs.highest_remote_version }},
+            "generatedAt": "$TIMESTAMP",
+            "sourceFile": "${{ steps.check.outputs.download_file }}"
+          }
+          EOF
+          
+          echo "Created midi-database-version.json with version info"
+          
           # Configure git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Add and commit the file
-          git add "${{ steps.check.outputs.download_file }}"
+          # Add and commit both files
+          git add "${{ steps.check.outputs.download_file }}" midi-database-version.json
           git commit -m "Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
 
           - Downloaded ${{ steps.check.outputs.download_file }}
           - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
+          - Updated version info in midi-database-version.json
           - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}"
           
           # Push the changes
