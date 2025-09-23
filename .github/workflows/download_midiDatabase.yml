@@ -85,28 +85,57 @@ jobs:
           
           echo "Successfully downloaded and validated ${{ steps.check.outputs.download_file }}"
           
+          # Create minified version and gzip it
+          echo "Creating minified and gzipped version..."
+          jq -c '.' "${{ steps.check.outputs.download_file }}" | gzip > midi.min.json.gz
+          
+          # Verify the gzipped file
+          if ! gunzip -c midi.min.json.gz | jq empty 2>/dev/null; then
+            echo "Error: Minified/gzipped file is not valid JSON"
+            exit 1
+          fi
+          
+          echo "Successfully created midi.min.json.gz"
+          
+          # Get file sizes for logging
+          ORIGINAL_SIZE=$(wc -c < "${{ steps.check.outputs.download_file }}")
+          GZIPPED_SIZE=$(wc -c < midi.min.json.gz)
+          COMPRESSION_RATIO=$(echo "scale=1; $GZIPPED_SIZE * 100 / $ORIGINAL_SIZE" | bc -l)
+          
+          echo "File sizes:"
+          echo "  Original: ${ORIGINAL_SIZE} bytes"
+          echo "  Compressed: ${GZIPPED_SIZE} bytes"
+          echo "  Compression ratio: ${COMPRESSION_RATIO}%"
+          
           # Create version info file
           TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
           cat > midi-database-version.json << EOF
           {
             "version": ${{ steps.check.outputs.highest_remote_version }},
             "generatedAt": "$TIMESTAMP",
-            "sourceFile": "${{ steps.check.outputs.download_file }}"
+            "sourceFile": "${{ steps.check.outputs.download_file }}",
+            "minifiedFile": "midi.min.json.gz",
+            "fileSizes": {
+              "original": ${ORIGINAL_SIZE},
+              "compressed": ${GZIPPED_SIZE},
+              "compressionRatio": ${COMPRESSION_RATIO}
+            }
           }
           EOF
           
-          echo "Created midi-database-version.json with version info"
+          echo "Created midi-database-version.json with version and compression info"
           
           # Configure git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Add and commit both files
-          git add "${{ steps.check.outputs.download_file }}" midi-database-version.json
+          # Add and commit all files
+          git add "${{ steps.check.outputs.download_file }}" midi-database-version.json midi.min.json.gz
           git commit -m "Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
 
           - Downloaded ${{ steps.check.outputs.download_file }}
           - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
+          - Created minified/gzipped version: midi.min.json.gz (${COMPRESSION_RATIO}% of original size)
           - Updated version info in midi-database-version.json
           - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}"
           
