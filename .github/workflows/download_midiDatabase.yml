@@ -1,17 +1,13 @@
-name: Check MIDI Database Updates
+name: Download MIDI Database
 
 on:
-  schedule:
-    # Run every day at 09:00 UTC
-    - cron: '0 9 * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch: # Manual trigger only
 
 jobs:
-  check-updates:
+  download-database:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     
     steps:
       - name: Checkout repository
@@ -74,7 +70,7 @@ jobs:
             echo "No update needed"
           fi
 
-      - name: Download updated file
+      - name: Download and commit updated file
         if: steps.check.outputs.update_needed == 'true'
         run: |
           DOWNLOAD_URL="https://raw.githubusercontent.com/woodenplastic/MidiDeviceDefinitions/main/Json/${{ steps.check.outputs.download_file }}"
@@ -88,41 +84,27 @@ jobs:
           fi
           
           echo "Successfully downloaded and validated ${{ steps.check.outputs.download_file }}"
+          
+          # Configure git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add and commit the file
+          git add "${{ steps.check.outputs.download_file }}"
+          git commit -m "Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
 
-      - name: Create Pull Request
-        if: steps.check.outputs.update_needed == 'true'
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: |
-            Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
-            
-            - Downloaded ${{ steps.check.outputs.download_file }}
-            - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
-          title: "Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}"
-          body: |
-            ## MIDI Database Update
-            
-            This PR updates the MIDI database file from the upstream repository.
-            
-            **Changes:**
-            - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
-            - Downloaded: `${{ steps.check.outputs.download_file }}`
-            - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}
-            
-            **Verification:**
-            - ✅ File downloaded successfully
-            - ✅ JSON format validated
-            
-            This update was automatically detected and downloaded by the GitHub Action workflow.
-          branch: update-midi-database-v${{ steps.check.outputs.highest_remote_version }}
-          delete-branch: true
-          draft: false
+          - Downloaded ${{ steps.check.outputs.download_file }}
+          - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
+          - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}"
+          
+          # Push the changes
+          git push
 
       - name: Summary
         run: |
           if [ "${{ steps.check.outputs.update_needed }}" == "true" ]; then
-            echo "✅ Update found and PR created for v${{ steps.check.outputs.highest_remote_version }}"
+            echo "✅ Update found and committed: v${{ steps.check.outputs.highest_remote_version }}"
+            echo "📁 Downloaded file: ${{ steps.check.outputs.download_file }}"
           else
             echo "ℹ️ No updates available. Current version v${{ steps.check.outputs.current_version }} is up to date."
           fi
