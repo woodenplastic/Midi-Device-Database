@@ -229,6 +229,7 @@ function createStandardDevice(deviceData, brandName, deviceName) {
     return {
         brand: brandName,
         device_name: deviceName,
+        device_icon: deviceData.device_icon || "",
         midi_thru: deviceData.midi_thru || false,
         midi_in: deviceData.midi_in || "",
         midi_clock: deviceData.midi_clock || false,
