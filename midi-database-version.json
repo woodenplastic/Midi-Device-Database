@@ -1,0 +1,11 @@
+{
+  "version": 9,
+  "generatedAt": "2025-09-24T10:35:40.224Z",
+  "sourceFile": "midi-database-v9.json",
+  "minifiedFile": "midi.min.json.gz",
+  "fileSizes": {
+    "original": 2315405,
+    "compressed": 213373,
+    "compressionRatio": 9.2
+  }
+}
