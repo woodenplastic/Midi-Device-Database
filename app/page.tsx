@@ -79,9 +79,9 @@ export default function HomePage() {
 
   return (
     <div style={{ padding: '20px' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '20px', maxWidth: '1400px', margin: '0 auto' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '3fr 1fr', gap: '20px', maxWidth: '1600px', margin: '0 auto' }}>
         <div>
-          <h2>MIDI Device Parameters</h2>
+          <h2>MIDI Device Editor</h2>
           <DeviceEditor 
             database={database}
             onSave={saveDatabase}
