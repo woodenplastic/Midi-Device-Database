@@ -1,0 +1,128 @@
+name: Minify and Compress MIDI Database
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'midi-database-v*.json'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'midi-database-v*.json'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  minify-and-compress:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Find MIDI database file
+      id: find-file
+      run: |
+        # Find the midi-database-v*.json file
+        DATABASE_FILE=$(ls midi-database-v*.json | head -n1)
+        if [ -z "$DATABASE_FILE" ]; then
+          echo "No midi-database-v*.json file found!"
+          exit 1
+        fi
+        echo "Found database file: $DATABASE_FILE"
+        echo "database_file=$DATABASE_FILE" >> $GITHUB_OUTPUT
+        
+    - name: Minify JSON
+      run: |
+        DATABASE_FILE="${{ steps.find-file.outputs.database_file }}"
+        echo "Minifying $DATABASE_FILE..."
+        
+        # Minify JSON by removing all unnecessary whitespace
+        node -e "
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('$DATABASE_FILE', 'utf8'));
+          fs.writeFileSync('midi.min.json', JSON.stringify(data));
+          console.log('JSON minified successfully');
+        "
+        
+        # Show size comparison
+        ORIGINAL_SIZE=$(wc -c < "$DATABASE_FILE" | tr -d ' ')
+        MINIFIED_SIZE=$(wc -c < midi.min.json | tr -d ' ')
+        echo "Original size: $ORIGINAL_SIZE bytes"
+        echo "Minified size: $MINIFIED_SIZE bytes"
+        echo "Saved: $(($ORIGINAL_SIZE - $MINIFIED_SIZE)) bytes"
+        
+    - name: Compress with gzip
+      run: |
+        echo "Compressing midi.min.json with gzip..."
+        gzip -9 -c midi.min.json > midi.min.json.gz
+        
+        # Show final size comparison
+        MINIFIED_SIZE=$(wc -c < midi.min.json | tr -d ' ')
+        COMPRESSED_SIZE=$(wc -c < midi.min.json.gz | tr -d ' ')
+        echo "Minified size: $MINIFIED_SIZE bytes"
+        echo "Compressed size: $COMPRESSED_SIZE bytes"
+        echo "Compression ratio: $(echo "scale=2; $COMPRESSED_SIZE * 100 / $MINIFIED_SIZE" | bc)%"
+        
+    - name: Verify compressed file
+      run: |
+        echo "Verifying compressed file..."
+        # Test that the compressed file can be decompressed and parsed
+        gunzip -c midi.min.json.gz | node -e "
+          let data = '';
+          process.stdin.on('data', chunk => data += chunk);
+          process.stdin.on('end', () => {
+            try {
+              const json = JSON.parse(data);
+              console.log('✓ Compressed file is valid JSON');
+              console.log('✓ Contains', Object.keys(json).length, 'top-level keys');
+            } catch (e) {
+              console.error('✗ Invalid JSON in compressed file:', e.message);
+              process.exit(1);
+            }
+          });
+        "
+        
+    - name: Upload compressed file as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: midi-database-compressed
+        path: |
+          midi.min.json
+          midi.min.json.gz
+        retention-days: 30
+        
+    - name: Commit compressed file
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Only commit if the file has changed
+        if ! git diff --quiet midi.min.json.gz 2>/dev/null; then
+          git add midi.min.json.gz
+          git commit -m "Auto-update compressed MIDI database [skip ci]" || echo "No changes to commit"
+          git push || echo "Nothing to push"
+        else
+          echo "No changes to compressed file"
+        fi
+        
+    - name: Display summary
+      run: |
+        DATABASE_FILE="${{ steps.find-file.outputs.database_file }}"
+        ORIGINAL_SIZE=$(wc -c < "$DATABASE_FILE" | tr -d ' ')
+        COMPRESSED_SIZE=$(wc -c < midi.min.json.gz | tr -d ' ')
+        RATIO=$(echo "scale=1; $COMPRESSED_SIZE * 100 / $ORIGINAL_SIZE" | bc)
+        
+        echo "## 📊 Compression Summary" >> $GITHUB_STEP_SUMMARY
+        echo "| File | Size |" >> $GITHUB_STEP_SUMMARY
+        echo "|------|------|" >> $GITHUB_STEP_SUMMARY
+        echo "| Original ($DATABASE_FILE) | $(numfmt --to=iec $ORIGINAL_SIZE) |" >> $GITHUB_STEP_SUMMARY
+        echo "| Minified (midi.min.json) | $(numfmt --to=iec $(wc -c < midi.min.json | tr -d ' ')) |" >> $GITHUB_STEP_SUMMARY
+        echo "| Compressed (midi.min.json.gz) | $(numfmt --to=iec $COMPRESSED_SIZE) |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Compression Ratio:** ${RATIO}% of original size" >> $GITHUB_STEP_SUMMARY
+        echo "**Space Saved:** $(numfmt --to=iec $(($ORIGINAL_SIZE - $COMPRESSED_SIZE)))" >> $GITHUB_STEP_SUMMARY
