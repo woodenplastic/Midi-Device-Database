@@ -91,12 +91,12 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
         backgroundColor: 'white',
         border: '1px solid #e5e7eb',
         borderRadius: '8px',
-        padding: '20px',
+        padding: 'clamp(12px, 3vw, 20px)',
         marginBottom: '20px'
       }}>
-        <h3 style={{ marginTop: 0, marginBottom: '20px', color: '#1f2937' }}>Device Information</h3>
+        <h3 style={{ marginTop: 0, marginBottom: '20px', color: '#1f2937', fontSize: 'clamp(1rem, 3vw, 1.2rem)' }}>Device Information</h3>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+        <div className="device-info-grid">
           <div>
             <label style={{ display: 'block', fontSize: '14px', fontWeight: '600', marginBottom: '4px' }}>
               MIDI Thru:
@@ -106,9 +106,10 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               onChange={(e) => updateDeviceInfo('midi_thru', e.target.value === 'true' ? true : e.target.value === 'false' ? false : e.target.value)}
               style={{
                 width: '100%',
-                padding: '8px',
+                padding: '12px 8px',
                 border: '1px solid #d1d5db',
-                borderRadius: '4px'
+                borderRadius: '4px',
+                fontSize: '14px'
               }}
             >
               <option value="">Not specified</option>
@@ -128,9 +129,10 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               placeholder="e.g., TRS, DIN, USB"
               style={{
                 width: '100%',
-                padding: '8px',
+                padding: '12px 8px',
                 border: '1px solid #d1d5db',
-                borderRadius: '4px'
+                borderRadius: '4px',
+                fontSize: '14px'
               }}
             />
           </div>
@@ -144,9 +146,10 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               onChange={(e) => updateDeviceInfo('midi_clock', e.target.value === 'true' ? true : e.target.value === 'false' ? false : e.target.value)}
               style={{
                 width: '100%',
-                padding: '8px',
+                padding: '12px 8px',
                 border: '1px solid #d1d5db',
-                borderRadius: '4px'
+                borderRadius: '4px',
+                fontSize: '14px'
               }}
             >
               <option value="">Not specified</option>
@@ -166,9 +169,10 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               placeholder="e.g., None, Required, Optional"
               style={{
                 width: '100%',
-                padding: '8px',
+                padding: '12px 8px',
                 border: '1px solid #d1d5db',
-                borderRadius: '4px'
+                borderRadius: '4px',
+                fontSize: '14px'
               }}
             />
           </div>
@@ -185,11 +189,12 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             rows={3}
             style={{
               width: '100%',
-              padding: '8px',
+              padding: '12px 8px',
               border: '1px solid #d1d5db',
               borderRadius: '4px',
               resize: 'vertical',
-              fontFamily: 'inherit'
+              fontFamily: 'inherit',
+              fontSize: '14px'
             }}
           />
         </div>
@@ -205,11 +210,12 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             rows={4}
             style={{
               width: '100%',
-              padding: '8px',
+              padding: '12px 8px',
               border: '1px solid #d1d5db',
               borderRadius: '4px',
               resize: 'vertical',
-              fontFamily: 'inherit'
+              fontFamily: 'inherit',
+              fontSize: '14px'
             }}
           />
         </div>
@@ -237,9 +243,9 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               padding: '16px',
               marginBottom: '12px'
             }}>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+              <div className="parameter-grid">
                 {/* Name and Description */}
-                <div style={{ gridColumn: 'span 2' }}>
+                <div className="parameter-full-width">
                   <label style={{ display: 'block', fontSize: '14px', fontWeight: '600', marginBottom: '4px' }}>
                     Parameter Name:
                   </label>
@@ -249,7 +255,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     onChange={(e) => updateParameter(type, originalIndex, 'name', e.target.value)}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px',
@@ -266,7 +272,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     rows={2}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px',
@@ -278,7 +284,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                 </div>
 
                 {/* Usage */}
-                <div style={{ gridColumn: 'span 2' }}>
+                <div className="parameter-full-width">
                   <label style={{ display: 'block', fontSize: '14px', fontWeight: '600', marginBottom: '4px' }}>
                     Usage:
                   </label>
@@ -288,7 +294,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     rows={2}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px',
@@ -313,7 +319,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                       max="127"
                       style={{
                         width: '100%',
-                        padding: '8px',
+                        padding: '12px 8px',
                         border: '1px solid #d1d5db',
                         borderRadius: '4px',
                         fontSize: '14px'
@@ -336,7 +342,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                         max="127"
                         style={{
                           width: '100%',
-                          padding: '8px',
+                          padding: '12px 8px',
                           border: '1px solid #d1d5db',
                           borderRadius: '4px',
                           fontSize: '14px'
@@ -355,7 +361,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                         max="127"
                         style={{
                           width: '100%',
-                          padding: '8px',
+                          padding: '12px 8px',
                           border: '1px solid #d1d5db',
                           borderRadius: '4px',
                           fontSize: '14px'
@@ -378,7 +384,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                       max="127"
                       style={{
                         width: '100%',
-                        padding: '8px',
+                        padding: '12px 8px',
                         border: '1px solid #d1d5db',
                         borderRadius: '4px',
                         fontSize: '14px'
@@ -398,7 +404,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     onChange={(e) => updateParameter(type, originalIndex, 'min', parseInt(e.target.value) || 0)}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px'
@@ -416,7 +422,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     onChange={(e) => updateParameter(type, originalIndex, 'max', parseInt(e.target.value) || 0)}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px'
@@ -434,7 +440,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     onChange={(e) => updateParameter(type, originalIndex, 'curve', e.target.value)}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px'
@@ -459,7 +465,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     placeholder="Parameter, System, Scene, etc."
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px'
@@ -481,7 +487,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     }}
                     style={{
                       width: '100%',
-                      padding: '8px',
+                      padding: '12px 8px',
                       border: '1px solid #d1d5db',
                       borderRadius: '4px',
                       fontSize: '14px'
@@ -499,7 +505,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
 
   return (
     <div>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>
+      <div className="selector-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' }}>
         <div>
           <label style={{ display: 'block', fontWeight: '600', marginBottom: '8px' }}>
             Select Brand:
@@ -512,9 +518,10 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             }}
             style={{
               width: '100%',
-              padding: '8px',
+              padding: '12px 8px',
               border: '1px solid #d1d5db',
-              borderRadius: '4px'
+              borderRadius: '4px',
+              fontSize: '14px'
             }}
           >
             <option value="">Choose a brand...</option>
@@ -534,9 +541,11 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             disabled={!selectedBrand}
             style={{
               width: '100%',
-              padding: '8px',
+              padding: '12px 8px',
               border: '1px solid #d1d5db',
-              borderRadius: '4px'
+              borderRadius: '4px',
+              fontSize: '14px',
+              opacity: !selectedBrand ? 0.6 : 1
             }}
           >
             <option value="">Choose a device...</option>
@@ -611,9 +620,10 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               placeholder="Search by parameter name..."
               style={{
                 width: '100%',
-                padding: '8px',
+                padding: '12px 8px',
                 border: '1px solid #d1d5db',
-                borderRadius: '4px'
+                borderRadius: '4px',
+                fontSize: '14px'
               }}
             />
           </div>

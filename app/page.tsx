@@ -78,17 +78,17 @@ export default function HomePage() {
   }
 
   return (
-    <div style={{ padding: '20px' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '3fr 1fr', gap: '20px', maxWidth: '1600px', margin: '0 auto' }}>
-        <div>
-          <h2>MIDI Device Editor</h2>
+    <div style={{ padding: 'clamp(10px, 2vw, 20px)' }}>
+      <div className="main-grid">
+        <div className="editor-section">
+          <h2 className="section-title">MIDI Device Editor</h2>
           <DeviceEditor 
             database={database}
             onSave={saveDatabase}
           />
         </div>
-        <div>
-          <h2>SVG Icon Upload</h2>
+        <div className="upload-section">
+          <h2 className="section-title">SVG Icon Upload</h2>
           <SvgUploader />
         </div>
       </div>
