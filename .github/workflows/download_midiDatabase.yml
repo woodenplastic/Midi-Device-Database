@@ -20,31 +20,17 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Check for updates
-        id: check
+      - name: Find latest MIDI database
+        id: find-latest
         run: |
+          # Check remote repository for available versions
+          REPO_URL="https://api.github.com/repos/woodenplastic/MidiDeviceDefinitions/contents/Json"
+          REMOTE_FILES=$(curl -s "$REPO_URL" | jq -r '.[].name | select(test("midi-database-v[0-9]+\\.json"))')
+          
           # Function to extract version number from filename
           extract_version() {
             echo "$1" | grep -o 'v[0-9]\+' | sed 's/v//' || echo "0"
           }
-          
-          # Find current highest version in our repository
-          CURRENT_VERSION=0
-          if ls midi-database-v*.json 1> /dev/null 2>&1; then
-            for file in midi-database-v*.json; do
-              VERSION=$(extract_version "$file")
-              if [ "$VERSION" -gt "$CURRENT_VERSION" ]; then
-                CURRENT_VERSION=$VERSION
-              fi
-            done
-          fi
-          
-          echo "Current version: $CURRENT_VERSION"
-          echo "current_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
-          
-          # Check remote repository for available versions
-          REPO_URL="https://api.github.com/repos/woodenplastic/MidiDeviceDefinitions/contents/Json"
-          REMOTE_FILES=$(curl -s "$REPO_URL" | jq -r '.[].name | select(test("midi-database-v[0-9]+\\.json"))')
           
           HIGHEST_REMOTE_VERSION=0
           DOWNLOAD_FILE=""
@@ -57,21 +43,18 @@ jobs:
             fi
           done
           
-          echo "Highest remote version: $HIGHEST_REMOTE_VERSION"
+          echo "Latest remote version: $HIGHEST_REMOTE_VERSION"
           echo "highest_remote_version=$HIGHEST_REMOTE_VERSION" >> $GITHUB_OUTPUT
           echo "download_file=$DOWNLOAD_FILE" >> $GITHUB_OUTPUT
           
-          # Check if update is needed
-          if [ "$HIGHEST_REMOTE_VERSION" -gt "$CURRENT_VERSION" ]; then
-            echo "update_needed=true" >> $GITHUB_OUTPUT
-            echo "Update needed: v$CURRENT_VERSION -> v$HIGHEST_REMOTE_VERSION"
-          else
-            echo "update_needed=false" >> $GITHUB_OUTPUT
-            echo "No update needed"
+          if [ -z "$DOWNLOAD_FILE" ]; then
+            echo "Error: No MIDI database files found in remote repository"
+            exit 1
           fi
+          
+          echo "Will download: $DOWNLOAD_FILE"
 
-      - name: Download and commit updated file
-        if: steps.check.outputs.update_needed == 'true'
+      - name: Download and commit MIDI database
         run: |
           # Find and remove old MIDI database files
           OLD_FILES=""
@@ -84,71 +67,50 @@ jobs:
             done
           fi
           
-          DOWNLOAD_URL="https://raw.githubusercontent.com/woodenplastic/MidiDeviceDefinitions/main/Json/${{ steps.check.outputs.download_file }}"
+          DOWNLOAD_URL="https://raw.githubusercontent.com/woodenplastic/MidiDeviceDefinitions/main/Json/${{ steps.find-latest.outputs.download_file }}"
           echo "Downloading: $DOWNLOAD_URL"
-          curl -L -o "${{ steps.check.outputs.download_file }}" "$DOWNLOAD_URL"
+          curl -L -o "${{ steps.find-latest.outputs.download_file }}" "$DOWNLOAD_URL"
           
           # Verify the file was downloaded and is valid JSON
-          if ! jq empty "${{ steps.check.outputs.download_file }}" 2>/dev/null; then
+          if ! jq empty "${{ steps.find-latest.outputs.download_file }}" 2>/dev/null; then
             echo "Error: Downloaded file is not valid JSON"
             exit 1
           fi
           
-          echo "Successfully downloaded and validated ${{ steps.check.outputs.download_file }}"
+          echo "Successfully downloaded and validated ${{ steps.find-latest.outputs.download_file }}"
           
-          # Create minified version and gzip it
-          echo "Creating minified and gzipped version..."
-          jq -c '.' "${{ steps.check.outputs.download_file }}" | gzip > midi.min.json.gz
+          # Get file size for logging
+          ORIGINAL_SIZE=$(wc -c < "${{ steps.find-latest.outputs.download_file }}")
           
-          # Verify the gzipped file
-          if ! gunzip -c midi.min.json.gz | jq empty 2>/dev/null; then
-            echo "Error: Minified/gzipped file is not valid JSON"
-            exit 1
-          fi
-          
-          echo "Successfully created midi.min.json.gz"
-          
-          # Get file sizes for logging
-          ORIGINAL_SIZE=$(wc -c < "${{ steps.check.outputs.download_file }}")
-          GZIPPED_SIZE=$(wc -c < midi.min.json.gz)
-          COMPRESSION_RATIO=$(echo "scale=1; $GZIPPED_SIZE * 100 / $ORIGINAL_SIZE" | bc -l)
-          
-          echo "File sizes:"
-          echo "  Original: ${ORIGINAL_SIZE} bytes"
-          echo "  Compressed: ${GZIPPED_SIZE} bytes"
-          echo "  Compression ratio: ${COMPRESSION_RATIO}%"
+          echo "File size: ${ORIGINAL_SIZE} bytes"
           
           # Create version info file
           TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S.%3NZ")
           cat > midi-database-version.json << EOF
           {
-            "version": ${{ steps.check.outputs.highest_remote_version }},
+            "version": ${{ steps.find-latest.outputs.highest_remote_version }},
             "generatedAt": "$TIMESTAMP",
-            "sourceFile": "${{ steps.check.outputs.download_file }}",
-            "minifiedFile": "midi.min.json.gz",
+            "sourceFile": "${{ steps.find-latest.outputs.download_file }}",
             "fileSizes": {
-              "original": ${ORIGINAL_SIZE},
-              "compressed": ${GZIPPED_SIZE},
-              "compressionRatio": ${COMPRESSION_RATIO}
+              "original": ${ORIGINAL_SIZE}
             }
           }
           EOF
           
-          echo "Created midi-database-version.json with version and compression info"
+          echo "Created midi-database-version.json with version info"
           
           # Configure git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
           # Add and commit all files
-          git add "${{ steps.check.outputs.download_file }}" midi-database-version.json midi.min.json.gz
+          git add "${{ steps.find-latest.outputs.download_file }}" midi-database-version.json
           
           # Create commit message with old files info
-          COMMIT_MSG="Update MIDI database to v${{ steps.check.outputs.highest_remote_version }}
+          COMMIT_MSG="Update MIDI database to v${{ steps.find-latest.outputs.highest_remote_version }}
 
-          - Downloaded ${{ steps.check.outputs.download_file }}
-          - Updated from v${{ steps.check.outputs.current_version }} to v${{ steps.check.outputs.highest_remote_version }}
-          - Created minified/gzipped version: midi.min.json.gz (${COMPRESSION_RATIO}% of original size)
+          - Downloaded ${{ steps.find-latest.outputs.download_file }}
+          - Fresh download of v${{ steps.find-latest.outputs.highest_remote_version }}
           - Updated version info in midi-database-version.json"
           
           if [ -n "$OLD_FILES" ]; then
@@ -157,7 +119,7 @@ jobs:
           fi
           
           COMMIT_MSG="$COMMIT_MSG
-          - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.check.outputs.download_file }}"
+          - Source: https://github.com/woodenplastic/MidiDeviceDefinitions/blob/main/Json/${{ steps.find-latest.outputs.download_file }}"
           
           git commit -m "$COMMIT_MSG"
           
@@ -166,9 +128,5 @@ jobs:
 
       - name: Summary
         run: |
-          if [ "${{ steps.check.outputs.update_needed }}" == "true" ]; then
-            echo "✅ Update found and committed: v${{ steps.check.outputs.highest_remote_version }}"
-            echo "📁 Downloaded file: ${{ steps.check.outputs.download_file }}"
-          else
-            echo "ℹ️ No updates available. Current version v${{ steps.check.outputs.current_version }} is up to date."
-          fi
+          echo "✅ MIDI database downloaded successfully: v${{ steps.find-latest.outputs.highest_remote_version }}"
+          echo "📁 Downloaded file: ${{ steps.find-latest.outputs.download_file }}"
