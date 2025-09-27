@@ -1,15 +1,7 @@
 name: Minify and Compress MIDI Database
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'midi-database-v*.json'
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'midi-database-v*.json'
-  workflow_dispatch: # Allow manual triggering
+  workflow_dispatch: # Manual triggering only
 
 jobs:
   minify-and-compress:
