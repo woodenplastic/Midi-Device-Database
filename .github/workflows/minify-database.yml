@@ -6,6 +6,8 @@ on:
 jobs:
   minify-and-compress:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to push changes
     
     steps:
     - name: Checkout repository
@@ -60,6 +62,27 @@ jobs:
         echo "Compressed size: $COMPRESSED_SIZE bytes"
         echo "Compression ratio: $(echo "scale=2; $COMPRESSED_SIZE * 100 / $MINIFIED_SIZE" | bc)%"
         
+        # List files to verify they exist
+        echo "Files in current directory:"
+        ls -la midi.*
+        
+    - name: Verify files exist
+      run: |
+        echo "Checking if files were created..."
+        if [ -f "midi.min.json" ]; then
+          echo "✓ midi.min.json exists ($(wc -c < midi.min.json | tr -d ' ') bytes)"
+        else
+          echo "✗ midi.min.json does not exist"
+          exit 1
+        fi
+        
+        if [ -f "midi.min.json.gz" ]; then
+          echo "✓ midi.min.json.gz exists ($(wc -c < midi.min.json.gz | tr -d ' ') bytes)"
+        else
+          echo "✗ midi.min.json.gz does not exist"
+          exit 1
+        fi
+        
     - name: Verify compressed file
       run: |
         echo "Verifying compressed file..."
@@ -93,13 +116,16 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        # Only commit if the file has changed
-        if ! git diff --quiet midi.min.json.gz 2>/dev/null; then
-          git add midi.min.json.gz
-          git commit -m "Auto-update compressed MIDI database [skip ci]" || echo "No changes to commit"
-          git push || echo "Nothing to push"
+        # Add the compressed file
+        git add midi.min.json.gz
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
         else
-          echo "No changes to compressed file"
+          git commit -m "Auto-update compressed MIDI database [skip ci]"
+          git push
+          echo "Compressed file committed and pushed"
         fi
         
     - name: Display summary
