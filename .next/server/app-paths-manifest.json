@@ -1,5 +1,6 @@
 {
-  "/api/database/route": "app/api/database/route.js",
   "/page": "app/page.js",
+  "/api/download-svg/[filename]/route": "app/api/download-svg/[filename]/route.js",
+  "/api/database/route": "app/api/database/route.js",
   "/api/list-svg/route": "app/api/list-svg/route.js"
 }

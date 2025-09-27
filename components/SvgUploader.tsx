@@ -127,8 +127,12 @@ export default function SvgUploader() {
             <p style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>
               Drag and drop SVG files here
             </p>
-            <p style={{ color: '#6b7280', marginBottom: '16px' }}>
+            <p style={{ color: '#6b7280', marginBottom: '8px' }}>
               or
+            </p>
+            <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '16px', fontStyle: 'italic' }}>
+              <strong>Naming format:</strong> manufacturer_devicename.svg<br/>
+              Example: roland_ju-06a.svg, moog_minitaur.svg
             </p>
             <button
               onClick={() => fileInputRef.current?.click()}

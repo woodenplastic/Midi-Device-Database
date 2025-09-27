@@ -40300,7 +40300,7 @@
           "min": 0,
           "max": 127,
           "type": "Performance",
-          "icon_number": null
+          "icon_number": 1
         },
         {
           "name": "Performance: Parameter B",

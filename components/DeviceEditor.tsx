@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { MidiDatabase, MidiParameter } from '../types/midi'
 
 interface DeviceEditorProps {
@@ -12,9 +12,42 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
   const [selectedBrand, setSelectedBrand] = useState<string>('')
   const [selectedDevice, setSelectedDevice] = useState<string>('')
   const [searchTerm, setSearchTerm] = useState<string>('')
+  const [deviceIcon, setDeviceIcon] = useState<string | null>(null)
 
-  const brands = Object.keys(database)
+  const brands = Object.keys(database).filter(key => 
+    !['version', 'generatedAt', 'sourceFile', 'fileSizes'].includes(key) &&
+    typeof database[key] === 'object' && 
+    database[key] !== null &&
+    !Array.isArray(database[key])
+  )
   const devices = selectedBrand ? Object.keys(database[selectedBrand] || {}) : []
+
+  // Check for device icon when brand/device selection changes
+  useEffect(() => {
+    if (selectedBrand && selectedDevice) {
+      checkForDeviceIcon()
+    } else {
+      setDeviceIcon(null)
+    }
+  }, [selectedBrand, selectedDevice])
+
+  const checkForDeviceIcon = async () => {
+    if (!selectedBrand || !selectedDevice) return
+    
+    // Create filename in format: manufacturer_devicename.svg (all lowercase)
+    const iconFilename = `${selectedBrand.toLowerCase()}_${selectedDevice.toLowerCase().replace(/\s+/g, '-')}.svg`
+    
+    try {
+      const response = await fetch(`/api/download-svg/${iconFilename}`)
+      if (response.ok) {
+        setDeviceIcon(iconFilename)
+      } else {
+        setDeviceIcon(null)
+      }
+    } catch (error) {
+      setDeviceIcon(null)
+    }
+  }
 
   const updateParameter = (
     type: 'cc' | 'nrpn' | 'pc',
@@ -143,6 +176,54 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
 
       {selectedBrand && selectedDevice && (
         <>
+          {/* Device Info Header with Icon */}
+          <div style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '16px', 
+            marginBottom: '20px', 
+            padding: '16px',
+            backgroundColor: 'white',
+            border: '1px solid #e5e7eb',
+            borderRadius: '8px'
+          }}>
+            {deviceIcon && (
+              <div style={{ 
+                width: '64px', 
+                height: '64px', 
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#f3f4f6',
+                borderRadius: '8px',
+                border: '1px solid #e5e7eb'
+              }}>
+                <img
+                  src={`/api/download-svg/${deviceIcon}`}
+                  alt={`${selectedBrand} ${selectedDevice}`}
+                  style={{ 
+                    width: '48px', 
+                    height: '48px',
+                    objectFit: 'contain'
+                  }}
+                />
+              </div>
+            )}
+            <div>
+              <h3 style={{ margin: '0 0 4px 0', color: '#1f2937' }}>
+                {selectedBrand} - {selectedDevice}
+              </h3>
+              <p style={{ margin: 0, fontSize: '14px', color: '#6b7280' }}>
+                {deviceIcon ? `Icon: ${deviceIcon}` : 'No icon available'}
+              </p>
+              {!deviceIcon && (
+                <p style={{ margin: '4px 0 0 0', fontSize: '12px', color: '#9ca3af' }}>
+                  Upload SVG as: {selectedBrand.toLowerCase()}_{selectedDevice.toLowerCase().replace(/\s+/g, '-')}.svg
+                </p>
+              )}
+            </div>
+          </div>
+
           <div style={{ marginBottom: '20px' }}>
             <label style={{ display: 'block', fontWeight: '600', marginBottom: '8px' }}>
               Search Parameters:
