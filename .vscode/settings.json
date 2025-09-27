@@ -1,0 +1,6 @@
+{
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/minify-database.yml",
+        ".github/workflows/download_midiDatabase.yml"
+    ]
+}
