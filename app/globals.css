@@ -8,12 +8,88 @@ body {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --section-title-color: #1f2937;
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0,0,0,0.1);
+  --shadow-hover-color: rgba(0,0,0,0.15);
+  --upload-bg: #f7fafc;
+  --upload-border: #cbd5e0;
+  --upload-hover-bg: #ebf8ff;
+  --upload-hover-border: #4299e1;
+  --upload-dragover-bg: #bee3f8;
+  --upload-dragover-border: #3182ce;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #111827;
+    --text-color: #f9fafb;
+    --section-title-color: #e5e7eb;
+    --border-color: #374151;
+    --shadow-color: rgba(0,0,0,0.3);
+    --shadow-hover-color: rgba(0,0,0,0.4);
+    --upload-bg: #1f2937;
+    --upload-border: #4b5563;
+    --upload-hover-bg: #374151;
+    --upload-hover-border: #60a5fa;
+    --upload-dragover-bg: #4b5563;
+    --upload-dragover-border: #3b82f6;
+  }
+}
+
+/* Manual dark mode class override */
+body.dark {
+  --bg-color: #111827;
+  --text-color: #f9fafb;
+  --section-title-color: #e5e7eb;
+  --border-color: #374151;
+  --shadow-color: rgba(0,0,0,0.3);
+  --shadow-hover-color: rgba(0,0,0,0.4);
+  --upload-bg: #1f2937;
+  --upload-border: #4b5563;
+  --upload-hover-bg: #374151;
+  --upload-hover-border: #60a5fa;
+  --upload-dragover-bg: #4b5563;
+  --upload-dragover-border: #3b82f6;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --section-title-color: #1f2937;
+  --border-color: #5b5c5c;
+  --shadow-color: rgba(0,0,0,0.1);
+  --shadow-hover-color: rgba(0,0,0,0.15);
+  --upload-bg: #f7fafc;
+  --upload-border: #cbd5e0;
+  --upload-hover-bg: #ebf8ff;
+  --upload-hover-border: #4299e1;
+  --upload-dragover-bg: #bee3f8;
+  --upload-dragover-border: #3182ce;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+  input, select, textarea {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
 
 /* Mobile-responsive grid */
 .main-grid {
@@ -27,7 +103,10 @@ a {
 .section-title {
   font-size: clamp(1.2rem, 4vw, 1.5rem);
   margin: 0 0 15px 0;
-  color: #1f2937;
+  color: var(--section-title-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .editor-section,
@@ -70,16 +149,16 @@ a {
 }
 
 .parameter-item {
-  background: white;
-  border: 1px solid #e2e8f0;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .parameter-item:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px var(--shadow-hover-color);
 }
 
 /* Mobile parameter items */
@@ -91,11 +170,11 @@ a {
 }
 
 .upload-area {
-  border: 2px dashed #cbd5e0;
+  border: 2px dashed var(--upload-border);
   border-radius: 8px;
   padding: 40px;
   text-align: center;
-  background-color: #f7fafc;
+  background-color: var(--upload-bg);
   transition: all 0.2s;
   min-height: 200px;
   display: flex;
@@ -104,13 +183,13 @@ a {
 }
 
 .upload-area:hover {
-  border-color: #4299e1;
-  background-color: #ebf8ff;
+  border-color: var(--upload-hover-border);
+  background-color: var(--upload-hover-bg);
 }
 
 .upload-area.dragover {
-  border-color: #3182ce;
-  background-color: #bee3f8;
+  border-color: var(--upload-dragover-border);
+  background-color: var(--upload-dragover-bg);
 }
 
 /* Mobile upload area */
@@ -182,5 +261,46 @@ a {
 @media (max-width: 768px) {
   .parameter-full-width {
     grid-column: span 1;
+  }
+}
+
+/* Dark mode button */
+.dark-mode-button {
+  background: var(--upload-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.dark-mode-button:hover {
+  background: var(--upload-hover-bg);
+  border-color: var(--upload-hover-border);
+}
+
+@media (max-width: 768px) {
+  .dark-mode-button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+  
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dark-mode-button {
+    padding: 6px 8px;
+    font-size: 0.8rem;
   }
 }

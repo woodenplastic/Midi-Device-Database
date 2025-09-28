@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Simple MIDI connector for favicon -->
+  <rect x="1" y="4" width="14" height="8" rx="1" ry="1" fill="#2563eb"/>
+  
+  <!-- 5 MIDI pins - simplified for small size -->
+  <circle cx="4" cy="6" r="0.8" fill="white"/>
+  <circle cx="8" cy="6" r="0.8" fill="white"/>
+  <circle cx="12" cy="6" r="0.8" fill="white"/>
+  <circle cx="6" cy="10" r="0.8" fill="white"/>
+  <circle cx="10" cy="10" r="0.8" fill="white"/>
+  
+  <!-- Cable connector -->
+  <rect x="0" y="6" width="2" height="4" rx="0.5" ry="0.5" fill="#2563eb"/>
+</svg>

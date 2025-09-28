@@ -81,7 +81,6 @@ export default function HomePage() {
     <div style={{ padding: 'clamp(10px, 2vw, 20px)' }}>
       <div className="main-grid">
         <div className="editor-section">
-          <h2 className="section-title">MIDI Device Editor</h2>
           <DeviceEditor 
             database={database}
             onSave={saveDatabase}

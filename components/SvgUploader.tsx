@@ -94,7 +94,7 @@ export default function SvgUploader() {
         className={`upload-area ${dragOver ? 'dragover' : ''}`}
         style={{
           border: dragOver ? '2px dashed #3182ce' : '2px dashed #cbd5e0',
-          backgroundColor: dragOver ? '#bee3f8' : '#f7fafc',
+          backgroundColor: dragOver ? '#bee3f8' : 'var(--bg-color)',
           borderRadius: '8px',
           padding: '40px',
           textAlign: 'center',
@@ -112,7 +112,7 @@ export default function SvgUploader() {
         ) : (
           <div>
             <svg 
-              style={{ width: '48px', height: '48px', margin: '0 auto 16px', color: '#9ca3af' }}
+              style={{ width: '48px', height: '48px', margin: '0 auto 16px', color: 'var(--text-color)' }}
               fill="none" 
               stroke="currentColor" 
               viewBox="0 0 24 24"
@@ -127,10 +127,10 @@ export default function SvgUploader() {
             <p style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>
               Drag and drop SVG files here
             </p>
-            <p style={{ color: '#6b7280', marginBottom: '8px' }}>
+            <p style={{ color: 'var(--text-color)', marginBottom: '8px' }}>
               or
             </p>
-            <p style={{ fontSize: '12px', color: '#9ca3af', marginBottom: '16px', fontStyle: 'italic' }}>
+            <p style={{ fontSize: '12px', color: 'var(--text-color)', marginBottom: '16px', fontStyle: 'italic' }}>
               <strong>Naming format:</strong> manufacturer_devicename.svg<br/>
               Example: roland_ju-06a.svg, moog_minitaur.svg
             </p>
@@ -163,11 +163,11 @@ export default function SvgUploader() {
       />
 
       {uploadedFiles.length > 0 && (
-        <div>
-          <h4 style={{ marginBottom: '12px', color: '#374151' }}>
+        <div style={{ border: '1px solid var(--border-color)', borderRadius: '8px', padding: '16px' }}>
+          <h4 style={{ marginBottom: '12px', color: 'var(--section-title-color)' }}>
             Uploaded SVG Files ({uploadedFiles.length}):
           </h4>
-          <div style={{ maxHeight: '300px', overflowY: 'auto', backgroundColor: 'white', border: '1px solid #e5e7eb', borderRadius: '8px', padding: '12px' }}>
+          <div style={{ maxHeight: '300px', overflowY: 'auto',  border: '1px solid var(--border-color)', borderRadius: '8px', padding: '12px' }}>
             {uploadedFiles.map((filename, index) => (
               <div 
                 key={index} 
@@ -177,12 +177,11 @@ export default function SvgUploader() {
                   justifyContent: 'space-between',
                   padding: '8px',
                   marginBottom: '4px',
-                  backgroundColor: '#f9fafb',
                   borderRadius: '4px'
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                  <svg style={{ width: '16px', height: '16px', marginRight: '8px', color: '#6b7280' }} fill="currentColor" viewBox="0 0 20 20">
+                  <svg style={{ width: '16px', height: '16px', marginRight: '8px', color: 'var(--text-color)' }} fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                   </svg>
                   <span style={{ fontSize: '14px' }}>{filename}</span>
@@ -196,7 +195,6 @@ export default function SvgUploader() {
                     textDecoration: 'none',
                     fontSize: '12px',
                     padding: '4px 8px',
-                    backgroundColor: '#eff6ff',
                     borderRadius: '4px'
                   }}
                 >
