@@ -6,10 +6,9 @@ export const metadata = {
   title: "MIDI Device Database Editor",
   description: "Edit MIDI device parameters and upload icons",
   icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/midi-icon.svg", type: "image/svg+xml", sizes: "32x32" },
-    ],
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
