@@ -1643,9 +1643,9 @@
     "Virus_TI": {
       "device_icon": "access_virus_ti",
       "midi_thru": true,
-      "midi_in": "DIN USB",
+      "midi_in": "",
       "midi_clock": true,
-      "phantom_power": "None",
+      "phantom_power": "O",
       "midi_channel": {
         "instructions": ""
       },

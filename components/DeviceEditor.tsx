@@ -13,14 +13,33 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
   const [selectedDevice, setSelectedDevice] = useState<string>('')
   const [searchTerm, setSearchTerm] = useState<string>('')
   const [deviceIcon, setDeviceIcon] = useState<string | null>(null)
+  const [localDatabase, setLocalDatabase] = useState<MidiDatabase>(database)
+  const [hasUnsavedChanges, setHasUnsavedChanges] = useState<boolean>(false)
+  const [originalDeviceData, setOriginalDeviceData] = useState<any>(null)
 
-  const brands = Object.keys(database).filter(key => 
+  const brands = Object.keys(localDatabase).filter(key => 
     !['version', 'generatedAt', 'sourceFile', 'fileSizes'].includes(key) &&
-    typeof database[key] === 'object' && 
-    database[key] !== null &&
-    !Array.isArray(database[key])
+    typeof localDatabase[key] === 'object' && 
+    localDatabase[key] !== null &&
+    !Array.isArray(localDatabase[key])
   )
-  const devices = selectedBrand ? Object.keys(database[selectedBrand] || {}) : []
+  const devices = selectedBrand ? Object.keys(localDatabase[selectedBrand] || {}) : []
+
+  // Update local database when props change
+  useEffect(() => {
+    setLocalDatabase(database)
+    setHasUnsavedChanges(false)
+    setOriginalDeviceData(null)
+  }, [database])
+
+  // Save original device data when device selection changes
+  useEffect(() => {
+    if (selectedBrand && selectedDevice && localDatabase[selectedBrand]?.[selectedDevice]) {
+      // Deep copy the device data when first selected
+      setOriginalDeviceData(JSON.parse(JSON.stringify(localDatabase[selectedBrand][selectedDevice])))
+      setHasUnsavedChanges(false)
+    }
+  }, [selectedBrand, selectedDevice])
 
   // Check for device icon when brand/device selection changes
   useEffect(() => {
@@ -52,7 +71,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
   const updateDeviceInfo = (field: string, value: any) => {
     if (!selectedBrand || !selectedDevice) return
 
-    const updatedDatabase = { ...database }
+    const updatedDatabase = { ...localDatabase }
     const device = updatedDatabase[selectedBrand][selectedDevice]
     
     if (field === 'midi_channel_instructions') {
@@ -61,7 +80,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
       (device as any)[field] = value
     }
     
-    onSave(updatedDatabase)
+    setLocalDatabase(updatedDatabase)
+    setHasUnsavedChanges(true)
   }
 
   const updateParameter = (
@@ -72,19 +92,34 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
   ) => {
     if (!selectedBrand || !selectedDevice) return
 
-    const updatedDatabase = { ...database }
+    const updatedDatabase = { ...localDatabase }
     const device = updatedDatabase[selectedBrand][selectedDevice]
     
     if (device[type] && device[type][index]) {
       (device[type][index] as any)[field] = value
-      onSave(updatedDatabase)
+      setLocalDatabase(updatedDatabase)
+      setHasUnsavedChanges(true)
+    }
+  }
+
+  const handleSave = () => {
+    onSave(localDatabase)
+    setHasUnsavedChanges(false)
+  }
+
+  const handleRevert = () => {
+    if (selectedBrand && selectedDevice && originalDeviceData) {
+      const updatedDatabase = { ...localDatabase }
+      updatedDatabase[selectedBrand][selectedDevice] = JSON.parse(JSON.stringify(originalDeviceData))
+      setLocalDatabase(updatedDatabase)
+      setHasUnsavedChanges(false)
     }
   }
 
   const renderDeviceInfoEditor = () => {
     if (!selectedBrand || !selectedDevice) return null
     
-    const device = database[selectedBrand][selectedDevice]
+    const device = localDatabase[selectedBrand][selectedDevice]
     
     return (
       <div style={{ 
@@ -557,6 +592,63 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
 
       {selectedBrand && selectedDevice && (
         <>
+          {/* Save/Cancel Buttons */}
+          {hasUnsavedChanges && (
+            <div style={{ 
+              display: 'flex', 
+              gap: '12px', 
+              marginBottom: '20px',
+              padding: '16px',
+              backgroundColor: 'var(--warning-bg, #fff3cd)',
+              border: '1px solid var(--warning-border, #ffeaa7)',
+              borderRadius: '8px',
+              alignItems: 'center'
+            }}>
+              <div style={{ 
+                flex: 1, 
+                fontSize: '14px', 
+                color: 'var(--warning-text, #856404)',
+                fontWeight: '600'
+              }}>
+                You have unsaved changes
+              </div>
+              <button
+                onClick={handleSave}
+                style={{
+                  padding: '8px 16px',
+                  backgroundColor: 'var(--success-color, #28a745)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '4px',
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  cursor: 'pointer'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'var(--success-hover, #218838)'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'var(--success-color, #28a745)'}
+              >
+                Save Changes
+              </button>
+              <button
+                onClick={handleRevert}
+                style={{
+                  padding: '8px 16px',
+                  backgroundColor: 'var(--danger-color, #dc3545)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '4px',
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  cursor: 'pointer'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'var(--danger-hover, #c82333)'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'var(--danger-color, #dc3545)'}
+              >
+                Cancel
+              </button>
+            </div>
+          )}
+
           {/* Device Info Header with Icon */}
           <div style={{ 
             display: 'flex', 
@@ -626,18 +718,18 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
           </div>
 
           <div style={{ maxHeight: '600px', overflowY: 'auto', scrollbarColor: 'var(--border-color)', scrollbarWidth: 'thin', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '16px' }}>
-            {database[selectedBrand][selectedDevice].cc.length > 0 && 
-              renderParameterList('cc', database[selectedBrand][selectedDevice].cc)}
+            {localDatabase[selectedBrand][selectedDevice].cc.length > 0 && 
+              renderParameterList('cc', localDatabase[selectedBrand][selectedDevice].cc)}
             
-            {database[selectedBrand][selectedDevice].nrpn.length > 0 && 
-              renderParameterList('nrpn', database[selectedBrand][selectedDevice].nrpn)}
+            {localDatabase[selectedBrand][selectedDevice].nrpn.length > 0 && 
+              renderParameterList('nrpn', localDatabase[selectedBrand][selectedDevice].nrpn)}
             
-            {database[selectedBrand][selectedDevice].pc.length > 0 && 
-              renderParameterList('pc', database[selectedBrand][selectedDevice].pc)}
+            {localDatabase[selectedBrand][selectedDevice].pc.length > 0 && 
+              renderParameterList('pc', localDatabase[selectedBrand][selectedDevice].pc)}
             
-            {database[selectedBrand][selectedDevice].cc.length === 0 && 
-             database[selectedBrand][selectedDevice].nrpn.length === 0 && 
-             database[selectedBrand][selectedDevice].pc.length === 0 && (
+            {localDatabase[selectedBrand][selectedDevice].cc.length === 0 && 
+             localDatabase[selectedBrand][selectedDevice].nrpn.length === 0 && 
+             localDatabase[selectedBrand][selectedDevice].pc.length === 0 && (
               <p style={{ textAlign: 'center', color: 'var(--text-color)' }}>No parameters found for this device.</p>
             )}
           </div>

@@ -1,16 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
+import { assert } from 'console'
 
 const DATABASE_FILE = path.join(process.cwd(), 'midi-database-v1.json')
 
 export async function GET() {
   try {
     if (!fs.existsSync(DATABASE_FILE)) {
-      // Create an empty database if it doesn't exist
-      const emptyDatabase = {}
-      fs.writeFileSync(DATABASE_FILE, JSON.stringify(emptyDatabase, null, 2))
-      return NextResponse.json(emptyDatabase)
+      assert(false, 'Database file does not exist')
+      return NextResponse.json({ error: 'Database file does not exist' }, { status: 404 })
     }
 
     const data = fs.readFileSync(DATABASE_FILE, 'utf8')

@@ -1643,7 +1643,7 @@
     "Virus_TI": {
       "device_icon": "access_virus_ti",
       "midi_thru": true,
-      "midi_in": "DIN USB",
+      "midi_in": "DIN,",
       "midi_clock": true,
       "phantom_power": "None",
       "midi_channel": {
