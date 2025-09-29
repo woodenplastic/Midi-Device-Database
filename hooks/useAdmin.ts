@@ -51,6 +51,8 @@ export function useAdmin() {
       if (data.success) {
         setIsAdmin(true)
         setUsername(data.username)
+        // Force a page reload to refresh all components
+        window.location.reload()
         return { success: true }
       } else {
         return { success: false, error: data.message }

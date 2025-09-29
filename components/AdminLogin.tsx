@@ -42,6 +42,7 @@ export default function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
       zIndex: 1000
     }}>
       <div style={{
+        backgroundColor: 'var(--bg-color)',
         padding: '32px',
         borderRadius: '12px',
         width: '100%',
@@ -51,6 +52,7 @@ export default function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
         border: '1px solid var(--border-color)'
       }}>
         <div style={{
+          background: 'var(--bg-color)',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
@@ -214,8 +216,8 @@ export default function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
             padding: '8px',
             borderRadius: '4px'
           }}>
-            <strong>admin1</strong> / Admin_2024_Secure!<br />
-            <strong>admin2</strong> / SecurePass_2024!
+            <strong>adrianwild</strong> / ritter-preston-already-rookies<br />
+            <strong>andreaskiesgen</strong> / cellular-teenage-gui-cartoon
           </p>
         </div>
       </div>
