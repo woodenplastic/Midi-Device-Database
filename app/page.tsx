@@ -4,11 +4,13 @@ import React, { useState, useEffect } from 'react'
 import { MidiDatabase } from '../types/midi'
 import DeviceEditor from '../components/DeviceEditor'
 import SvgUploader from '../components/SvgUploader'
+import { useAdmin } from '../hooks/useAdmin'
 
 export default function HomePage() {
   const [database, setDatabase] = useState<MidiDatabase | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const { isAdmin } = useAdmin()
 
   useEffect(() => {
     loadDatabase()
@@ -30,6 +32,11 @@ export default function HomePage() {
   }
 
   const saveDatabase = async (updatedDatabase: MidiDatabase) => {
+    if (!isAdmin) {
+      alert('Admin access required to modify the database')
+      return
+    }
+
     try {
       const response = await fetch('/api/database', {
         method: 'POST',
@@ -37,6 +44,7 @@ export default function HomePage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(updatedDatabase),
+        credentials: 'include' // Include cookies for authentication
       })
 
       if (!response.ok) {
@@ -84,12 +92,15 @@ export default function HomePage() {
           <DeviceEditor 
             database={database}
             onSave={saveDatabase}
+            readOnly={!isAdmin}
           />
         </div>
-        <div className="upload-section">
-          <h2 className="section-title">SVG Icon Upload</h2>
-          <SvgUploader />
-        </div>
+        {isAdmin && (
+          <div className="upload-section">
+            <h2 className="section-title">SVG Icon Upload</h2>
+            <SvgUploader />
+          </div>
+        )}
       </div>
     </div>
   )

@@ -26,6 +26,17 @@ export async function GET() {
 
 export async function POST(request: NextRequest) {
   try {
+    // Authentication is now handled by middleware
+    const userRole = request.headers.get('x-user-role')
+    const userName = request.headers.get('x-user-name')
+    
+    if (userRole !== 'admin') {
+      return NextResponse.json(
+        { error: 'Admin role required' },
+        { status: 403 }
+      )
+    }
+
     const database = await request.json()
     
     // Backup current database

@@ -1,6 +1,7 @@
 import React from "react";
 import "./globals.css";
 import DarkModeButton from "@/components/DarkModeButton";
+import AdminButton from "@/components/AdminButton";
 
 export const metadata = {
   title: "MIDI Device Database Editor",
@@ -47,7 +48,10 @@ export default function RootLayout({
           >
             MIDI Device Database Editor
           </h1>
-          <DarkModeButton />
+          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+            <AdminButton />
+            <DarkModeButton />
+          </div>
         </header>
         <main
           style={{ minHeight: "100vh" }}

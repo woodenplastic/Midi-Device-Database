@@ -1,12 +1,14 @@
 'use client'
 
 import React, { useState, useRef, DragEvent, ChangeEvent } from 'react'
+import { useAdmin } from '../hooks/useAdmin'
 
 export default function SvgUploader() {
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([])
   const [uploading, setUploading] = useState(false)
   const [dragOver, setDragOver] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const { isAdmin } = useAdmin()
 
   const handleFileUpload = async (files: FileList) => {
     setUploading(true)
@@ -31,6 +33,7 @@ export default function SvgUploader() {
       const response = await fetch('/api/upload-svg', {
         method: 'POST',
         body: formData,
+        credentials: 'include' // Include cookies for authentication
       })
 
       if (!response.ok) {

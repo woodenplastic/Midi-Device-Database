@@ -4,6 +4,16 @@ import path from 'path'
 
 export async function POST(request: NextRequest) {
   try {
+    // Authentication is now handled by middleware
+    const userRole = request.headers.get('x-user-role')
+    
+    if (userRole !== 'admin') {
+      return NextResponse.json(
+        { error: 'Admin role required' },
+        { status: 403 }
+      )
+    }
+
     const formData = await request.formData()
     const files = formData.getAll('files') as File[]
 

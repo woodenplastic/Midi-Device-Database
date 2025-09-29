@@ -6,9 +6,10 @@ import { MidiDatabase, MidiParameter } from '../types/midi'
 interface DeviceEditorProps {
   database: MidiDatabase
   onSave: (database: MidiDatabase) => void
+  readOnly?: boolean
 }
 
-export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
+export default function DeviceEditor({ database, onSave, readOnly = false }: DeviceEditorProps) {
   const [selectedBrand, setSelectedBrand] = useState<string>('')
   const [selectedDevice, setSelectedDevice] = useState<string>('')
   const [searchTerm, setSearchTerm] = useState<string>('')
@@ -69,7 +70,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
   }
 
   const updateDeviceInfo = (field: string, value: any) => {
-    if (!selectedBrand || !selectedDevice) return
+    if (!selectedBrand || !selectedDevice || readOnly) return
 
     const updatedDatabase = { ...localDatabase }
     const device = updatedDatabase[selectedBrand][selectedDevice]
@@ -90,7 +91,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
     field: keyof MidiParameter,
     value: any
   ) => {
-    if (!selectedBrand || !selectedDevice) return
+    if (!selectedBrand || !selectedDevice || readOnly) return
 
     const updatedDatabase = { ...localDatabase }
     const device = updatedDatabase[selectedBrand][selectedDevice]
@@ -101,6 +102,15 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
       setHasUnsavedChanges(true)
     }
   }
+
+  const getInputStyle = (extraStyles = {}) => ({
+    width: '100%',
+    padding: '12px 8px',
+    border: '1px solid var(--border-color)',
+    borderRadius: '4px',
+    fontSize: '14px',
+    ...extraStyles
+  })
 
   const handleSave = () => {
     onSave(localDatabase)
@@ -139,13 +149,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             <select
               value={device.midi_thru?.toString() || ''}
               onChange={(e) => updateDeviceInfo('midi_thru', e.target.value === 'true' ? true : e.target.value === 'false' ? false : e.target.value)}
-              style={{
-                width: '100%',
-                padding: '12px 8px',
-                border: '1px solid var(--border-color)',
-                borderRadius: '4px',
-                fontSize: '14px'
-              }}
+              disabled={readOnly}
+              style={getInputStyle()}
             >
               <option value="">Not specified</option>
               <option value="true">Yes</option>
@@ -162,13 +167,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               value={device.midi_in || ''}
               onChange={(e) => updateDeviceInfo('midi_in', e.target.value)}
               placeholder="e.g., TRS, DIN, USB"
-              style={{
-                width: '100%',
-                padding: '12px 8px',
-                border: '1px solid var(--border-color)',
-                borderRadius: '4px',
-                fontSize: '14px'
-              }}
+              disabled={readOnly}
+              style={getInputStyle()}
             />
           </div>
 
@@ -179,13 +179,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             <select
               value={device.midi_clock?.toString() || ''}
               onChange={(e) => updateDeviceInfo('midi_clock', e.target.value === 'true' ? true : e.target.value === 'false' ? false : e.target.value)}
-              style={{
-                width: '100%',
-                padding: '12px 8px',
-                border: '1px solid var(--border-color)',
-                borderRadius: '4px',
-                fontSize: '14px'
-              }}
+              disabled={readOnly}
+              style={getInputStyle()}
             >
               <option value="">Not specified</option>
               <option value="true">Supported</option>
@@ -202,13 +197,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
               value={device.phantom_power || ''}
               onChange={(e) => updateDeviceInfo('phantom_power', e.target.value)}
               placeholder="e.g., None, Required, Optional"
-              style={{
-                width: '100%',
-                padding: '12px 8px',
-                border: '1px solid var(--border-color)',
-                borderRadius: '4px',
-                fontSize: '14px'
-              }}
+              disabled={readOnly}
+              style={getInputStyle()}
             />
           </div>
         </div>
@@ -222,15 +212,11 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             onChange={(e) => updateDeviceInfo('midi_channel_instructions', e.target.value)}
             placeholder="Step by step instructions for setting MIDI channel..."
             rows={3}
-            style={{
-              width: '100%',
-              padding: '12px 8px',
-              border: '1px solid var(--border-color)',
-              borderRadius: '4px',
+            disabled={readOnly}
+            style={getInputStyle({
               resize: 'vertical',
-              fontFamily: 'inherit',
-              fontSize: '14px'
-            }}
+              fontFamily: 'inherit'
+            })}
           />
         </div>
 
@@ -243,15 +229,11 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
             onChange={(e) => updateDeviceInfo('instructions', e.target.value)}
             placeholder="General device instructions..."
             rows={4}
-            style={{
-              width: '100%',
-              padding: '12px 8px',
-              border: '1px solid var(--border-color)',
-              borderRadius: '4px',
+            disabled={readOnly}
+            style={getInputStyle({
               resize: 'vertical',
-              fontFamily: 'inherit',
-              fontSize: '14px'
-            }}
+              fontFamily: 'inherit'
+            })}
           />
         </div>
       </div>
@@ -267,6 +249,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
       <div style={{ marginBottom: '20px' }}>
         <h4 style={{ marginBottom: '10px' }}>
           {type.toUpperCase()} Parameters ({filteredParams.length})
+          {readOnly && <span style={{ color: 'var(--text-muted)', fontSize: '12px', fontWeight: 'normal' }}> - Read Only</span>}
         </h4>
         {filteredParams.map((param, index) => {
           const originalIndex = parameters.findIndex(p => p === param)
@@ -287,14 +270,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     type="text"
                     value={param.name}
                     onChange={(e) => updateParameter(type, originalIndex, 'name', e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px',
-                      marginBottom: '8px'
-                    }}
+                    disabled={readOnly}
+                    style={getInputStyle({ marginBottom: '8px' })}
                   />
                   
                   <label style={{ display: 'block', fontSize: '14px', fontWeight: '600', marginBottom: '4px' }}>
@@ -304,15 +281,11 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     value={param.description}
                     onChange={(e) => updateParameter(type, originalIndex, 'description', e.target.value)}
                     rows={2}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px',
+                    disabled={readOnly}
+                    style={getInputStyle({
                       resize: 'vertical',
                       fontFamily: 'inherit'
-                    }}
+                    })}
                     placeholder="Parameter description..."
                   />
                 </div>
@@ -326,15 +299,11 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     value={param.usage}
                     onChange={(e) => updateParameter(type, originalIndex, 'usage', e.target.value)}
                     rows={2}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px',
+                    disabled={readOnly}
+                    style={getInputStyle({
                       resize: 'vertical',
                       fontFamily: 'inherit'
-                    }}
+                    })}
                     placeholder="Usage instructions..."
                   />
                 </div>
@@ -351,13 +320,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                       onChange={(e) => updateParameter(type, originalIndex, 'value', parseInt(e.target.value) || 0)}
                       min="0"
                       max="127"
-                      style={{
-                        width: '100%',
-                        padding: '12px 8px',
-                        border: '1px solid var(--border-color)',
-                        borderRadius: '4px',
-                        fontSize: '14px'
-                      }}
+                      disabled={readOnly}
+                      style={getInputStyle()}
                     />
                   </div>
                 )}
@@ -374,13 +338,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                         onChange={(e) => updateParameter(type, originalIndex, 'msb', parseInt(e.target.value) || 0)}
                         min="0"
                         max="127"
-                        style={{
-                          width: '100%',
-                          padding: '12px 8px',
-                          border: '1px solid var(--border-color)',
-                          borderRadius: '4px',
-                          fontSize: '14px'
-                        }}
+                        disabled={readOnly}
+                        style={getInputStyle()}
                       />
                     </div>
                     <div>
@@ -393,13 +352,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                         onChange={(e) => updateParameter(type, originalIndex, 'lsb', parseInt(e.target.value) || 0)}
                         min="0"
                         max="127"
-                        style={{
-                          width: '100%',
-                          padding: '12px 8px',
-                          border: '1px solid var(--border-color)',
-                          borderRadius: '4px',
-                          fontSize: '14px'
-                        }}
+                        disabled={readOnly}
+                        style={getInputStyle()}
                       />
                     </div>
                   </>
@@ -416,13 +370,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                       onChange={(e) => updateParameter(type, originalIndex, 'value', parseInt(e.target.value) || 0)}
                       min="0"
                       max="127"
-                      style={{
-                        width: '100%',
-                        padding: '12px 8px',
-                        border: '1px solid var(--border-color)',
-                        borderRadius: '4px',
-                        fontSize: '14px'
-                      }}
+                      disabled={readOnly}
+                      style={getInputStyle()}
                     />
                   </div>
                 )}
@@ -436,13 +385,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     type="number"
                     value={param.min}
                     onChange={(e) => updateParameter(type, originalIndex, 'min', parseInt(e.target.value) || 0)}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px'
-                    }}
+                    disabled={readOnly}
+                    style={getInputStyle()}
                   />
                 </div>
 
@@ -454,13 +398,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     type="number"
                     value={param.max}
                     onChange={(e) => updateParameter(type, originalIndex, 'max', parseInt(e.target.value) || 0)}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px'
-                    }}
+                    disabled={readOnly}
+                    style={getInputStyle()}
                   />
                 </div>
 
@@ -472,13 +411,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                   <select
                     value={param.curve}
                     onChange={(e) => updateParameter(type, originalIndex, 'curve', e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px'
-                    }}
+                    disabled={readOnly}
+                    style={getInputStyle()}
                   >
                     <option value="Toggle">Toggle</option>
                     <option value="0-based">0-based</option>
@@ -497,13 +431,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                     value={param.type}
                     onChange={(e) => updateParameter(type, originalIndex, 'type', e.target.value)}
                     placeholder="Parameter, System, Scene, etc."
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px'
-                    }}
+                    disabled={readOnly}
+                    style={getInputStyle()}
                   />
                 </div>
 
@@ -519,13 +448,8 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
                       const value = e.target.value === '' ? null : parseInt(e.target.value)
                       updateParameter(type, originalIndex, 'icon_number', value)
                     }}
-                    style={{
-                      width: '100%',
-                      padding: '12px 8px',
-                      border: '1px solid var(--border-color)',
-                      borderRadius: '4px',
-                      fontSize: '14px'
-                    }}
+                    disabled={readOnly}
+                    style={getInputStyle()}
                     placeholder="Icon number"
                   />
                 </div>
@@ -593,7 +517,7 @@ export default function DeviceEditor({ database, onSave }: DeviceEditorProps) {
       {selectedBrand && selectedDevice && (
         <>
           {/* Save/Cancel Buttons */}
-          {hasUnsavedChanges && (
+          {hasUnsavedChanges && !readOnly && (
             <div style={{ 
               display: 'flex', 
               gap: '12px', 
