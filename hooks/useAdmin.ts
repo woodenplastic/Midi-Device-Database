@@ -74,6 +74,8 @@ export function useAdmin() {
     } finally {
       setIsAdmin(false)
       setUsername(null)
+      // Force a page reload to refresh all components
+      window.location.reload()
     }
   }
 
