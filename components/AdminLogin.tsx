@@ -186,40 +186,6 @@ export default function AdminLogin({ onLogin, onClose }: AdminLoginProps) {
             </button>
           </div>
         </form>
-
-        <div style={{
-          marginTop: '24px',
-          padding: '16px',
-          backgroundColor: 'var(--bg-color)',
-          borderRadius: '8px',
-          border: '1px solid var(--border-color)'
-        }}>
-          <p style={{ 
-            margin: '0 0 12px 0', 
-            fontSize: '14px', 
-            color: 'var(--text-muted)',
-            textAlign: 'center'
-          }}>
-            <strong>🔒 Secure Authentication</strong><br />
-            • Bcrypt password hashing<br />
-            • JWT tokens with HTTP-only cookies<br />
-            • Rate limiting & account lockout<br />
-            • Session timeout protection
-          </p>
-          <p style={{ 
-            margin: 0, 
-            fontSize: '13px', 
-            color: 'var(--text-color)',
-            textAlign: 'center',
-            fontFamily: 'monospace',
-            backgroundColor: 'rgba(0,0,0,0.1)',
-            padding: '8px',
-            borderRadius: '4px'
-          }}>
-            <strong>adrianwild</strong> / ritter-preston-already-rookies<br />
-            <strong>andreaskiesgen</strong> / cellular-teenage-gui-cartoon
-          </p>
-        </div>
       </div>
     </div>
   )
